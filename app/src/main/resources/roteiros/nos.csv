@@ -59,3 +59,6 @@ LES_03;LES;3;MULTI;S;N;;;E algum destes?;Marque todos que valem. Se nenhum, toqu
 LES_04;LES;6;UNICA;N;N;NAO_HOJE;;Desde que machucou, como está?;
 LES_FIM;LES;7;DECISAO;N;N;;;;
 BEB_01;GEN;6;UNICA;N;N;FLAG:barriga;;Você (ou a pessoa que precisa de ajuda) está conseguindo beber líquidos e fazer xixi?;Se vomita tudo o que bebe ou quase não faz xixi, o corpo pode estar perdendo água demais.
+URI_01;URI;1;MULTI;S;S;;;Algum destes sinais de alerta está acontecendo?;Marque todos que valem. Se nenhum, toque em Nenhum destes.
+PEL_01;PEL;1;MULTI;S;S;;;Algum destes sinais de alerta está acontecendo?;Marque todos que valem. Se nenhum, toque em Nenhum destes.
+BAR_01;BAR;1;MULTI;S;S;;;Algum destes sinais de alerta está acontecendo?;Marque todos que valem. Se nenhum, toque em Nenhum destes.

@@ -408,7 +408,7 @@ public final class BaseConhecimento {
         "peito", List.of("peito", "costela", "coracao", "respirar", "respiracao", "tosse", "catarro", "pulmao", "mama", "seio", "folego"),
         "barriga", List.of("barriga", "estomago", "umbigo", "vomito", "vomitando", "diarreia", "fezes", "coco", "xixi", "urina",
             "virilha", "intestino", "gases", "vagina", "calcinha", "bolsa", "contracao", "evacuar", "abdome"),
-        "costas", List.of("costas", "lombar", "coluna", "bumbum", "quadril", "nadega", "coccix", "rim"),
+        "costas", List.of("costas", "lombar", "coluna", "bumbum", "quadril", "nadega", "coccix", "rim", "rins", "renal"),
         "bracos", List.of("braco", "ombro", "cotovelo", "antebraco", "mao", "punho", "dedo", "clavicula"),
         "pernas", List.of("perna", "coxa", "joelho", "canela", "panturrilha", "batata", "tornozelo", "pe", "calcanhar", "dedo"));
 
@@ -434,6 +434,26 @@ public final class BaseConhecimento {
         if (g == null || !palavrasDoSinal.containsKey(sinalId) || daRegiao(sinalId, g)) return true;
         for (String outra : PALAVRAS_DA_REGIAO.keySet()) if (daRegiao(sinalId, outra)) return false;
         return true;   // o sinal não fala de nenhuma parte do corpo: vale para qualquer região
+    }
+
+    /** Grandes regiões do corpo citadas num sinal (vazio se ele não fala de nenhuma). */
+    public Set<String> regioesDoSinal(String sinalId) {
+        indexar();
+        Set<String> r = new HashSet<>();
+        if (!palavrasDoSinal.containsKey(sinalId)) return r;
+        for (String g : PALAVRAS_DA_REGIAO.keySet()) if (daRegiao(sinalId, g)) r.add(g);
+        return r;
+    }
+
+    /** Grandes regiões do corpo citadas num texto livre. */
+    public static Set<String> regioesDoTexto(String texto) {
+        Set<String> r = new HashSet<>();
+        if (texto == null) return r;
+        for (String w : normal(texto).split(" "))
+            for (var e : PALAVRAS_DA_REGIAO.entrySet())
+                for (String k : e.getValue())
+                    if (w.equals(k) || (k.length() >= 5 && w.length() >= 5 && BuscaExpressoes.mesmaRaiz(w, k))) r.add(e.getKey());
+        return r;
     }
 
     private boolean daRegiao(String sinalId, String grande) {

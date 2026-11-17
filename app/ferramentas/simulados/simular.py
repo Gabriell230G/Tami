@@ -67,10 +67,30 @@ def responder(ficha, q, r):
                   or (o["codigo"] in BASE and parecido(o["rotulo"], ficha["descricao_sinal"]) >= 0.5)]
         resp = marcar or ["nenhum"]
         informado = bool(marcar)
+    elif nid == "FIL_EM":   # tela de emergência: cada item responde como a pergunta antiga
+        resp = []
+        for c, fid in (("ar", "FIL_01"), ("peito", "FIL_02"), ("avc", "FIL_04"), ("sangue", "FIL_05")):
+            if c in cods and tem(CONC_FIL[fid]):
+                resp.append(c)
+        if tem(CONC_FIL["FIL_03"]):
+            c = "apagou_agora" if tem(r"agora|nao acorda|desacord|convulsionando|nao responde") else "apagou_passou"
+            if c in cods:
+                resp.append(c)
+        informado = bool(resp)
+        resp = resp or ["nenhum"]
     elif nid == "ORI_01":
         resp = ["machucou" if ficha["lesao"] else "sozinho"]
     elif nid == "LES_01":
         resp = [ficha["mecanismo"] or "pancada"]
+    elif nid in ("URI_01", "PEL_01", "BAR_01"):   # trilhas: o item aponta para um sinal da base
+        descs = [norm(BASE[s]["desc"]) for s in ficha["sinais_presentes"] if s in BASE] + [norm(ficha["descricao_sinal"])]
+        resp = []
+        for o in ops:
+            alvo = [e.split(":", 1)[1] for e in o.get("efeitos", []) if e.startswith("SINAL:")]
+            if alvo and (alvo[0] in ficha["sinais_presentes"] or any(parecido(o["rotulo"], d) >= 0.4 for d in descs)):
+                resp.append(o["codigo"])
+        informado = bool(resp)
+        resp = resp or ["nenhum"]
     elif nid in ("LES_02", "LES_03"):
         resp = [c for c in cods if c in ficha["conceitos"]] or ["nenhum"]
         informado = resp != ["nenhum"]
@@ -187,6 +207,15 @@ NOME_CONCEITO = {
 }
 
 
+def palavras(texto):
+    vazias = {"para", "com", "sem", "que", "uma", "dor", "mais", "muito", "depois", "quando", "como", "esta", "ainda", "pelo", "pela", "isso", "dias", "forte"}
+    return {w for w in norm(texto).split() if len(w) > 3 and w not in vazias}
+
+
+def raizes(texto):
+    return {w[:5] for w in palavras(texto)}
+
+
 def grandes(texto):
     t = norm(texto)
     return {g for g, rx in PALAVRAS_REGIAO.items() if re.search(rx, t)}
@@ -203,7 +232,12 @@ def avaliar(ficha, conv):
     nos = [t["no"] for t in feitas]
     respondidos = {h["no"] for h in conv["historico"]}
     lesao_case = ficha["lesao"]
-    regiao_caso = grandes((ficha["regiao"] or "") + " " + ficha["descricao_sinal"])
+    # auditoria (Passo 1): a região vem do que a pessoa disse ou tocou; a descrição do sinal só entra se não houver nada
+    regiao_caso = grandes((ficha["regiao"] or "") + " " + ficha["relato"]) or grandes(ficha["descricao_sinal"])
+    rel = norm(ficha["relato"])
+    pos_parto = ficha.get("pos_parto") or re.search(r"\bparto\b|ganhei|ganhou|tive (o |a |um |meu )?(bebe|nenem|filh)|teve (o |a |um )?(bebe|nenem|filh)|amament|resguardo|puerper|cesar", rel)
+    operou = ficha["cirurgia"] or re.search(r"\b(oper\w*|cirur\w*|cirug\w*|pos op\w*|amigdal\w*|protese|blefaro\w*|lipo\w*|abdomino\w*|bariatric\w*|histeroscop\w*|colonoscop\w*|endoscop\w*|biopsia|cateter\w*|implante|pino|placa|parafuso)", rel)
+    graves_plausiveis = []
 
     irrelevantes, problemas = [], []
     for t in feitas:
@@ -214,15 +248,27 @@ def avaliar(ficha, conv):
                 d = norm(rot)
                 motivo = None
                 for grupo, rx in GRUPO_ITEM:
+                    if grupo == "gravidez" and pos_parto:
+                        continue
+                    if grupo == "cirurgia" and operou:
+                        continue
                     if grupo in ficha["sem_sentido"] and re.search(rx, d):
                         motivo = "grupo:" + grupo
                         break
+                if not motivo:   # auditoria: o item repete o que a pessoa escreveu (mesma raiz de palavra), então tem relação
+                    ri, rr = raizes(rot), raizes(ficha["relato"])
+                    if len(ri & rr) / max(1, min(len(ri), len(rr))) >= 0.34:
+                        continue
                 if not motivo and not lesao_case and TRAUMA_ITEM.search(d):
                     motivo = "trauma_sem_machucado"
                 if not motivo and regiao_caso:
                     gi = grandes(rot)
                     if gi and not (gi & regiao_caso):
                         motivo = "outra_parte_do_corpo"
+                grave_item = BASE.get(cod, {}).get("destino") in ("UPA_HOJE", "SAMU_192")
+                if motivo and grave_item and not motivo.startswith("grupo") and grandes(rot) & regiao_caso and raizes(rot) & raizes(ficha["relato"]):
+                    graves_plausiveis.append(f"{t['no']}: {rot}")   # auditoria: grave e da mesma parte do corpo, um profissional perguntaria
+                    continue
                 if motivo:
                     irrelevantes.append(f"{t['no']}: {rot}")
                     problemas.append("irrelevante:" + motivo)
@@ -232,9 +278,10 @@ def avaliar(ficha, conv):
             if lesao_case and ficha["familia"] in (1, 2, 3):
                 cabeca = "cabeca" in regiao_caso or re.search(r"cabeca", ficha["texto_sinal"])
                 ruim = t["no"] in ("FIL_02", "FIL_06", "FIL_07", "FIL_08", "GEN_04") or (t["no"] in ("FIL_04", "GEN_01") and not cabeca)
-            elif t["no"] == "FIL_06" and ficha["familia"] not in (7, 8, 14) and not re.search(r"alerg|picad|incha|rosto|labio|garganta", ficha["texto_sinal"]):
+            elif t["no"] == "FIL_06" and ficha["familia"] not in (7, 8, 14) and not re.search(r"alerg|picad|incha|rosto|labio|garganta", ficha["texto_sinal"] + " " + rel):
                 ruim = True
-            elif t["no"] == "FIL_07" and ficha["familia"] not in (11, 13, 14, 6) and not re.search(r"remedio|engol|bebeu|produto|gas|fumaca", ficha["texto_sinal"]):
+            elif t["no"] == "FIL_07" and ficha["familia"] not in (11, 13, 14, 6) and not re.search(r"remedio|engol|bebeu|produto|gas|fumaca", ficha["texto_sinal"]) \
+                    and not re.search(r"vomit|sonolen|confus|desmai|tont|tremor|convuls", rel):   # auditoria: com esses sintomas, perguntar de veneno faz sentido
                 ruim = True
             if ruim:
                 irrelevantes.append(f"{t['no']}: {tema or t['texto'][:60]}")
@@ -315,7 +362,7 @@ def avaliar(ficha, conv):
         frases.append("Conversa boa, direto ao ponto.")
     fb.update(destino_tami=conv["destino"], seguranca=seg, perguntas_feitas=len(feitas), perguntas_ideal=ideal,
               irrelevantes=irrelevantes, faltaram=faltaram, repetidas=repetidas, estranhas_para_o_perfil=[i for i, p in zip(irrelevantes, problemas) if p.startswith("irrelevante:grupo")],
-              cuidados_no_fim=cuidado, linguagem="ok", nota_pessoa_real=nota, comentario=" ".join(frases),
+              graves_plausiveis=graves_plausiveis, cuidados_no_fim=cuidado, linguagem="ok", nota_pessoa_real=nota, comentario=" ".join(frases),
               problemas=sorted(set(problemas)), queixa=conv["queixa"], perguntas=nos)
     return fb
 
@@ -377,17 +424,25 @@ def main():
         casos = [c for c in casos if c["conjunto"] == conjunto]
     if limite:
         casos = casos[:limite]
-    r = random.Random(7)
-    motor = Motor()
-    convs, fbs = [], []
-    for i, c in enumerate(casos):
-        r = random.Random(c["caso"])   # o mesmo caso erra do mesmo jeito em qualquer versão: dá para comparar antes e depois
-        conv = conversar(motor, c, r)
-        convs.append(conv)
-        fbs.append(avaliar(c, conv))
-        if (i + 1) % 1000 == 0:
-            print(f"  {i + 1} conversas", flush=True)
-    motor.fechar()
+    so = os.environ.get("SIM_IDS")   # para olhar poucos casos: SIM_IDS=SIM-01-00001,SIM-02-00002 (grava em *_debug)
+    if so:
+        casos = [c for c in casos if c["caso"] in set(so.split(","))]
+        conjunto += "_debug"
+    jobs = max(1, int(os.environ.get("SIM_JOBS", "2")))
+    convs, fbs = [None] * len(casos), [None] * len(casos)
+
+    def lote(k):
+        motor = Motor()
+        for i in range(k, len(casos), jobs):
+            c = casos[i]
+            r = random.Random(c["caso"])   # o mesmo caso erra do mesmo jeito em qualquer versão: dá para comparar antes e depois
+            convs[i] = conversar(motor, c, r)
+            fbs[i] = avaliar(c, convs[i])
+        motor.fechar()
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(jobs) as ex:
+        list(ex.map(lote, range(jobs)))
     with open(os.path.join(SAIDA, f"conversas_{conjunto}.jsonl"), "w", encoding="utf-8") as f:
         for c in convs:
             f.write(json.dumps(c, ensure_ascii=False) + "\n")

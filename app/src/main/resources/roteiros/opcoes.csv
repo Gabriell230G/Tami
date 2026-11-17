@@ -206,3 +206,24 @@ BEB_01;S;Sim, bebo e faço xixi normal;0;EXIGE:BLK-HIDRATAR
 BEB_01;pouco;Bebo, mas faço bem menos xixi que o normal;1;UBS_MESMO_DIA:DESIDRATACAO_LEVE & EXIGE:BLK-HIDRATAR
 BEB_01;N;Não consigo: vomito tudo ou quase não faço xixi;2;UPA:DESIDRATACAO
 BEB_01;nao_sei;Não sei;0;
+URI_01;rim;Febre ou calafrio junto com dor nas costas ou do lado;2;SINAL:SA-D2-036
+URI_01;preso;Não consegue fazer xixi nenhum, com o pé da barriga cheio e doendo;2;SINAL:SA-D2-038
+URI_01;coagulo;Xixi com sangue, com coágulos, ou cor de coca;2;SINAL:SA-D2-040
+URI_01;testiculo;Dor forte e de repente em um testículo (no saco);3;SINAL:SA-D2-041
+URI_01;pe_barriga;Dor no pé da barriga com febre e corrimento diferente;2;SINAL:SA-D2-074
+URI_01;nenhum;Nenhum destes;0;
+URI_01;nao_sei;Não sei;0;UPA:DUVIDA_SINAL_GRAVE
+PEL_01;copo;Manchas roxas ou vermelhas que não somem quando aperta um copo de vidro em cima;3;SINAL:SA-D2-083
+PEL_01;incha;Lábios, língua, rosto ou garganta inchando de repente;3;SINAL:SA-D3-009
+PEL_01;espalha;Pele vermelha, quente, inchada e doída que vai se espalhando;2;SINAL:SA-D3-001
+PEL_01;bolhas;Bolhas, pele soltando ou feridas na boca e nos olhos;3;SINAL:SA-I-002
+PEL_01;olho;Bolhas ou vermelhidão perto do olho, ou pálpebra vermelha e inchada;2;SINAL:SA-D3-003
+PEL_01;nenhum;Nenhum destes;0;
+PEL_01;nao_sei;Não sei;0;UPA:DUVIDA_SINAL_GRAVE
+BAR_01;dura;Barriga dura como tábua e muito dolorida quando encosta;3;SINAL:SA-D2-002
+BAR_01;sangue;Vômito com sangue ou parecendo borra de café, ou cocô preto como piche;3;SINAL:SA-D2-006
+BAR_01;gases;Barriga inchada, sem conseguir fazer cocô e sem soltar gases;3;SINAL:SA-D2-021
+BAR_01;direita;Dor que começou perto do umbigo e foi para o lado direito, embaixo;2;SINAL:SA-D2-003
+BAR_01;amarelo;Olhos amarelos com febre, ou dor forte do lado direito em cima da barriga;2;SINAL:SA-D2-029
+BAR_01;nenhum;Nenhum destes;0;
+BAR_01;nao_sei;Não sei;0;UPA:DUVIDA_SINAL_GRAVE

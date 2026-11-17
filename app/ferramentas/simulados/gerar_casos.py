@@ -115,6 +115,8 @@ def idade_para(it, fam, r):
                                 ("idoso", r"\bidos[oa]s?\b")) if re.search(rx, d) and not re.search(r"bebe .{0,30}(mex|chut|semanas|barriga)", d)]
     if citados:   # o sinal fala de quem tem (ex.: "cotovelo de babá: criança pequena chora...")
         vale = citados
+    if re.search(r"\bparto\b|gravid|gestant|amament|puerper|resguardo|cesar", d) and not re.match(r"(bebe|crianca|recem)", d):
+        vale = ["gestante"] if re.search(r"gravid|gestant|semanas", d) else ["adulto"]   # quem escreve é a mãe, não o bebê
     if vale is None:
         if fam == 11:
             vale = ["bebe", "crianca"]
@@ -417,7 +419,8 @@ def gerar(n=12000, semente=2026):
                 caso="", familia=fam, nome_familia=FAMILIAS[fam], semente_sinal=it["id"], descricao_sinal=it["desc"],
                 grupo=grupo, idade_meses=idade, sexo=sexo, gestante=gestante, diabetes="diabetico" in fatores,
                 fatores=fatores + (["homem"] if sexo == "M" else ["mulher"]), doencas=doencas,
-                cirurgia=bool(re.search(r"cirurgi|operad|operou|operacao|protese|colonoscop|endoscop|biopsia", t)),
+                cirurgia=bool(re.search(r"cirurgi|oper\w*|protese|colonoscop|endoscop|biopsia|amigdal|blefaro|lipo|abdomino|bariatric|histeroscop", t)),
+                pos_parto=bool(re.search(r"\bparto\b|amament|puerper|resguardo|cesar", t)),
                 lesao=lesao, mecanismo=mec, conta_mecanismo=lesao and r.random() < 0.65, tempo=tempo,
                 dor=r.randint(dmin, dmax), conceitos=conceitos, texto_sinal=t,
                 evolucao=r.choices(["melhorando", "igual", "piorando"], [55, 35, 10] if it["destino"] in ("CUIDADO_EM_CASA", "UBS_EM_BREVE") else [20, 40, 40])[0],

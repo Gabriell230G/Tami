@@ -21,12 +21,14 @@ Outros comandos (no terminal, na pasta do projeto):
 
 ```
 python3 ferramentas/simulados/gerar_casos.py      # 12.000 casos com ficha escondida (2.000 guardados para a prova)
-python3 ferramentas/simulados/simular.py treino   # roda no motor e dá feedback de cada conversa (uns 7 minutos)
+python3 ferramentas/simulados/simular.py treino   # roda no motor e dá feedback de cada conversa (uns 5 minutos, 2 motores ao mesmo tempo)
 python3 ferramentas/simulados/simular.py prova
 python3 ferramentas/simulados/relatorio.py        # relatório e a aba "Conversas simuladas" do painel
 ```
 
-Resultados em `dados/simulados/`: `relatorio_testes.md`, `CHANGELOG_SIMULADOS.md`, `feedback_*.jsonl` (uma linha por conversa) e `casos_simulados.csv`.
+Resultados em `dados/simulados/`: `relatorio_testes.md`, `CHANGELOG_SIMULADOS.md`, `auditoria_avaliador.md`, `feedback_*.jsonl` (uma linha por conversa) e `casos_simulados.csv`.
+
+Para olhar só alguns casos: `SIM_IDS=SIM-01-00001,SIM-02-00002 python3 ferramentas/simulados/simular.py treino` (grava em `*_debug`). Para dar a nota de novo com a régua antiga: `python3 ferramentas/simulados/reavaliar.py conversas_prova.jsonl v1`.
 
 ## Publicar (link para outras pessoas testarem)
 

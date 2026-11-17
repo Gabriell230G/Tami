@@ -82,24 +82,45 @@ public final class Validacao {
 
     /** Como uma pessoa sincera responderia: marca o sinal que tem, responde o que está no caso e "não" no resto. */
     /** Sinais parecidos com os itens das perguntas LES_02 e LES_03: quem tem um deles marcaria o item também. */
-    private static final Map<String, Set<String>> PARECIDOS = Map.of(
-        "estalo", Set.of("SA-C-012", "SA-C-016", "SA-C-017", "SA-C-107", "SA-C-112"),
-        "apoiar", Set.of("SA-A-015", "SA-C-003", "SA-C-019", "SA-C-114"),
-        "frio", Set.of("SA-C-020"),
-        "coluna", Set.of("SA-A-031"),
-        "cabeca", Set.of("SA-A-018", "SA-A-020"),
-        "cabeca_grave", Set.of("SA-A-016", "SA-A-019", "SA-A-024"));
+    private static final Map<String, Set<String>> PARECIDOS = Map.ofEntries(
+        Map.entry("estalo", Set.of("SA-C-012", "SA-C-016", "SA-C-017", "SA-C-107", "SA-C-112")),
+        Map.entry("apoiar", Set.of("SA-A-015", "SA-C-003", "SA-C-019", "SA-C-114")),
+        Map.entry("frio", Set.of("SA-C-020")),
+        Map.entry("coluna", Set.of("SA-A-031")),
+        Map.entry("cabeca", Set.of("SA-A-018", "SA-A-020")),
+        Map.entry("cabeca_grave", Set.of("SA-A-016", "SA-A-019", "SA-A-024")),
+        // sprint 6: itens das trilhas URI, PEL e BAR
+        Map.entry("rim", Set.of("SA-C-045")),
+        Map.entry("preso", Set.of("SA-G-009")),
+        Map.entry("coagulo", Set.of("SA-D2-039", "SA-I-004")),
+        Map.entry("copo", Set.of("SA-D1-089", "SA-E-037", "SA-D3-050")),
+        Map.entry("incha", Set.of("SA-I-001", "SA-I-018", "SA-H-010")),
+        Map.entry("espalha", Set.of("SA-D3-002", "SA-D3-005")),
+        Map.entry("bolhas", Set.of("SA-F2-045")),
+        Map.entry("sangue", Set.of("SA-D2-007", "SA-D2-008")),
+        Map.entry("gases", Set.of("SA-D2-026")),
+        Map.entry("direita", Set.of("SA-D2-030")));
 
     public static List<String> responder(Caso caso, No n) { return responder(caso, n, null); }
 
     /** @param motor para a pergunta da origem (ORI_01): quem tem um sinal de machucado responde "machuquei". */
     public static List<String> responder(Caso caso, No n, MotorTriagem motor) {
         Set<String> sinaisDoCaso = Set.of(caso.sinal().split("\\|"));
+        if (n.id().equals(MotorTriagem.TELA_EMERGENCIA)) {   // os casos não respondem as perguntas de emergência: "nenhum", como antes
+            List<String> r = new ArrayList<>();
+            for (String fil : List.of("FIL_01", "FIL_02", "FIL_03", "FIL_04", "FIL_05")) {
+                List<String> v = caso.respostas().get(fil);
+                if (v != null && !v.isEmpty() && !v.get(0).equals("N")) r.add(switch (fil) { case "FIL_01" -> "ar"; case "FIL_02" -> "peito";
+                    case "FIL_03" -> v.get(0).equals("passou") ? "apagou_passou" : "apagou_agora"; case "FIL_04" -> "avc"; default -> "sangue"; });
+            }
+            r.removeIf(c -> n.opcoes().stream().noneMatch(o -> o.codigo().equals(c)));
+            return r.isEmpty() ? List.of("nenhum") : r;
+        }
         if (n.id().equals(MotorTriagem.ORIGEM)) {
             boolean machucou = motor != null && sinaisDoCaso.stream().anyMatch(motor::sinalDeTrauma);
             return List.of(machucou ? "machucou" : "sozinho");
         }
-        if (n.id().equals("LES_02") || n.id().equals("LES_03")) {   // o item aponta para um sinal da base (efeito SINAL)
+        if (n.opcoes().stream().anyMatch(o -> o.efeitos().stream().anyMatch(e -> e.acao() == br.com.fiap.tami.motor.Efeito.Acao.SINAL))) {   // o item aponta para um sinal da base (efeito SINAL)
             List<String> r = new ArrayList<>();
             for (Opcao o : n.opcoes())
                 for (var e : o.efeitos())

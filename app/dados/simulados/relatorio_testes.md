@@ -8,14 +8,14 @@ Cada caso é uma pessoa simulada com uma ficha escondida (idade, o que aconteceu
 
 | Medida | Antes | Depois |
 | --- | --- | --- |
-| Destino exato | 67,7% (65,6% a 69,7%) | 68,5% (66,4% a 70,5%) |
-| Urgentes que foram para UPA ou SAMU | 99,8% (99,4% a 100,0%) | 99,8% (99,4% a 100,0%) |
-| Urgente mandado para UBS ou casa | 0,2% (0,1% a 0,6%) | 0,2% (0,1% a 0,6%) |
-| Conversas com pergunta ou item sem relação | 65,9% (63,8% a 68,0%) | 56,7% (54,5% a 58,9%) |
-| Conversas em que faltou uma pergunta importante | 5,7% (4,8% a 6,8%) | 5,0% (4,1% a 6,0%) |
-| UBS ou casa sem nenhum cuidado no fim | 5,0% (3,4% a 7,3%) | 0,0% (0,0% a 0,8%) |
-| Perguntas por conversa (média) | 7,60 | 7,00 |
-| Nota de uma pessoa real (0 a 10) | 6,58 | 7,70 |
+| Destino exato | 65,7% (63,6% a 67,8%) | 70,8% (68,7% a 72,7%) |
+| Urgentes que foram para UPA ou SAMU | 99,9% (99,5% a 100,0%) | 100,0% (99,7% a 100,0%) |
+| Urgente mandado para UBS ou casa | 0,1% (0,0% a 0,5%) | 0,0% (0,0% a 0,3%) |
+| Conversas com pergunta ou item sem relação | 54,7% (52,5% a 56,9%) | 35,7% (33,6% a 37,8%) |
+| Conversas em que faltou uma pergunta importante | 3,6% (2,9% a 4,5%) | 8,1% (6,9% a 9,3%) |
+| UBS ou casa sem nenhum cuidado no fim | 0,0% (0,0% a 0,8%) | 0,0% (0,0% a 0,7%) |
+| Perguntas por conversa (média) | 6,89 | 4,71 |
+| Nota de uma pessoa real (0 a 10) | 7,97 | 9,08 |
 
 Intervalos de confiança de 95% pelo método de Wilson.
 
@@ -23,212 +23,210 @@ Intervalos de confiança de 95% pelo método de Wilson.
 
 | Medida | Antes | Depois |
 | --- | --- | --- |
-| Destino exato | 66,2% (65,3% a 67,1%) | 67,3% (66,3% a 68,2%) |
-| Urgentes que foram para UPA ou SAMU | 99,8% (99,7% a 99,9%) | 99,8% (99,7% a 99,9%) |
-| Urgente mandado para UBS ou casa | 0,2% (0,1% a 0,3%) | 0,2% (0,1% a 0,3%) |
-| Conversas com pergunta ou item sem relação | 65,5% (64,6% a 66,5%) | 56,7% (55,8% a 57,7%) |
-| Conversas em que faltou uma pergunta importante | 4,9% (4,5% a 5,3%) | 4,0% (3,7% a 4,4%) |
-| UBS ou casa sem nenhum cuidado no fim | 6,5% (5,6% a 7,6%) | 0,0% (0,0% a 0,2%) |
-| Perguntas por conversa (média) | 7,44 | 6,88 |
-| Nota de uma pessoa real (0 a 10) | 6,64 | 7,75 |
+| Destino exato | 67,9% (67,0% a 68,8%) | 73,2% (72,3% a 74,1%) |
+| Urgentes que foram para UPA ou SAMU | 99,9% (99,8% a 99,9%) | 99,9% (99,7% a 99,9%) |
+| Urgente mandado para UBS ou casa | 0,1% (0,1% a 0,2%) | 0,1% (0,1% a 0,3%) |
+| Conversas com pergunta ou item sem relação | 54,7% (53,7% a 55,6%) | 35,8% (34,9% a 36,8%) |
+| Conversas em que faltou uma pergunta importante | 3,9% (3,5% a 4,3%) | 8,4% (7,8% a 8,9%) |
+| UBS ou casa sem nenhum cuidado no fim | 0,0% (0,0% a 0,2%) | 0,0% (0,0% a 0,1%) |
+| Perguntas por conversa (média) | 6,88 | 4,67 |
+| Nota de uma pessoa real (0 a 10) | 7,98 | 9,08 |
 
 ## 3. Os 20 problemas mais comuns antes das correções
 
-### 1. Item de cirurgia para quem não operou
+### 1. Mais cuidadosa que o necessário (destino mais urgente que o esperado)
 
-**3837 conversas antes ➜ 1505 depois.** Famílias mais atingidas: Urina e região íntima (409), Pele (402), Febre e dengue (369).
+**3185 conversas antes ➜ 2651 depois.** Famílias mais atingidas: Febre e dengue (287), Urina e região íntima (276), Pele (256).
 
-Causa: A base tem 215 sinais de pós-operatório e a busca por palavras parecidas trazia todos para quem tinha febre ou dor.
+- "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana" ➜ esperado UBS_EM_BREVE, a Tami deu UPA_HOJE
+- "bati com forca na prota febre" ➜ esperado CUIDADO_EM_CASA, a Tami deu UBS_EM_BREVE
+- "escape no meio do mes desde seugnda" ➜ esperado UBS_EM_BREVE, a Tami deu SAMU_192
 
-- "minha avo de 74 anos, caroco na axila doi apos beber e ingua doi com alcool hj" ➜ CONF_SINAIS: Inchaço novo na mama com prótese meses ou anos depois, ou caroços pequenos e doloridos (Prótese de silicone na mama)
-- "queria fechar os olhos e pronto faz uns 2 dias" ➜ CONF_SINAIS: Mão difícil de abrir e fechar depois de tirar a tala (cirurgia com placa e parafusos no braço, punho ou mão)
-- "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem m" ➜ CONF_SINAIS_2: Quadril operado voltando a doer, inchar, estalar ou ficar mais duro meses ou anos depois (Prótese de quadril)
+### 2. Lista com item de outra parte do corpo
 
-### 2. Pergunta de alergia com inchaço sem motivo no relato
-
-**3396 conversas antes ➜ 660 depois.** Famílias mais atingidas: Urina e região íntima (465), Febre e dengue (394), Barriga (375).
-
-Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
-
-- "minha avo de 74 anos, caroco na axila doi apos beber e ingua doi com alcool hj" ➜ FIL_06: alergia com inchaço
-- "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem m" ➜ FIL_06: alergia com inchaço
-- "nao sei se e serio, to gravida de 31 semanas pontada forte na boca do estomago" ➜ FIL_06: alergia com inchaço
-
-### 3. Mais cuidadosa que o necessário (destino mais urgente que o esperado)
-
-**3338 conversas antes ➜ 3231 depois.** Famílias mais atingidas: Febre e dengue (306), Urina e região íntima (294), Pele (273).
-
-- "queria fechar os olhos e pronto faz uns 2 dias" ➜ esperado UPA_HOJE, a Tami deu SAMU_192
-- "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem m" ➜ esperado UBS_EM_BREVE, a Tami deu UPA_HOJE
-- "cabeca latejando depois da cirurgia na coluna ah e xixi rosinha depois da cistoscopia" ➜ esperado UPA_HOJE, a Tami deu SAMU_192
-
-### 4. Pergunta de veneno ou remédio demais sem motivo no relato
-
-**3288 conversas antes ➜ 1048 depois.** Famílias mais atingidas: Pele (497), Urina e região íntima (492), Febre e dengue (455).
-
-Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
-
-- "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem m" ➜ FIL_07: veneno ou remédio demais
-- "gravida de 9 semanas, to gravida e com manchas vermelhas e febre" ➜ FIL_07: veneno ou remédio demais
-- "suspeita de zika, zika faz 2 semanas" ➜ FIL_07: veneno ou remédio demais
-
-### 5. Perguntas demais para o caso
-
-**2962 conversas antes ➜ 2688 depois.** Famílias mais atingidas: Urina e região íntima (362), Pele (346), Intoxicação e animais (326).
-
-Causa: O caminho genérico tem 8 perguntas de emergência e 6 gerais, além da lista.
-
-- "minha avo de 74 anos, caroco na axila doi apos beber e ingua doi com alcool hj" ➜ 16 perguntas
-- "suspeita de zika, zika faz 2 semanas" ➜ 16 perguntas
-- "rosto cheio de espinha e acne" ➜ 15 perguntas
-
-### 6. Lista com item de outra parte do corpo
-
-**2838 conversas antes ➜ 2674 depois.** Famílias mais atingidas: Pele (300), Barriga (297), Pancada, corte e queimadura (280).
+**2827 conversas antes ➜ 1008 depois.** Famílias mais atingidas: Barriga (300), Pele (298), Cirurgia, crônicos e 'não é nada' (258).
 
 Causa: A lista não sabia onde era o problema quando a pessoa não tocava no corpo.
 
-- "minha avo de 74 anos, caroco na axila doi apos beber e ingua doi com alcool hj" ➜ CONF_SINAIS: Homem com caroço no peito ou na axila ou com líquido saindo do bico do peito
-- "cabeca latejando depois da cirurgia na coluna ah e xixi rosinha depois da cistoscopia" ➜ CONF_SINAIS: Pancada na cabeça durante o jogo e ficou zonzo, com dor de cabeça ou enjoo
-- "dor nas costas ou do lado embaixo das costelas e infeccao urinaria subiu pro rim" ➜ CONF_SINAIS: Dor na barriga ou no ombro depois da pancada nas costelas (cuidados em casa da costela quebrada)
+- "cancer na lingua to fazendo quimio" ➜ CONF_SINAIS: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
+- "siso arrancado latejando 3 dias depois e buraco do siso vazio e doendo desde ontem" ➜ CONF_SINAIS: Dor forte na barriga que só piora, com barriga dura ou mal-estar, depois de lipoaspiração (Lipoaspiração)
+- "tomei um chute crise de sinusite, dor ou pressão no rosto e na testa agora pouco" ➜ CONF_SINAIS: Atraso menstrual com dor leve de um lado da barriga e sangramento escuro
 
-### 7. Item de "depois de queda ou pancada" para quem não se machucou
+### 3. Perguntas demais para o caso
 
-**2293 conversas antes ➜ 2068 depois.** Famílias mais atingidas: Pele (286), Saúde mental e crise (220), Febre e dengue (201).
+**2676 conversas antes ➜ 479 depois.** Famílias mais atingidas: Urina e região íntima (360), Intoxicação e animais (346), Pele (334).
+
+Causa: O caminho genérico tem 8 perguntas de emergência e 6 gerais, além da lista.
+
+- "cancer na lingua to fazendo quimio" ➜ 16 perguntas
+- "meu vo de 68 anos reclama de pele queimada de produto" ➜ 12 perguntas
+- "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana" ➜ 11 perguntas
+
+### 4. Item de "depois de queda ou pancada" para quem não se machucou
+
+**1366 conversas antes ➜ 583 depois.** Famílias mais atingidas: Urina e região íntima (140), Saúde mental e crise (140), Intoxicação e animais (135).
 
 Causa: A lista mostrava sinais de "depois de queda" para quem não caiu.
 
-- "queria fechar os olhos e pronto faz uns 2 dias" ➜ CONF_SINAIS: Mão difícil de abrir e fechar depois de tirar a tala (cirurgia com placa e parafusos no braço, punho ou mão)
-- "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem m" ➜ CONF_SINAIS: Febre junto com dor nas costas (cuidados da vértebra quebrada por osteoporose)
-- "cabeca latejando depois da cirurgia na coluna ah e xixi rosinha depois da cistoscopia" ➜ CONF_SINAIS: Pancada na cabeça durante o jogo e ficou zonzo, com dor de cabeça ou enjoo
+- "escape no meio do mes desde seugnda" ➜ CONF_SINAIS_2: Pancada na cabeça durante o jogo e ficou zonzo, com dor de cabeça ou enjoo
+- "meu vo de 63 anos ta fzees escuras c anticoagulante agora uso anticoagulante" ➜ CONF_SINAIS: Toma remédio para afinar o sangue e bateu a cabeça, mesmo sem sintomas
+- "nao sei se e serio  meu menino de 2 anos ta  urticaria agora" ➜ CONF_SINAIS: Criança que não consegue fazer nada de xixi depois da cirurgia de fimose (Cirurgia de fimose em criança)
 
-### 8. Resultado de UPA sem o que fazer até chegar lá
+### 5. Item de cirurgia para quem não operou
 
-**2179 conversas antes ➜ 84 depois.** Famílias mais atingidas: Febre e dengue (327), Gravidez e pós-parto (245), Bebês e crianças (242).
+**1316 conversas antes ➜ 462 depois.** Famílias mais atingidas: Febre e dengue (158), Barriga (136), Gravidez e pós-parto (133).
 
-Causa: Só alguns caminhos de UPA tinham o bloco do que fazer até chegar.
+Causa: A base tem 215 sinais de pós-operatório e a busca por palavras parecidas trazia todos para quem tinha febre ou dor.
 
-- "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem m"
-- "nao sei se e serio, to gravida de 31 semanas pontada forte na boca do estomago"
-- "gravida de 9 semanas, to gravida e com manchas vermelhas e febre"
+- "bati com forca na prota febre" ➜ CONF_SINAIS_2: Febre ou calafrios nos dias depois de uma cirurgia
+- "bolha de agua quente hj de mahna" ➜ CONF_SINAIS: Corte da cirurgia ficando mais vermelho, quente, inchado ou dolorido
+- "meu vo de 81 anos ta  dedos inchados no gesso essa semana alem disso costas travadas" ➜ CONF_SINAIS: Mão difícil de abrir e fechar depois de tirar a tala ou o gesso (cirurgia com fios no osso)
+
+### 6. Pergunta de veneno ou remédio demais sem motivo no relato
+
+**1009 conversas antes ➜ 1000 depois.** Famílias mais atingidas: Idosos e anticoagulante (184), Pele (149), Cirurgia, crônicos e 'não é nada' (145).
+
+Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
+
+- "cancer na lingua to fazendo quimio" ➜ FIL_07: veneno ou remédio demais
+- "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana" ➜ FIL_07: veneno ou remédio demais
+- "meu vo de 81 anos ta  dedos inchados no gesso essa semana alem disso costas travadas" ➜ FIL_07: veneno ou remédio demais
+
+### 7. Item de gravidez ou parto para quem não está grávida
+
+**709 conversas antes ➜ 358 depois.** Famílias mais atingidas: Bebês e crianças (96), Urina e região íntima (90), Febre e dengue (82).
+
+- "meu bebe de 23 meses gripe que n melhora tbm caatrro faz mais de dez dias hj" ➜ CONF_SINAIS: Gripe ou covid com febre em idoso, grávida, criança pequena ou pessoa com doença crônica
+- "febre e sou transplantado essa semana sou transplantado" ➜ CONF_SINAIS: Febre nos dias ou semanas depois do parto ou da cesárea
+- "mniha avo de 83 anos ta minha avo esta esquecendo tudo hoje de manha" ➜ CONF_SINAIS_2: Gripe ou covid com febre em idoso, grávida, criança pequena ou pessoa com doença crônica
+
+### 8. Pergunta de alergia com inchaço sem motivo no relato
+
+**612 conversas antes ➜ 638 depois.** Famílias mais atingidas: Cabeça e tontura (124), Barriga (68), Pancada, corte e queimadura (60).
+
+Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
+
+- "cancer na lingua to fazendo quimio" ➜ FIL_06: alergia com inchaço
+- "to gravida de 10 semanas vendo pontinhos brilhando e gravida c dor de cabeca forte desde cedo alem disso fique" ➜ FIL_06: alergia com inchaço
+- "sinusite de novo esse mes e nariz entupido ha semanas faz 3 dias" ➜ FIL_06: alergia com inchaço
 
 ### 9. Machucado que não entrou na trilha de machucado
 
-**594 conversas antes ➜ 572 depois.** Famílias mais atingidas: Pancada, corte e queimadura (225), Machucado no esporte (161), Queda (157).
+**569 conversas antes ➜ 493 depois.** Famílias mais atingidas: Pancada, corte e queimadura (232), Machucado no esporte (148), Queda (147).
 
-- "no futsal doi o ossinho do tornozleo e ossinho do lado do pe doi faz umas 2 horas"
-- "to c muito medo meu pai de 60 anos, caiu da escada caiu e levantou sozinho hj de manha"
-- "nunca senti nada assim minha avo de 63 anos  levanta e fica tonta e tonto ao ficar de pe"
+- "cancer na lingua to fazendo quimio"
+- "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana"
+- "bati com forca na prota febre"
 
-### 10. Item de gravidez ou parto para quem não está grávida
+### 10. Item de câncer para quem não tem
 
-**568 conversas antes ➜ 904 depois.** Famílias mais atingidas: Gravidez e pós-parto (119), Saúde mental e crise (87), Urina e região íntima (64).
+**543 conversas antes ➜ 88 depois.** Famílias mais atingidas: Barriga (82), Febre e dengue (70), Cabeça e tontura (58).
 
-- "suspeita de zika, zika faz 2 semanas" ➜ CONF_SINAIS: Febre nos dias ou semanas depois do parto
-- "dor no fundo da boca faz 2 semanas" ➜ CONF_SINAIS_2: Febre nos dias ou semanas depois do parto ou da cesárea
-- "ciclo n votlou depois da curetagem essa semana" ➜ CONF_SINAIS: Tristeza ou ansiedade forte que não passa depois da perda da gravidez (Curetagem ou aspiração do útero)
+- "to gravida de 10 semanas vendo pontinhos brilhando e gravida c dor de cabeca forte desde cedo alem disso fique" ➜ CONF_SINAIS_2: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
+- "vive sangrando a boca tbm gengiva sangrando toda hora" ➜ CONF_SINAIS_2: Sangramento que não para ou manchas roxas grandes em quem faz tratamento de câncer
+- "nao sei se e serio  tremedeira e diarreia c antidepressivo novo agora pouco" ➜ CONF_SINAIS_2: Diarreia aquosa muitas vezes ao dia durante a quimioterapia
 
-### 11. Item de criança ou bebê para adulto
+### 11. Item de transplante ou HIV para quem não tem
 
-**438 conversas antes ➜ 340 depois.** Famílias mais atingidas: Saúde mental e crise (63), Machucado no esporte (50), Pele (43).
+**332 conversas antes ➜ 181 depois.** Famílias mais atingidas: Urina e região íntima (113), Barriga (54), Cirurgia, crônicos e 'não é nada' (44).
 
-- "correndo no parque dor no osso do pe depois de torcer agora pouco e tbm espinha da barba" ➜ CONF_SINAIS: Criança ou adolescente com dor no joelho ou no calcanhar junto com febre, pele vermelha e quente no lugar ou sem conseguir apoiar o pé no chão
-- "febrinha todo dia sem motivo desde o comeco do ano" ➜ CONF_SINAIS: Criança que começou a andar torto, perder o equilíbrio ou mudar o jeito de ser sem motivo
-- "n enxergo de longe dedse o comeco do ano" ➜ CONF_SINAIS_2: Criança pequena que começou a mancar ou parou de andar depois de tropeço ou queda pequena, chora ao apoiar o pé, pouco ou nenhum inchaço
+- "cancer na lingua to fazendo quimio" ➜ CONF_SINAIS: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
+- "deve ser bobeira mas perdendo xixi depois de tirar a prostata faz uns 2 dias to fazendo quimio" ➜ CONF_SINAIS_2: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
+- "ca de esofago faco tratamento de cnacer" ➜ CONF_SINAIS_2: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
 
 ### 12. Pergunta de dor no peito num machucado de braço ou perna
 
-**341 conversas antes ➜ 305 depois.** Famílias mais atingidas: Pancada, corte e queimadura (169), Machucado no esporte (121), Queda (51).
+**318 conversas antes ➜ 0 depois.** Famílias mais atingidas: Pancada, corte e queimadura (167), Machucado no esporte (107), Queda (44).
 
-- "no futsal doi o ossinho do tornozleo e ossinho do lado do pe doi faz umas 2 horas" ➜ FIL_02: dor no peito
-- "nao sei se e serio, levei uma pancada roxo no corpo sem pancada essa semana" ➜ FIL_02: dor no peito
-- "n sei se e serio dor forte no dedo faz umas 2 horas" ➜ FIL_02: dor no peito
+- "cancer na lingua to fazendo quimio" ➜ FIL_02: dor no peito
+- "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana" ➜ FIL_02: dor no peito
+- "bati com forca na prota febre" ➜ FIL_02: dor no peito
 
-### 13. Pergunta de se machucar de propósito num machucado comum
+### 13. Item de criança ou bebê para adulto
 
-**299 conversas antes ➜ 271 depois.** Famílias mais atingidas: Pancada, corte e queimadura (152), Machucado no esporte (110), Queda (37).
+**310 conversas antes ➜ 267 depois.** Famílias mais atingidas: Urina e região íntima (40), Machucado no esporte (39), Febre e dengue (38).
 
-- "no futsal doi o ossinho do tornozleo e ossinho do lado do pe doi faz umas 2 horas" ➜ FIL_08: pensar em se machucar
-- "nao sei se e serio, levei uma pancada roxo no corpo sem pancada essa semana" ➜ FIL_08: pensar em se machucar
-- "n sei se e serio dor forte no dedo faz umas 2 horas" ➜ FIL_08: pensar em se machucar
+- "meu vo de 68 anos reclama de pele queimada de produto" ➜ CONF_SINAIS_2: Criança, bebê ou idoso com queimadura que fez bolha
+- "corrimento com odor que nao melhora agora pouco" ➜ CONF_SINAIS: Criança ativa com dor atrás do calcanhar que piora correndo ou pulando e melhora no descanso, andando normal
+- "to de 15 semanas barriga contraindo e depois relaxa desde ontem" ➜ CONF_SINAIS_2: Bebê mexendo menos que o normal ou parou de mexer na barriga
 
-### 14. Item de osteoporose para quem não tem
+### 14. Pergunta de se machucar de propósito num machucado comum
 
-**249 conversas antes ➜ 117 depois.** Famílias mais atingidas: Idosos e anticoagulante (51), Febre e dengue (46), Cirurgia, crônicos e 'não é nada' (21).
+**284 conversas antes ➜ 247 depois.** Famílias mais atingidas: Pancada, corte e queimadura (152), Machucado no esporte (95), Queda (37).
 
-- "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem m" ➜ CONF_SINAIS: Febre junto com dor nas costas (cuidados da vértebra quebrada por osteoporose)
-- "tontura ao deitar ou virar na cama faz 2 semanas" ➜ CONF_SINAIS: Dor que acorda à noite ou piora quando deita (cuidados da vértebra quebrada por osteoporose)
-- "meu pai de 86 anos, tombo leve sem machucado, caiu sentado e ja levantou desde ontem" ➜ CONF_SINAIS: Dor forte nas costas depois de queda em idoso ou em quem tem osteoporose
+- "cancer na lingua to fazendo quimio" ➜ FIL_08: pensar em se machucar
+- "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana" ➜ FIL_08: pensar em se machucar
+- "bati com forca na prota febre" ➜ FIL_08: pensar em se machucar
 
-### 15. Pergunta de AVC num machucado de braço ou perna
+### 15. Item de diabetes para quem não tem
 
-**249 conversas antes ➜ 214 depois.** Famílias mais atingidas: Machucado no esporte (112), Pancada, corte e queimadura (108), Queda (29).
+**280 conversas antes ➜ 62 depois.** Famílias mais atingidas: Febre e dengue (43), Idosos e anticoagulante (41), Cabeça e tontura (35).
 
-- "no futsal doi o ossinho do tornozleo e ossinho do lado do pe doi faz umas 2 horas" ➜ FIL_04: AVC
-- "nao sei se e serio, levei uma pancada roxo no corpo sem pancada essa semana" ➜ FIL_04: AVC
-- "n sei se e serio dor forte no dedo faz umas 2 horas" ➜ FIL_04: AVC
+- "fiz canal e a dor voltou e fiz canal e segue doendo faz uns 2 dias e tbm hipoglicemia" ➜ CONF_SINAIS_2: Pessoa com diabetes que ficou confusa de repente
+- "meu vo de 69 anos tá: levou uma pancada ulcera de pressao, machucado de ficar acamado hoje de manha" ➜ CONF_SINAIS: Diabético com ferida ou bolha no pé que não cicatriza
+- "freida que n sara na pele desde segunda" ➜ CONF_SINAIS: Diabético com ferida ou bolha no pé que não cicatriza
 
-### 16. Item de transplante ou HIV para quem não tem
+### 16. Pergunta de AVC num machucado de braço ou perna
 
-**229 conversas antes ➜ 313 depois.** Famílias mais atingidas: Urina e região íntima (69), Barriga (49), Cirurgia, crônicos e 'não é nada' (36).
+**225 conversas antes ➜ 0 depois.** Famílias mais atingidas: Pancada, corte e queimadura (106), Machucado no esporte (94), Queda (25).
 
-- "pele descascando na quimio agora pouco faco tratamento de cancer" ➜ CONF_SINAIS: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
-- "minha avo de 78 anos tá: colica em onda com tumor intestinal faco tratamento de cancer" ➜ CONF_SINAIS: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
-- "acho q n e nada mas corte q n estanca na quimio essa semana faco tratamento de cancer" ➜ CONF_SINAIS: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
+- "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana" ➜ FIL_04: AVC
+- "bati com forca na prota febre" ➜ FIL_04: AVC
+- "ca de esofago faco tratamento de cnacer" ➜ FIL_04: AVC
 
 ### 17. Pergunta de confusão e sonolência num machucado de braço ou perna
 
-**220 conversas antes ➜ 193 depois.** Famílias mais atingidas: Machucado no esporte (104), Pancada, corte e queimadura (94), Queda (22).
+**197 conversas antes ➜ 157 depois.** Famílias mais atingidas: Pancada, corte e queimadura (92), Machucado no esporte (86), Queda (19).
 
-- "no futsal doi o ossinho do tornozleo e ossinho do lado do pe doi faz umas 2 horas" ➜ GEN_01: confusão e sonolência
-- "nao sei se e serio, levei uma pancada roxo no corpo sem pancada essa semana" ➜ GEN_01: confusão e sonolência
-- "n sei se e serio dor forte no dedo faz umas 2 horas" ➜ GEN_01: confusão e sonolência
+- "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana" ➜ GEN_01: confusão e sonolência
+- "ca de esofago faco tratamento de cnacer" ➜ GEN_01: confusão e sonolência
+- "minha mae de 85 anos reclama de bateu de moto fratura no esterno agora e tbm claridade incomodando apos exame " ➜ GEN_01: confusão e sonolência
 
-### 18. Vômito ou diarreia sem perguntar se bebe líquido e faz xixi
+### 18. Item de diálise para quem não faz
 
-**211 conversas antes ➜ 146 depois.** Famílias mais atingidas: Barriga (211).
+**158 conversas antes ➜ 164 depois.** Famílias mais atingidas: Urina e região íntima (41), Queda (17), Cirurgia, crônicos e 'não é nada' (17).
+
+- "to de 8 semanas de barriga e sangrando agora" ➜ CONF_SINAIS_2: Fístula da hemodiálise sangrando muito e sem parar mesmo apertando
+- "acho q nao e nada mas anida nao escuta depois do tubinho faz 2 semnaas" ➜ CONF_SINAIS: Fístula da hemodiálise parou de vibrar ou de fazer o barulhinho
+- "sangue depois da trsana hj" ➜ CONF_SINAIS_2: Fístula da hemodiálise sangrando muito e sem parar mesmo apertando
+
+### 19. Vômito ou diarreia sem perguntar se bebe líquido e faz xixi
+
+**146 conversas antes ➜ 152 depois.** Famílias mais atingidas: Barriga (146).
 
 Causa: Não existia pergunta sobre beber líquido e fazer xixi no caminho genérico.
 
-- "minha avo de 74 anos, caroco na axila doi apos beber e ingua doi com alcool hj" ➜ faltou perguntar se está conseguindo beber líquido e fazer xixi
-- "dor de estomago q sempre volta e barriga inchada todo dia agora" ➜ faltou perguntar se está conseguindo beber líquido e fazer xixi
-- "nao sei se e serio, orelha de cachorro na abdomino e queloide depois da plastica da barriga" ➜ faltou perguntar se está conseguindo beber líquido e fazer xixi
+- "intestino travado faz 2 semanas" ➜ faltou perguntar se está conseguindo beber líquido e fazer xixi
+- "acho q nao e nada mas dor de menstruacao" ➜ faltou perguntar se está conseguindo beber líquido e fazer xixi
+- "xixi de noite toda hora" ➜ faltou perguntar se está conseguindo beber líquido e fazer xixi
 
-### 19. Item de câncer para quem não tem
+### 20. Item de remédio para afinar o sangue para quem não toma
 
-**169 conversas antes ➜ 518 depois.** Famílias mais atingidas: Cabeça e tontura (31), Febre e dengue (30), Pele (17).
+**123 conversas antes ➜ 67 depois.** Famílias mais atingidas: Pancada, corte e queimadura (50), Urina e região íntima (23), Pele (13).
 
-- "deve ser bobeira mas coceira forte, alergia na pele faz uns 2 dias alem disso pele descascando da agua sanitar" ➜ CONF_SINAIS: Manchas vermelhas espalhadas com bolhas ou pele soltando em quem faz quimioterapia ou imunoterapia
-- "vomitando sem parar, nem agua para no estomago" ➜ CONF_SINAIS: Vômitos que não deixam beber nem segurar o remédio durante a quimioterapia
-- "acho q nao e nada mas perna formigando e subindo desde ontem" ➜ CONF_SINAIS: Fraqueza, peso ou dormência nas pernas ou perda do controle do xixi ou cocô em quem tem câncer
-
-### 20. Item de diálise para quem não faz
-
-**163 conversas antes ➜ 163 depois.** Famílias mais atingidas: Urina e região íntima (45), Queda (18), Pele (15).
-
-- "levei um tombo de bicicleta pulso c um degaru tbm caiu e o pulso ficou estranho faz uns 2 dias" ➜ CONF_SINAIS: Fístula da hemodiálise parou de vibrar ou de fazer o barulhinho
-- "nunca senti nada assim dor no pulso do lado do dedao hj" ➜ CONF_SINAIS: Fístula da hemodiálise parou de vibrar ou de fazer o barulhinho
-- "minha mae sangrou depois da menopausa e ja parei de menstruar e sangrei desde segunda" ➜ CONF_SINAIS_2: Fístula da hemodiálise sangrando muito e sem parar mesmo apertando
+- "tomei um chute crise de sinusite, dor ou pressão no rosto e na testa agora pouco" ➜ CONF_SINAIS: Adulto bateu a cabeça de leve, sem desmaio, sem vômito e sem remédio para afinar o sangue
+- "bati com forca na prota febre" ➜ CONF_SINAIS_2: Adulto bateu a cabeça de leve, sem desmaio, sem vômito e sem remédio para afinar o sangue
+- "bati c forca na porta dente saiu inteiro c a raiz depois de pancada tbm dente arrancado" ➜ CONF_SINAIS: Adulto bateu a cabeça de leve, sem desmaio, sem vômito e sem remédio para afinar o sangue
 
 ## 4. Por família (treino, depois das correções)
 
 | Família | Casos | Nota antes | Nota depois | Perguntas depois | Destino exato depois | Problema mais comum depois |
 | --- | --- | --- | --- | --- | --- | --- |
-| Barriga | 673 | 5,67 | 6,81 | 8,2 | 70,6% | Lista com item de outra parte do corpo |
-| Bebês e crianças | 674 | 8,02 | 8,57 | 6,5 | 69,9% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Cabeça e tontura | 667 | 7,37 | 8,25 | 4,7 | 75,4% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Cirurgia, crônicos e 'não é nada' | 668 | 6,03 | 7,22 | 7,8 | 71,9% | Lista com item de outra parte do corpo |
-| Febre e dengue | 670 | 5,47 | 7,33 | 8,9 | 54,6% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Gravidez e pós-parto | 672 | 5,62 | 7,13 | 8,1 | 59,4% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Idosos e anticoagulante | 670 | 7,28 | 8,04 | 4,9 | 66,1% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Intoxicação e animais | 658 | 7,76 | 8,28 | 6,5 | 68,8% | Perguntas demais para o caso |
-| Machucado no esporte | 660 | 6,4 | 7,58 | 6,3 | 66,2% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Pancada, corte e queimadura | 677 | 6,83 | 7,61 | 4,7 | 72,2% | Lista com item de outra parte do corpo |
-| Peito e falta de ar | 642 | 7,17 | 8,07 | 6,3 | 67,9% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Pele | 666 | 5,23 | 6,8 | 10,8 | 60,2% | Perguntas demais para o caso |
-| Queda | 660 | 8,66 | 9,27 | 1,8 | 83,0% | Machucado que não entrou na trilha de machucado |
-| Saúde mental e crise | 674 | 7,23 | 8,47 | 7,1 | 64,8% | Perguntas demais para o caso |
-| Urina e região íntima | 669 | 4,92 | 6,91 | 10,8 | 58,3% | Perguntas demais para o caso |
+| Barriga | 656 | 6,95 | 9,04 | 5,5 | 77,1% | Vômito ou diarreia sem perguntar se bebe líquido e faz xixi |
+| Bebês e crianças | 656 | 8,79 | 9,48 | 4,4 | 76,1% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Cabeça e tontura | 669 | 8,57 | 9,17 | 3,3 | 82,5% | faltou:sinais_avc |
+| Cirurgia, crônicos e 'não é nada' | 674 | 7,42 | 8,92 | 5,4 | 77,7% | Pergunta de veneno ou remédio demais sem motivo no relato |
+| Febre e dengue | 669 | 7,48 | 8,8 | 5,8 | 63,7% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Gravidez e pós-parto | 659 | 8,04 | 9,01 | 5,0 | 68,3% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Idosos e anticoagulante | 661 | 8,31 | 9,18 | 3,7 | 70,5% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Intoxicação e animais | 669 | 8,36 | 9,12 | 4,3 | 77,1% | faltou:sinais_graves_intox |
+| Machucado no esporte | 668 | 7,73 | 9,18 | 4,2 | 69,3% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Pancada, corte e queimadura | 686 | 7,53 | 8,71 | 3,7 | 71,9% | Machucado que não entrou na trilha de machucado |
+| Peito e falta de ar | 673 | 8,24 | 9,02 | 4,3 | 71,8% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Pele | 663 | 7,35 | 9,05 | 7,0 | 67,7% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Queda | 657 | 9,27 | 9,65 | 1,6 | 84,5% | Machucado que não entrou na trilha de machucado |
+| Saúde mental e crise | 660 | 8,77 | 9,27 | 5,4 | 70,3% | Perguntas demais para o caso |
+| Urina e região íntima | 680 | 6,98 | 8,66 | 6,6 | 69,9% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
 
 ## 5. O que ainda falta (de propósito ou para a próxima rodada)
 

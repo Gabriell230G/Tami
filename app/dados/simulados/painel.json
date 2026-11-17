@@ -3,274 +3,274 @@
  "prova": 2000,
  "antes": {
   "destino_exato": {
-   "x": 1353,
+   "x": 1314,
    "n": 2000,
-   "p": 0.6765,
+   "p": 0.657,
    "ic95": [
-    0.6557,
-    0.6966
+    0.6359,
+    0.6775
    ]
   },
   "sensibilidade_urgente": {
-   "x": 1195,
-   "n": 1197,
-   "p": 0.9983,
+   "x": 1214,
+   "n": 1215,
+   "p": 0.9992,
    "ic95": [
-    0.9939,
-    0.9995
+    0.9954,
+    0.9999
    ]
   },
   "subtriagem_critica": {
-   "x": 2,
-   "n": 1197,
-   "p": 0.0017,
+   "x": 1,
+   "n": 1215,
+   "p": 0.0008,
    "ic95": [
-    0.0005,
-    0.0061
+    0.0001,
+    0.0046
    ]
   },
   "com_irrelevante": {
-   "x": 1318,
+   "x": 1094,
    "n": 2000,
-   "p": 0.659,
+   "p": 0.547,
    "ic95": [
-    0.6379,
-    0.6795
+    0.5251,
+    0.5687
    ]
   },
   "com_falta": {
-   "x": 114,
+   "x": 72,
    "n": 2000,
-   "p": 0.057,
+   "p": 0.036,
    "ic95": [
-    0.0477,
-    0.068
-   ]
-  },
-  "sem_cuidado": {
-   "x": 24,
-   "n": 483,
-   "p": 0.0497,
-   "ic95": [
-    0.0336,
-    0.0729
-   ]
-  },
-  "nota_media": 6.58,
-  "perguntas_media": 7.6
- },
- "depois": {
-  "destino_exato": {
-   "x": 1369,
-   "n": 2000,
-   "p": 0.6845,
-   "ic95": [
-    0.6638,
-    0.7045
-   ]
-  },
-  "sensibilidade_urgente": {
-   "x": 1195,
-   "n": 1197,
-   "p": 0.9983,
-   "ic95": [
-    0.9939,
-    0.9995
-   ]
-  },
-  "subtriagem_critica": {
-   "x": 2,
-   "n": 1197,
-   "p": 0.0017,
-   "ic95": [
-    0.0005,
-    0.0061
-   ]
-  },
-  "com_irrelevante": {
-   "x": 1134,
-   "n": 2000,
-   "p": 0.567,
-   "ic95": [
-    0.5452,
-    0.5886
-   ]
-  },
-  "com_falta": {
-   "x": 99,
-   "n": 2000,
-   "p": 0.0495,
-   "ic95": [
-    0.0408,
-    0.0599
+    0.0287,
+    0.0451
    ]
   },
   "sem_cuidado": {
    "x": 0,
-   "n": 493,
+   "n": 459,
+   "p": 0.0,
+   "ic95": [
+    -0.0,
+    0.0083
+   ]
+  },
+  "nota_media": 7.97,
+  "perguntas_media": 6.89
+ },
+ "depois": {
+  "destino_exato": {
+   "x": 1415,
+   "n": 2000,
+   "p": 0.7075,
+   "ic95": [
+    0.6872,
+    0.727
+   ]
+  },
+  "sensibilidade_urgente": {
+   "x": 1215,
+   "n": 1215,
+   "p": 1.0,
+   "ic95": [
+    0.9968,
+    1.0
+   ]
+  },
+  "subtriagem_critica": {
+   "x": 0,
+   "n": 1215,
+   "p": 0.0,
+   "ic95": [
+    -0.0,
+    0.0032
+   ]
+  },
+  "com_irrelevante": {
+   "x": 714,
+   "n": 2000,
+   "p": 0.357,
+   "ic95": [
+    0.3363,
+    0.3783
+   ]
+  },
+  "com_falta": {
+   "x": 161,
+   "n": 2000,
+   "p": 0.0805,
+   "ic95": [
+    0.0694,
+    0.0932
+   ]
+  },
+  "sem_cuidado": {
+   "x": 0,
+   "n": 546,
    "p": 0.0,
    "ic95": [
     0.0,
-    0.0077
+    0.007
    ]
   },
-  "nota_media": 7.7,
-  "perguntas_media": 7.0
+  "nota_media": 9.08,
+  "perguntas_media": 4.71
  },
  "problemas": [
   {
-   "problema": "Perguntas demais para o caso",
-   "casos": 542
-  },
-  {
    "problema": "Lista com item de outra parte do corpo",
-   "casos": 521
-  },
-  {
-   "problema": "Item de \"depois de queda ou pancada\" para quem não se machucou",
-   "casos": 391
-  },
-  {
-   "problema": "Item de cirurgia para quem não operou",
-   "casos": 311
+   "casos": 198
   },
   {
    "problema": "Pergunta de veneno ou remédio demais sem motivo no relato",
-   "casos": 236
+   "casos": 189
+  },
+  {
+   "problema": "Pergunta de alergia com inchaço sem motivo no relato",
+   "casos": 130
+  },
+  {
+   "problema": "Item de \"depois de queda ou pancada\" para quem não se machucou",
+   "casos": 127
+  },
+  {
+   "problema": "Machucado que não entrou na trilha de machucado",
+   "casos": 107
   }
  ],
  "por_familia": [
   {
    "familia": "Barriga",
-   "nota_antes": 5.67,
-   "nota": 6.81,
-   "perguntas": 8.2
+   "nota_antes": 6.95,
+   "nota": 9.04,
+   "perguntas": 5.5
   },
   {
    "familia": "Bebês e crianças",
-   "nota_antes": 8.02,
-   "nota": 8.57,
-   "perguntas": 6.5
+   "nota_antes": 8.79,
+   "nota": 9.48,
+   "perguntas": 4.4
   },
   {
    "familia": "Cabeça e tontura",
-   "nota_antes": 7.37,
-   "nota": 8.25,
-   "perguntas": 4.7
+   "nota_antes": 8.57,
+   "nota": 9.17,
+   "perguntas": 3.3
   },
   {
    "familia": "Cirurgia, crônicos e 'não é nada'",
-   "nota_antes": 6.03,
-   "nota": 7.22,
-   "perguntas": 7.8
+   "nota_antes": 7.42,
+   "nota": 8.92,
+   "perguntas": 5.4
   },
   {
    "familia": "Febre e dengue",
-   "nota_antes": 5.47,
-   "nota": 7.33,
-   "perguntas": 8.9
+   "nota_antes": 7.48,
+   "nota": 8.8,
+   "perguntas": 5.8
   },
   {
    "familia": "Gravidez e pós-parto",
-   "nota_antes": 5.62,
-   "nota": 7.13,
-   "perguntas": 8.1
+   "nota_antes": 8.04,
+   "nota": 9.01,
+   "perguntas": 5.0
   },
   {
    "familia": "Idosos e anticoagulante",
-   "nota_antes": 7.28,
-   "nota": 8.04,
-   "perguntas": 4.9
+   "nota_antes": 8.31,
+   "nota": 9.18,
+   "perguntas": 3.7
   },
   {
    "familia": "Intoxicação e animais",
-   "nota_antes": 7.76,
-   "nota": 8.28,
-   "perguntas": 6.5
+   "nota_antes": 8.36,
+   "nota": 9.12,
+   "perguntas": 4.3
   },
   {
    "familia": "Machucado no esporte",
-   "nota_antes": 6.4,
-   "nota": 7.58,
-   "perguntas": 6.3
+   "nota_antes": 7.73,
+   "nota": 9.18,
+   "perguntas": 4.2
   },
   {
    "familia": "Pancada, corte e queimadura",
-   "nota_antes": 6.83,
-   "nota": 7.61,
-   "perguntas": 4.7
+   "nota_antes": 7.53,
+   "nota": 8.71,
+   "perguntas": 3.7
   },
   {
    "familia": "Peito e falta de ar",
-   "nota_antes": 7.17,
-   "nota": 8.07,
-   "perguntas": 6.3
+   "nota_antes": 8.24,
+   "nota": 9.02,
+   "perguntas": 4.3
   },
   {
    "familia": "Pele",
-   "nota_antes": 5.23,
-   "nota": 6.8,
-   "perguntas": 10.8
+   "nota_antes": 7.35,
+   "nota": 9.05,
+   "perguntas": 7.0
   },
   {
    "familia": "Queda",
-   "nota_antes": 8.66,
-   "nota": 9.27,
-   "perguntas": 1.8
+   "nota_antes": 9.27,
+   "nota": 9.65,
+   "perguntas": 1.6
   },
   {
    "familia": "Saúde mental e crise",
-   "nota_antes": 7.23,
-   "nota": 8.47,
-   "perguntas": 7.1
+   "nota_antes": 8.77,
+   "nota": 9.27,
+   "perguntas": 5.4
   },
   {
    "familia": "Urina e região íntima",
-   "nota_antes": 4.92,
-   "nota": 6.91,
-   "perguntas": 10.8
+   "nota_antes": 6.98,
+   "nota": 8.66,
+   "perguntas": 6.6
   }
  ],
  "exemplos": [
   {
-   "relato": "menstruacao sumida apos a aspiracao faz 3 dias",
-   "comentario": "Faltou perguntar sangramento na gravidez e sinais de pressão alta na gravidez. Foram 14 perguntas, cansa.",
+   "relato": "cheiro de peixe que piora depois da relação faz 2 semanas",
+   "comentario": "Perguntou de veneno ou remédio demais sem ter nada a ver comigo.",
    "nota": 6
   },
   {
-   "relato": "bolha na mao da enxada tbm bolha no pe de tanto andar",
-   "comentario": "Perguntou de diabetes sem ter nada a ver comigo.",
+   "relato": "travo os denets",
+   "comentario": "Mostrou 4 coisa(s) de outra parte do corpo.",
    "nota": 6
   },
   {
-   "relato": "cicatriz la embaixo atrapalhando apos parto faz umas 2 horas",
-   "comentario": "Perguntou de gravidez sem ter nada a ver comigo. Faltou perguntar sangramento na gravidez e sinais de pressão alta na gravidez. Foram 14 perguntas, cansa.",
-   "nota": 0
+   "relato": "depois da cachaca a ingua doi desde ontem",
+   "comentario": "Perguntou de gravidez, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar se está conseguindo beber líquido e fazer xixi.",
+   "nota": 6
   },
   {
-   "relato": "minha avo de 73 anos tá: febre faz semanas e ninguem descobre ja tem meses",
-   "comentario": "Perguntou de gravidez, idoso, cirurgia sem ter nada a ver comigo. Foram 19 perguntas, cansa.",
+   "relato": "minha mae de 79 anos, irritação agora pouco",
+   "comentario": "Perguntou de gravidez, idoso, veneno ou remédio demais sem ter nada a ver comigo. Faltou perguntar sinais de AVC.",
    "nota": 4
   },
   {
-   "relato": "dor de cabeca de nervoso, dor de cabeca de tanto trabalhar faz umas 2 horas",
-   "comentario": "Perguntou de câncer, transplante ou HIV, alergia com inchaço sem ter nada a ver comigo.",
-   "nota": 4
+   "relato": "acho q n e nada mas dtm tbm atm desde ontem",
+   "comentario": "Perguntou de gravidez sem ter nada a ver comigo.",
+   "nota": 5
   }
  ],
  "bons": [
   {
-   "relato": "meu filho de 8 anos ta com dente saiu inteiro e tbm claridade incomodando apos exame de vista",
+   "relato": "vomitou um negocio prteo",
    "comentario": "Conversa boa, direto ao ponto.",
    "nota": 10
   },
   {
-   "relato": "cai em casa depois do tombo n seguro o xixi hj",
+   "relato": "vmoito cor de chocolate escuro faz 3 dias",
    "comentario": "Conversa boa, direto ao ponto.",
    "nota": 10
   },
   {
-   "relato": "provavelmente nao e nada malieta e sangrando tbm voltou de rondonia delirando c febre faz umas 2 horas e tbm bebi demais",
+   "relato": "minha mae de 62 anos ta c vovó c falta de ar de repente",
    "comentario": "Conversa boa, direto ao ponto.",
    "nota": 10
   }

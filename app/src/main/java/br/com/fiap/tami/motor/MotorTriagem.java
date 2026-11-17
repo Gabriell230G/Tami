@@ -128,6 +128,7 @@ public final class MotorTriagem {
                 adicionar(s, Disparo.de("LX-CONVULSAO", Destino.SAMU_192, "CONVULSAO").exigindo("BLK-EI-CONVULSAO"));
         }
         if (a.presente(GrupoLexico.PEITO) && !soNoPassado(a, GrupoLexico.PEITO, textoLivre)) s.doTexto.put("FIL_02", "S");
+        if (DO_TEXTO_GERAL) jaRespondido(s, norm);   // sprint 6 (passo 5): tempo, dor e febre que o relato já disse
         // sprint 2 (C4): sintoma de resfriado escrito no texto responde a FEB_A09
         if ("FEB".equals(queixa) && java.util.regex.Pattern.compile("\\b(tosse|tossindo|coriza|nariz escorrendo|nariz entupido|espirr\\w*|dor de garganta|garganta)\\b")
                 .matcher(br.com.fiap.tami.motor.lexico.Normalizador.normalizar(textoLivre)).find())
@@ -213,14 +214,22 @@ public final class MotorTriagem {
             || URGENTES.stream().anyMatch(g -> a.presente(g) && !soNoPassado(a, g, s.textoLivre()));
         if ("LES".equals(s.queixa) && urgente) { s.queixa = "GEN"; s.doTexto.remove("LES_01"); }
         if ("LES".equals(s.queixa)) { rotaLesao(s); return s; }
+        if (TRILHAS && "GEN".equals(s.queixa) && !urgente && !perfil.crianca() && !perfil.gestante()
+                && (s.destinoAtual() == null || s.destinoAtual().compareTo(Destino.UPA_HOJE) < 0)) {
+            boolean barriga = BARRIGA_TRILHA.matcher(norm).find();
+            boolean tronco = grande == null || grande.equals("barriga") || grande.equals("costas");   // braço ou perna tocado: não é urina nem barriga
+            String tr = tronco && URI.matcher(norm).find() && (!barriga || URI_FORTE.matcher(norm).find()) ? "URI" : PELE.matcher(norm).find() && !barriga ? "PEL"
+                : tronco && barriga ? "BAR" : null;
+            if (tr != null) { s.queixa = tr; rotaTrilha(s, tr); return s; }
+        }
         if (membro && !semMachucar && !urgente && "GEN".equals(s.queixa) && (s.destinoAtual() == null || s.destinoAtual().compareTo(Destino.UPA_HOJE) < 0)) {
             s.fila.add(ORIGEM);
             return s;
         }
         rotaGeral(s, Modo.GERAL);
         if (a.presente(GrupoLexico.AR)) {   // falta de ar: abre FAR antes do filtro, e o FIL_01 herda do FAR_01
-            List<String> far = catalogo.roteiro("FAR");
-            for (int i = far.size() - 1; i >= 0; i--) s.fila.addFirst(far.get(i));
+            List<String> rotFar = catalogo.roteiro("FAR");
+            for (int i = rotFar.size() - 1; i >= 0; i--) s.fila.addFirst(rotFar.get(i));
         }
         return s;
     }
@@ -241,7 +250,12 @@ public final class MotorTriagem {
         + "cai|caiu|queda|tombo|tropecei|tropecou|escorreguei|escorregou|pancada|bati|bateu (o|a|com|em|no|na|de)|batida no|"
         + "golpe|chute|chutaram|soco|socaram|levei um (golpe|chute|soco|tombo)|pisei num prego|pisou num prego|pulou de cabeca|pulei de cabeca|machuquei|machucou|machucad\\w*|lesionei|estiramento|distensao|"
         + "contusao|fratur\\w*|quebrei|quebrou|trinc\\w*|pisei errado|virei o pe|virou o pe|estalou|estralou|"
-        + "no treino|treinando|no judo|no jogo|jogando bola|na luta|lutando|no futebol|na academia|correndo)\\b");
+        + "no treino|treinando|no judo|no jogo|jogando bola|na luta|lutando|no futebol|na academia|correndo|"
+        // sprint 6: esporte e lesão de ligamento ditos de outro jeito
+        + "jiu ?jitsu|futsal|ftusal|no volei|jogando volei|no basquete|no handebol|no tenis|na corrida|na musculacao|no crossfit|na bike|de bicicleta|de patinete|de skate|"
+        + "pisei em falso|pisou em falso|pisei de mau jeito|rompi|rompeu|ruptura|menisco|ligamento|cruzado|tendao|levei uma pancada|levou uma pancada|"
+        + "tomei um (golpe|chute|soco|tombo)|tomou um (golpe|chute|soco|tombo)|joelho (dobra|falha|falhou)|falseou|falseia|"
+        + "quebrad[oa]|quebrou|nao (da|consigo|consegue) (pra |para )?(pisar|apoiar)|desde a batida|levou uma batida|levei uma batida)\\b");
     /** Sprint 5: motivos para perguntar de alergia (FIL_06) e de veneno ou remédio demais (FIL_07). */
     private static final java.util.regex.Pattern PODE_ALERGIA = java.util.regex.Pattern.compile(
         "\\b(alerg\\w*|picad\\w*|picou|ferroada|abelha|vespa|formiga|comi|comeu|comida|camarao|amendoim|remedio|antibiotico|injecao|vacina|"
@@ -322,7 +336,8 @@ public final class MotorTriagem {
             java.util.regex.Pattern.compile("\\b(cirur\\w*|cirug\\w*|ciru\\w*|oper\\w*|ope\\w*ei|opeou|pontos|dreno|sonda|bolsinha|bolsa de colostomia|colonoscop\\w*|endoscop\\w*|biopsia|cateter\\w*|"
                 + "prote\\w*|placa|parafuso|pino|haste|lipo\\w*|plastica|abdomino\\w*|cesar\\w*|csarea|cesaera|laqueadura|vasectomia|artroscop\\w*|curetagem|puncao|tireoid\\w*|transplant\\w*|"
                 + "ostomia|colostom\\w*|colos\\w*|clostom\\w*|gesso|tala|marca passo|aparelh\\w*|silicone|peitos novos|implante|lasik|laser|blefaro\\w*|amigdala\\w*|adenoide|vesicula|"
-                + "hernia|apendic\\w*|polipo|colposcopia|bypass|valvula|safena|menisco|lca|manguito|coloquei|colocou|colocaram|tirei|tirou|tiraram|retirada|exame)"));
+                + "hernia|apendic\\w*|polipo|colposcopia|bypass|valvula|safena|menisco|lca|manguito|coloquei|colocou|colocaram|tirei|tirou|tiraram|retirada|exame|"
+                + "sleeve|bariatric\\w*|reducao de estomago|gastroplast\\w*|ca\\w{0,2}terism\\w*|angioplast\\w*|stent)"));
     private static final java.util.regex.Pattern SO_IDOSO = java.util.regex.Pattern.compile("^(idoso|idosa|pessoa idosa)\\b");
     private static final java.util.regex.Pattern SO_CRIANCA = java.util.regex.Pattern.compile("^(crianca|bebe)\\b");
     /** "Bebê mexendo menos na barriga" fala da gestante, não de uma criança. */
@@ -350,9 +365,112 @@ public final class MotorTriagem {
             && br.com.fiap.tami.motor.lexico.Normalizador.normalizar(s.descricao() + " " + s.termoMedico()).matches(".*\\b(fratur|quebrad|quebrou|quebrei).*");
     }
 
+    // ---------- sprint 6 (passo 3): lista curta, só com o que tem ligação com o relato ----------
+    public static boolean LISTA_CURTA = !"nao".equals(System.getProperty("tami.listaCurta"));
+    private static final ThreadLocal<String> relatoAtual = ThreadLocal.withInitial(() -> "");
+    public static int LISTA_CURTA_MAX = Integer.parseInt(System.getProperty("tami.listaMax", "5"));
+    /** A 2ª página só aparece se a 1ª tinha item grave e a pessoa marcou "Nenhum". */
+    public static int PAGINA2_MAX = Integer.parseInt(System.getProperty("tami.pagina2", "10"));
+    /** Lista curta: item grave de outro grupo só fica se o relato já descreve mais da metade dele. */
+    public static double GRUPO_GRAVE_CURTA = Double.parseDouble(System.getProperty("tami.grupoGraveCurta", "0.55"));
+    public static double GRAVE_PERTO = Double.parseDouble(System.getProperty("tami.gravePerto", "2"));
+    public static double LIGACAO_MINIMA = Double.parseDouble(System.getProperty("tami.ligacao", "0.34"));
+    private static final Set<String> VAZIAS_LIGACAO = Set.of("para", "com", "sem", "que", "uma", "dor", "mais", "muito", "depois", "quando",
+        "como", "esta", "ainda", "pelo", "pela", "isso", "dias", "forte");
+
+    private static Set<String> raizes(String texto) {
+        Set<String> r = new HashSet<>();
+        for (String w : br.com.fiap.tami.motor.lexico.Normalizador.normalizar(texto).split(" "))
+            if (w.length() > 3 && !VAZIAS_LIGACAO.contains(w)) r.add(w.length() > 5 ? w.substring(0, 5) : w);
+        return r;
+    }
+
+    /** Quanto das palavras do item aparece no relato (0 a 1, pela raiz das palavras). */
+    static double ligacao(String item, String relato) {
+        Set<String> a = raizes(item), b = raizes(relato);
+        if (a.isEmpty() || b.isEmpty()) return 0;
+        int comum = 0;
+        for (String x : a) {
+            if (b.contains(x)) { comum++; continue; }
+            for (String y : b) if (x.length() == 5 && y.length() == 5 && quaseIgual(x, y)) { comum++; break; }   // erro de digitação: "cotre", "ceasrea"
+        }
+        return comum / (double) Math.min(a.size(), b.size());
+    }
+
+    /** Mesma palavra com uma letra trocada de lugar, a mais, a menos ou diferente (só nas 5 primeiras letras). */
+    private static boolean quaseIgual(String x, String y) {
+        int dif = 0;
+        for (int i = 0; i < 5; i++) if (x.charAt(i) != y.charAt(i)) dif++;
+        if (dif <= 1) return x.charAt(0) == y.charAt(0);
+        for (int i = 0; i < 4; i++)   // troca de duas letras vizinhas
+            if (x.charAt(i) != y.charAt(i))
+                return x.charAt(i) == y.charAt(i + 1) && x.charAt(i + 1) == y.charAt(i) && x.substring(i + 2).equals(y.substring(i + 2));
+        return false;
+    }
+
+    /** Lista curta: o item fala de outra parte do corpo, de outro grupo ou de queda sem queda? Então sai, grave ou não. */
+    private boolean semLigacao(BaseConhecimento.Candidato c, String contexto, Perfil perfilAtual, String regiaoAtual, String relato) {
+        var sinal = c.sinal();
+        String d = br.com.fiap.tami.motor.lexico.Normalizador.normalizar(sinal.descricao());
+        Set<String> citados = gruposDoSinal(d);
+        Set<String> meus = gruposDaPessoa(perfilAtual, contexto);
+        boolean grave = sinal.destino().compareTo(Destino.UPA_HOJE) >= 0;
+        double lig = ligacao(sinal.descricao(), relato);
+        // 1. item de um grupo de que a pessoa não é (cirurgia, gravidez, diálise...): sai, a não ser que seja grave e o relato repita o item
+        if (!citados.isEmpty() && java.util.Collections.disjoint(citados, meus)
+            && !(grave && !IDADES.containsAll(citados) && lig >= 0.4))
+            return dbg(sinal, "grupo " + citados);
+        // 2. o item repete boa parte das palavras do relato: tem ligação
+        if (lig >= LIGACAO_MINIMA) return false;
+        Set<String> doItem = anatomia(d);
+        Set<String> minhas = new HashSet<>(BaseConhecimento.regioesDoTexto(relato));
+        String g = BaseConhecimento.grandeRegiao(regiaoAtual);
+        if (g != null) minhas.add(g);
+        boolean outraParte = !doItem.isEmpty() && !minhas.isEmpty() && java.util.Collections.disjoint(doItem, minhas);
+        boolean descreve = grave && c.cobertura() >= FORTE_CURTA && lig > 0;   // grave que o relato descreve com clareza fica
+        // 3. "depois de queda ou pancada" para quem não contou nada que machuque
+        Set<String> anatRelato = new HashSet<>(anatomia(br.com.fiap.tami.motor.lexico.Normalizador.normalizar(relato)));
+        if (g != null) anatRelato.add(g);
+        boolean graveAqui = grave && !java.util.Collections.disjoint(doItem, anatRelato);   // grave da parte do corpo que a pessoa citou
+        if (!graveAqui && !descreve
+            && DEPOIS_DE_TRAUMA.matcher(SEM_TRAUMA.matcher(d).replaceAll(" ")).find() && !QUEDA_OU_ESFORCO.matcher(contexto).find()) return dbg(sinal, "trauma");
+        // 4. outra parte do corpo
+        return outraParte && !descreve && dbg(sinal, "regiao " + doItem + " x " + minhas);
+    }
+    public static double FORTE_CURTA = Double.parseDouble(System.getProperty("tami.forteCurta", "0.6"));
+    private static final java.util.regex.Pattern SEM_TRAUMA = java.util.regex.Pattern.compile(
+        "\\b(sem|nem) (ter )?(uma |um |ter )?(queda|pancada|batida|trauma|machucado|caido|cair|bater)( (ou|nem) (uma |um )?(queda|pancada|batida|trauma|machucado))?");
+    /** Algo no relato que pode ter causado um machucado ou esforço (mais largo que MECANISMO). */
+    private static final java.util.regex.Pattern QUEDA_OU_ESFORCO = java.util.regex.Pattern.compile(
+        "\\b(pancada|queda|caiu|cair|caido|cai|tombo|torc\\w*|batida|bateu|bater|bati|acidente|chute|machuc\\w*|estalo|fratur\\w*|desloc\\w*|"
+        + "golpe|soco|puxao|tranco|fisgada|atropel\\w*|agredid\\w*|mergulh\\w*|engessad\\w*|gesso|escorreg\\w*|tropec\\w*|vir(ei|ou) o pe|pul(ei|ou|ando)|"
+        + "exercici\\w*|treino|treinando|jogo|jogando|esporte|futsal|futebol|volei|basquete|corrida|correndo|caminhada|academia|pilates|luta|judo|jiu|"
+        + "calor|sol|praia|bicicleta|bike|patinete|skate|moto|carro|torneio|escada|telhado|piscina|picad\\w*|mordid\\w*|queimad\\w*|corte|cortei)\\b");
+    private static final Map<String, java.util.regex.Pattern> ANATOMIA = Map.of(
+        "cabeca", java.util.regex.Pattern.compile("\\b(cabeca|rosto|olhos?|boca|dentes?|ouvidos?|nariz|garganta|pescoco|nuca|testa|mandibula|queixo|gengiva|lingua|labios?)\\b"),
+        "peito", java.util.regex.Pattern.compile("\\b(peito|costelas?|coracao|pulmao|pulmoes|mamas?|seios?)\\b"),
+        "barriga", java.util.regex.Pattern.compile("\\b(barriga|estomago|umbigo|virilha|intestino|vagina|bexiga|abdome)\\b"),
+        "costas", java.util.regex.Pattern.compile("\\b(costas|lombar|coluna|bumbum|quadril|nadegas?|coccix)\\b"),
+        "bracos", java.util.regex.Pattern.compile("\\b(bracos?|ombros?|cotovelos?|antebraco|maos?|punhos?|clavicula)\\b"),
+        "pernas", java.util.regex.Pattern.compile("\\b(pernas?|coxas?|joelhos?|canelas?|panturrilha|batata da perna|tornozelos?|pes?|calcanhar)\\b"));
+    /** Partes do corpo que a descrição de um sinal cita (só nomes de partes do corpo, não sintomas). */
+    private static final Map<String, Set<String>> CACHE_ANATOMIA = new java.util.concurrent.ConcurrentHashMap<>();
+    private static Set<String> anatomia(String d) { return CACHE_ANATOMIA.computeIfAbsent(d, MotorTriagem::anatomiaCalc); }
+    private static Set<String> anatomiaCalc(String descricaoNormalizada) {
+        Set<String> r = new HashSet<>();
+        for (var e : ANATOMIA.entrySet()) if (e.getValue().matcher(descricaoNormalizada).find()) r.add(e.getKey());
+        return r;
+    }
+    private static final boolean DEBUG_LISTA = System.getProperty("tami.debugLista") != null;
+    private static boolean dbg(br.com.fiap.tami.motor.conhecimento.SinalAlerta s, String m) {
+        if (DEBUG_LISTA && s.destino().compareTo(Destino.UPA_HOJE) >= 0) System.err.println("  fora " + s.id() + " " + m);
+        return true;
+    }
+
     private boolean cabeNaLista(BaseConhecimento.Candidato c, Modo modo, String contexto, Perfil perfilAtual, String regiaoAtual, double topo) {
         var sinal = c.sinal();
         if (modo == Modo.LESAO && SINAIS_DA_TRILHA.contains(sinal.id())) return false;
+        if (LISTA_CURTA && semLigacao(c, contexto, perfilAtual, regiaoAtual, relatoAtual.get())) return false;
         boolean forte = c.cobertura() >= 0.6;   // o relato descreve este sinal com clareza: entra sempre
         boolean grave = sinal.destino().compareTo(Destino.UPA_HOJE) >= 0;
         String d = br.com.fiap.tami.motor.lexico.Normalizador.normalizar(sinal.descricao());
@@ -394,7 +512,10 @@ public final class MotorTriagem {
     private static final java.util.regex.Pattern SUJEITO_IDADE = java.util.regex.Pattern.compile("^(idos[oa]|pessoa idosa|crianca|bebe|adolescente|adulto|menino|menina)\\b");
 
     /** Grupos citados na descrição de um sinal. */
-    private static Set<String> gruposDoSinal(String d) {
+    private static final Map<String, Set<String>> CACHE_GRUPOS = new java.util.concurrent.ConcurrentHashMap<>();
+    private static final Map<String, java.util.regex.Pattern> PADRAO_QUALIF = new java.util.concurrent.ConcurrentHashMap<>();
+    private static Set<String> gruposDoSinal(String d) { return CACHE_GRUPOS.computeIfAbsent(d, MotorTriagem::gruposDoSinalCalc); }
+    private static Set<String> gruposDoSinalCalc(String d) {
         Set<String> g = new HashSet<>();
         boolean feto = java.util.regex.Pattern.compile("\\bbebe\\b.{0,40}\\b(mex\\w*|chut\\w*|na barriga|semanas)|\\b(gravid\\w*|gestant\\w*)").matcher(d).find();
         if (!feto && java.util.regex.Pattern.compile("\\b(crianca|criancas|bebe|bebes|menino|menina|recem nascid\\w*|lactente)\\b").matcher(d).find()) g.add("crianca");
@@ -403,8 +524,8 @@ public final class MotorTriagem {
         if (java.util.regex.Pattern.compile("^adultos?\\b").matcher(d).find()) g.add("adulto");
         if (feto) g.add("gestante");
         for (var q : QUALIFICADORES.entrySet())
-            if (java.util.regex.Pattern.compile("\\b(" + q.getKey() + ")\\b").matcher(d).find()) g.add(q.getKey());
-        return g;
+            if (PADRAO_QUALIF.computeIfAbsent(q.getKey(), k -> java.util.regex.Pattern.compile("\\b(" + k + ")\\b")).matcher(d).find()) g.add(q.getKey());
+        return Collections.unmodifiableSet(g);
     }
 
     /** Grupos a que a pessoa pertence: pela idade, pela gravidez e pelo que ela contou. */
@@ -461,15 +582,117 @@ public final class MotorTriagem {
         s.fila.add("LES_FIM");
     }
 
+    // ---------- sprint 6 (passo 4): trilhas curtas para urina, pele e barriga ----------
+    public static boolean TRILHAS = !"nao".equals(System.getProperty("tami.trilhas"));
+    private static final java.util.regex.Pattern URI = java.util.regex.Pattern.compile(
+        "\\b(xixi|urina\\w*|urinar|uirnar|mijar|ardencia|ardendo|ardor|arde|cistite|infeccao urinaria|bexiga|corrimento|coceira (na|intima|la embaixo)|"
+        + "vagina|vulva|penis|testiculo\\w*|saco|prostata|candidiase)\\b");
+    /** Queixa que é mesmo da urina ou da região íntima (com vômito ou diarreia, "pouco xixi" é falta de água: vai para a barriga). */
+    private static final java.util.regex.Pattern URI_FORTE = java.util.regex.Pattern.compile(
+        "\\b(ardencia|ardendo|ardor|arde|cistite|infeccao urinaria|corrimento|coceira (na|intima|la embaixo)|vagina|vulva|penis|testiculo\\w*|prostata|candidiase|"
+        + "sangue na urina|xixi com sangue|urina com sangue|dor (pra|para|ao) (fazer xixi|urinar))\\b");
+    private static final java.util.regex.Pattern PELE = java.util.regex.Pattern.compile(
+        "\\b(pele|manchas?|manchinhas?|coceira|cocando|coca muito|bolinhas?|bolhas?|urticaria|vergoes|placas vermelhas|espinhas?|acne|micose|frieira|impinge|"
+        + "vermelhidao|brotoeja|assadura|eczema|dermatite|alergia na pele|pintas?|verruga|herpes|cobreiro|sarna|piolho|unha encravada)\\b");
+    private static final java.util.regex.Pattern BARRIGA_TRILHA = java.util.regex.Pattern.compile(
+        "\\b(barriga|estomago|abdome|abdominal|colica|enjoo|enjoada?|vomit\\w*|diarreia|caganeira|intestino|prisao de ventre|azia|queimacao|gastrite|"
+        + "gases|estufad\\w*|virose|indigestao|ma digestao)\\b");
+    private static final Map<String, String> TRILHA_CUIDADO = Map.of("URI", "BLK-CASA-URI", "PEL", "BLK-CASA-PELE", "BAR", "BLK-CASA-BARRIGA");
+
+    /** Trilha curta: os sinais graves daquele tipo de queixa, febre, dor, tempo e a lista da base (uma página). */
+    private void rotaTrilha(Sessao s, String tr) {
+        s.flags.add("trilha");
+        if (tr.equals("BAR")) s.flags.add("barriga");
+        s.fila.add(tr + "_01");
+        if (tr.equals("BAR")) {   // dor na barriga pode ser do coração ou de outra emergência: a tela de emergência vem junto
+            List<String> todas = new ArrayList<>(EMERGENCIA.keySet());
+            todas.removeIf(s.doTexto::containsKey);
+            if (!todas.isEmpty()) { s.fila.add(TELA_EMERGENCIA); s.dinamicos.put(TELA_EMERGENCIA, telaEmergencia(todas)); }
+        }
+        s.fila.add("GEN_04");
+        s.fila.add("GEN_03");
+        if (tr.equals("BAR")) s.fila.add("BEB_01");
+        s.fila.add("GEN_02");
+        s.fila.add("GEN_06");
+        if (montarLista(s, Modo.GERAL)) s.fila.add(CONF_SINAIS);
+        s.fila.add("GEN_FIM");
+    }
+
     /** O caminho de antes: lista da base, filtro FIL e o roteiro da queixa (FAR antes, se falta de ar). */
     private void rotaGeral(Sessao s, Modo modo) {
-        s.fila.addAll(catalogo.roteiro("FIL"));
+        // sprint 6: as 5 perguntas de emergência viram uma tela só, de marcar (as que o texto já respondeu continuam sozinhas)
+        boolean far = s.analise().presente(GrupoLexico.AR);
+        List<String> naTela = new ArrayList<>();
+        for (String id : catalogo.roteiro("FIL")) {
+            boolean vaiNaTela = TELA_UNICA && EMERGENCIA.containsKey(id) && !s.doTexto.containsKey(id)
+                && !(far && (id.equals("FIL_01") || id.equals("FIL_02")));   // com falta de ar, o FAR pergunta antes e estas herdam
+            if (vaiNaTela) {
+                if (naTela.isEmpty()) s.fila.add(TELA_EMERGENCIA);
+                naTela.add(id);
+            } else s.fila.add(id);
+        }
+        if (!naTela.isEmpty()) s.dinamicos.put(TELA_EMERGENCIA, telaEmergencia(naTela));
         s.fila.addAll(catalogo.roteiro(s.queixa));
         if (montarLista(s, modo)) s.fila.addFirst(CONF_SINAIS);
         if (s.analise().presente(GrupoLexico.AR)) {   // falta de ar: abre FAR antes do filtro, e o FIL_01 herda do FAR_01
-            List<String> far = catalogo.roteiro("FAR");
-            for (int i = far.size() - 1; i >= 0; i--) s.fila.addFirst(far.get(i));
+            List<String> rotFar = catalogo.roteiro("FAR");
+            for (int i = rotFar.size() - 1; i >= 0; i--) s.fila.addFirst(rotFar.get(i));
         }
+    }
+
+    // ---------- sprint 6 (passo 5): o que o relato já respondeu não volta como pergunta ----------
+    public static boolean DO_TEXTO_GERAL = !"nao".equals(System.getProperty("tami.doTexto"));
+    private static final java.util.regex.Pattern T_HOJE = java.util.regex.Pattern.compile(
+        "\\b(agora pouco|agorinha|ha pouco|faz pouco|hoje|hj|desde cedo|de manha|nesta manha|essa manha|esta noite|"
+        + "(faz|ha|tem|a) (umas? |uns |mais de |quase )?(\\d{1,2}|uma|duas|tres|quatro|cinco|meia) (h|hr|hrs|hora|horas|hoars|minutos?|min)\\b)");
+    private static final java.util.regex.Pattern T_DIAS = java.util.regex.Pattern.compile(
+        "\\b(ontem|anteontem|antontem|desde (segunda|terca|quarta|quinta|sexta|sabado|domingo|o fim de semana)|essa semana|nessa semana|esta semana|"
+        + "(faz|ha|tem|a|desde) (uns |umas |mais de |quase )?([1-7]|um|dois|tres|quatro|cinco|seis|sete) (dia|dias)\\b|\\b[2-7] dias)");
+    private static final java.util.regex.Pattern T_SEMANAS = java.util.regex.Pattern.compile(
+        "\\b((faz|ha|tem|desde) (umas? |uns |mais de |quase )?(\\d{1,2}|uma|duas|tres|quatro) semanas?|faz (um|1) mes|ha (um|1) mes|semana passada|(faz|ha) (\\d{2}|quinze|dez|vinte) dias)\\b");
+    private static final java.util.regex.Pattern T_MESES = java.util.regex.Pattern.compile(
+        "\\b((faz|ha|tem|desde) (uns |umas |mais de |quase )?(\\d+|dois|tres|quatro|seis|varios|alguns) (meses|anos)|faz anos|ha anos|ha meses|faz meses|desde (crianca|pequeno|sempre))\\b");
+    private static final java.util.regex.Pattern DOR_NUMERO = java.util.regex.Pattern.compile("\\bdor (nota |de |uns |tipo )?(10|[0-9])( de 10)?\\b|\\b(10|[0-9]) de 10\\b");
+    private static final java.util.regex.Pattern DOR_MAXIMA = java.util.regex.Pattern.compile("\\b(dor (fortissima|insuportavel|absurda|horrivel|terrivel)|nunca senti (uma )?dor (assim|igual))\\b");
+    private static final java.util.regex.Pattern DOR_LEVE = java.util.regex.Pattern.compile("\\bdor (leve|fraca|fraquinha|pequena|bem de leve)\\b|\\b(doi|dor) (so )?um pouco\\b|\\bdorzinha\\b");
+    private static final java.util.regex.Pattern SEM_FEBRE = java.util.regex.Pattern.compile("\\b(sem febre|nao (tem|tenho|tive|teve|deu|esta com|to com|ta com) febre|febre nao)\\b");
+
+    private static void jaRespondido(Sessao s, String norm) {
+        // tempo (GEN_06): o primeiro jeito de dizer que aparece decide; "28 semanas" de gravidez não conta
+        String semGravidez = norm.replaceAll("\\b(de|com|gravida de|gestante de) \\d{1,2} semanas\\b", " ");
+        String tempo = T_MESES.matcher(semGravidez).find() ? "mais_1_mes" : T_SEMANAS.matcher(semGravidez).find() ? "1_4_semanas"
+            : T_DIAS.matcher(semGravidez).find() ? "1_7_dias" : T_HOJE.matcher(semGravidez).find() ? "hoje" : null;
+        if (tempo != null) s.doTexto.putIfAbsent("GEN_06", tempo);
+        var m = DOR_NUMERO.matcher(norm);
+        if (m.find()) s.doTexto.putIfAbsent("GEN_02", m.group(2) != null ? m.group(2) : m.group(4));
+        else if (DOR_MAXIMA.matcher(norm).find()) s.doTexto.putIfAbsent("GEN_02", "9");
+        else if (DOR_LEVE.matcher(norm).find()) s.doTexto.putIfAbsent("GEN_02", "2");
+        if (SEM_FEBRE.matcher(norm).find()) s.doTexto.putIfAbsent("GEN_04", "N");
+    }
+
+    // ---------- sprint 6: tela de emergência ----------
+    public static final String TELA_EMERGENCIA = "FIL_EM";
+    public static boolean TELA_UNICA = !"nao".equals(System.getProperty("tami.telaUnica"));
+    /** Pergunta do filtro ➜ itens da tela (código, texto, gravidade, efeitos: os mesmos da pergunta antiga). */
+    private static final Map<String, String[][]> EMERGENCIA = new LinkedHashMap<>();
+    static {
+        EMERGENCIA.put("FIL_01", new String[][]{{"ar", "Muita falta de ar, lábios roxos ou não consegue falar uma frase inteira", "3", "SAMU:AR_GRAVE"}});
+        EMERGENCIA.put("FIL_02", new String[][]{{"peito", "Dor, aperto ou peso no peito, agora ou nas últimas horas", "2", "FLAG:dorPeito & IR:DPE_01"}});
+        EMERGENCIA.put("FIL_03", new String[][]{
+            {"apagou_agora", "Está desacordado, muito difícil de acordar, convulsionando ou muito confuso agora", "3", "SAMU:CONSCIENCIA & EXIGE:BLK-EI-DESMAIO"},
+            {"apagou_passou", "Desmaiou ou teve convulsão nas últimas horas, mas já passou", "2", "IR:DCV_02"}});
+        EMERGENCIA.put("FIL_04", new String[][]{{"avc", "De repente: boca torta, fala enrolada ou fraqueza de um lado do corpo", "3", "SAMU:SINAL_AVC & EXIGE:BLK-EI-AVC"}});
+        EMERGENCIA.put("FIL_05", new String[][]{{"sangue", "Sangramento forte que não para mesmo apertando, ou acidente grave (trânsito, queda de altura)", "3", "SAMU:TRAUMA & EXIGE:BLK-EI-SANGRAMENTO"}});
+    }
+
+    private static No telaEmergencia(List<String> ids) {
+        List<Opcao> ops = new ArrayList<>();
+        for (String id : ids)
+            for (String[] o : EMERGENCIA.get(id)) ops.add(new Opcao(o[0], o[1], Integer.parseInt(o[2]), Efeito.lerLista(o[3])));
+        ops.add(new Opcao("nenhum", "Nenhum destes", 0, List.of()));
+        ops.add(new Opcao("nao_sei", "Não sei", 0, List.of()));
+        return new No(TELA_EMERGENCIA, "FIL", 0, No.Tipo.MULTI, true, true, null, null,
+            "Agora, você (ou a pessoa que precisa de ajuda) tem algum destes?", "Marque todos que valem. Se nenhum, toque em Nenhum destes.", ops);
     }
 
     /** D-015: a pessoa confirma sinais parecidos com o relato. Devolve true se montou a lista. */
@@ -480,12 +703,13 @@ public final class MotorTriagem {
         Set<String> fatores = s.fatoresInicio;
         String regiao = s.regiao;
         String ctx = contexto(s);
-        int tamanho = LISTA_DE_CONFIRMACAO;
+        relatoAtual.set(textoLivre == null ? "" : textoLivre);
+        int tamanho = LISTA_CURTA ? LISTA_CURTA_MAX : LISTA_DE_CONFIRMACAO;
             Set<String> ja = new HashSet<>();
             for (Disparo d : s.disparos) if (d.regra().startsWith("SA:")) ja.add(d.regra().substring(3));
-            List<BaseConhecimento.Candidato> todos = conhecimento.candidatosComNota(textoLivre, perfil, fatores, ja, 6 * tamanho, regiao);
+            List<BaseConhecimento.Candidato> todos = conhecimento.candidatosComNota(textoLivre, perfil, fatores, ja, 6 * Math.max(tamanho, LISTA_DE_CONFIRMACAO), regiao);
             double topo = todos.isEmpty() ? 0 : todos.get(0).nota();
-            List<BaseConhecimento.Candidato> comNota = todos.stream().filter(c -> cabeNaLista(c, modo, ctx, perfil, regiao, topo)).limit(2 * tamanho).toList();
+            List<BaseConhecimento.Candidato> comNota = todos.stream().filter(c -> cabeNaLista(c, modo, ctx, perfil, regiao, topo)).limit(LISTA_CURTA ? tamanho + PAGINA2_MAX : 2 * tamanho).toList();
             List<br.com.fiap.tami.motor.conhecimento.SinalAlerta> cand = new ArrayList<>();
             // sprint 3 (item 7): o sinal grave que o relato descreve com boa confiança vem já marcado, no topo da lista
             for (var c : preMarcar(comNota, textoLivre, perfil, fatores)) { cand.add(c); s.flags.add(PRE + c.id()); }
@@ -499,13 +723,14 @@ public final class MotorTriagem {
                     if (cabeNaLista(cn, modo, ctx, perfil, regiao, topo) && c.destino() == Destino.CUIDADO_EM_CASA && !cand.contains(c) && extra < 3) { cand.add(c); extra++; }
                 }
             }
-            if (cand.size() > tamanho && !(modo == Modo.LESAO && LESAO_UMA_PAGINA))   // 2ª página, só se a pessoa marcar "nenhum" na 1ª, só se a pessoa marcar "nenhum" na 1ª
+            boolean graveNa1 = cand.stream().limit(tamanho).anyMatch(x -> x.destino().compareTo(Destino.UPA_HOJE) >= 0);
+            if (cand.size() > tamanho && !(modo == Modo.LESAO && LESAO_UMA_PAGINA) && (!LISTA_CURTA || graveNa1))   // 2ª página, só se a pessoa marcar "nenhum" na 1ª, só se a pessoa marcar "nenhum" na 1ª
                 s.dinamicos.put(CONF_SINAIS_2, listaDeConfirmacao(CONF_SINAIS_2,
-                    cand.subList(tamanho, cand.size()), "Nenhum destes também? Veja mais alguns:", s));
+                    cand.subList(tamanho, LISTA_CURTA ? Math.min(cand.size(), tamanho + PAGINA2_MAX) : cand.size()), "Nenhum destes também? Veja mais alguns:", s));
             if (!cand.isEmpty()) {
                 s.dinamicos.put(CONF_SINAIS, listaDeConfirmacao(CONF_SINAIS,
                     cand.subList(0, Math.min(tamanho, cand.size())),
-                    modo == Modo.LESAO ? "Algum destes combina com o que aconteceu?" : "Algum destes está acontecendo?", s));
+                    modo == Modo.LESAO ? "Algum destes combina com o que aconteceu?" : s.flags.contains("trilha") ? "E algum destes combina com o que você sente?" : "Algum destes está acontecendo?", s));
             }
         return s.dinamicos.containsKey(CONF_SINAIS);
     }
@@ -956,6 +1181,10 @@ public final class MotorTriagem {
         for (Disparo d : finais) for (String x : d.exige()) if (x.equals("CVV188") || x.equals("DISQUE_INTOX")) exige.add(x);
         if ("S".equals(s.doTexto.get("FIL_08"))) exige.add("CVV188");
         if ("LES".equals(s.queixa) && fim == Destino.SAMU_192) exige.add("BLK-EI-TRAUMA");   // sprint 4: não mexer em quem caiu forte
+        if (fim.compareTo(Destino.UPA_HOJE) < 0 && TRILHA_CUIDADO.containsKey(s.queixa)) {   // sprint 6: cuidados da trilha antes dos gerais
+            exige.remove("BLK-CASA-GERAL");
+            exige.add(TRILHA_CUIDADO.get(s.queixa));
+        }
         // sprint 5: todo resultado leva o que fazer agora (UPA: enquanto vai; UBS ou casa: cuidados e quando voltar)
         if (fim == Destino.UPA_HOJE && exige.stream().noneMatch(x -> x.startsWith("BLK-EI") || x.equals("MATERNIDADE") || x.equals("DISQUE_INTOX")))
             exige.add("BLK-EI-GERAL");
