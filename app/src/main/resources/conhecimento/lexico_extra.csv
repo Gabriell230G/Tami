@@ -1,0 +1,132 @@
+codigo;grupo;tipo;termo
+LXE-PEITO-01;PEITO;NORMAL;dor no peito que vai pro braco
+LXE-PEITO-02;PEITO;NORMAL;peito doendo e suando
+LXE-PEITO-03;PEITO;NORMAL;dor no peito de esmagar
+LXE-PEITO-04;PEITO;NORMAL;parece que sentou um elefante no peito
+LXE-PEITO-05;PEITO;NORMAL;dor no peito com enjoo e suor
+LXE-PEITO-06;PEITO;NORMAL;coracao doendo forte
+LXE-PEITO_VAGO-01;PEITO_VAGO;NORMAL;aperto no coracao
+LXE-PEITO_VAGO-02;PEITO_VAGO;NORMAL;angustia no peito
+LXE-PEITO_VAGO-03;PEITO_VAGO;NORMAL;peito ruim
+LXE-PEITO_VAGO-04;PEITO_VAGO;NORMAL;pontada no coracao
+LXE-PEITO_VAGO-05;PEITO_VAGO;NORMAL;dor no peito de vez em quando
+LXE-AR_GRAVE-01;AR_GRAVE;POSITIVO_COM_NAO;nao to conseguindo respirar
+LXE-AR_GRAVE-02;AR_GRAVE;NORMAL;falta o ar ate pra falar
+LXE-AR_GRAVE-03;AR_GRAVE;POSITIVO_COM_NAO;nao consegue nem falar de falta de ar
+LXE-AR_GRAVE-04;AR_GRAVE;NORMAL;ficando azul
+LXE-AR_GRAVE-05;AR_GRAVE;NORMAL;boca azulada
+LXE-AR_GRAVE-06;AR_GRAVE;NORMAL;engasgou e nao respira
+LXE-AR_GRAVE-07;AR_GRAVE;NORMAL;sem respirar
+LXE-AR_GRAVE-08;AR_GRAVE;NORMAL;costelinha afundando
+LXE-AR-01;AR;NORMAL;folego curto
+LXE-AR-02;AR;NORMAL;sem folego
+LXE-AR-03;AR;NORMAL;respiracao curta
+LXE-AR-04;AR;NORMAL;respirando rapido
+LXE-AR-05;AR;NORMAL;cansaco no peito
+LXE-AR-06;AR;NORMAL;chiadeira
+LXE-AR-07;AR;NORMAL;respirando com dificuldade
+LXE-AR-08;AR;NORMAL;canseira pra respirar
+LXE-CONSCIENCIA-01;CONSCIENCIA;NORMAL;teve um treco
+LXE-CONSCIENCIA-02;CONSCIENCIA;NORMAL;deu um treco
+LXE-CONSCIENCIA-03;CONSCIENCIA;NORMAL;perdeu os sentidos
+LXE-CONSCIENCIA-04;CONSCIENCIA;NORMAL;desfaleceu
+LXE-CONSCIENCIA-05;CONSCIENCIA;POSITIVO_COM_NAO;nao ta respondendo
+LXE-CONSCIENCIA-06;CONSCIENCIA;NORMAL;caiu e nao levanta
+LXE-CONSCIENCIA-07;CONSCIENCIA;POSITIVO_COM_NAO;nao reage
+LXE-CONSCIENCIA-08;CONSCIENCIA;POSITIVO_COM_NAO;nao acorda de jeito nenhum
+LXE-CONSCIENCIA_VAGO-01;CONSCIENCIA_VAGO;NORMAL;aereo
+LXE-CONSCIENCIA_VAGO-02;CONSCIENCIA_VAGO;NORMAL;grogue
+LXE-CONSCIENCIA_VAGO-03;CONSCIENCIA_VAGO;NORMAL;meio bobo
+LXE-CONSCIENCIA_VAGO-04;CONSCIENCIA_VAGO;NORMAL;sonolento demais
+LXE-CONSCIENCIA_VAGO-05;CONSCIENCIA_VAGO;NORMAL;lerdo de sono
+LXE-CONVULSAO-01;CONVULSAO;NORMAL;estrebuchando
+LXE-CONVULSAO-02;CONVULSAO;NORMAL;tremendo todo e babando
+LXE-CONVULSAO-03;CONVULSAO;NORMAL;olho virado
+LXE-CONVULSAO-04;CONVULSAO;NORMAL;revirou os olhos e tremeu
+LXE-CONVULSAO-05;CONVULSAO;NORMAL;deu crise convulsiva
+LXE-CONVULSAO-06;CONVULSAO;NORMAL;teve uma crise de tremer
+LXE-AVC-01;AVC;NORMAL;lado do corpo morto
+LXE-AVC-02;AVC;NORMAL;boca entortou
+LXE-AVC-03;AVC;NORMAL;fala embolada
+LXE-AVC-04;AVC;NORMAL;lingua enrolada
+LXE-AVC-05;AVC;POSITIVO_COM_NAO;nao consegue levantar o braco
+LXE-AVC-06;AVC;NORMAL;rosto caido
+LXE-AVC-07;AVC;NORMAL;deu um derrame
+LXE-AVC-08;AVC;NORMAL;boca caida
+LXE-AVC-09;AVC;NORMAL;metade do rosto caiu
+LXE-AVC_VAGO-01;AVC_VAGO;NORMAL;fraqueza num lado
+LXE-AVC_VAGO-02;AVC_VAGO;NORMAL;esqueceu as palavras
+LXE-AVC_VAGO-03;AVC_VAGO;NORMAL;troca as palavras
+LXE-SANGUE-01;SANGUE;NORMAL;sangue esguichando
+LXE-SANGUE-02;SANGUE;NORMAL;sangrando sem parar
+LXE-SANGUE-03;SANGUE;NORMAL;perdendo muito sangue
+LXE-SANGUE-04;SANGUE;NORMAL;poca de sangue
+LXE-SANGUE-05;SANGUE;NORMAL;golfando sangue
+LXE-SANGUE-06;SANGUE;NORMAL;vomitou sangue
+LXE-SANGUE-07;SANGUE;NORMAL;cuspindo sangue
+LXE-TRAUMA-01;TRAUMA;NORMAL;caiu de moto
+LXE-TRAUMA-02;TRAUMA;NORMAL;bateu de carro
+LXE-TRAUMA-03;TRAUMA;NORMAL;levou uma facada
+LXE-TRAUMA-04;TRAUMA;NORMAL;levou um tiro
+LXE-TRAUMA-05;TRAUMA;NORMAL;foi esfaqueado
+LXE-TRAUMA-06;TRAUMA;NORMAL;baleado
+LXE-TRAUMA-07;TRAUMA;NORMAL;caiu do andaime
+LXE-TRAUMA-08;TRAUMA;NORMAL;caiu da arvore
+LXE-TRAUMA-09;TRAUMA;NORMAL;queimou com alcool
+LXE-TRAUMA-10;TRAUMA;NORMAL;bateu a cabeca e desmaiou
+LXE-ALERGIA-01;ALERGIA;NORMAL;empolou o corpo todo
+LXE-ALERGIA-02;ALERGIA;NORMAL;fechando a garganta
+LXE-ALERGIA-03;ALERGIA;NORMAL;lingua grossa
+LXE-ALERGIA-04;ALERGIA;NORMAL;garganta trancando
+LXE-ALERGIA-05;ALERGIA;NORMAL;inchou a boca e o olho
+LXE-VENENO-01;VENENO;NORMAL;tomou remedio demais
+LXE-VENENO-02;VENENO;NORMAL;engoliu remedio da avo
+LXE-VENENO-03;VENENO;NORMAL;bebeu soda
+LXE-VENENO-04;VENENO;NORMAL;bebeu querosene
+LXE-VENENO-05;VENENO;NORMAL;bebeu gasolina
+LXE-VENENO-06;VENENO;NORMAL;comeu veneno
+LXE-VENENO-07;VENENO;NORMAL;tomou chumbinho
+LXE-VENENO-08;VENENO;NORMAL;engoliu pilha
+LXE-VENENO-09;VENENO;NORMAL;engoliu bateria
+LXE-GESTANTE-01;GESTANTE;NORMAL;perdendo agua
+LXE-GESTANTE-02;GESTANTE;NORMAL;a bolsa rompeu
+LXE-GESTANTE-03;GESTANTE;NORMAL;saindo agua la embaixo
+LXE-GESTANTE-04;GESTANTE;POSITIVO_COM_NAO;nao sinto o bebe mexer
+LXE-GESTANTE-05;GESTANTE;NORMAL;nenem parou de mexer
+LXE-GESTANTE-06;GESTANTE;NORMAL;sangrando na gravidez
+LXE-FEBRE-01;FEBRE;NORMAL;quente de febre
+LXE-FEBRE-02;FEBRE;NORMAL;ardendo em febre
+LXE-FEBRE-03;FEBRE;NORMAL;pelando de febre
+LXE-FEBRE-04;FEBRE;NORMAL;tremendo de frio com febre
+LXE-FEBRE-05;FEBRE;NORMAL;febre alta
+LXE-SUICIDIO-01;SUICIDIO;POSITIVO_COM_NAO;nao quero mais viver
+LXE-SUICIDIO-02;SUICIDIO;NORMAL;quero sumir
+LXE-SUICIDIO-03;SUICIDIO;NORMAL;dar fim na minha vida
+LXE-SUICIDIO-04;SUICIDIO;NORMAL;acabar com a minha vida
+LXE-SUICIDIO-05;SUICIDIO;POSITIVO_COM_NAO;nao vale a pena viver
+LXE-SUICIDIO-06;SUICIDIO;NORMAL;pensando em me matar
+LXE-SUICIDIO-07;SUICIDIO;NORMAL;melhor eu morrer
+LXE-AVC-11;AVC;NORMAL;lado esquerdo dormente
+LXE-AVC-12;AVC;NORMAL;lado direito dormente
+LXE-AVC-13;AVC;NORMAL;metade do corpo dormente
+LXE-AVC-14;AVC;NORMAL;metade do corpo amortecida
+LXE-AVC-15;AVC;NORMAL;boca torta pro lado
+LXE-AVC-16;AVC;NORMAL;boca entortada
+LXE-AVC-17;AVC;NORMAL;boca caida de um lado
+LXE-AVC-18;AVC;NORMAL;falando embolado
+LXE-AVC-19;AVC;NORMAL;fala engrolada
+LXE-AVC-20;AVC;NORMAL;lingua embolando
+LXE-AVC-21;AVC;NORMAL;braco esquerdo caiu
+LXE-AVC-22;AVC;NORMAL;perna esquerda arrastando
+LXE-CONVULSAO-07;CONVULSAO;NORMAL;estrebuchou
+LXE-CONVULSAO-08;CONVULSAO;NORMAL;se estrebuchou
+LXE-CONVULSAO-09;CONVULSAO;NORMAL;ficou dura e tremendo
+LXE-CONVULSAO-10;CONVULSAO;NORMAL;ficou duro e tremendo
+LXE-CONVULSAO-11;CONVULSAO;NORMAL;ficou durinho e tremendo
+LXE-CONVULSAO-12;CONVULSAO;NORMAL;olho virou pra cima
+LXE-CONVULSAO-13;CONVULSAO;NORMAL;olho revirou e tremeu
+LXE-CONVULSAO-14;CONVULSAO;NORMAL;tremeu inteiro e apagou
+LXE-CONVULSAO-15;CONVULSAO;NORMAL;tremi inteira e apaguei
+LXE-CONVULSAO-16;CONVULSAO;NORMAL;tremeu todo e desmaiou
+LXE-CONVULSAO-17;CONVULSAO;NORMAL;se sacudindo e babando
+LXE-CONVULSAO-18;CONVULSAO;NORMAL;travou o queixo e tremeu

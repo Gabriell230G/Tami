@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+node_modules/
+app/build/
+app/tami.properties
+app/dados/*.db
+app/dados/*.mv.db
+app/dados/*.trace.db

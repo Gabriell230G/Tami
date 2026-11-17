@@ -1,0 +1,42 @@
+-- Árvore das regiões do corpo (dados iniciais). Gerado por gen/regioes.py.
+-- Nível 0: corpo todo · nível 1: grandes regiões · nível 2: partes. As palavras ficam sem acento.
+
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('CORPO', NULL, 'Corpo todo', 0, 'corpo todo|corpo inteiro|o corpo todo|no corpo todo');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('CABECA_PESCOCO', 'CORPO', 'Cabeça e pescoço', 1, '');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('CABECA', 'CABECA_PESCOCO', 'Cabeça', 2, 'cabeca|testa|cranio|moleira');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('ROSTO', 'CABECA_PESCOCO', 'Rosto', 2, 'rosto|cara|face|bochecha|queixo|mandibula|maxilar');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('OLHOS', 'CABECA_PESCOCO', 'Olhos', 2, 'olho|olhos|vista|visao|palpebra|enxergar|enxergando|enxergo');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('OUVIDOS', 'CABECA_PESCOCO', 'Ouvidos', 2, 'ouvido|ouvidos|orelha|orelhas|zumbido|escutar');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('NARIZ', 'CABECA_PESCOCO', 'Nariz', 2, 'nariz|narina|narinas');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('BOCA', 'CABECA_PESCOCO', 'Boca e dentes', 2, 'boca|dente|dentes|lingua|gengiva|labio|labios');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('GARGANTA', 'CABECA_PESCOCO', 'Garganta', 2, 'garganta|goela|engolir|amigdala|amigdalas|rouco|rouquidao');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('PESCOCO', 'CABECA_PESCOCO', 'Pescoço', 2, 'pescoco|nuca');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('TRONCO_PEITO', 'CORPO', 'Peito e respiração', 1, '');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('PEITO', 'TRONCO_PEITO', 'Peito', 2, 'peito|coracao|torax');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('COSTELAS', 'TRONCO_PEITO', 'Costelas', 2, 'costela|costelas');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('MAMAS', 'TRONCO_PEITO', 'Mamas', 2, 'mama|mamas|seio|seios|mamilo');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('RESPIRACAO', 'TRONCO_PEITO', 'Respiração', 2, 'respirar|respiracao|falta de ar|pulmao|pulmoes|tosse|tossindo|catarro|folego|chiado');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('BARRIGA_GRUPO', 'CORPO', 'Barriga', 1, '');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('ESTOMAGO', 'BARRIGA_GRUPO', 'Estômago', 2, 'estomago|boca do estomago|azia|queimacao');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('BARRIGA', 'BARRIGA_GRUPO', 'Barriga', 2, 'barriga|abdome|abdomen|umbigo|intestino|gases|vomito|vomitando|diarreia|fezes|coco');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('PE_BARRIGA', 'BARRIGA_GRUPO', 'Pé da barriga', 2, 'pe da barriga|baixo ventre|bexiga|xixi|urina|urinar|mijar');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('VIRILHA', 'BARRIGA_GRUPO', 'Virilha', 2, 'virilha|virilhas');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('INTIMA', 'BARRIGA_GRUPO', 'Região íntima', 2, 'vagina|penis|testiculo|testiculos|saco|menstruacao|corrimento|parte intima|partes intimas');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('COSTAS_GRUPO', 'CORPO', 'Costas', 1, '');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('COSTAS', 'COSTAS_GRUPO', 'Costas', 2, 'costas|coluna|omoplata');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('LOMBAR', 'COSTAS_GRUPO', 'Lombar', 2, 'lombar|lombo|rim|rins|pe das costas');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('QUADRIL', 'COSTAS_GRUPO', 'Quadril e bumbum', 2, 'quadril|bumbum|nadega|nadegas|coccix|bacia');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('BRACOS', 'CORPO', 'Braços e mãos', 1, '');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('OMBRO', 'BRACOS', 'Ombro', 2, 'ombro|ombros|clavicula');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('BRACO', 'BRACOS', 'Braço', 2, 'braco|bracos|biceps|triceps|antebraco|antebracos');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('COTOVELO', 'BRACOS', 'Cotovelo', 2, 'cotovelo|cotovelos');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('PUNHO', 'BRACOS', 'Punho', 2, 'punho|punhos|pulso|pulsos|munheca');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('MAO', 'BRACOS', 'Mão e dedos', 2, 'mao|maos|palma da mao|dedo da mao|dedos da mao|polegar|unha|unhas');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('PERNAS', 'CORPO', 'Pernas e pés', 1, '');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('COXA', 'PERNAS', 'Coxa', 2, 'coxa|coxas');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('JOELHO', 'PERNAS', 'Joelho', 2, 'joelho|joelhos|patela');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('PERNA', 'PERNAS', 'Perna', 2, 'perna|pernas|canela|canelas|panturrilha|batata da perna');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('TORNOZELO', 'PERNAS', 'Tornozelo', 2, 'tornozelo|tornozelos');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('PE', 'PERNAS', 'Pé', 2, 'pe|pes|calcanhar|dedo do pe|dedos do pe|dedao|sola do pe|planta do pe');
+INSERT INTO T_TAMI_REGIAO (CD_REGIAO, CD_REGIAO_PAI, NM_REGIAO, NR_NIVEL, DS_PALAVRAS) VALUES ('PELE', 'CORPO', 'Pele', 1, 'pele|mancha|manchas|coceira|cocando|ferida|feridas|bolha|bolhas|picada|queimadura|queimei|corte|cortei|hematoma|caroco|inchaco na pele');
+COMMIT;

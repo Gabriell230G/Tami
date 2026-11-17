@@ -1,0 +1,23 @@
+# Publicação do app da Tami no Render (plano grátis). New ➜ Blueprint ➜ este repositório.
+# Só a senha do banco é pedida na hora; ela fica guardada no Render, nunca no Git.
+services:
+  - type: web
+    name: tami-app
+    runtime: docker
+    plan: free
+    region: virginia
+    rootDir: app
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/status
+    envVars:
+      - key: TAMI_DB_URL
+        value: jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?sslmode=require
+      - key: TAMI_DB_USUARIO
+        value: postgres.oddqikxpfgckqngufvzb
+      - key: TAMI_DB_SENHA
+        sync: false
+      - key: TAMI_SEGREDO
+        generateValue: true
+      - key: TAMI_MODO
+        value: demonstracao

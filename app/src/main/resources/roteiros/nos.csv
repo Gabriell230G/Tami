@@ -1,0 +1,60 @@
+id;roteiro;ordem;tipo;alarme;pode_samu;mostrar_se;herda_de;pergunta;ajuda
+FIL_01;FIL;1;UNICA;S;S;;FAR_01;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Muita dificuldade para respirar • Ficando com a cor roxa • Não consegue falar uma frase inteira;
+FIL_02;FIL;2;UNICA;S;S;;FAR_03;Você (ou a pessoa que precisa de ajuda) tem dor, aperto ou peso no peito? Vale se for agora ou se foi nas últimas horas.;
+FIL_03;FIL;3;UNICA;S;S;;;Agora ou nas últimas horas, você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Ficou desacordado (apagou) ou está muito difícil de acordar • Ficou confuso de repente • Convulsão (ataque);
+FIL_04;FIL;4;UNICA;S;S;;;De repente, você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Boca torta • Fala enrolada • Fraqueza ou formigamento de um lado do corpo;Peça para a pessoa sorrir, levantar os dois braços e repetir uma frase. Se não tiver ninguém com você, faça isso na frente do espelho. Veja se um lado da boca cai, se um braço cai ou se a fala sai enrolada.
+FIL_05;FIL;5;UNICA;S;S;;;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Sangramento forte que não para, mesmo apertando • Sofreu um acidente grave: trânsito, queda de altura, batida forte na cabeça, queimadura grande ou choque elétrico;
+FIL_06;FIL;6;UNICA;S;S;;FAR_02;Depois de uma picada, comida ou remédio, inchou alguma destas partes? • Rosto • Lábios • Língua • Garganta;
+FIL_07;FIL;7;UNICA;S;S;;;Alguém engoliu, bebeu ou respirou algo perigoso? Por exemplo: veneno, produto de limpeza ou remédio demais.;
+FIL_08;FIL;8;UNICA;S;S;;;Você (ou a pessoa que precisa de ajuda) está pensando em se machucar ou em tirar a própria vida?;
+FIL_C01;FIL;9;UNICA;S;N;CRIANCA;;O bebê ou a criança tem algum destes sinais? • Não consegue mamar nem beber nada • Vomita tudo o que toma • Está molinho, caidinho, diferente do normal, mas acorda;
+FIL_C02;FIL;10;UNICA;S;N;MENOR_3M;;Você mediu a temperatura do bebê debaixo do braço (axila, sovaco)? Quanto deu?;
+FIL_C03;FIL;11;UNICA;S;N;MENOR_2M;;O bebê tem algum destes sinais? • Umbigo vermelho em volta, ou com pus, ou com mau cheiro • Pele amarela que já chegou nos braços e nas pernas • Pus saindo do ouvido;Olhe a pele do bebê na luz do dia ou numa luz branca forte.
+FIL_G01;FIL;12;UNICA;S;S;GESTANTE;;Você (ou a pessoa que precisa de ajuda) está perdendo sangue ou líquido pela vagina? Se ficar em dúvida entre muito e pouco sangue, escolha Muito sangue.;
+FIL_G02;FIL;13;UNICA;S;N;GESTANTE;;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Dor de cabeça forte com a vista embaçada ou vendo pontinhos • Rosto, mãos ou pernas inchados de repente • Pressão de 14 por 9 ou mais (se não mediu a pressão, não conte este);
+FIL_G03;FIL;14;UNICA;S;N;GESTANTE;;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • O bebê está mexendo bem menos que o normal • O bebê ficou mais de 4 horas sem mexer (com 20 semanas de gravidez ou mais) • Dor forte na barriga • Antes de 37 semanas: a barriga fica dura e isso volta de tempos em tempos, num ritmo certo (contrações);
+FIL_I01;FIL;15;UNICA;S;S;IDOSO_OU_DIABETES;;De repente, sem motivo, começou falta de ar ou um cansaço muito forte?;
+FAR_01;FAR;1;UNICA;S;S;;;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Não consegue falar uma frase inteira • Lábios roxos • Respira muito rápido;
+FAR_02;FAR;2;UNICA;S;S;;;A falta de ar começou junto com inchaço no rosto, boca ou garganta?;
+FAR_03;FAR;3;UNICA;S;S;;;Tem dor ou aperto no peito junto?;
+FAR_FIM;FAR;4;DECISAO;N;N;;;;
+DPE_01;DPE;1;UNICA;S;S;;;A dor ou o aperto ainda está aí agora, e já dura mais que alguns minutos?;
+DPE_02;DPE;2;UNICA;S;S;;;Junto com a dor, tem algum destes sinais? • Suor frio • Pele ou rosto muito pálido, sem cor • Falta de ar • Enjoo • Sensação de que vai desmaiar;
+DPE_03;DPE;3;UNICA;S;S;;;A dor se espalha para algum destes lugares? • Braço • Costas • Pescoço • Queixo • Estômago;
+DPE_FIM;DPE;4;DECISAO;N;N;;;;
+DCV_02;DCV;1;UNICA;S;S;;;Você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Mais de uma convulsão (ataque) • Demorou mais que alguns minutos para acordar;
+DCV_03;DCV;2;UNICA;S;S;;;Antes ou depois do que aconteceu, teve algum destes sinais? • Dor no peito • Falta de ar • Sinais de derrame (AVC): boca torta, fala enrolada, ou fraqueza ou formigamento de um lado do corpo • Bateu a cabeça na queda;
+DCV_04;DCV;3;DECISAO;N;N;;;;
+DCV_04B;DCV;4;UNICA;S;S;CRIANCA_SEM_CONVULSAO;;Foi uma convulsão (ataque)? Por exemplo: tremedeira com olho virado.;
+DCV_FIM;DCV;5;DECISAO;N;N;;;;
+INT_01;INT;1;UNICA;S;S;;;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Está sonolento • Desmaiou • Falta de ar • Convulsão (ataque). Se tomou de propósito, escolha Foi de propósito, mesmo que tenha algum destes sinais.;
+INT_FIM;INT;2;DECISAO;N;N;;;;
+CRI_01;CRI;1;UNICA;S;S;;;Obrigada por me contar. Algum destes vale para você (ou para a pessoa que precisa de ajuda) agora? • Está em perigo • Já tem um plano • O que pensou em usar está por perto • Já se machucou ou tomou algo;
+CRI_FIM;CRI;2;DECISAO;N;N;;;;
+PEL_03;PEL;1;UNICA;S;S;;;Faça o teste do copo. Aperte com força um copo de vidro liso e transparente em cima das manchas. Olhe pelo vidro. As manchas somem?;Use um copo de vidro transparente. Aperte o lado do copo com força sobre as manchas. Olhe pelo vidro. Em pele negra ou parda pode ser mais difícil ver. Na dúvida, toque em Não consegui ver.
+FEB_A02;FEB;1;MULTI;S;S;;;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes? Marque todos que tiver.;
+FEB_A03;FEB;2;UNICA;N;N;;;A febre começou depois de muito sol, lugar muito quente ou exercício forte?;
+FEB_A03B;FEB;3;UNICA;S;S;FLAG:calor;;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Pele quente e seca, sem suor • Está tonto • Está confuso • Está com a visão diferente;
+FEB_A04;FEB;4;UNICA;S;S;;;Apareceram pintinhas ou manchas vermelho-escuras ou roxas na pele?;
+FEB_A05;FEB;5;MULTI;S;N;;;E agora, você (ou a pessoa que precisa de ajuda) tem algum destes? Marque todos que tiver.;
+FEB_A06;FEB;6;UNICA;N;N;;;Há quantos dias começou a febre?;
+FEB_A07;FEB;7;UNICA;N;N;;;A febre durou alguns dias e baixou ou sumiu nos últimos 1 ou 2 dias?;
+FEB_A08;FEB;8;UNICA;S;N;;;Algum destes vale para você (ou para a pessoa que precisa de ajuda)? • Tem casos de dengue, chikungunya ou zika perto de você • Viajou nas últimas 2 semanas para um lugar com esses casos;
+FEB_A09;FEB;9;MULTI;N;N;;;Além da febre, você (ou a pessoa que precisa de ajuda) tem algum destes? Marque todos que tiver.;
+RES_07;FEB;10;UNICA;S;S;FLAG:resfriado;;Está com falta de ar, mesmo que leve, ou cansaço para respirar?;
+FEB_A10;FEB;11;MULTI;S;N;NAO_IDOSO;;Você (ou a pessoa que precisa de ajuda) tem alguma destas doenças ou situações? Marque todas que tiver.;
+FEB_A11;FEB;12;UNICA;S;N;;;Algum destes vale para você (ou para a pessoa que precisa de ajuda)? • Mora sozinho e está difícil beber líquidos • Se piorar, não tem como chegar a um posto ou UPA;
+FEB_AFIM;FEB;13;DECISAO;N;N;;;;
+GEN_01;GEN;1;UNICA;S;S;;;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Está confuso • Está muito sonolento • Está com a fala enrolada;
+GEN_02;GEN;2;UNICA;N;N;;;De 0 a 10, quanto incomoda agora?;
+GEN_03;GEN;3;UNICA;S;N;;;Algum destes é verdade sobre o que está acontecendo? • Começou de repente e forte • Está piorando rápido;
+GEN_04;GEN;4;UNICA;S;N;;;Tem febre ou calafrio?;
+GEN_05;GEN;5;UNICA;S;N;SEM_RISCO_NO_PERFIL;;Você (ou a pessoa que precisa de ajuda) tem diabetes, imunidade baixa (defesa do corpo fraca) ou outra doença que precisa de acompanhamento médico?;
+GEN_06;GEN;6;UNICA;N;N;;;Há quanto tempo começou?;
+GEN_FIM;GEN;7;DECISAO;N;N;;;;
+ORI_01;ORI;1;UNICA;N;S;;;Como isso começou?;Assim eu sei quais perguntas fazem sentido para você.
+LES_01;LES;1;UNICA;N;S;;;Como aconteceu?;
+LES_02;LES;2;MULTI;S;S;;;Agora, algum destes está acontecendo?;Marque todos que valem. Se nenhum, toque em Nenhum destes.
+LES_03;LES;3;MULTI;S;N;;;E algum destes?;Marque todos que valem. Se nenhum, toque em Nenhum destes.
+LES_04;LES;6;UNICA;N;N;NAO_HOJE;;Desde que machucou, como está?;
+LES_FIM;LES;7;DECISAO;N;N;;;;

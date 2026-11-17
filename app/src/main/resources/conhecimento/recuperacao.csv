@@ -1,0 +1,474 @@
+procedimento_id;fase;esperado_normal;sinal_alerta;destino_se_alerta;fonte_url
+PR-B1-001;dia_0_1;Dor no lugar quebrado e ao mexer o ombro ou o braço, inchaço e roxo em cima da clavícula. A tipoia segura o braço e evita movimentos que doem.;SA-B-003;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000529.htm
+PR-B1-001;dia_0_1;Dor no lugar quebrado e ao mexer o ombro ou o braço, inchaço e roxo em cima da clavícula. A tipoia segura o braço e evita movimentos que doem.;SA-B-018;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000529.htm
+PR-B1-001;dias_2_7;Roxo e inchaço em cima da clavícula, com dor ao mexer o ombro ou o braço.;SA-B-004;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000529.htm
+PR-B1-001;semanas_2_4;A tipoia vai sendo menos usada quando o braço já mexe sem dor e a equipe libera exercícios leves. A volta às atividades é aos poucos.;SA-G-046;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000529.htm
+PR-B1-001;meses_1_3;Criança costuma estar recuperada em 3 a 6 semanas e adulto pode levar até 12 semanas, sem esporte de contato até a liberação do profissional;SA-G-047;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000529.htm
+PR-B1-002;dia_0_1;Braço apoiado na tipoia depois que o ombro volta ao lugar.;SA-B-035;UPA_HOJE;https://www.nhs.uk/conditions/dislocated-shoulder/
+PR-B1-002;dia_0_1;Dor, inchaço e roxo na região do ombro por causa da lesão.;SA-B-003;SAMU_192;https://medlineplus.gov/ency/article/000014.htm
+PR-B1-002;dias_2_7;Roxo no ombro e no braço. Os tecidos em volta da articulação costumam levar de 6 a 12 semanas para sarar.;SA-B-004;UPA_HOJE;https://medlineplus.gov/ency/article/000014.htm
+PR-B1-002;semanas_2_4;Exercícios orientados pela fisioterapia para diminuir a dor e a rigidez e deixar os músculos do ombro mais fortes.;SA-B-035;UPA_HOJE;https://www.nhs.uk/conditions/dislocated-shoulder/
+PR-B1-002;meses_1_3;A recuperação costuma levar de 6 a 12 semanas e voltar a alguns esportes pode levar até 16 semanas ou mais.;SA-G-048;UBS_EM_BREVE;https://www.nhs.uk/conditions/dislocated-shoulder/
+PR-B1-002;depois_3_meses;;SA-G-049;UBS_EM_BREVE;https://medlineplus.gov/ency/article/000014.htm
+PR-B1-003;dia_0_1;Dor que pode ser forte, inchaço e roxo no ombro e no braço.;SA-B-003;SAMU_192;https://medlineplus.gov/ency/article/000001.htm
+PR-B1-003;dias_2_7;;SA-B-004;UPA_HOJE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-003;dias_2_7;;SA-G-050;UPA_HOJE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-003;semanas_2_4;A equipe orienta exercícios para ajudar na recuperação. Braço duro e fraco é comum e a fisioterapia ajuda.;SA-G-051;UPA_HOJE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-003;meses_1_3;Recuperação costuma levar de 6 a 12 semanas, e rigidez e fraqueza podem durar meses com melhora na fisioterapia;SA-G-052;UBS_EM_BREVE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-003;depois_3_meses;Rigidez leve pode continuar por alguns meses;SA-G-053;UBS_EM_BREVE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-004;dia_0_1;Criança volta a mexer o braço normalmente poucos minutos depois da manobra, sem gesso nem tipoia;SA-G-054;UPA_HOJE;https://library.sheffieldchildrens.nhs.uk/pulled-elbow/
+PR-B1-004;dia_0_1;;SA-B-021;SAMU_192;https://medlineplus.gov/ency/article/000001.htm
+PR-B1-004;dias_2_7;Braço normal e criança brincando como antes;SA-G-055;UPA_HOJE;https://library.sheffieldchildrens.nhs.uk/pulled-elbow/
+PR-B1-004;semanas_2_4;Braço normal, mas nessas semanas o cotovelo sai do lugar com mais facilidade, então a criança deve ser levantada pelas axilas e não pelas mãos;SA-B-036;UPA_HOJE;https://medlineplus.gov/ency/article/000983.htm
+PR-B1-004;depois_3_meses;Algumas crianças repetem o problema até uns 6 ou 7 anos e depois param;SA-G-056;UBS_EM_BREVE;https://library.sheffieldchildrens.nhs.uk/pulled-elbow/
+PR-B1-005;dia_0_1;Dor nos primeiros dias. Gelo ajuda, e ao descansar o membro fica parado e mais alto que o coração.;SA-B-042;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B1-005;dia_0_1;Dor nos primeiros dias. Gelo ajuda, e ao descansar o membro fica parado e mais alto que o coração.;SA-B-044;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B1-005;dias_2_7;Às vezes a tala é trocada por gesso alguns dias depois quando o inchaço baixa.;SA-B-045;UPA_HOJE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-005;dias_2_7;;SA-B-043;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B1-006;dia_0_1;Manter a mão mais alta que o cotovelo sempre que der usando um travesseiro à noite.;SA-B-042;UPA_HOJE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-006;dias_2_7;;SA-B-046;UPA_HOJE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-006;dias_2_7;O inchaço pode descer e deixar os dedos um pouco maiores, por isso não usar anéis nessa mão até liberar.;SA-B-048;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B1-006;semanas_2_4;;SA-B-045;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B1-006;meses_1_3;Depois de tirar o gesso o punho pode ficar duro e fraco e a recuperação costuma levar de 6 a 12 semanas.;SA-G-057;UBS_EM_BREVE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-006;depois_3_meses;Rigidez e fraqueza podem durar alguns meses, com melhora na fisioterapia;SA-G-058;UBS_EM_BREVE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-007;dia_0_1;Punho dolorido e inchado dentro da tala ou do gesso nas primeiras horas depois de alinhar o osso;SA-B-043;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B1-007;dia_0_1;Punho dolorido e inchado dentro da tala ou do gesso nas primeiras horas depois de alinhar o osso;SA-B-044;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B1-007;dias_2_7;Inchaço diminuindo aos poucos, com retorno marcado pela equipe para conferir o osso;SA-B-004;UPA_HOJE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-007;semanas_2_4;;SA-G-059;UPA_HOJE;https://www.nhs.uk/conditions/broken-arm-or-wrist/
+PR-B1-008;dia_0_1;;SA-B-003;SAMU_192;https://medlineplus.gov/ency/article/000001.htm
+PR-B1-008;dias_2_7;;SA-B-049;UPA_HOJE;https://medlineplus.gov/ency/article/007645.htm
+PR-B1-008;semanas_2_4;;SA-B-049;UPA_HOJE;https://medlineplus.gov/ency/article/007645.htm
+PR-B1-008;meses_1_3;Na mão a volta ao trabalho e ao esporte costuma levar de 8 a 12 semanas com liberação do profissional. Às vezes precisa de fisioterapia depois de tirar a tala ou o gesso.;SA-G-060;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000552.htm
+PR-B1-009;dia_0_1;Dor e inchaço no lugar da cirurgia, com a mão mais alta que o coração;SA-B-042;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000552.htm
+PR-B1-009;dias_2_7;;SA-B-049;UPA_HOJE;https://medlineplus.gov/ency/article/007645.htm
+PR-B1-009;meses_1_3;Às vezes precisa de fisioterapia depois de tirar a tala ou o gesso, e a volta ao trabalho e ao esporte costuma levar de 8 a 12 semanas.;SA-G-061;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000552.htm
+PR-B1-010;dia_0_1;Dor e inchaço na mão, com gelo enrolado em pano e a mão mais alta que o coração.;SA-B-042;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000552.htm
+PR-B1-010;dias_2_7;Dor e inchaço por cerca de 1 a 2 semanas, diminuindo aos poucos;SA-G-062;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000552.htm
+PR-B1-010;semanas_2_4;Tala em geral por cerca de 3 semanas e consulta de retorno de 1 a 3 semanas depois do machucado;SA-B-045;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000552.htm
+PR-B1-010;meses_1_3;A junta pode ficar com aparência diferente e o dedo pode se mexer um pouco diferente ao fechar a mão;SA-G-063;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000552.htm
+PR-B1-011;dia_0_1;Dor, inchaço e roxo no dedo, que aliviam com a mão elevada e gelo enrolado em pano;SA-B-003;SAMU_192;https://www.nhs.uk/conditions/broken-finger/
+PR-B1-011;dias_2_7;Dor e inchaço diminuindo aos poucos com o dedo parado;SA-G-064;UBS_EM_BREVE;https://www.nhs.uk/conditions/broken-finger/
+PR-B1-011;meses_1_3;O dedo costuma colar em 6 a 8 semanas, mas a força da mão pode levar 3 a 4 meses para voltar;SA-G-065;UBS_EM_BREVE;https://www.nhs.uk/conditions/broken-finger/
+PR-B1-011;depois_3_meses;A força total da mão pode levar de 3 a 4 meses para voltar.;SA-G-066;UBS_EM_BREVE;https://www.nhs.uk/conditions/broken-finger/
+PR-B1-012;dia_0_1;Ponta do dedo reta dentro da tala, com a junta do meio livre para dobrar;SA-G-067;UBS_EM_BREVE;https://www.nhs.uk/conditions/mallet-finger/
+PR-B1-012;dias_2_7;Dor e inchaço na ponta do dedo, com limpeza diária do dedo e da tala mantendo a ponta sempre reta;SA-G-068;UBS_EM_BREVE;https://www.nhs.uk/conditions/mallet-finger/
+PR-B1-012;semanas_2_4;Tala o tempo todo, tirando só para limpar, e dedo ainda sensível;SA-G-069;UBS_EM_BREVE;https://www.nhs.uk/conditions/mallet-finger/
+PR-B1-012;meses_1_3;Tala por até cerca de 8 semanas e depois exercícios para a mão, com sensibilidade, inchaço e vermelhidão comuns nos primeiros meses;SA-G-070;UBS_EM_BREVE;https://www.nhs.uk/conditions/mallet-finger/
+PR-B1-012;depois_3_meses;A recuperação completa pode levar vários meses;SA-G-071;UPA_HOJE;https://www.nhs.uk/conditions/mallet-finger/
+PR-B1-013;dia_0_1;Dor forte no peito principalmente ao respirar fundo ou tossir. Gelo enrolado em pano nos primeiros dias ajuda a baixar o inchaço e dormir mais sentado nas primeiras noites ajuda.;SA-B-009;SAMU_192;https://www.nhs.uk/conditions/broken-or-bruised-ribs/
+PR-B1-013;dia_0_1;Dor forte no peito principalmente ao respirar fundo ou tossir. Gelo enrolado em pano nos primeiros dias ajuda a baixar o inchaço e dormir mais sentado nas primeiras noites ajuda.;SA-B-010;SAMU_192;https://www.nhs.uk/conditions/broken-or-bruised-ribs/
+PR-B1-013;dia_0_1;Dor forte no peito principalmente ao respirar fundo ou tossir. Gelo enrolado em pano nos primeiros dias ajuda a baixar o inchaço e dormir mais sentado nas primeiras noites ajuda.;SA-G-072;SAMU_192;https://www.nhs.uk/conditions/broken-or-bruised-ribs/
+PR-B1-013;dias_2_7;Dor ainda forte, mas controlada o bastante para respirar fundo e tossir segurando um travesseiro no peito;SA-G-073;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000539.htm
+PR-B1-013;dias_2_7;Ainda dói mas é importante respirar fundo devagar de tempos em tempos e tossir quando precisar segurando um travesseiro contra o peito.;SA-B-013;UPA_HOJE;https://www.nhs.uk/conditions/broken-or-bruised-ribs/
+PR-B1-013;semanas_2_4;Dor diminuindo aos poucos, e a maioria melhora entre 2 e 6 semanas;SA-G-074;UPA_HOJE;https://www.nhs.uk/conditions/broken-or-bruised-ribs/
+PR-B1-013;meses_1_3;A costela leva pelo menos 6 semanas para colar, com volta gradual a esforço quando a equipe liberar;SA-B-009;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000539.htm
+PR-B1-014;dia_0_1;;SA-B-015;SAMU_192;https://medlineplus.gov/ency/article/007425.htm
+PR-B1-014;dia_0_1;;SA-A-030;SAMU_192;https://medlineplus.gov/ency/article/007425.htm
+PR-B1-014;dias_2_7;;SA-G-075;UPA_HOJE;https://medlineplus.gov/ency/article/007425.htm
+PR-B1-014;semanas_2_4;;SA-G-076;UPA_HOJE;https://medlineplus.gov/ency/article/007425.htm
+PR-B1-014;meses_1_3;Tratamento dos ossos fracos combinado com o médico. Muitas pessoas conseguem manter a maioria das atividades de costume;SA-G-077;UBS_EM_BREVE;https://www.nhs.uk/conditions/osteoporosis/
+PR-B1-014;depois_3_meses;Prevenção de quedas e exercícios de força e equilíbrio continuam importantes;SA-C-046;SAMU_192;https://www.nhs.uk/conditions/osteoporosis/
+PR-B1-015;dia_0_1;Nariz dolorido e inchado depois da manobra, e dormir com a cabeça mais alta ajuda;SA-D3-029;SAMU_192;https://www.nhs.uk/conditions/broken-nose/
+PR-B1-015;dias_2_7;Roxo em volta dos olhos e inchaço começando a diminuir, sem assoar nem mexer no nariz;SA-G-078;UPA_HOJE;https://www.nhs.uk/conditions/broken-nose/
+PR-B1-015;dias_2_7;Roxo em volta dos olhos e inchaço começando a diminuir, sem assoar nem mexer no nariz;SA-G-079;SAMU_192;https://www.nhs.uk/conditions/broken-nose/
+PR-B1-015;semanas_2_4;Sem exercício pesado nas primeiras 2 semanas. O nariz costuma estar curado em cerca de 3 semanas.;SA-G-080;UPA_HOJE;https://www.nhs.uk/conditions/broken-nose/
+PR-B1-015;meses_1_3;Nariz recuperado, evitando esportes com risco de pancada no rosto por pelo menos 6 semanas;SA-D3-031;UPA_HOJE;https://www.nhs.uk/conditions/broken-nose/
+PR-B1-016;dia_0_1;Dente recolocado e preso aos dentes do lado por uma contenção.;SA-D3-038;SAMU_192;https://www.nhs.uk/conditions/knocked-out-tooth/
+PR-B1-016;dias_2_7;Contenção ainda no lugar, segurando o dente recolocado.;SA-D3-037;UPA_HOJE;https://www.nhs.uk/conditions/knocked-out-tooth/
+PR-B1-016;semanas_2_4;Retorno depois de algumas semanas para tirar a contenção e muitas vezes fazer tratamento de canal;SA-G-081;UPA_HOJE;https://www.nhs.uk/conditions/knocked-out-tooth/
+PR-B1-017;dia_0_1;Dentes presos com fios ou elásticos, rosto inchado e alimentação só líquida ou bem mole;SA-G-082;SAMU_192;https://medlineplus.gov/ency/article/000019.htm
+PR-B1-017;dia_0_1;Dentes presos com fios ou elásticos, rosto inchado e alimentação só líquida ou bem mole;SA-G-083;UPA_HOJE;https://medlineplus.gov/ency/article/000019.htm
+PR-B1-017;dias_2_7;;SA-B-049;UPA_HOJE;https://medlineplus.gov/ency/article/007645.htm
+PR-B1-017;semanas_2_4;Parte dos elásticos pode ser retirada depois de algumas semanas, e os fios costumam ficar cerca de 6 a 8 semanas;SA-G-084;UBS_EM_BREVE;https://medlineplus.gov/ency/article/000019.htm
+PR-B1-018;dia_0_1;Mandíbula de volta ao lugar, dolorida, às vezes com uma faixa segurando;SA-G-085;UPA_HOJE;https://medlineplus.gov/ency/article/000019.htm
+PR-B1-018;meses_1_3;Evitar abrir muito a boca por pelo menos 6 semanas e segurar o queixo com a mão ao bocejar ou espirrar;SA-G-086;UPA_HOJE;https://medlineplus.gov/ency/article/000019.htm
+PR-B1-019;dias_2_7;;SA-A-030;SAMU_192;https://medlineplus.gov/ency/article/007425.htm
+PR-B1-019;semanas_2_4;A dor pode melhorar em algumas semanas, mas às vezes demora mais;SA-G-087;UPA_HOJE;https://www.nhs.uk/conditions/tailbone-coccyx-pain/
+PR-B1-019;meses_1_3;A dor às vezes dura mais que algumas semanas e costuma piorar ao ficar sentado;SA-G-088;UBS_EM_BREVE;https://www.nhs.uk/conditions/tailbone-coccyx-pain/
+PR-B2-001;dia_0_1;Dor e inchaço no tornozelo que aliviam com o pé elevado acima do joelho e gelo enrolado em pano;SA-B-003;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000548.htm
+PR-B2-001;dias_2_7;;SA-B-042;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000548.htm
+PR-B2-001;semanas_2_4;;SA-B-047;UPA_HOJE;https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/
+PR-B2-001;semanas_2_4;;SA-B-048;SAMU_192;https://www.nhs.uk/conditions/pulmonary-embolism/
+PR-B2-001;meses_1_3;Ao voltar a andar o pé pode ficar duro e os músculos mais fracos e finos, melhorando com exercícios.;SA-G-089;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000548.htm
+PR-B2-002;dia_0_1;Dor nos primeiros dias e algum inchaço. Gelo ajuda, e ao descansar a perna fica mais alta que o coração.;SA-B-044;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B2-002;dia_0_1;O inchaço pode descer e deixar os dedos do pé um pouco maiores.;SA-B-043;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B2-002;dias_2_7;;SA-B-042;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B2-002;semanas_2_4;;SA-B-045;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B2-002;semanas_2_4;;SA-B-046;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B2-002;semanas_2_4;;SA-B-047;UPA_HOJE;https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/
+PR-B2-002;meses_1_3;;SA-B-048;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000522.htm
+PR-B2-003;dia_0_1;Leva um tempo para se acostumar com o movimento das muletas nos primeiros passos.;SA-G-090;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000344.htm
+PR-B2-003;dias_2_7;;SA-G-091;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000344.htm
+PR-B2-003;semanas_2_4;;SA-B-047;UPA_HOJE;https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/
+PR-B2-004;dia_0_1;;SA-G-005;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000166.htm
+PR-B2-004;dias_2_7;;SA-G-002;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000166.htm
+PR-B2-004;dias_2_7;;SA-G-092;SAMU_192;https://www.ncbi.nlm.nih.gov/sites/books/NBK499885/
+PR-B2-004;semanas_2_4;Por um tempo pode não poder apoiar o peso todo, parte ou nenhum na perna, usando bengala, muletas ou andador do jeito ensinado.;SA-B-047;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000166.htm
+PR-B2-004;semanas_2_4;;SA-B-048;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000166.htm
+PR-B2-004;meses_1_3;A recuperação costuma levar de 4 a 6 meses, fazendo os exercícios ensinados para ganhar força e flexibilidade.;SA-G-093;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000166.htm
+PR-B2-004;depois_3_meses;A recuperação total costuma levar de quatro a seis meses e a haste em geral fica no osso;SA-B-049;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000166.htm
+PR-B2-005;dia_0_1;;SA-B-040;SAMU_192;https://www.ncbi.nlm.nih.gov/sites/books/NBK537173/
+PR-B2-005;dia_0_1;;SA-G-094;SAMU_192;https://www.ncbi.nlm.nih.gov/sites/books/NBK499885/
+PR-B2-005;dias_2_7;;SA-G-002;UPA_HOJE;https://www.ncbi.nlm.nih.gov/sites/books/NBK537173/
+PR-B2-005;semanas_2_4;;SA-B-047;UPA_HOJE;https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/
+PR-B2-005;depois_3_meses;A recuperação costuma ser lenta e levar de 6 a 12 meses. Dor na frente do joelho é a queixa mais comum a longo prazo depois da haste.;SA-G-095;UBS_EM_BREVE;https://www.ncbi.nlm.nih.gov/sites/books/NBK537173/
+PR-B2-006;dia_0_1;Dor e inchaço no tornozelo que aliviam com o pé elevado acima do joelho;SA-B-003;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000548.htm
+PR-B2-006;dias_2_7;;SA-B-042;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000548.htm
+PR-B2-006;semanas_2_4;Ainda sem apoiar o pé até a liberação, que costuma levar pelo menos 6 a 10 semanas.;SA-B-049;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000548.htm
+PR-B2-006;semanas_2_4;;SA-B-048;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000548.htm
+PR-B2-006;meses_1_3;Perna mais fina e fraca e pé duro ao voltar a andar, melhorando com exercícios;SA-G-096;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000548.htm
+PR-B2-007;dia_0_1;;SA-D2-105;SAMU_192;https://www.nhs.uk/conditions/confusion/
+PR-B2-007;dias_2_7;Roxo e leve vermelhidão em volta do corte;SA-G-002;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000168.htm
+PR-B2-007;dias_2_7;Usar assento de vaso mais alto nas primeiras semanas.;SA-D2-045;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000168.htm
+PR-B2-007;semanas_2_4;Anda com muletas ou andador.;SA-B-047;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000168.htm
+PR-B2-007;semanas_2_4;;SA-B-048;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000168.htm
+PR-B2-007;semanas_2_4;Roxo em volta do corte, que vai sumindo.;SA-I-005;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000168.htm
+PR-B2-007;meses_1_3;Troca o andador pela bengala quando a equipe libera;SA-A-012;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000168.htm
+PR-B2-008;dia_0_1;Dor no quadril operado e primeiros passos com andador logo depois da cirurgia;SA-G-006;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000168.htm
+PR-B2-008;dias_2_7;Roxo em volta do corte que some sozinho e leve vermelhidão na pele perto do corte.;SA-G-025;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000169.htm
+PR-B2-008;semanas_2_4;Usa andador ou muletas até o cirurgião e o fisioterapeuta liberarem. Levantar e andar ajuda a evitar problemas.;SA-G-026;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000168.htm
+PR-B2-008;meses_1_3;Depois de alguns dias faz tarefas simples de casa, sem tarefas pesadas e sem sentar em cadeira baixa ou sofá mole.;SA-G-025;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000169.htm
+PR-B2-009;dia_0_1;Levanta e dá os primeiros passos com andador ou muletas logo depois da cirurgia;SA-G-005;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000169.htm
+PR-B2-009;dias_2_7;Roxo em volta do corte que some sozinho e leve vermelhidão na pele perto do corte.;SA-B-047;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000169.htm
+PR-B2-009;dias_2_7;Precisa de alguém em casa por uma ou duas semanas para ajudar no banho, na comida e para se locomover;SA-G-006;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000169.htm
+PR-B2-009;semanas_2_4;Pontos retirados perto de dez a catorze dias e muitos deixam as muletas nessa fase com liberação;SA-G-025;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000169.htm
+PR-B2-009;meses_1_3;Volta aos poucos às atividades leves e caminhadas;SA-G-026;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000169.htm
+PR-B2-009;depois_3_meses;Com o tempo volta a muitas atividades, com cuidado maior para o quadril não sair do lugar nos primeiros meses.;SA-G-097;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000169.htm
+PR-B2-010;dia_0_1;Joelho inchado e dolorido que melhora com gelo e perna elevada;SA-B-038;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000585.htm
+PR-B2-010;dias_2_7;;SA-B-047;UPA_HOJE;https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/
+PR-B2-010;semanas_2_4;Começa exercícios de força para coxa e quadril e o joelho vai ganhando movimento;SA-C-019;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000585.htm
+PR-B2-010;meses_1_3;A maioria costuma voltar às atividades em 6 a 8 semanas. Antes de voltar ao esporte a perna machucada deve estar tão forte quanto a outra e o joelho deve dobrar e esticar sem dor.;SA-C-018;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000585.htm
+PR-B2-011;dia_0_1;Dor e inchaço no joelho que melhoram com gelo e perna elevada;SA-G-098;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000582.htm
+PR-B2-011;dias_2_7;Joelho ainda inchado e dolorido dentro do imobilizador, aliviando com gelo e perna elevada. Com a liberação da equipe já dá para começar a levantar a perna esticada e mexer o tornozelo.;SA-G-003;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000582.htm
+PR-B2-011;semanas_2_4;;SA-B-047;UPA_HOJE;https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/
+PR-B2-011;meses_1_3;Quando o imobilizador sai ou é afrouxado começam exercícios para mexer e fortalecer o joelho. A volta ao esporte costuma levar de 4 a 6 meses e só com liberação.;SA-G-099;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000582.htm
+PR-B2-012;dia_0_1;;SA-B-040;SAMU_192;https://www.nhs.uk/conditions/compartment-syndrome/
+PR-B2-012;dias_2_7;;SA-G-100;UPA_HOJE;https://www.ncbi.nlm.nih.gov/sites/books/NBK493169/
+PR-B2-012;semanas_2_4;;SA-B-047;UPA_HOJE;https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/
+PR-B2-012;meses_1_3;O fixador pode ficar de dois a quatro meses e o apoio só começa quando o osso forma calo;SA-G-101;UPA_HOJE;https://www.ncbi.nlm.nih.gov/sites/books/NBK470593/
+PR-B2-013;dia_0_1;Dor e inchaço no dedo que aliviam com o pé elevado e gelo enrolado em pano;SA-B-004;UPA_HOJE;https://www.nhs.uk/conditions/broken-toe/
+PR-B2-013;dias_2_7;Dor e inchaço começam a melhorar em uns cinco dias;SA-G-102;UBS_EM_BREVE;https://www.nhs.uk/conditions/broken-toe/
+PR-B2-013;semanas_2_4;Esparadrapo por duas a três semanas e sapato largo de sola firme;SA-D3-046;UPA_HOJE;https://www.nhs.uk/conditions/broken-toe/
+PR-B2-013;meses_1_3;O dedo costuma colar em quatro a seis semanas;SA-G-103;UBS_EM_BREVE;https://www.nhs.uk/conditions/broken-toe/
+PR-G1-001;dia_0_1;;SA-G-015;SAMU_192;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-001;dias_2_7;;SA-G-016;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-001;dias_2_7;;SA-G-017;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-001;dias_2_7;;SA-G-018|SA-D2-009;SAMU_192;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-001;semanas_2_4;;SA-G-006;SAMU_192;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-001;semanas_2_4;;SA-G-007;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-001;semanas_2_4;;SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-001;meses_1_3;Cortar a comida em pedaços pequenos e mastigar bem, para a comida não entalar;SA-G-011;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-001;meses_1_3;Cortar a comida em pedaços pequenos e mastigar bem, para a comida não entalar;SA-G-104;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-001;meses_1_3;Comer em porções pequenas, mastigando bem a comida até virar uma pasta e parando assim que se sentir satisfeito.;SA-G-019;CUIDADO_EM_CASA;https://guysandstthomas.nhs.uk/health-information/diet-after-weight-loss-surgery/managing-possible-side-effects
+PR-G1-001;depois_3_meses;Volta aos poucos a uma alimentação equilibrada, comendo pouco de cada vez, com vitaminas e exames de sangue de rotina nas consultas de acompanhamento;SA-G-105;UBS_EM_BREVE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/recovering/
+PR-G1-001;depois_3_meses;;SA-D2-030;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-002;dia_0_1;;SA-G-015;SAMU_192;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-002;dias_2_7;;SA-G-016;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-002;dias_2_7;No começo depois da cirurgia a alimentação é só líquida e depois passa aos poucos para pastosa e macia conforme a equipe orientar.;SA-G-017;UPA_HOJE;https://www.hey.nhs.uk/wp/wp-content/uploads/2020/05/HEY1118-2020-Post-Discharge-Bariatric.pdf
+PR-G1-002;semanas_2_4;;SA-G-006;SAMU_192;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-002;meses_1_3;Cortar a comida em pedaços pequenos e mastigar bem, para a comida não entalar;SA-G-106;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-002;depois_3_meses;Vitaminas e exames de sangue de rotina nas consultas de acompanhamento;SA-G-107;UBS_EM_BREVE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/recovering/
+PR-G1-003;dia_0_1;;SA-G-015;SAMU_192;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-003;dias_2_7;;SA-G-017;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-003;semanas_2_4;;SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-003;meses_1_3;Mastigar bem a comida, cortada em pedaços pequenos;SA-G-108;UBS_EM_BREVE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-003;depois_3_meses;;SA-G-108;UBS_EM_BREVE;https://www.nhs.uk/tests-and-treatments/weight-loss-surgery/complications/
+PR-G1-004;dia_0_1;Algum incômodo no corte que pode durar alguns dias, cabeça meio pesada pela anestesia nas primeiras 24 horas e um adulto junto nas primeiras 24 horas em casa;SA-G-008;UPA_HOJE;https://www.uhsussex.nhs.uk/resources/adult-day-surgery-discharge-information/
+PR-G1-004;dias_2_7;;SA-D2-028;UPA_HOJE;https://www.nhs.uk/conditions/gallbladder-removal/risks/
+PR-G1-004;dias_2_7;;SA-G-005;UPA_HOJE;https://www.nhs.uk/conditions/gallbladder-removal/risks/
+PR-G1-004;dias_2_7;;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/gallbladder-removal/risks/
+PR-G1-004;semanas_2_4;;SA-G-007;UPA_HOJE;https://www.nhs.uk/conditions/gallbladder-removal/risks/
+PR-G1-004;semanas_2_4;;SA-G-006;SAMU_192;https://www.nhs.uk/conditions/gallbladder-removal/risks/
+PR-G1-004;meses_1_3;Enjoo, má digestão ou diarreia podem acontecer depois de tirar a vesícula e costumam melhorar logo após a cirurgia. Se continuarem, não é o esperado e vale procurar a UBS.;SA-G-109;UBS_EM_BREVE;https://www.nhs.uk/conditions/gallbladder-removal/risks/
+PR-G1-005;dia_0_1;Dor na barriga e nos cortes, com alta no dia seguinte por vídeo quando já come, bebe e evacua, ou alguns dias se foi aberta;SA-G-110;SAMU_192;https://www.nhs.uk/conditions/appendicitis/treatment/
+PR-G1-005;dias_2_7;Alguma dor na barriga e em volta dos cortes. Os cortes são pequenos e os pontos costumam se dissolver sozinhos. Intestino preso ou solto por alguns dias.;SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/appendicitis/treatment/
+PR-G1-005;dias_2_7;Alguma dor na barriga e em volta dos cortes. Os cortes são pequenos e os pontos costumam se dissolver sozinhos. Intestino preso ou solto por alguns dias.;SA-G-001;UPA_HOJE;https://www.nhs.uk/conditions/appendicitis/treatment/
+PR-G1-005;dias_2_7;Alguma dor na barriga e em volta dos cortes. Os cortes são pequenos e os pontos costumam se dissolver sozinhos. Intestino preso ou solto por alguns dias.;SA-G-111;SAMU_192;https://www.nhs.uk/conditions/appendicitis/treatment/
+PR-G1-005;semanas_2_4;A maioria se recupera em 1 a 2 semanas, evitando esporte e esforço até melhorar de vez;SA-D2-004;UPA_HOJE;https://www.nhs.uk/conditions/appendicitis/treatment/
+PR-G1-005;meses_1_3;A maioria costuma se recuperar em 1 a 2 semanas e voltar às atividades normais.;SA-G-011;UPA_HOJE;https://www.nhs.uk/conditions/appendicitis/treatment/
+PR-G1-006;dia_0_1;Vai para casa no mesmo dia, com um pouco de sangue no curativo e dor no corte;SA-G-008;UPA_HOJE;https://www.nhs.uk/conditions/inguinal-hernia-repair/recovery/
+PR-G1-006;dia_0_1;Vai para casa no mesmo dia, com um pouco de sangue no curativo e dor no corte;SA-G-112;UPA_HOJE;https://www.nhs.uk/conditions/inguinal-hernia-repair/recovery/
+PR-G1-006;dias_2_7;Dor no corte que diminui, roxo e inchaço no corte e na região genital e, se foi por vídeo, barriga estufada e dor no ombro por 1 ou 2 dias;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/inguinal-hernia-repair/recovery/
+PR-G1-006;dias_2_7;Dor no corte que diminui, roxo e inchaço no corte e na região genital e, se foi por vídeo, barriga estufada e dor no ombro por 1 ou 2 dias;SA-G-113;UPA_HOJE;https://www.nhs.uk/conditions/inguinal-hernia-repair/recovery/
+PR-G1-006;semanas_2_4;Roxo sumindo em umas duas semanas, dormência abaixo do corte e caminhadas leves aumentando aos poucos;SA-G-007;UPA_HOJE;https://www.nhs.uk/conditions/inguinal-hernia-repair/recovery/
+PR-G1-006;semanas_2_4;Roxo sumindo em umas duas semanas, dormência abaixo do corte e caminhadas leves aumentando aos poucos;SA-G-006;SAMU_192;https://www.nhs.uk/conditions/inguinal-hernia-repair/recovery/
+PR-G1-006;meses_1_3;Recuperação completa em 4 a 6 semanas, ainda evitando pegar peso;SA-G-114;UBS_EM_BREVE;https://www.nhs.uk/conditions/inguinal-hernia-repair/recovery/
+PR-G1-006;depois_3_meses;Vida normal, e um pedacinho de pele pode continuar dormente;SA-G-115;UBS_EM_BREVE;https://www.nhs.uk/conditions/inguinal-hernia-repair/recovery/
+PR-G1-006;depois_3_meses;Na maioria das vezes o resultado é bom e é raro a hérnia voltar.;SA-D2-025;UPA_HOJE;https://medlineplus.gov/ency/article/000960.htm
+PR-G1-007;dia_0_1;Dor e curativo no umbigo, geralmente com alta no mesmo dia;SA-G-008;UPA_HOJE;https://www.uhsussex.nhs.uk/resources/adult-day-surgery-discharge-information/
+PR-G1-007;dias_2_7;Algum incômodo no corte que costuma durar alguns dias;SA-G-001|SA-G-002;UPA_HOJE;https://www.uhsussex.nhs.uk/resources/adult-day-surgery-discharge-information/
+PR-G1-007;semanas_2_4;Afastamento do trabalho costuma ser de pelo menos 1 a 2 semanas, e mais tempo se o trabalho exige pegar peso;SA-G-007;UPA_HOJE;https://www.nhs.uk/conditions/umbilical-hernia-repair/
+PR-G1-007;meses_1_3;Recuperação completa em 4 a 6 semanas;SA-G-116;UBS_EM_BREVE;https://www.nhs.uk/conditions/umbilical-hernia-repair/
+PR-G1-007;depois_3_meses;A recuperação completa costuma já ter acontecido;SA-D2-026;SAMU_192;https://www.nhs.uk/conditions/umbilical-hernia-repair/
+PR-G1-008;dia_0_1;Alta no mesmo dia ou no dia seguinte;SA-D2-009;SAMU_192;https://www.nhs.uk/conditions/piles-haemorrhoids/
+PR-G1-008;dia_0_1;Algum incômodo que pode durar alguns dias e um pouco de sangramento que costuma parar em poucos dias;SA-G-009;UPA_HOJE;https://www.uhsussex.nhs.uk/resources/adult-day-surgery-discharge-information/
+PR-G1-008;dias_2_7;Manter as fezes macias com bastante líquido e fibra, sem fazer força, e banho morno para aliviar a dor;SA-G-117;SAMU_192;https://www.nhs.uk/conditions/piles-haemorrhoids/
+PR-G1-008;dias_2_7;Manter as fezes macias com bastante líquido e fibra, sem fazer força, e banho morno para aliviar a dor;SA-G-001;UPA_HOJE;https://www.nhs.uk/conditions/piles-haemorrhoids/
+PR-G1-008;dias_2_7;Manter as fezes macias com bastante líquido e fibra, sem fazer força, e banho morno para aliviar a dor;SA-G-118;UPA_HOJE;https://www.nhs.uk/conditions/piles-haemorrhoids/
+PR-G1-008;semanas_2_4;Intestino funcionando com bastante líquido e fibra, sem fazer força;SA-D2-009;SAMU_192;https://www.nhs.uk/conditions/piles-haemorrhoids/
+PR-G1-009;dias_2_7;;SA-G-119;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/colostomy/complications-of-a-colostomy/
+PR-G1-009;dias_2_7;;SA-G-001;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/colostomy/complications-of-a-colostomy/
+PR-G1-009;dias_2_7;;SA-G-120;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/colostomy/complications-of-a-colostomy/
+PR-G1-009;semanas_2_4;;SA-G-121;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/colostomy/complications-of-a-colostomy/
+PR-G1-009;semanas_2_4;;SA-D2-012;SAMU_192;https://www.nhs.uk/tests-and-treatments/colostomy/complications-of-a-colostomy/
+PR-G1-009;meses_1_3;;SA-G-122;UBS_EM_BREVE;https://www.nhs.uk/tests-and-treatments/colostomy/complications-of-a-colostomy/
+PR-G1-009;depois_3_meses;Contato com a enfermagem de estomia para ajustar a bolsinha e cuidar da pele em volta do estoma;SA-G-123;UBS_EM_BREVE;https://www.nhs.uk/tests-and-treatments/colostomy/complications-of-a-colostomy/
+PR-G1-010;dia_0_1;;SA-D2-066;SAMU_192;https://www.cdc.gov/hearher/maternal-warning-signs/index.html
+PR-G1-010;dias_2_7;A alta costuma ser em 1 ou 2 dias. Algum sangramento pela vagina e desconforto no corte nos primeiros dias que em algumas mulheres pode durar semanas.;SA-G-022;UPA_HOJE;https://www.nhs.uk/conditions/caesarean-section/recovery/
+PR-G1-010;dias_2_7;Sangramento pela vagina que vai clareando aos poucos de vermelho para rosado e depois amarelado ou esbranquiçado. Dor no corte que costuma diminuir depois de 2 ou 3 dias com o corte ainda sensível por algumas semanas.;SA-G-021;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000624.htm
+PR-G1-010;dias_2_7;Sangramento pela vagina que vai clareando aos poucos de vermelho para rosado e depois amarelado ou esbranquiçado. Dor no corte que costuma diminuir depois de 2 ou 3 dias com o corte ainda sensível por algumas semanas.;SA-G-023;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000624.htm
+PR-G1-010;dias_2_7;A alta costuma ser em 1 ou 2 dias. Algum sangramento pela vagina e desconforto no corte nos primeiros dias que em algumas mulheres pode durar semanas.;SA-G-124;UPA_HOJE;https://www.nhs.uk/conditions/caesarean-section/recovery/
+PR-G1-010;semanas_2_4;Em algumas mulheres a dor no corte pode durar várias semanas.;SA-G-007|SA-D2-064;UPA_HOJE;https://www.nhs.uk/conditions/caesarean-section/recovery/
+PR-G1-010;semanas_2_4;Em algumas mulheres a dor no corte pode durar várias semanas.;SA-G-006;SAMU_192;https://www.nhs.uk/conditions/caesarean-section/recovery/
+PR-G1-010;semanas_2_4;;SA-D2-070;UBS_EM_BREVE;https://www.nhs.uk/conditions/post-natal-depression/
+PR-G1-010;meses_1_3;Consulta de pós-parto até cerca de 30 dias depois do parto e dor na região da cirurgia que tende a diminuir aos poucos. Não existe um tempo certo para voltar a ter relações e dor não deve ser ignorada.;SA-D2-069;SAMU_192;https://www.gov.br/saude/pt-br/composicao/saps/publicacoes/cadernetas-e-cartoes/caderneta-brasileira-da-gestante.pdf
+PR-G1-011;dia_0_1;;SA-D2-066;SAMU_192;https://www.cdc.gov/hearher/maternal-warning-signs/index.html
+PR-G1-011;dias_2_7;Dor nos pontos, que pode aliviar com gelo envolto em pano. Depois do banheiro, jogar água morna na região para limpar;SA-D2-068;UPA_HOJE;https://www.nhs.uk/pregnancy/labour-and-birth/what-happens/episiotomy-and-perineal-tears/
+PR-G1-011;dias_2_7;Dor nos pontos, que pode aliviar com gelo envolto em pano. Depois do banheiro, jogar água morna na região para limpar;SA-D2-065;UPA_HOJE;https://www.nhs.uk/pregnancy/labour-and-birth/what-happens/episiotomy-and-perineal-tears/
+PR-G1-011;dias_2_7;Dor ou desconforto nos pontos que tende a diminuir aos poucos e sangramento pela vagina que vai diminuindo com o tempo. Cuidar da higiene íntima ajuda na cicatrização.;SA-D2-067;UPA_HOJE;https://www.gov.br/saude/pt-br/composicao/saps/publicacoes/cadernetas-e-cartoes/caderneta-brasileira-da-gestante.pdf
+PR-G1-011;semanas_2_4;Dor que costuma melhorar em 2 a 3 semanas e pontos que cicatrizam em cerca de um mês sem precisar tirar;SA-G-125;UBS_EM_BREVE;https://www.nhs.uk/pregnancy/labour-and-birth/what-happens/episiotomy-and-perineal-tears/
+PR-G1-011;semanas_2_4;;SA-D2-064;UPA_HOJE;https://www.cdc.gov/hearher/maternal-warning-signs/index.html
+PR-G1-011;semanas_2_4;;SA-D2-070;UBS_EM_BREVE;https://www.nhs.uk/conditions/post-natal-depression/
+PR-G1-011;meses_1_3;Dor na relação é comum nos primeiros meses e a consulta de pós-parto é uma boa hora para falar disso;SA-G-126;UBS_EM_BREVE;https://www.nhs.uk/pregnancy/labour-and-birth/what-happens/episiotomy-and-perineal-tears/
+PR-G1-011;meses_1_3;A consulta de pós-parto é uma boa hora para falar com o médico sobre qualquer problema físico ou emocional desde o parto.;SA-G-127;UBS_EM_BREVE;https://www.nhs.uk/baby/support-and-services/your-post-pregnancy-body/
+PR-G1-012;dia_0_1;Dor e cansaço, sonda no xixi e às vezes dreno por 1 a 2 dias, e uma caminhada curta já no primeiro dia;SA-G-009;UPA_HOJE;https://www.nhs.uk/conditions/hysterectomy/recovery/
+PR-G1-012;dias_2_7;Alta em 1 a 5 dias, sangramento ou corrimento pela vagina mais fraco que menstruação e intestino preso;SA-G-128;UPA_HOJE;https://www.nhs.uk/conditions/hysterectomy/recovery/
+PR-G1-012;dias_2_7;Alta em 1 a 5 dias, sangramento ou corrimento pela vagina mais fraco que menstruação e intestino preso;SA-G-129;UPA_HOJE;https://www.nhs.uk/conditions/hysterectomy/recovery/
+PR-G1-012;dias_2_7;Alta em 1 a 5 dias, sangramento ou corrimento pela vagina mais fraco que menstruação e intestino preso;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/hysterectomy/recovery/
+PR-G1-012;semanas_2_4;Cansaço, desconforto e corrimento leve que pode durar até 6 semanas, com caminhadas e sem pegar peso;SA-D2-035;UBS_EM_BREVE;https://www.nhs.uk/conditions/hysterectomy/recovery/
+PR-G1-012;semanas_2_4;Cansaço maior que o normal, mantendo o corpo em movimento com caminhadas.;SA-G-007;UPA_HOJE;https://www.nhs.uk/conditions/hysterectomy/recovery/
+PR-G1-012;semanas_2_4;Cansaço maior que o normal, mantendo o corpo em movimento com caminhadas.;SA-G-006;SAMU_192;https://www.nhs.uk/conditions/hysterectomy/recovery/
+PR-G1-012;meses_1_3;Recuperação completa em 6 a 8 semanas na cirurgia pela barriga e menos por vídeo ou pela vagina, e calorões se os ovários foram retirados;SA-G-130;UBS_EM_BREVE;https://www.nhs.uk/conditions/hysterectomy/recovery/
+PR-G1-013;dia_0_1;Vai para casa no mesmo dia com alguém junto, sensível e com dor leve na barriga;SA-G-008;UPA_HOJE;https://www.uhsussex.nhs.uk/resources/adult-day-surgery-discharge-information/
+PR-G1-013;dias_2_7;Pode ter dor no ombro depois da cirurgia por vídeo.;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-013;dias_2_7;Pode ter dor no ombro depois da cirurgia por vídeo.;SA-G-131;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-013;semanas_2_4;;SA-G-007;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-013;depois_3_meses;Laqueadura é definitiva e raramente falha;SA-D2-062;SAMU_192;https://medlineplus.gov/ency/article/002913.htm
+PR-G1-013;depois_3_meses;Laqueadura é definitiva e raramente falha;SA-D2-063;UPA_HOJE;https://medlineplus.gov/ency/article/002913.htm
+PR-G1-014;dia_0_1;Volta para casa geralmente no mesmo dia, com cólica e sangramento pela vagina;SA-D2-072;SAMU_192;https://www.nhs.uk/conditions/miscarriage/
+PR-G1-014;dias_2_7;Cólica, dor nas costas e sangramento por alguns dias, sem absorvente interno e sem relação por 1 a 2 semanas;SA-D2-073;UPA_HOJE;https://medlineplus.gov/ency/article/002914.htm
+PR-G1-014;dias_2_7;Dor na barriga que pode durar alguns dias e sangramento ou manchinhas. Evitar relação até os sintomas passarem;SA-G-132;SAMU_192;https://www.nhs.uk/conditions/miscarriage/
+PR-G1-014;semanas_2_4;Sangramento ou manchinhas que podem durar até 2 semanas e emoções à flor da pele;SA-G-133;UBS_EM_BREVE;https://www.nhs.uk/conditions/miscarriage/
+PR-G1-014;meses_1_3;Menstruação que volta em até 8 semanas e pode levar alguns meses para ficar regular;SA-G-134;UBS_EM_BREVE;https://www.nhs.uk/conditions/miscarriage/
+PR-G1-015;dia_0_1;Dreno saindo perto do corte, dor e cansaço, e alguns dias de internação se a reconstrução foi feita junto;SA-G-008;UPA_HOJE;https://www.nhs.uk/conditions/mastectomy/recovery/
+PR-G1-015;dias_2_7;Cansaço, dor e dificuldade para tarefas pequenas, com os drenos retirados em alguns dias ou semanas;SA-G-135;UPA_HOJE;https://www.nhs.uk/conditions/mastectomy/recovery/
+PR-G1-015;dias_2_7;Algum incômodo no corte que pode durar alguns dias;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.uhsussex.nhs.uk/resources/adult-day-surgery-discharge-information/
+PR-G1-015;semanas_2_4;Volta à maioria das atividades por volta de 3 semanas, com exercícios para o braço ensinados pela equipe e sem pegar peso;SA-G-136;UPA_HOJE;https://www.nhs.uk/conditions/mastectomy/recovery/
+PR-G1-015;semanas_2_4;Volta à maioria das atividades por volta de 3 semanas, com exercícios para o braço ensinados pela equipe e sem pegar peso;SA-G-006;SAMU_192;https://www.nhs.uk/conditions/mastectomy/recovery/
+PR-G1-015;meses_1_3;Os cortes costumam cicatrizar em cerca de 6 semanas;SA-G-137;UBS_EM_BREVE;https://www.nhs.uk/conditions/mastectomy/recovery/
+PR-G1-015;depois_3_meses;A maioria das atividades do dia a dia já costuma ter voltado. Dúvidas ou preocupações podem ser levadas à equipe que fez a cirurgia;SA-G-138;UBS_EM_BREVE;https://www.nhs.uk/conditions/mastectomy/recovery/
+PR-G1-016;dia_0_1;Enjoo, cansaço, dor de garganta, dor na barriga e no ombro e barriga estufada, com alta no mesmo dia ou no seguinte quando é por vídeo;SA-G-139;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-016;dias_2_7;Roxinho em volta dos cortes e algum desconforto na barriga.;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-016;dias_2_7;Roxinho em volta dos cortes e algum desconforto na barriga.;SA-G-140;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-016;semanas_2_4;Movimentando o corpo e caminhando, com recuperação completa que pode levar de 6 a 8 semanas;SA-G-007;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-017;dia_0_1;Vai para casa no mesmo dia, com desconforto, saco escrotal inchado e roxo, que aliviam com gelo envolto em pano e cueca firme;SA-G-141;UPA_HOJE;https://medlineplus.gov/ency/article/002995.htm
+PR-G1-017;dias_2_7;Volta ao trabalho em 2 a 3 dias e às atividades físicas em 3 a 7 dias;SA-G-001;UPA_HOJE;https://medlineplus.gov/ency/article/002995.htm
+PR-G1-017;dias_2_7;Volta ao trabalho em 2 a 3 dias e às atividades físicas em 3 a 7 dias;SA-G-002;UPA_HOJE;https://medlineplus.gov/ency/article/002995.htm
+PR-G1-017;semanas_2_4;Inchaço e roxo somem em até 2 semanas e a relação pode voltar quando se sentir bem, ainda com outro método para evitar gravidez;SA-G-142;UBS_EM_BREVE;https://medlineplus.gov/ency/article/002995.htm
+PR-G1-017;depois_3_meses;Ainda pode ter espermatozoides por cerca de 3 meses e só o exame do sêmen confirma que deu certo;SA-G-143;UBS_EM_BREVE;https://medlineplus.gov/ency/article/002995.htm
+PR-G1-018;dias_2_7;Cansaço maior que o normal e algum desconforto na barriga.;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-018;dias_2_7;Cansaço maior que o normal e algum desconforto na barriga.;SA-G-007;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-018;dias_2_7;Cansaço maior que o normal e algum desconforto na barriga.;SA-G-006;SAMU_192;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-018;semanas_2_4;;SA-D2-038;UPA_HOJE;https://www.nhs.uk/conditions/transurethral-resection-of-the-prostate-turp/recovery/
+PR-G1-018;meses_1_3;Escapes de urina e dificuldade de ereção são efeitos esperados que a equipe acompanha;SA-G-144;UBS_EM_BREVE;https://www.nhs.uk/conditions/prostate-cancer/treatment/
+PR-G1-018;meses_1_3;;SA-D2-040;UPA_HOJE;https://medlineplus.gov/ency/article/003138.htm
+PR-G1-019;dia_0_1;Sonda drenando a urina e sangue misturado no saco coletor nos primeiros dias;SA-G-145;UPA_HOJE;https://www.nhs.uk/conditions/transurethral-resection-of-the-prostate-turp/recovery/
+PR-G1-019;dias_2_7;Alta em 1 a 4 dias e, depois de tirar a sonda, xixi toda hora, ardência, um pouco de sangue e dificuldade para segurar que vão melhorando;SA-D2-038;UPA_HOJE;https://www.nhs.uk/conditions/transurethral-resection-of-the-prostate-turp/recovery/
+PR-G1-019;dias_2_7;Alta em 1 a 4 dias e, depois de tirar a sonda, xixi toda hora, ardência, um pouco de sangue e dificuldade para segurar que vão melhorando;SA-G-001;UPA_HOJE;https://www.nhs.uk/conditions/transurethral-resection-of-the-prostate-turp/recovery/
+PR-G1-019;dias_2_7;Alta em 1 a 4 dias e, depois de tirar a sonda, xixi toda hora, ardência, um pouco de sangue e dificuldade para segurar que vão melhorando;SA-G-146;UPA_HOJE;https://www.nhs.uk/conditions/transurethral-resection-of-the-prostate-turp/recovery/
+PR-G1-019;semanas_2_4;Sangue na urina pode voltar entre 10 e 14 dias depois e faz parte da recuperação, e atividades do dia a dia voltam em 2 a 4 semanas;SA-G-147;UPA_HOJE;https://www.nhs.uk/conditions/transurethral-resection-of-the-prostate-turp/recovery/
+PR-G1-019;meses_1_3;Cicatrização completa em até 6 semanas, sem pegar peso nem fazer exercício pesado nesse tempo;SA-D2-035;UBS_EM_BREVE;https://www.nhs.uk/conditions/transurethral-resection-of-the-prostate-turp/recovery/
+PR-G1-020;dia_0_1;;SA-G-001|SA-D2-036;UPA_HOJE;https://www.nhs.uk/conditions/kidney-stones/treatment/
+PR-G1-020;dias_2_7;Beber bastante líquido ao longo do dia para o xixi ficar clarinho.;SA-D2-037;UPA_HOJE;https://www.nhs.uk/conditions/kidney-stones/treatment/
+PR-G1-020;dias_2_7;Beber bastante líquido ao longo do dia para o xixi ficar clarinho.;SA-D2-038;UPA_HOJE;https://www.nhs.uk/conditions/kidney-stones/treatment/
+PR-G1-020;dias_2_7;Beber bastante líquido ao longo do dia para o xixi ficar clarinho.;SA-G-148;SAMU_192;https://www.nhs.uk/conditions/kidney-stones/treatment/
+PR-G1-020;semanas_2_4;;SA-D2-040;UPA_HOJE;https://www.nhs.uk/conditions/kidney-stones/treatment/
+PR-G1-021;dia_0_1;Fica até umas 2 horas em observação e vai para casa no mesmo dia, coando o xixi para pegar os pedacinhos;SA-D2-037;UPA_HOJE;https://medlineplus.gov/ency/article/007113.htm
+PR-G1-021;dias_2_7;Pedacinhos de pedra saindo no xixi;SA-G-001|SA-D2-036;UPA_HOJE;https://medlineplus.gov/ency/article/007113.htm
+PR-G1-021;dias_2_7;Pedacinhos de pedra saindo no xixi;SA-G-149;SAMU_192;https://medlineplus.gov/ency/article/007113.htm
+PR-G1-021;semanas_2_4;Às vezes precisa de mais uma sessão para quebrar o que sobrou;SA-D2-038;UPA_HOJE;https://medlineplus.gov/ency/article/007113.htm
+PR-G1-022;dia_0_1;Pênis inchado, roxo e sangrando um pouquinho, com a cabeça do pênis muito sensível;SA-G-150;UPA_HOJE;https://www.nhs.uk/conditions/circumcision-in-boys/
+PR-G1-022;dia_0_1;Pênis inchado, roxo e sangrando um pouquinho, com a cabeça do pênis muito sensível;SA-G-151;SAMU_192;https://www.nhs.uk/conditions/circumcision-in-boys/
+PR-G1-022;dias_2_7;Criança em casa por cerca de uma semana, com roupa folgada e a região limpa e seca;SA-G-001|SA-G-002;UPA_HOJE;https://www.nhs.uk/conditions/circumcision-in-boys/
+PR-G1-022;dias_2_7;Criança em casa por cerca de uma semana, com roupa folgada e a região limpa e seca;SA-G-152;UPA_HOJE;https://www.nhs.uk/conditions/circumcision-in-boys/
+PR-G1-022;dias_2_7;Criança em casa por cerca de uma semana, com roupa folgada e a região limpa e seca;SA-G-005;UPA_HOJE;https://www.nhs.uk/conditions/circumcision-in-boys/
+PR-G1-022;semanas_2_4;Inchaço, roxo e sangramento leve melhorando em 1 a 2 semanas, sem piscina, bicicleta e esporte por pelo menos 2 semanas;SA-G-003|SA-G-004;UPA_HOJE;https://www.nhs.uk/conditions/circumcision-in-boys/
+PR-G1-022;meses_1_3;A cicatrização costuma levar de 4 a 6 semanas e às vezes mais. A sensibilidade da cabeça do pênis costuma melhorar em algumas semanas.;SA-G-153;UBS_EM_BREVE;https://www.nhs.uk/conditions/circumcision-in-boys/
+PR-G1-022;meses_1_3;A cicatrização costuma levar de 4 a 6 semanas e às vezes mais. A sensibilidade da cabeça do pênis costuma melhorar em algumas semanas.;SA-G-154;UBS_EM_BREVE;https://www.nhs.uk/conditions/circumcision-in-boys/
+PR-G1-023;dia_0_1;Dor no pescoço, às vezes um dreno pequeno, e alta no mesmo dia ou no seguinte quando já consegue engolir líquidos;SA-G-155;SAMU_192;https://medlineplus.gov/ency/article/002933.htm
+PR-G1-023;dia_0_1;Dor no pescoço, às vezes um dreno pequeno, e alta no mesmo dia ou depois de uma noite no hospital.;SA-G-156;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000293.htm
+PR-G1-023;dias_2_7;Pescoço dolorido, principalmente ao engolir, e voz um pouco rouca na primeira semana, dormindo com a cabeça mais alta.;SA-G-002|SA-G-008;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000293.htm
+PR-G1-023;dias_2_7;Pescoço dolorido, principalmente ao engolir, e voz um pouco rouca na primeira semana, dormindo com a cabeça mais alta.;SA-G-001;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000293.htm
+PR-G1-023;dias_2_7;Pescoço dolorido, principalmente ao engolir, e voz um pouco rouca na primeira semana, dormindo com a cabeça mais alta.;SA-G-157;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000293.htm
+PR-G1-023;semanas_2_4;Consulta com o cirurgião por volta de 2 semanas e sem esforço nas primeiras semanas;SA-G-158;UBS_EM_BREVE;https://medlineplus.gov/ency/patientinstructions/000293.htm
+PR-G1-023;meses_1_3;A volta às atividades do dia a dia costuma acontecer em poucas semanas. Quem tirou a tireoide pode precisar tomar hormônio da tireoide, com exames de sangue regulares.;SA-G-156;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000293.htm
+PR-G1-024;dia_0_1;Enjoo, cansaço, garganta dolorida da anestesia, barriga estufada e roxinho em volta dos furos;SA-G-159;SAMU_192;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-024;dias_2_7;Dor no ombro e cólicas ou desconforto na barriga podem aparecer depois da cirurgia por vídeo.;SA-G-160;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-024;dias_2_7;Dor no ombro e cólicas ou desconforto na barriga podem aparecer depois da cirurgia por vídeo.;SA-G-010;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-024;dias_2_7;Dor no ombro e cólicas ou desconforto na barriga podem aparecer depois da cirurgia por vídeo.;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-024;dias_2_7;Dor no ombro e cólicas ou desconforto na barriga podem aparecer depois da cirurgia por vídeo.;SA-G-161;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-024;semanas_2_4;Laparoscopia só para olhar costuma recuperar em cerca de 10 dias, sem banheira até os cortes fecharem;SA-G-007;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-024;semanas_2_4;Laparoscopia só para olhar costuma recuperar em cerca de 10 dias, sem banheira até os cortes fecharem;SA-G-006;SAMU_192;https://www.nhs.uk/conditions/laparoscopy/
+PR-G1-024;meses_1_3;Cirurgias maiores por vídeo podem levar de 6 a 8 semanas para a recuperação completa;SA-D1-062;UPA_HOJE;https://www.nhs.uk/conditions/laparoscopy/
+PR-G2-001;dia_0_1;Dor e um pouco de roxo no lugar do furo no braço ou na virilha, com curativo. Muitas pessoas já conseguem andar em poucas horas.;SA-G-027;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000096.htm
+PR-G2-001;dia_0_1;Roxo no lugar onde o cateter entrou, que pode ficar dolorido por alguns dias.;SA-G-029;SAMU_192;https://www.nhs.uk/conditions/coronary-angioplasty/recovery/
+PR-G2-001;dias_2_7;Pode continuar com dor e roxo em volta e abaixo do lugar do furo. Caminhadas curtas em chão plano são liberadas.;SA-G-028;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000096.htm
+PR-G2-001;dias_2_7;Pode continuar com dor e roxo em volta e abaixo do lugar do furo. Caminhadas curtas em chão plano são liberadas.;SA-G-045;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000096.htm
+PR-G2-001;dias_2_7;Pode continuar com dor e roxo em volta e abaixo do lugar do furo. Caminhadas curtas em chão plano são liberadas.;SA-G-002|SA-G-003|SA-G-001;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000096.htm
+PR-G2-001;dias_2_7;Pode continuar com dor e roxo em volta e abaixo do lugar do furo. Caminhadas curtas em chão plano são liberadas.;SA-G-006|SA-D1-001;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000096.htm
+PR-G2-001;semanas_2_4;A maioria está recuperada em cerca de uma semana, mais rápido quando o furo foi no punho.;SA-D1-011|SA-D1-017;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000096.htm
+PR-G2-002;dia_0_1;Roxo no lugar do furo e peito um pouco dolorido por alguns dias. Muita gente vai para casa no mesmo dia ou no seguinte.;SA-G-027;SAMU_192;https://www.nhs.uk/conditions/coronary-angioplasty/recovery/
+PR-G2-002;dia_0_1;Roxo no lugar do furo e peito um pouco dolorido por alguns dias. Muita gente vai para casa no mesmo dia ou no seguinte.;SA-G-029;SAMU_192;https://www.nhs.uk/conditions/coronary-angioplasty/recovery/
+PR-G2-002;dias_2_7;Roxo e peito sensível melhorando. Na primeira semana o normal é evitar carregar peso e fazer esforço até o furo cicatrizar.;SA-D1-001|SA-D1-010;SAMU_192;https://www.nhs.uk/conditions/coronary-angioplasty/recovery/
+PR-G2-002;dias_2_7;Roxo e peito sensível melhorando. Na primeira semana o normal é evitar carregar peso e fazer esforço até o furo cicatrizar.;SA-G-002|SA-G-001;UPA_HOJE;https://www.nhs.uk/conditions/coronary-angioplasty/recovery/
+PR-G2-002;semanas_2_4;Depois de angioplastia marcada, a maioria já retomou a rotina leve. Depois de infarto a recuperação é mais lenta e costuma ter reabilitação cardíaca.;SA-D1-009;SAMU_192;https://www.nhs.uk/conditions/coronary-angioplasty/recovery/
+PR-G2-002;meses_1_3;Recuperação seguindo, com os remédios do coração e para afinar o sangue mantidos do jeito que o cardiologista orientou, que costuma ser por até um ano.;SA-D1-009|SA-D1-010;SAMU_192;https://www.nhs.uk/conditions/coronary-angioplasty/recovery/
+PR-G2-003;dia_0_1;Cansaço e dor no lado do peito onde ficou o aparelho. Movimentos leves do braço costumam ser liberados.;SA-G-032;SAMU_192;https://www.nhs.uk/conditions/pacemaker-implantation/recovery/
+PR-G2-003;dias_2_7;Cansaço nos primeiros dias e o lado do peito onde ficou o aparelho ainda dolorido. Movimentos leves do braço costumam ser liberados nos primeiros dias, e o corte é cuidado como a equipe orientar;SA-G-031;UPA_HOJE;https://www.nhs.uk/conditions/pacemaker-implantation/recovery/
+PR-G2-003;dias_2_7;Cansaço nos primeiros dias e o lado do peito onde ficou o aparelho ainda dolorido. Movimentos leves do braço costumam ser liberados nos primeiros dias, e o corte é cuidado como a equipe orientar;SA-G-001;UPA_HOJE;https://www.nhs.uk/conditions/pacemaker-implantation/recovery/
+PR-G2-003;dias_2_7;Corte mantido totalmente seco nos primeiros 4 a 5 dias. As atividades do dia a dia costumam voltar em 3 a 4 dias, sem carregar peso nem fazer força com o braço do lado do aparelho.;SA-G-033;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000097.htm
+PR-G2-003;semanas_2_4;Ainda sem levantar o cotovelo acima do ombro e sem esforço forte com o braço do lado do aparelho, o que costuma durar de 4 a 6 semanas.;SA-D1-041|SA-D1-042;SAMU_192;https://www.nhs.uk/conditions/pacemaker-implantation/recovery/
+PR-G2-003;semanas_2_4;Ainda sem levantar o cotovelo acima do ombro e sem esforço forte com o braço do lado do aparelho, o que costuma durar de 4 a 6 semanas.;SA-D1-001|SA-D1-002;SAMU_192;https://www.nhs.uk/conditions/pacemaker-implantation/recovery/
+PR-G2-003;meses_1_3;Primeira revisão do aparelho por volta de 6 semanas. A recuperação completa pode levar algumas semanas ou meses.;SA-G-032|SA-D1-093;SAMU_192;https://www.nhs.uk/conditions/pacemaker-implantation/recovery/
+PR-G2-004;dias_2_7;Dor no peito perto do corte, pouco apetite, cansaço, sono ruim, intestino preso, cabeça meio esquecida e um pouco de falta de ar. A perna de onde tiraram a veia fica inchada.;SA-G-006;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000102.htm
+PR-G2-004;dias_2_7;Dor no peito perto do corte, pouco apetite, cansaço, sono ruim, intestino preso, cabeça meio esquecida e um pouco de falta de ar. A perna de onde tiraram a veia fica inchada.;SA-G-002|SA-G-003|SA-G-004;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000102.htm
+PR-G2-004;dias_2_7;Dor no peito perto do corte, pouco apetite, cansaço, sono ruim, intestino preso, cabeça meio esquecida e um pouco de falta de ar. A perna de onde tiraram a veia fica inchada.;SA-G-001;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000102.htm
+PR-G2-004;semanas_2_4;Apetite ainda baixo e braços mais fracos no primeiro mês. Os cortes levam de 4 a 6 semanas para cicatrizar e a pessoa vai se sentindo melhor.;SA-D1-011|SA-D1-017;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000102.htm
+PR-G2-004;semanas_2_4;Apetite ainda baixo e braços mais fracos no primeiro mês. Os cortes levam de 4 a 6 semanas para cicatrizar e a pessoa vai se sentindo melhor.;SA-G-162;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000102.htm
+PR-G2-004;semanas_2_4;Apetite ainda baixo e braços mais fracos no primeiro mês. Os cortes levam de 4 a 6 semanas para cicatrizar e a pessoa vai se sentindo melhor.;SA-G-163;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000102.htm
+PR-G2-004;meses_1_3;A maioria volta à maior parte das atividades por volta de 6 semanas. A recuperação completa costuma levar de 2 a 3 meses e é comum seguir sem carregar peso nesse período.;SA-D1-009;SAMU_192;https://www.nhs.uk/conditions/coronary-artery-bypass-graft-cabg/recovery/
+PR-G2-004;depois_3_meses;Coceira, dormência ou formigamento em volta dos cortes do peito e da perna podem durar 6 meses ou mais.;SA-G-004;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000102.htm
+PR-G2-005;dias_2_7;Dor no peito perto do corte, cansaço, pouco apetite, intestino preso, mudanças de humor e um pouco de falta de ar.;SA-G-006;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000291.htm
+PR-G2-005;dias_2_7;Dor no peito perto do corte, cansaço, pouco apetite, intestino preso, mudanças de humor e um pouco de falta de ar.;SA-G-164;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000291.htm
+PR-G2-005;dias_2_7;Dor no peito perto do corte, cansaço, pouco apetite, intestino preso, mudanças de humor e um pouco de falta de ar.;SA-G-002|SA-G-003|SA-G-004|SA-G-001;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000291.htm
+PR-G2-005;semanas_2_4;Braços mais fracos e pouco apetite no primeiro mês. Sem levantar os braços acima dos ombros nas primeiras semanas.;SA-G-007;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000291.htm
+PR-G2-005;semanas_2_4;Braços mais fracos e pouco apetite no primeiro mês. Sem levantar os braços acima dos ombros nas primeiras semanas.;SA-D1-011|SA-D1-017;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000291.htm
+PR-G2-005;semanas_2_4;Braços mais fracos e pouco apetite no primeiro mês. Sem levantar os braços acima dos ombros nas primeiras semanas.;SA-G-165;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000291.htm
+PR-G2-005;meses_1_3;Recuperação completa em 2 a 3 meses, mais rápida quando foi por cateter. A falta de ar e a dor no peito de antes devem ir melhorando.;SA-G-166;UBS_EM_BREVE;https://www.nhs.uk/conditions/aortic-valve-replacement/recovery/
+PR-G2-005;meses_1_3;A cicatrização completa costuma levar de 4 a 6 semanas ou mais.;SA-I-008|SA-I-004;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000291.htm
+PR-G2-005;depois_3_meses;Coceira, dormência ou formigamento em volta do corte podem durar 6 meses ou mais. Avisar o dentista sobre a válvula continua importante.;SA-G-167;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000291.htm
+PR-G2-006;dia_0_1;Fica deitado de 1 a 6 horas com pressão no lugar do furo na virilha enquanto o ritmo do coração é observado.;SA-G-027|SA-G-045;SAMU_192;https://medlineplus.gov/ency/article/007368.htm
+PR-G2-006;dias_2_7;Por 2 a 3 dias pode haver cansaço, peito dolorido e batidas falhando ou rápidas de vez em quando.;SA-D1-011;SAMU_192;https://medlineplus.gov/ency/article/007368.htm
+PR-G2-006;dias_2_7;Por 2 a 3 dias pode haver cansaço, peito dolorido e batidas falhando ou rápidas de vez em quando.;SA-D1-012;UPA_HOJE;https://medlineplus.gov/ency/article/007368.htm
+PR-G2-006;dias_2_7;Por 2 a 3 dias pode haver cansaço, peito dolorido e batidas falhando ou rápidas de vez em quando.;SA-D1-031|SA-D1-032;SAMU_192;https://medlineplus.gov/ency/article/007368.htm
+PR-G2-006;dias_2_7;Por 2 a 3 dias pode haver cansaço, peito dolorido e batidas falhando ou rápidas de vez em quando.;SA-D1-001|SA-D1-003;SAMU_192;https://medlineplus.gov/ency/article/007368.htm
+PR-G2-007;dia_0_1;;SA-G-025;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/hip-replacement/complications-of-a-hip-replacement/
+PR-G2-007;dias_2_7;;SA-G-007|SA-B-047;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/hip-replacement/complications-of-a-hip-replacement/
+PR-G2-007;dias_2_7;;SA-B-048|SA-G-006;SAMU_192;https://www.nhs.uk/tests-and-treatments/hip-replacement/complications-of-a-hip-replacement/
+PR-G2-007;dias_2_7;;SA-G-001|SA-G-003;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/hip-replacement/complications-of-a-hip-replacement/
+PR-G2-007;semanas_2_4;;SA-G-026;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/hip-replacement/complications-of-a-hip-replacement/
+PR-G2-007;semanas_2_4;;SA-G-025;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/hip-replacement/complications-of-a-hip-replacement/
+PR-G2-007;meses_1_3;;SA-G-007|SA-B-047;UPA_HOJE;https://www.nhs.uk/tests-and-treatments/hip-replacement/complications-of-a-hip-replacement/
+PR-G2-007;depois_3_meses;A prótese é feita para durar pelo menos 15 anos;SA-G-168;UBS_EM_BREVE;https://www.nhs.uk/tests-and-treatments/hip-replacement/complications-of-a-hip-replacement/
+PR-G2-008;dias_2_7;Andando com andador ou muletas. Roxo em volta do corte e vermelhidão leve que vão sumindo.;SA-G-008;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000170.htm
+PR-G2-008;dias_2_7;Andando com andador ou muletas. Roxo em volta do corte e vermelhidão leve que vão sumindo.;SA-G-005;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000170.htm
+PR-G2-008;dias_2_7;Andando com andador ou muletas. Roxo em volta do corte e vermelhidão leve que vão sumindo.;SA-G-007;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000170.htm
+PR-G2-008;dias_2_7;Andando com andador ou muletas. Roxo em volta do corte e vermelhidão leve que vão sumindo.;SA-G-169;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000170.htm
+PR-G2-008;dias_2_7;Andando com andador ou muletas. Roxo em volta do corte e vermelhidão leve que vão sumindo.;SA-G-006;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000170.htm
+PR-G2-008;semanas_2_4;Pontos ou grampos retirados entre 10 e 14 dias. Banho de chuveiro liberado pelo cirurgião, sem deixar o corte de molho.;SA-G-026|SA-G-001;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000170.htm
+PR-G2-008;meses_1_3;Ainda pode precisar de andador ou muletas até uns 3 meses, com exercícios de fisioterapia.;SA-G-007;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000170.htm
+PR-G2-009;dia_0_1;Dor e joelho enfaixado. Perna para cima apoiada em travesseiros e gelo ajudam nos primeiros dias.;SA-G-008;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000199.htm
+PR-G2-009;dias_2_7;Dor diminuindo e começo do apoio na perna com caminhadas curtas, se o cirurgião liberou. Muletas podem ajudar.;SA-G-005;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000199.htm
+PR-G2-009;dias_2_7;Dor diminuindo e começo do apoio na perna com caminhadas curtas, se o cirurgião liberou. Muletas podem ajudar.;SA-G-007;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000199.htm
+PR-G2-009;dias_2_7;Articulação dolorida e dura no começo. Manter a perna elevada ao sentar ajuda no inchaço e a equipe pode passar exercícios.;SA-G-026|SA-G-001;UPA_HOJE;https://www.nhs.uk/conditions/arthroscopy
+PR-G2-009;dias_2_7;Dor diminuindo e começo do apoio na perna com caminhadas curtas, se o cirurgião liberou. Muletas podem ajudar.;SA-G-170;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000199.htm
+PR-G2-009;semanas_2_4;A recuperação completa pode levar de cerca de 1 semana a alguns meses e a equipe costuma dar um plano por escrito.;SA-G-171;UPA_HOJE;https://www.nhs.uk/conditions/arthroscopy
+PR-G2-009;meses_1_3;A recuperação completa pode levar alguns meses e às vezes inclui fisioterapia por algumas semanas.;SA-G-026;UPA_HOJE;https://www.nhs.uk/conditions/arthroscopy
+PR-G2-010;dia_0_1;Braço na tipoia o tempo todo e dor controlada com os remédios receitados. Gelo enrolado em pano pode ser posto em cima do curativo.;SA-G-008;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000179.htm
+PR-G2-010;dias_2_7;Braço ainda na tipoia, dor aliviada com os remédios receitados e corte mantido limpo e seco.;SA-G-172;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000179.htm
+PR-G2-010;dias_2_7;Braço ainda na tipoia, dor aliviada com os remédios receitados e corte mantido limpo e seco.;SA-G-005;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000179.htm
+PR-G2-010;dias_2_7;Braço ainda na tipoia, dor aliviada com os remédios receitados e corte mantido limpo e seco.;SA-G-002|SA-G-003|SA-G-001;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000179.htm
+PR-G2-010;semanas_2_4;Os pontos costumam ser retirados em 1 a 2 semanas. Os exercícios ensinados pelo cirurgião ou fisioterapeuta continuam.;SA-G-173;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000179.htm
+PR-G2-011;dia_0_1;Perna um pouco dormente por algumas horas e às vezes até um dia por causa da anestesia no nervo, dor que vai melhorando com o tempo e joelheira que limita o movimento do joelho.;SA-G-008;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000189.htm
+PR-G2-011;dias_2_7;Muletas e joelheira travada para andar. Dor diminuindo aos poucos, perna apoiada em travesseiros embaixo da batata da perna.;SA-G-007;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000189.htm
+PR-G2-011;dias_2_7;Muletas e joelheira travada para andar. Dor diminuindo aos poucos, perna apoiada em travesseiros embaixo da batata da perna.;SA-G-174;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000189.htm
+PR-G2-011;dias_2_7;Muletas e joelheira travada para andar. Dor diminuindo aos poucos, perna apoiada em travesseiros embaixo da batata da perna.;SA-G-002|SA-G-003|SA-G-001;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000189.htm
+PR-G2-011;semanas_2_4;Fisioterapia começando. Apoio total na perna sem muletas pode vir em 2 a 3 semanas, se o cirurgião liberar.;SA-G-005;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000189.htm
+PR-G2-011;meses_1_3;Fisioterapia por meses para recuperar movimento e força do joelho.;SA-G-175;UBS_EM_BREVE;https://medlineplus.gov/ency/article/007208.htm
+PR-G2-011;depois_3_meses;Volta ao esporte costuma levar de 4 a 6 meses e esportes com mudança rápida de direção até 9 a 12 meses, com liberação do profissional.;SA-G-175;UBS_EM_BREVE;https://medlineplus.gov/ency/article/007208.htm
+PR-G2-012;dia_0_1;Sai do hospital com tipoia e dor controlada com os remédios receitados.;SA-G-008;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000179.htm
+PR-G2-012;dias_2_7;Braço na tipoia, dor aliviada com os remédios receitados e só os movimentos liberados pelo cirurgião para não forçar o conserto.;SA-G-176;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000179.htm
+PR-G2-012;dias_2_7;Braço na tipoia, dor aliviada com os remédios receitados e só os movimentos liberados pelo cirurgião para não forçar o conserto.;SA-G-002|SA-G-003|SA-G-001;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000179.htm
+PR-G2-012;semanas_2_4;Tipoia costuma ficar de 4 a 6 semanas, com exercícios orientados.;SA-G-005;UPA_HOJE;https://medlineplus.gov/ency/article/007207.htm
+PR-G2-012;meses_1_3;Fisioterapia. Ombro duro e fraco melhorando aos poucos. A recuperação leva de 4 a 6 meses.;SA-G-177;UBS_EM_BREVE;https://medlineplus.gov/ency/article/007207.htm
+PR-G2-012;depois_3_meses;A dor costuma melhorar, mas a força pode não voltar por completo.;SA-G-177;UBS_EM_BREVE;https://medlineplus.gov/ency/article/007207.htm
+PR-G2-013;dia_0_1;;SA-C-042;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000313.htm
+PR-G2-013;dias_2_7;Dor no corte, um pouco de dormência e vermelhidão leve. Só caminhadas curtas e sem ficar sentado muito tempo seguido.;SA-G-178;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000313.htm
+PR-G2-013;dias_2_7;Dor no corte, um pouco de dormência e vermelhidão leve. Só caminhadas curtas e sem ficar sentado muito tempo seguido.;SA-G-179;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000313.htm
+PR-G2-013;dias_2_7;Dor no corte, um pouco de dormência e vermelhidão leve. Só caminhadas curtas e sem ficar sentado muito tempo seguido.;SA-G-001|SA-G-002|SA-G-003|SA-G-004;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000313.htm
+PR-G2-013;dias_2_7;Dor no corte, um pouco de dormência e vermelhidão leve. Só caminhadas curtas e sem ficar sentado muito tempo seguido.;SA-G-007;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000313.htm
+PR-G2-013;dias_2_7;Dor no corte, um pouco de dormência e vermelhidão leve. Só caminhadas curtas e sem ficar sentado muito tempo seguido.;SA-G-006;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000313.htm
+PR-G2-013;semanas_2_4;Dor, dormência ou fraqueza no caminho do nervo melhorando em poucas semanas depois da retirada do disco.;SA-G-005;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000313.htm
+PR-G2-013;meses_1_3;;SA-G-180;UBS_EM_BREVE;https://medlineplus.gov/ency/article/007250.htm
+PR-G2-014;dia_0_1;Punho com tala ou curativo por cerca de uma semana, mantido limpo e seco.;SA-B-042|SA-B-043;UPA_HOJE;https://medlineplus.gov/ency/article/002976.htm
+PR-G2-014;dias_2_7;Punho com tala ou curativo por cerca de uma semana, mantido limpo e seco.;SA-G-002|SA-G-003|SA-G-008;UPA_HOJE;https://medlineplus.gov/ency/article/002976.htm
+PR-G2-014;semanas_2_4;Depois de tirar a tala ou o curativo começam os exercícios de movimento ou a terapia da mão.;SA-G-181;UBS_EM_BREVE;https://medlineplus.gov/ency/article/002976.htm
+PR-G2-014;meses_1_3;Formigamento e força melhorando aos poucos. Se os sintomas duraram muito tempo antes da cirurgia, um pouco de dormência pode ficar.;SA-G-181;UBS_EM_BREVE;https://medlineplus.gov/ency/article/002976.htm
+PR-G2-015;dia_0_1;Visão embaçada por algumas horas por causa do colírio que dilata a pupila. Protetor de plástico no olho à noite.;SA-G-039;UPA_HOJE;https://www.nhs.uk/conditions/cataract-surgery/recovery
+PR-G2-015;dias_2_7;Olho dolorido por alguns dias, mais cansaço que o normal e visão melhorando em alguns dias. O colírio receitado segue por cerca de 4 semanas.;SA-G-040|SA-D3-024;UPA_HOJE;https://www.nhs.uk/conditions/cataract-surgery/recovery
+PR-G2-015;dias_2_7;Olho dolorido por alguns dias, mais cansaço que o normal e visão melhorando em alguns dias. O colírio receitado segue por cerca de 4 semanas.;SA-G-182;UBS_EM_BREVE;https://www.nhs.uk/conditions/cataract-surgery/recovery
+PR-G2-015;semanas_2_4;Ainda com colírio. Pode precisar de óculos novos para perto ou longe. Sem coçar o olho e sem deixar entrar água.;SA-G-040;UPA_HOJE;https://www.nhs.uk/conditions/cataract-surgery/recovery
+PR-G2-015;depois_3_meses;;SA-G-183;UBS_EM_BREVE;https://www.nhs.uk/conditions/cataract-surgery/recovery
+PR-G2-016;dia_0_1;Ardência, coceira ou sensação de cisco por até umas 6 horas, visão embaçada e protetor no olho à noite.;SA-G-184;UPA_HOJE;https://medlineplus.gov/ency/article/007018.htm
+PR-G2-016;dias_2_7;A visão costuma melhorar já no dia seguinte e estabilizar em poucos dias. Revisão em 24 a 48 horas.;SA-G-185;UPA_HOJE;https://medlineplus.gov/ency/article/007018.htm
+PR-G2-016;semanas_2_4;Sem creme, loção ou maquiagem nos olhos por 2 a 4 semanas. Evitar piscina, banheira de hidromassagem e esporte de contato pelo tempo que o médico orientar.;SA-G-185;UPA_HOJE;https://medlineplus.gov/ency/article/007018.htm
+PR-G2-016;meses_1_3;Brilho, halos em volta das luzes e dificuldade para dirigir à noite costumam melhorar em até 6 meses. Olho seco pode acontecer.;SA-G-186;UBS_EM_BREVE;https://medlineplus.gov/ency/article/007018.htm
+PR-G2-017;dia_0_1;Olho dolorido e vermelho. A posição da cabeça orientada pelo médico começa logo depois da cirurgia.;SA-G-187;UPA_HOJE;https://www.nhs.uk/conditions/detached-retina-retinal-detachment/
+PR-G2-017;dias_2_7;Quando é usada uma bolha de gás no olho, a cabeça precisa ficar virada para baixo ou de lado por alguns dias ou semanas, como o médico orientar.;SA-D3-016;SAMU_192;https://medlineplus.gov/ency/article/002960.htm
+PR-G2-017;semanas_2_4;A visão embaçada costuma durar de 2 a 6 semanas. Se colocaram uma bolha de gás no olho, pode ser preciso evitar viajar de avião.;SA-D3-024;UPA_HOJE;https://www.nhs.uk/conditions/detached-retina-retinal-detachment/
+PR-G2-017;meses_1_3;;SA-D3-024;UPA_HOJE;https://www.nhs.uk/conditions/detached-retina-retinal-detachment/
+PR-G2-017;depois_3_meses;Vida normal na maioria das pessoas. O descolamento pode voltar, então os sinais de alerta valem para sempre.;SA-D3-024;UPA_HOJE;https://www.nhs.uk/conditions/detached-retina-retinal-detachment/
+PR-G2-018;dia_0_1;Garganta dolorida, cansaço e febre que baixa rápido nas primeiras 48 horas são comuns. Comer e beber normalmente ajuda.;SA-G-037;SAMU_192;https://www.hey.nhs.uk/patient-leaflet/tonsillectomy-advice-sheet-for-parents/
+PR-G2-018;dias_2_7;Garganta branca na cicatrização, dor de ouvido, úvula inchada e dor que costuma piorar até perto do sexto dia.;SA-G-036;UPA_HOJE;https://www.hey.nhs.uk/patient-leaflet/tonsillectomy-advice-sheet-for-parents/
+PR-G2-018;dias_2_7;Garganta branca na cicatrização, dor de ouvido, úvula inchada e dor que costuma piorar até perto do sexto dia.;SA-D2-092;UPA_HOJE;https://www.hey.nhs.uk/patient-leaflet/tonsillectomy-advice-sheet-for-parents/
+PR-G2-018;dias_2_7;Garganta branca na cicatrização, dor de ouvido, úvula inchada e dor que costuma piorar até perto do sexto dia.;SA-G-001;UPA_HOJE;https://www.hey.nhs.uk/patient-leaflet/tonsillectomy-advice-sheet-for-parents/
+PR-G2-018;dias_2_7;Garganta dolorida, com dor que costuma ser mais forte entre o terceiro e o sexto dia.;SA-G-005;UPA_HOJE;https://cuh.nhs.uk/patient-information/tonsillectomy-advice-leaflet
+PR-G2-018;semanas_2_4;Cansaço nos primeiros dias e repouso em casa por 10 a 14 dias longe de aglomeração e fumaça e de gente com tosse ou resfriado. A garganta pode doer por até duas semanas.;SA-G-036;UPA_HOJE;https://www.hey.nhs.uk/patient-leaflet/tonsillectomy-advice-sheet-for-parents/
+PR-G2-019;dia_0_1;Enjoo, nariz entupido, garganta e ouvidos doloridos, voz fanhosa e mau hálito.;SA-G-188;SAMU_192;https://www.nhs.uk/conditions/adenoids-and-adenoidectomy/
+PR-G2-019;dias_2_7;Recuperação em cerca de uma semana, em casa descansando e comendo comida normal assim que der.;SA-G-005;UPA_HOJE;https://www.nhs.uk/conditions/adenoids-and-adenoidectomy/
+PR-G2-019;dias_2_7;Recuperação em cerca de uma semana, em casa descansando e comendo comida normal assim que der.;SA-G-189;UPA_HOJE;https://www.nhs.uk/conditions/adenoids-and-adenoidectomy/
+PR-G2-019;dias_2_7;Recuperação em cerca de uma semana, em casa descansando e comendo comida normal assim que der.;SA-G-001|SA-D2-092;UPA_HOJE;https://www.nhs.uk/conditions/adenoids-and-adenoidectomy/
+PR-G2-019;semanas_2_4;A voz fanhosa volta ao normal em poucas semanas.;SA-G-188;SAMU_192;https://www.nhs.uk/conditions/adenoids-and-adenoidectomy/
+PR-G2-020;dia_0_1;Criança sonolenta e irritada por cerca de uma hora ao acordar da anestesia. Vai para casa no mesmo dia.;SA-D3-034;UPA_HOJE;https://medlineplus.gov/ency/article/003015.htm
+PR-G2-020;dias_2_7;Manter os ouvidos secos pelo tempo que o médico pedir.;SA-G-190;UBS_EM_BREVE;https://medlineplus.gov/ency/article/003015.htm
+PR-G2-020;meses_1_3;O tubinho fica no tímpano e a audição costuma melhorar.;SA-G-191;UBS_EM_BREVE;https://medlineplus.gov/ency/article/003015.htm
+PR-G2-020;depois_3_meses;O tubinho costuma cair sozinho em alguns anos. Se não cair, o especialista pode precisar tirar.;SA-G-192;UBS_EM_BREVE;https://medlineplus.gov/ency/article/003015.htm
+PR-G2-021;dia_0_1;Sonolência da anestesia por cerca de um dia, tampão ou tala dentro do nariz e um pouco de sangramento.;SA-G-193;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000246.htm
+PR-G2-021;dia_0_1;Sonolência da anestesia por cerca de um dia, tampão ou tala dentro do nariz e um pouco de sangramento.;SA-D1-041;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000246.htm
+PR-G2-021;dias_2_7;Tampão retirado em 24 a 36 horas. Inchaço dentro do nariz e secreção com um pouco de sangue de 2 a 5 dias. Dormir com a cabeça mais alta ajuda.;SA-D1-070|SA-D1-093;SAMU_192;https://medlineplus.gov/ency/patientinstructions/000246.htm
+PR-G2-021;dias_2_7;Tampão retirado em 24 a 36 horas. Inchaço dentro do nariz e secreção com um pouco de sangue de 2 a 5 dias. Dormir com a cabeça mais alta ajuda.;SA-G-001|SA-G-005;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000246.htm
+PR-G2-021;semanas_2_4;Nariz entupido por várias semanas é normal. Sem assoar o nariz e sem esforço forte por 1 a 2 semanas.;SA-G-193;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000246.htm
+PR-G2-021;meses_1_3;A respiração costuma melhorar.;SA-G-194;UBS_EM_BREVE;https://medlineplus.gov/ency/article/003012.htm
+PR-G2-022;dia_0_1;Coágulo se formando no lugar do dente, o que ajuda a cicatrizar. Se sangrar, apertar o local com pano limpo ou algodão por pelo menos 10 minutos;SA-G-008;UPA_HOJE;https://www.nhs.uk/conditions/wisdom-tooth-removal/recovery/
+PR-G2-022;dias_2_7;;SA-G-195;UPA_HOJE;https://medlineplus.gov/ency/patientinstructions/000780.htm
+PR-G2-022;dias_2_7;Dor e inchaço que começam a melhorar depois de 1 ou 2 dias, roxo na bochecha, mandíbula dura e incômodo para mastigar e engolir.;SA-D3-037;UPA_HOJE;https://www.nhs.uk/conditions/wisdom-tooth-removal/recovery/
+PR-G2-022;semanas_2_4;Até 2 semanas ainda pode haver incômodo ao mastigar, que vai sumindo.;SA-G-196;UBS_EM_BREVE;https://www.nhs.uk/conditions/wisdom-tooth-removal/recovery/
+PR-G2-022;meses_1_3;Quando há dormência por irritação do nervo, ela costuma melhorar em semanas ou meses.;SA-G-196;UBS_EM_BREVE;https://www.nhs.uk/conditions/wisdom-tooth-removal/recovery/
+PR-G2-023;dias_2_7;;SA-D3-037;UPA_HOJE;https://myoms.org/what-we-do/dental-implant-surgery/
+PR-G2-023;meses_1_3;O implante leva vários meses para se unir ao osso e esse tempo não pode ser encurtado.;SA-G-197;UBS_EM_BREVE;https://myoms.org/what-we-do/dental-implant-surgery/
+PR-G2-024;dia_0_1;;SA-D3-038;SAMU_192;https://medlineplus.gov/ency/article/007275.htm
+PR-G2-024;dias_2_7;Um pouco de dor ou sensibilidade no dente. Evitar mastigar com força daquele lado até o dente ser fechado de vez ou receber a coroa.;SA-D3-037;UPA_HOJE;https://medlineplus.gov/ency/article/007275.htm
+PR-G2-024;semanas_2_4;Região do dente inchada e dolorida que costuma melhorar em umas duas semanas, e consultas de retorno com o dentista;SA-G-198;UBS_EM_BREVE;https://www.nhs.uk/conditions/root-canal-treatment/
+PR-G2-024;semanas_2_4;Retorno ao dentista para conferir se a infecção acabou.;SA-G-199;UBS_EM_BREVE;https://medlineplus.gov/ency/article/007275.htm
+PR-G2-025;dia_0_1;Cinta ou faixa de compressão o tempo todo e dor leve. Alguém junto nas primeiras 24 horas depois de anestesia geral.;SA-G-006;SAMU_192;https://www.nhs.uk/conditions/cosmetic-procedures/liposuction/
+PR-G2-025;dias_2_7;Roxo, inchaço, dormência e um pouco de líquido saindo pelos cortes. Tornozelos inchados se as pernas foram operadas.;SA-G-005;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/liposuction/
+PR-G2-025;dias_2_7;Roxo, inchaço, dormência e um pouco de líquido saindo pelos cortes. Tornozelos inchados se as pernas foram operadas.;SA-G-007;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/liposuction/
+PR-G2-025;dias_2_7;Roxo, inchaço, dormência e um pouco de líquido saindo pelos cortes. Tornozelos inchados se as pernas foram operadas.;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/liposuction/
+PR-G2-025;dias_2_7;Roxo, inchaço, dormência e um pouco de líquido saindo pelos cortes. Tornozelos inchados se as pernas foram operadas.;SA-G-200;SAMU_192;https://www.nhs.uk/conditions/cosmetic-procedures/liposuction/
+PR-G2-025;semanas_2_4;Os pontos costumam ser retirados por volta de uma semana. Caminhar e se movimentar no dia a dia é normal. Exercício leve costuma voltar perto de 3 a 4 semanas e esforço forte continua evitado por mais tempo, conforme o cirurgião.;SA-G-201;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/liposuction/
+PR-G2-025;meses_1_3;A dormência costuma sumir em 6 a 8 semanas. Inchaço e roxo podem durar até 6 meses e o resultado só aparece depois disso.;SA-G-202;UBS_EM_BREVE;https://www.nhs.uk/conditions/cosmetic-procedures/liposuction/
+PR-G2-026;dia_0_1;Internação de algumas noites, dor, curativos, cinta e dificuldade para ficar totalmente reto.;SA-G-006;SAMU_192;https://www.nhs.uk/conditions/cosmetic-procedures/tummy-tuck/
+PR-G2-026;dias_2_7;Andar um pouco curvado com sensação de repuxar, roxo, dor e dormência na barriga. Dormir com os joelhos dobrados protege os pontos.;SA-G-007;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/tummy-tuck/
+PR-G2-026;dias_2_7;Andar um pouco curvado com sensação de repuxar, roxo, dor e dormência na barriga. Dormir com os joelhos dobrados protege os pontos.;SA-G-004;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/tummy-tuck/
+PR-G2-026;dias_2_7;Andar um pouco curvado com sensação de repuxar, roxo, dor e dormência na barriga. Dormir com os joelhos dobrados protege os pontos.;SA-G-001|SA-G-002|SA-G-003|SA-G-005;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/tummy-tuck/
+PR-G2-026;semanas_2_4;Um inchaço passageiro com líquido acima da cicatriz pode aparecer. A cinta costuma ficar por cerca de 6 semanas.;SA-G-203;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/tummy-tuck/
+PR-G2-026;meses_1_3;Recuperação completa em cerca de 6 semanas. Cicatriz vermelha e alta que vai clareando em 12 a 18 meses. Dormência pode durar meses ou anos.;SA-G-204;UBS_EM_BREVE;https://www.nhs.uk/conditions/cosmetic-procedures/tummy-tuck/
+PR-G2-027;dia_0_1;Consegue se movimentar logo depois da cirurgia, com dor controlada.;SA-G-205;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/breast-enlargement/
+PR-G2-027;dias_2_7;Recuperação em andamento, que costuma levar algumas semanas. Os pontos costumam ser retirados em 1 a 2 semanas, se não forem dos que dissolvem.;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/breast-enlargement/
+PR-G2-027;semanas_2_4;Sem carregar peso nem exercício forte por pelo menos um mês. Alguns cirurgiões pedem sutiã esportivo dia e noite.;SA-G-206;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/breast-enlargement/
+PR-G2-027;meses_1_3;Cicatrizes começam a clarear perto de 6 semanas e as mamas ficam com aparência mais natural em alguns meses.;SA-G-207;UBS_EM_BREVE;https://www.nhs.uk/conditions/cosmetic-procedures/breast-enlargement/
+PR-G2-027;depois_3_meses;Exames de mama continuam normalmente, avisando que tem prótese.;SA-G-208;UBS_EM_BREVE;https://www.nhs.uk/conditions/cosmetic-procedures/breast-enlargement/
+PR-G2-028;dia_0_1;Pálpebras inchadas, dormentes e difíceis de fechar, olhos lacrimejando ou irritados. Cabeça elevada e compressa fria ajudam.;SA-G-209;SAMU_192;https://www.nhs.uk/conditions/cosmetic-procedures/eyelid-surgery/
+PR-G2-028;dias_2_7;Fitas dos pontos retiradas em até uma semana. Roxo e inchaço ainda presentes.;SA-G-001|SA-G-002|SA-G-003;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/eyelid-surgery/
+PR-G2-028;semanas_2_4;Roxo e vermelhidão podem levar semanas para sumir e a irritação dos olhos pode durar algumas semanas.;SA-G-210;UPA_HOJE;https://www.nhs.uk/conditions/cosmetic-procedures/eyelid-surgery/
+PR-G2-028;meses_1_3;A cicatriz pode repuxar por alguns meses e vai clareando.;SA-G-211;UBS_EM_BREVE;https://www.nhs.uk/conditions/cosmetic-procedures/eyelid-surgery/

@@ -1,0 +1,92 @@
+tipo;codigo;texto_atual;texto_tami;revisar
+pergunta;FIL_01;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Muita dificuldade para respirar • Ficando com a cor roxa • Não consegue falar uma frase inteira;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Muita dificuldade para respirar • Ficando com a cor roxa • Não consegue falar uma frase inteira;NAO
+pergunta;FIL_02;Você (ou a pessoa que precisa de ajuda) tem dor, aperto ou peso no peito? Vale se for agora ou se foi nas últimas horas.;Você (ou a pessoa que precisa de ajuda) tem dor, aperto ou peso no peito? Vale se for agora ou se foi nas últimas horas.;NAO
+pergunta;FIL_03;Agora ou nas últimas horas, você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Ficou desacordado (apagou) ou está muito difícil de acordar • Ficou confuso de repente • Convulsão (ataque);Agora ou nas últimas horas, você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Ficou desacordado (apagou) ou está muito difícil de acordar • Ficou confuso de repente • Convulsão (ataque);NAO
+pergunta;FIL_04;De repente, você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Boca torta • Fala enrolada • Fraqueza ou formigamento de um lado do corpo;De repente, você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Boca torta • Fala enrolada • Fraqueza ou formigamento de um lado do corpo;NAO
+pergunta;FIL_05;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Sangramento forte que não para, mesmo apertando • Sofreu um acidente grave: trânsito, queda de altura, batida forte na cabeça, queimadura grande ou choque elétrico;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Sangramento forte que não para, mesmo apertando • Sofreu um acidente grave: trânsito, queda de altura, batida forte na cabeça, queimadura grande ou choque elétrico;NAO
+pergunta;FIL_06;Depois de uma picada, comida ou remédio, inchou alguma destas partes? • Rosto • Lábios • Língua • Garganta;Depois de uma picada, comida ou remédio, inchou alguma destas partes? • Rosto • Lábios • Língua • Garganta;NAO
+pergunta;FIL_07;Alguém engoliu, bebeu ou respirou algo perigoso? Por exemplo: veneno, produto de limpeza ou remédio demais.;Alguém engoliu, bebeu ou respirou algo perigoso? Por exemplo: veneno, produto de limpeza ou remédio demais.;NAO
+pergunta;FIL_08;Você (ou a pessoa que precisa de ajuda) está pensando em se machucar ou em tirar a própria vida?;Vou te fazer uma pergunta importante. Pode responder com sinceridade. Você (ou a pessoa que precisa de ajuda) está pensando em se machucar ou em tirar a própria vida? Se for outra pessoa, responda o que você sabe.;NAO
+pergunta;FIL_C01;O bebê ou a criança tem algum destes sinais? • Não consegue mamar nem beber nada • Vomita tudo o que toma • Está molinho, caidinho, diferente do normal, mas acorda;O bebê ou a criança tem algum destes sinais? • Não consegue mamar nem beber nada • Vomita tudo o que toma • Está molinho, caidinho, diferente do normal, mas acorda;NAO
+pergunta;FIL_C02;Você mediu a temperatura do bebê debaixo do braço (axila, sovaco)? Quanto deu?;Você mediu a temperatura do bebê debaixo do braço (axila, sovaco)? Quanto deu?;SIM
+pergunta;FIL_C03;O bebê tem algum destes sinais? • Umbigo vermelho em volta, ou com pus, ou com mau cheiro • Pele amarela que já chegou nos braços e nas pernas • Pus saindo do ouvido;O bebê tem algum destes sinais? • Umbigo vermelho em volta, ou com pus, ou com mau cheiro • Pele amarela que já chegou nos braços e nas pernas • Pus saindo do ouvido;SIM
+pergunta;FIL_G01;Você (ou a pessoa que precisa de ajuda) está perdendo sangue ou líquido pela vagina? Se ficar em dúvida entre muito e pouco sangue, escolha Muito sangue.;Você (ou a pessoa que precisa de ajuda) está perdendo sangue ou líquido pela vagina? Se ficar em dúvida entre muito e pouco sangue, escolha Muito sangue.;SIM
+pergunta;FIL_G02;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Dor de cabeça forte com a vista embaçada ou vendo pontinhos • Rosto, mãos ou pernas inchados de repente • Pressão de 14 por 9 ou mais (se não mediu a pressão, não conte este);Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Dor de cabeça forte com a vista embaçada ou vendo pontinhos • Rosto, mãos ou pernas inchados de repente • Pressão de 14 por 9 ou mais (se não mediu a pressão, não conte este);NAO
+pergunta;FIL_G03;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • O bebê está mexendo bem menos que o normal • O bebê ficou mais de 4 horas sem mexer (com 20 semanas de gravidez ou mais) • Dor forte na barriga • Antes de 37 semanas: a barriga fica dura e isso volta de tempos em tempos, num ritmo certo (contrações);Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • O bebê está mexendo bem menos que o normal • O bebê ficou mais de 4 horas sem mexer (com 20 semanas de gravidez ou mais) • Dor forte na barriga • Antes de 37 semanas: a barriga fica dura e isso volta de tempos em tempos, num ritmo certo (contrações);SIM
+pergunta;FIL_I01;De repente, sem motivo, começou falta de ar ou um cansaço muito forte?;De repente, sem motivo, começou falta de ar ou um cansaço muito forte?;NAO
+pergunta;FAR_01;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Não consegue falar uma frase inteira • Lábios roxos • Respira muito rápido;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Não consegue falar uma frase inteira • Lábios roxos • Respira muito rápido;NAO
+pergunta;FAR_02;A falta de ar começou junto com inchaço no rosto, boca ou garganta?;A falta de ar começou junto com inchaço no rosto, na boca ou na garganta?;NAO
+pergunta;FAR_03;Tem dor ou aperto no peito junto?;Tem dor ou aperto no peito junto com a falta de ar?;NAO
+pergunta;DPE_01;A dor ou o aperto ainda está aí agora, e já dura mais que alguns minutos?;A dor ou o aperto ainda está aí agora, e já dura mais que alguns minutos?;SIM
+pergunta;DPE_02;Junto com a dor, tem algum destes sinais? • Suor frio • Pele ou rosto muito pálido, sem cor • Falta de ar • Enjoo • Sensação de que vai desmaiar;Junto com a dor, tem algum destes sinais? • Suor frio • Pele ou rosto muito pálido, sem cor • Falta de ar • Enjoo • Sensação de que vai desmaiar;NAO
+pergunta;DPE_03;A dor se espalha para algum destes lugares? • Braço • Costas • Pescoço • Queixo • Estômago;A dor se espalha para algum destes lugares? • Braço • Costas • Pescoço • Queixo • Estômago;NAO
+pergunta;DCV_02;Você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Mais de uma convulsão (ataque) • Demorou mais que alguns minutos para acordar;Você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Mais de uma convulsão (ataque) • Demorou mais que alguns minutos para acordar;NAO
+pergunta;DCV_03;Antes ou depois do que aconteceu, teve algum destes sinais? • Dor no peito • Falta de ar • Sinais de derrame (AVC): boca torta, fala enrolada, ou fraqueza ou formigamento de um lado do corpo • Bateu a cabeça na queda;Antes ou depois do que aconteceu, teve algum destes sinais? • Dor no peito • Falta de ar • Sinais de derrame (AVC): boca torta, fala enrolada, ou fraqueza ou formigamento de um lado do corpo • Bateu a cabeça na queda;NAO
+pergunta;DCV_04B;Foi uma convulsão (ataque)? Por exemplo: tremedeira com olho virado.;Foi uma convulsão (ataque)? Por exemplo: tremedeira com olho virado.;SIM
+pergunta;INT_01;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Está sonolento • Desmaiou • Falta de ar • Convulsão (ataque). Se tomou de propósito, escolha Foi de propósito, mesmo que tenha algum destes sinais.;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Está sonolento • Desmaiou • Falta de ar • Convulsão (ataque). Se tomou de propósito, escolha Foi de propósito, mesmo que tenha algum destes sinais.;SIM
+pergunta;CRI_01;Obrigada por me contar. Algum destes vale para você (ou para a pessoa que precisa de ajuda) agora? • Está em perigo • Já tem um plano • O que pensou em usar está por perto • Já se machucou ou tomou algo;Obrigada por me contar. Estou aqui com você nesta conversa. Algum destes vale para você (ou para a pessoa que precisa de ajuda) agora? • Está em perigo • Já tem um plano • O que pensou em usar está por perto • Já se machucou ou tomou algo;SIM
+pergunta;PEL_03;Faça o teste do copo. Aperte com força um copo de vidro liso e transparente em cima das manchas. Olhe pelo vidro. As manchas somem?;Faça o teste do copo. Aperte com força um copo de vidro liso e transparente em cima das manchas. Olhe pelo vidro. As manchas somem?;NAO
+pergunta;FEB_A02;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes? Marque todos que tiver.;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes? Marque todos que tiver.;SIM
+pergunta;FEB_A03;A febre começou depois de muito sol, lugar muito quente ou exercício forte?;A febre começou depois de muito sol, de lugar muito quente ou de exercício forte?;NAO
+pergunta;FEB_A03B;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Pele quente e seca, sem suor • Está tonto • Está confuso • Está com a visão diferente;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Pele quente e seca, sem suor • Está tonto • Está confuso • Está com a visão diferente;NAO
+pergunta;FEB_A04;Apareceram pintinhas ou manchas vermelho-escuras ou roxas na pele?;Apareceram pintinhas ou manchas vermelho-escuras ou roxas na pele?;NAO
+pergunta;FEB_A05;E agora, você (ou a pessoa que precisa de ajuda) tem algum destes? Marque todos que tiver.;E agora, você (ou a pessoa que precisa de ajuda) tem algum destes? Marque todos que tiver.;NAO
+pergunta;FEB_A06;Há quantos dias começou a febre?;Há quantos dias começou a febre?;NAO
+pergunta;FEB_A07;A febre durou alguns dias e baixou ou sumiu nos últimos 1 ou 2 dias?;A febre durou alguns dias e baixou ou sumiu nos últimos 1 ou 2 dias?;NAO
+pergunta;FEB_A08;Algum destes vale para você (ou para a pessoa que precisa de ajuda)? • Tem casos de dengue, chikungunya ou zika perto de você • Viajou nas últimas 2 semanas para um lugar com esses casos;Algum destes vale para você (ou para a pessoa que precisa de ajuda)? • Tem casos de dengue, chikungunya ou zika perto de você • Viajou nas últimas 2 semanas para um lugar com esses casos;NAO
+pergunta;FEB_A09;Além da febre, você (ou a pessoa que precisa de ajuda) tem algum destes? Marque todos que tiver.;Além da febre, você (ou a pessoa que precisa de ajuda) tem algum destes? Marque todos que tiver.;NAO
+pergunta;RES_07;Está com falta de ar, mesmo que leve, ou cansaço para respirar?;Está com falta de ar, mesmo que leve, ou cansaço para respirar?;NAO
+pergunta;FEB_A10;Você (ou a pessoa que precisa de ajuda) tem alguma destas doenças ou situações? Marque todas que tiver.;Você (ou a pessoa que precisa de ajuda) tem alguma destas doenças ou situações? Marque todas que tiver.;SIM
+pergunta;FEB_A11;Algum destes vale para você (ou para a pessoa que precisa de ajuda)? • Mora sozinho e está difícil beber líquidos • Se piorar, não tem como chegar a um posto ou UPA;Algum destes vale para você (ou para a pessoa que precisa de ajuda)? • Mora sozinho e está difícil beber líquidos • Se piorar, não tem como chegar a um posto ou UPA;NAO
+pergunta;GEN_01;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Está confuso • Está muito sonolento • Está com a fala enrolada;Agora, você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Está confuso • Está muito sonolento • Está com a fala enrolada;NAO
+pergunta;GEN_02;De 0 a 10, quanto incomoda agora?;De 0 a 10, quanto isso está incomodando agora? Zero é nada. Dez é a pior dor que você já sentiu.;SIM
+pergunta;GEN_03;Algum destes é verdade sobre o que está acontecendo? • Começou de repente e forte • Está piorando rápido;Algum destes é verdade sobre o que está acontecendo? • Começou de repente e forte • Está piorando rápido;NAO
+pergunta;GEN_04;Tem febre ou calafrio?;Tem febre ou calafrio?;NAO
+pergunta;GEN_05;Você (ou a pessoa que precisa de ajuda) tem diabetes, imunidade baixa (defesa do corpo fraca) ou outra doença que precisa de acompanhamento médico?;Você (ou a pessoa que precisa de ajuda) tem diabetes, imunidade baixa (defesa do corpo fraca) ou outra doença que precisa de acompanhamento médico?;NAO
+pergunta;GEN_06;Há quanto tempo começou?;Há quanto tempo isso começou?;NAO
+tela;ABERTURA;;Oi, eu sou a Tami. Se for uma emergência, ligue 192 agora. Se não, me conta o que está acontecendo, do seu jeito. Eu te ajudo a saber para onde ir.;NAO
+tela;POS_RELATO;;Obrigada por me contar. Agora vou te fazer algumas perguntas rápidas.;NAO
+tela;MINIMIZA;;Tudo bem. Mesmo assim, vou conferir com cuidado.;NAO
+tela;FIGURADO;;Entendi: isso foi um jeito de falar. Que bom. Vamos seguir.;NAO
+tela;LISTA_CONFIRMACAO;;Vou te mostrar algumas coisas. Marque as que você (ou a pessoa que precisa de ajuda) tem agora.;NAO
+tela;LISTA_CONFIRMACAO_2;;Nenhum desses? Tudo bem. Veja mais alguns.;NAO
+tela;FIM_CONVERSA;;Pronto. Já sei para onde você deve ir.;NAO
+tela;LIMITE_REMEDIO;;Eu não indico remédio. Leve a receita ou a caixa do remédio na consulta.;NAO
+tela;LIMITE_DIAGNOSTICO;;Eu não digo o nome do que você tem. Quem faz isso é o profissional que vai te examinar. Eu te ajudo a chegar ao lugar certo.;NAO
+tela;FATOR_DE_RISCO;;Pelo que você me contou sobre a saúde, vou ter mais cuidado. É mais seguro assim.;NAO
+tela;FECHAMENTO;;Você se sente bem cuidado(a) com essa orientação?;NAO
+tela;FECHAMENTO_NAO;;Entendi. Você pode ligar 192 agora, ver o caminho até o atendimento ou refazer as perguntas.;NAO
+tela;FECHAMENTO_SIM;;Que bom. Se algo mudar, volte aqui. Eu estou sempre por aqui.;NAO
+mensagem;MSG-SAMU;;Ligue 192 agora. O que você contou pode ser grave e precisa de ajuda já.;SIM
+mensagem;MSG-UPA;;Vá hoje a uma UPA ou pronto-socorro. Isso precisa ser visto ainda hoje.;SIM
+mensagem;MSG-UPA-INTOX;;Ligue agora para o CIATox, que orienta em caso de envenenamento: 0800 722 6001. É de graça, 24 horas. Depois vá hoje a uma UPA. Leve a embalagem do produto ou do remédio.;SIM
+mensagem;MSG-UPA-MATERNIDADE;;Vá hoje à maternidade onde você faz o pré-natal, ou a um pronto-socorro. Leve a caderneta da gestante.;SIM
+mensagem;MSG-UBS-MESMO_DIA;;Procure o posto de saúde (UBS) hoje mesmo. Se estiver fechado, vá a uma UPA.;SIM
+mensagem;MSG-UBS-ATE_48H;;Procure o posto de saúde (UBS) em até 2 dias.;SIM
+mensagem;MSG-UBS-PROXIMOS_DIAS;;Marque um atendimento no posto de saúde (UBS) nos próximos dias.;SIM
+mensagem;MSG-CASA;;Dá para cuidar disso em casa por enquanto. Se piorar, procure atendimento ou volte aqui.;SIM
+bloco;CVV188;;Se você está em perigo agora, ligue 192. Para conversar, ligue 188 (CVV): é de graça e funciona 24 horas. Você não precisa passar por isso sem ajuda.;SIM
+bloco;DISQUE_INTOX;;CIATox, ajuda para envenenamento: 0800 722 6001. Ligação grátis, 24 horas. Eles dizem o que fazer agora.;SIM
+bloco;BLK-SP-GEN;;Ligue 192 se piorar. Ligue também se aparecer falta de ar, dor no peito, desmaio, ou se ficar confuso, sem entender as coisas.;SIM
+bloco;BLK-SP-FEB;;Procure atendimento hoje se a febre durar mais de 3 dias, ou se aparecerem manchas, sangramento, falta de ar ou muita moleza.;SIM
+bloco;BLK-LEVAR-INTOX;;Leve a embalagem do produto ou do remédio. Isso ajuda muito quem vai te atender.;SIM
+bloco;BLK-LEVAR-DENGUE;;Anote em que dia a febre começou e leve essa anotação.;SIM
+bloco;BLK-HIDRATAR;;Beba água e outros líquidos aos poucos, várias vezes ao dia.;SIM
+bloco;BLK-CALOR;;Vá para um lugar fresco e à sombra. Afrouxe a roupa e molhe a pele com água fresca.;SIM
+bloco;BLK-CASA-RES;;Descanse e beba líquidos. Se não melhorar em alguns dias, procure a UBS.;SIM
+bloco;BLK-EI-PEITO;;Enquanto a ajuda chega: quem está com a dor fica sentado, em repouso e com alguém junto. Quem está com a dor não deve dirigir.;SIM
+bloco;BLK-EI-AVC;;Anote a hora em que começou: isso é muito importante. Não dê comida, bebida nem remédio.;SIM
+bloco;BLK-EI-CONVULSAO;;Afaste objetos e proteja a cabeça. Não coloque nada na boca. Quando parar, deite a pessoa de lado.;SIM
+bloco;BLK-EI-DESMAIO;;Deixe a pessoa deitada e não dê nada pela boca. Se ela vomitar, vire de lado.;SIM
+bloco;BLK-EI-SANGRAMENTO;;Aperte firme com um pano limpo e não solte até a ajuda chegar.;SIM
+bloco;BLK-EI-RESPIRACAO;;Fique sentado (ou deixe a pessoa sentada), com o corpo um pouco para frente. Afrouxe a roupa.;SIM
+bloco;BLK-EI-ALERGIA;;Se o médico já passou um plano para crise de alergia, siga esse plano agora.;SIM
+bloco;BLK-EI-INTOX;;Não tente vomitar nem faça a pessoa vomitar. Separe a embalagem do que foi engolido ou respirado.;SIM
+bloco;BLK-EI-TRAUMA;;Se a pessoa caiu de altura ou bateu forte, não mexa nela. Só tire do lugar se ali for perigoso.;SIM
+bloco;BLK-EI-MANCHAS;;Isso precisa de atendimento agora. Não espere a febre baixar.;SIM
+bloco;BLK-EI-CHOQUE_DENGUE;;Isso precisa de atendimento agora. Se a pessoa estiver acordada, ofereça líquidos aos poucos enquanto espera a ajuda.;SIM
+bloco;BLK-CASA-LESAO;;Cuidados nos primeiros 2 ou 3 dias • Proteja a parte machucada e evite apoiar o peso nela • Descanse e pare o treino por enquanto • Gelo: um saco de gelo ou de legumes congelados enrolado num pano, por até 20 minutos, a cada 2 ou 3 horas. Nunca direto na pele • Uma faixa leve durante o dia ajuda a firmar. Tire para dormir • Deixe a parte machucada elevada num travesseiro sempre que puder • Evite calor (banho quente, bolsa quente), álcool e massagem nesses dias • Quando conseguir mexer sem a dor travar, mexa devagar para não endurecer • Durma bem: é dormindo que o corpo se recupera • Beba água ao longo do dia;SIM
+bloco;BLK-EI-LESAO;;Enquanto vai para lá • Não force nem tente colocar no lugar • Deixe a parte machucada parada, apoiada numa almofada, tala improvisada ou tipoia • Gelo enrolado num pano ajuda com a dor e o inchaço • Não dirija: peça para alguém levar você;SIM
+bloco;BLK-VOLTA-TREINO;;Volta ao treino • Volte só quando conseguir mexer e apoiar sem dor • Comece leve e aumente aos poucos • Avise seu professor ou treinador para adaptar o treino;SIM
+bloco;BLK-CASA-GERAL;;Enquanto isso • Descanse • Beba água ao longo do dia • Durma bem • Anote como você está: se piorar ou aparecer algo novo, procure atendimento antes;SIM
+bloco;BLK-SP-LESAO;;Procure a UPA se a dor ficar muito forte, se o inchaço ou o roxo aumentarem, se não conseguir apoiar ou mexer, ou se ficar dormente, gelado ou roxo. Procure a UBS se não melhorar em alguns dias.;SIM

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /movimento/
+Disallow: /marca/pdf.html
+Sitemap: https://gabriell230g.github.io/tami/sitemap.xml

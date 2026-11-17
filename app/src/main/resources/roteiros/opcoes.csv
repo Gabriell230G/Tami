@@ -1,0 +1,203 @@
+no_id;codigo;rotulo;gravidade;efeito
+FIL_01;S;Sim, pelo menos um;3;SAMU:AR_GRAVE
+FIL_01;N;Não, nenhum;0;
+FIL_01;nao_sei;Não sei;0;
+FIL_02;S;Sim;2;FLAG:dorPeito & IR:DPE_01
+FIL_02;N;Não;0;
+FIL_02;nao_sei;Não sei;0;
+FIL_03;agora;Sim, está acontecendo agora;3;SAMU:CONSCIENCIA & EXIGE:BLK-EI-DESMAIO
+FIL_03;passou;Sim, mas já passou;2;IR:DCV_02
+FIL_03;N;Não, nenhum;0;
+FIL_03;nao_sei;Não sei;0;SAMU:CONSCIENCIA & EXIGE:BLK-EI-DESMAIO
+FIL_04;S;Sim, pelo menos um;3;SAMU:SINAL_AVC & EXIGE:BLK-EI-AVC
+FIL_04;N;Não, nenhum;0;
+FIL_04;nao_sei;Não sei;0;
+FIL_05;S;Sim, pelo menos um;3;SAMU:TRAUMA & EXIGE:BLK-EI-SANGRAMENTO
+FIL_05;N;Não, nenhum;0;
+FIL_05;nao_sei;Não sei;0;
+FIL_06;S;Sim, pelo menos uma;3;SAMU:ANAFILAXIA & EXIGE:BLK-EI-ALERGIA
+FIL_06;N;Não, nenhuma;0;
+FIL_06;nao_sei;Não sei;0;
+FIL_07;S;Sim;2;IR:INT_01
+FIL_07;N;Não;0;
+FIL_07;nao_sei;Não sei;0;
+FIL_08;S;Sim;2;IR:CRI_01
+FIL_08;N;Não;0;
+FIL_08;nao_sei;Não sei;0;
+FIL_C01;S;Sim, pelo menos um;2;UPA:SINAL_PERIGO_CRIANCA
+FIL_C01;N;Não, nenhum;0;
+FIL_C01;nao_sei;Não sei;0;
+FIL_C02;37_5_mais;Deu 37,5 graus ou mais;2;UPA:FEBRE_BEBE
+FIL_C02;normal;Deu entre 35,6 e 37,4 graus;0;
+FIL_C02;35_5_menos;Deu 35,5 graus ou menos;2;UPA:TEMPERATURA_BAIXA_BEBE
+FIL_C02;nao_mediu;Não medi, mas o bebê parece quente ou frio;2;UPA:FEBRE_BEBE
+FIL_C02;nao_sei;Não medi e não sei dizer;0;
+FIL_C03;S;Sim, pelo menos um;2;UPA:SINAL_PERIGO_BEBE
+FIL_C03;N;Não, nenhum;0;
+FIL_C03;nao_sei;Não sei;0;
+FIL_G01;forte;Muito sangue (sangramento forte);3;SAMU:SANGRAMENTO_GESTACAO
+FIL_G01;leve_ou_liquido;Pouco sangue, ou só perda de líquido;2;UPA_MAT:SANGRAMENTO_OU_LIQUIDO
+FIL_G01;N;Não;0;
+FIL_G01;nao_sei;Não sei;0;
+FIL_G02;S;Sim, pelo menos um;2;UPA_MAT:PRE_ECLAMPSIA
+FIL_G02;N;Não, nenhum;0;
+FIL_G02;nao_sei;Não sei;0;
+FIL_G03;S;Sim, pelo menos um;2;UPA_MAT:ALERTA_GESTACAO
+FIL_G03;N;Não, nenhum;0;
+FIL_G03;nao_sei;Não sei;0;
+FIL_I01;S;Sim;3;SAMU:FALTA_AR_SUBITA
+FIL_I01;N;Não;0;
+FIL_I01;nao_sei;Não sei;0;
+FAR_01;S;Sim, pelo menos um;3;SAMU:AR_GRAVE & EXIGE:BLK-EI-RESPIRACAO
+FAR_01;N;Não, nenhum;0;
+FAR_01;nao_sei;Não sei;0;
+FAR_02;S;Sim;3;SAMU:ANAFILAXIA & EXIGE:BLK-EI-ALERGIA
+FAR_02;N;Não;0;
+FAR_02;nao_sei;Não sei;0;
+FAR_03;S;Sim;3;SAMU:DOR_PEITO_COM_FALTA_DE_AR & EXIGE:BLK-EI-PEITO
+FAR_03;N;Não;0;
+FAR_03;nao_sei;Não sei;0;
+DPE_01;S;Sim, ainda está aí;3;SAMU:DOR_PEITO_CONTINUA & EXIGE:BLK-EI-PEITO
+DPE_01;N;Não;0;
+DPE_01;nao_sei;Não sei;0;
+DPE_02;S;Sim, pelo menos um;3;SAMU:DOR_PEITO_COM_SINAIS & EXIGE:BLK-EI-PEITO
+DPE_02;N;Não, nenhum;0;
+DPE_02;nao_sei;Não sei;0;
+DPE_03;S;Sim, pelo menos um;3;SAMU:DOR_PEITO_IRRADIA & EXIGE:BLK-EI-PEITO
+DPE_03;N;Não, nenhum;0;
+DPE_03;nao_sei;Não sei;0;
+DCV_02;S;Sim, pelo menos um;3;SAMU:CONVULSAO_OU_DESMAIO_LONGO & EXIGE:BLK-EI-CONVULSAO
+DCV_02;N;Não, nenhum;0;
+DCV_02;nao_sei;Não sei;0;
+DCV_03;S;Sim, pelo menos um;3;SAMU:DESMAIO_COM_SINAL & EXIGE:BLK-EI-DESMAIO
+DCV_03;N;Não, nenhum;0;
+DCV_03;nao_sei;Não sei;0;
+DCV_04B;S;Sim, foi convulsão;3;SAMU:CONVULSAO_CRIANCA & EXIGE:BLK-EI-CONVULSAO
+DCV_04B;N;Não, foi desmaio;0;
+DCV_04B;nao_sei;Não sei;0;
+INT_01;S;Sim, pelo menos um;3;SAMU:INTOXICACAO_GRAVE & EXIGE:BLK-EI-INTOX
+INT_01;de_proposito;Foi de propósito;3;SAMU:INTOXICACAO_INTENCIONAL & EXIGE:CVV188 & EXIGE:BLK-EI-INTOX
+INT_01;N;Não, nenhum;0;
+INT_01;nao_sei;Não sei;0;
+CRI_01;S;Sim, pelo menos um;3;SAMU:RISCO_SUICIDIO & EXIGE:CVV188
+CRI_01;N;Não, nenhum;0;
+CRI_01;nao_sei;Não sei;0;
+PEL_03;somem;Todas somem;0;
+PEL_03;nao_somem;Pelo menos uma não some;3;SAMU:MANCHAS_COM_FEBRE & EXIGE:BLK-EI-MANCHAS
+PEL_03;nao_consegui_ver;Não consegui ver;3;SAMU:MANCHAS_COM_FEBRE & EXIGE:BLK-EI-MANCHAS
+FEB_A02;confusa;Muito confusa ou difícil de acordar;3;SAMU:CONFUSAO
+FEB_A02;falta_ar;Falta de ar forte;3;SAMU:FALTA_AR_FORTE & EXIGE:BLK-EI-RESPIRACAO
+FEB_A02;choque;Mãos e pés gelados, pele roxa ou muito pálida, ou suor frio (basta um);3;SAMU:CHOQUE_DENGUE & EXIGE:BLK-EI-CHOQUE_DENGUE
+FEB_A02;sangue_vomito;Vomitou sangue ou fez cocô preto;3;SAMU:SANGRAMENTO_GRAVE
+FEB_A02;sangramento_forte;Sangramento forte que não para;3;SAMU:SANGRAMENTO_GRAVE & EXIGE:BLK-EI-SANGRAMENTO
+FEB_A02;pescoco_duro;Pescoço duro: dói, ou o queixo não encosta no peito;3;SAMU:FEBRE_PESCOCO_DURO
+FEB_A02;nenhum;Nenhum;0;
+FEB_A02;nao_sei;Não sei;0;
+FEB_A03;S;Sim;0;FLAG:calor
+FEB_A03;N;Não;0;
+FEB_A03;nao_sei;Não sei;0;
+FEB_A03B;S;Sim, pelo menos um;3;SAMU:INSOLACAO & EXIGE:BLK-CALOR
+FEB_A03B;N;Não, nenhum;0;
+FEB_A03B;nao_sei;Não sei;0;
+FEB_A04;S;Sim;2;IR:PEL_03
+FEB_A04;N;Não;0;
+FEB_A04;nao_sei;Não sei;0;
+FEB_A05;dor_barriga;Dor forte na barriga que não passa;2;UPA:ALARME_DENGUE
+FEB_A05;vomito_toda_hora;Vomita toda hora ou não consegue beber;2;UPA:ALARME_DENGUE
+FEB_A05;tontura_levantar;Tontura ou quase desmaio ao levantar;2;UPA:ALARME_DENGUE
+FEB_A05;sangue_nariz_gengiva;Sangue no nariz ou na gengiva;2;UPA:ALARME_DENGUE
+FEB_A05;sonolento;Muito sonolento ou irritado, diferente do normal, mas acorda quando chama;2;UPA:ALARME_DENGUE
+FEB_A05;dor_cabeca_forte;Dor de cabeça muito forte, diferente das outras;2;UPA:DOR_CABECA_FORTE_COM_FEBRE
+FEB_A05;nenhum;Nenhum;0;
+FEB_A05;nao_sei;Não sei;0;
+FEB_A06;1_2;Começou hoje ou há 1 a 2 dias;0;VAR:dias=1
+FEB_A06;3_4;3 a 4 dias;0;VAR:dias=3
+FEB_A06;5_7;5 a 7 dias;0;VAR:dias=5
+FEB_A06;mais_7;Mais de 7 dias;0;VAR:dias=8
+FEB_A06;nao_lembro;Não lembro;0;VAR:dias=3
+FEB_A07;baixou;Sim, baixou ou sumiu;0;FLAG:febreBaixou
+FEB_A07;N;Não, continua;0;
+FEB_A07;nao_sei;Não sei;0;FLAG:febreBaixou
+FEB_A08;S;Sim, pelo menos um;1;FLAG:contextoArbo
+FEB_A08;N;Não, nenhum;0;
+FEB_A08;nao_sei;Não sei;0;
+FEB_A09;corpo;Dor no corpo;0;FLAG:arbo_corpo
+FEB_A09;juntas;Dor nas juntas;0;FLAG:arbo_juntas
+FEB_A09;cabeca;Dor de cabeça;0;FLAG:arbo_cabeca
+FEB_A09;olhos;Dor atrás dos olhos;0;FLAG:arbo_olhos
+FEB_A09;manchas;Manchas vermelhas que somem ao apertar;0;FLAG:arbo_manchas
+FEB_A09;enjoo;Enjoo ou vômito;0;FLAG:arbo_enjoo
+FEB_A09;resfriado;Tosse, nariz escorrendo ou dor de garganta;0;FLAG:resfriado
+FEB_A09;urinario;Ardência para fazer xixi ou dor nas costas;0;FLAG:urinario
+FEB_A09;nenhum;Nenhum;0;FLAG:semFoco
+RES_07;S;Sim;2;UPA:FEBRE_COM_FALTA_DE_AR
+RES_07;N;Não;0;
+RES_07;nao_sei;Não sei;0;
+FEB_A10;pressao;Pressão alta ou doença do coração;1;FLAG:grupoRisco
+FEB_A10;diabetes;Diabetes;1;FLAG:grupoRisco
+FEB_A10;pulmao;Asma, bronquite, enfisema ou DPOC;1;FLAG:grupoRisco
+FEB_A10;obesidade;Obesidade;1;FLAG:grupoRisco
+FEB_A10;sangue;Anemia falciforme ou outra doença do sangue;1;FLAG:grupoRisco
+FEB_A10;rins;Doença nos rins;1;FLAG:grupoRisco
+FEB_A10;figado;Doença no fígado;1;FLAG:grupoRisco
+FEB_A10;gastrite;Gastrite forte ou úlcera;1;FLAG:grupoRisco
+FEB_A10;autoimune;Doença autoimune (como lúpus);1;FLAG:grupoRisco
+FEB_A10;afinar_sangue;Usa remédio para afinar o sangue;1;FLAG:grupoRisco
+FEB_A10;nenhuma;Nenhuma;0;
+FEB_A10;nao_sei;Não sei;0;
+FEB_A11;S;Sim, pelo menos um;1;FLAG:riscoSocial
+FEB_A11;N;Não, nenhum;0;
+FEB_A11;nao_sei;Não sei;0;
+GEN_01;S;Sim, pelo menos um;3;SAMU:CONFUSAO
+GEN_01;N;Não, nenhum;0;
+GEN_01;nao_sei;Não sei;0;
+GEN_02;0;0;0;VAR:dor=0
+GEN_02;1;1;0;VAR:dor=1
+GEN_02;2;2;0;VAR:dor=2
+GEN_02;3;3;0;VAR:dor=3
+GEN_02;4;4;0;VAR:dor=4
+GEN_02;5;5;0;VAR:dor=5
+GEN_02;6;6;0;VAR:dor=6
+GEN_02;7;7;2;VAR:dor=7 & UPA:DOR_MUITO_FORTE
+GEN_02;8;8;2;VAR:dor=8 & UPA:DOR_MUITO_FORTE
+GEN_02;9;9;2;VAR:dor=9 & UPA:DOR_MUITO_FORTE
+GEN_02;10;10;2;VAR:dor=10 & UPA:DOR_MUITO_FORTE
+GEN_03;S;Sim, pelo menos um;2;UPA:PIORA_RAPIDA
+GEN_03;N;Não, nenhum;0;
+GEN_03;nao_sei;Não sei;0;
+GEN_04;S;Sim;1;FLAG:febre
+GEN_04;N;Não;0;
+GEN_04;nao_sei;Não sei;0;
+GEN_05;S;Sim;1;FLAG:grupoRisco
+GEN_05;N;Não;0;
+GEN_05;nao_sei;Não sei;0;
+GEN_06;hoje;Hoje (menos de 1 dia);0;
+GEN_06;1_7_dias;De 1 a 7 dias;0;
+GEN_06;1_4_semanas;De 8 dias a 1 mês;0;
+GEN_06;mais_1_mes;Mais de 1 mês;0;
+ORI_01;machucou;Machuquei: pancada, queda, torção ou esporte;0;FLAG:lesao
+ORI_01;sozinho;Começou sozinho, sem me machucar;0;
+ORI_01;nao_sei;Não sei;0;
+LES_01;esporte;No treino ou no esporte;0;FLAG:esporte
+LES_01;torcao;Torci ou pisei errado;0;FLAG:torcao
+LES_01;queda;Caí no chão, da minha altura;0;
+LES_01;pancada;Levei uma pancada ou bati em algo;0;
+LES_01;grave;Acidente de trânsito ou queda de mais de 1 metro;3;SAMU:ACIDENTE_GRAVE & EXIGE:BLK-EI-TRAUMA
+LES_01;agressao;Alguém me agrediu;2;UPA:AGRESSAO
+LES_02;osso;Osso aparecendo pela pele;3;SINAL:SA-C-121 & EXIGE:BLK-EI-TRAUMA
+LES_02;frio;A mão ou o pé ficou gelado, pálido ou roxo;3;SINAL:SA-C-124
+LES_02;coluna;Dor forte no pescoço ou nas costas, ou formigamento nos braços ou nas pernas;3;SINAL:SA-A-030 & EXIGE:BLK-EI-TRAUMA
+LES_02;cabeca_grave;Bateu a cabeça e está vomitando, confuso ou muito sonolento;3;SINAL:SA-C-027
+LES_02;nenhum;Nenhum destes;0;
+LES_02;nao_sei;Não sei;0;UPA:DUVIDA_SINAL_GRAVE
+LES_03;torto;Ficou torto ou parece fora do lugar;2;SINAL:SA-C-120
+LES_03;estalo;Ouvi um estalo ou senti algo quebrar na hora;2;SINAL:SA-C-123
+LES_03;apoiar;Não consigo apoiar o peso, dar uns 4 passos ou mexer a parte machucada;2;SINAL:SA-C-122
+LES_03;dormente;Ficou dormente ou formigando;2;SINAL:SA-C-125
+LES_03;inchaco;Inchaço ou roxo muito grande, que continua aumentando;2;SINAL:SA-C-126
+LES_03;cabeca;Bateu a cabeça e apagou por um instante, ou ficou tonto ou enjoado;2;SINAL:SA-C-025
+LES_03;nenhum;Nenhum destes;0;
+LES_03;nao_sei;Não sei;0;
+LES_04;melhorando;Está melhorando;0;
+LES_04;igual;Está igual;0;FLAG:semMelhora
+LES_04;piorando;Está piorando;2;UPA:LESAO_PIORANDO

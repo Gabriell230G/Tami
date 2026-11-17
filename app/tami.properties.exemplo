@@ -1,0 +1,22 @@
+# Configuração da Tami. Copie este arquivo para tami.properties e deixe ativa (sem #) só uma das opções.
+
+# ---- 1. Supabase (PostgreSQL na nuvem) · Connect ➜ Session pooler ----
+# db.url=jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?sslmode=require
+# db.usuario=postgres.CODIGO_DO_PROJETO
+# db.senha=SENHA_DO_BANCO
+
+# ---- 2. Oracle da FIAP ----
+# db.url=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
+# db.usuario=rmSEU_RM
+# db.senha=SUA_SENHA
+
+# ---- 3. Banco local para testar sem internet (H2 imitando o Oracle, não precisa instalar nada) ----
+db.url=jdbc:h2:./dados/tami;MODE=Oracle;DEFAULT_NULL_ORDERING=HIGH
+db.usuario=tami
+db.senha=tami
+
+# Porta do app no navegador: http://localhost:8080
+porta=8080
+
+# demonstracao: os 4 caminhos ativos. producao: como as regras ainda não têm revisão médica, "cuidar em casa" vira "UBS em breve".
+modo=demonstracao

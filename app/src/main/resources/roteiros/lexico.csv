@@ -1,0 +1,153 @@
+codigo;grupo;tipo;termo
+LX-PEITO-01;PEITO;NORMAL;dor no peito
+LX-PEITO-02;PEITO;NORMAL;aperto no peito
+LX-PEITO-03;PEITO;NORMAL;peso no peito
+LX-PEITO-04;PEITO;NORMAL;pressao no peito
+LX-PEITO-05;PEITO;NORMAL;queimacao no peito
+LX-PEITO-06;PEITO;NORMAL;peito apertado
+LX-PEITO-07;PEITO;NORMAL;dor no coracao
+LX-PEITO-08;PEITO;NORMAL;infarto
+LX-PEITO-09;PEITO;NORMAL;enfarto
+LX-PEITO-10;PEITO;NORMAL;ataque cardiaco
+LX-PEITO-11;PEITO;NORMAL;ataque do coracao
+LX-PEITO-12;PEITO;NORMAL;dor no braco esquerdo
+LX-PEITO-13;PEITO;NORMAL;suor frio
+LX-PEITO-14;PEITO;NORMAL;suando frio
+LX-PEITOV-01;PEITO_VAGO;VAGO;agonia no peito
+LX-PEITOV-02;PEITO_VAGO;VAGO;gastura
+LX-PEITOV-03;PEITO_VAGO;VAGO;pontada no peito
+LX-PEITOV-04;PEITO_VAGO;VAGO;coracao disparado
+LX-ARG-01;AR_GRAVE;POSITIVO_COM_NAO;nao consigo respirar
+LX-ARG-02;AR_GRAVE;POSITIVO_COM_NAO;nao consegue respirar
+LX-ARG-03;AR_GRAVE;POSITIVO_COM_NAO;nao respira
+LX-ARG-04;AR_GRAVE;POSITIVO_COM_NAO;engasgado nao respira
+LX-ARG-05;AR_GRAVE;NORMAL;sufocando
+LX-ARG-06;AR_GRAVE;NORMAL;ficando roxo
+LX-ARG-07;AR_GRAVE;NORMAL;ficando roxa
+LX-ARG-08;AR_GRAVE;NORMAL;labio roxo
+LX-ARG-09;AR_GRAVE;NORMAL;boca roxa
+LX-AR-01;AR;VAGO;falta de ar
+LX-AR-02;AR;VAGO;farta de ar
+LX-AR-03;AR;VAGO;sem ar
+LX-AR-04;AR;VAGO;cansaco pra respirar
+LX-AR-05;AR;VAGO;puxando o ar
+LX-AR-06;AR;VAGO;chiado forte
+LX-CON-01;CONSCIENCIA;NORMAL;desmaiou
+LX-CON-02;CONSCIENCIA;NORMAL;desmaio
+LX-CON-03;CONSCIENCIA;NORMAL;desmaiada
+LX-CON-04;CONSCIENCIA;NORMAL;desmaiado
+LX-CON-05;CONSCIENCIA;NORMAL;desmaiei
+LX-CON-06;CONSCIENCIA;NORMAL;apagou
+LX-CON-07;CONSCIENCIA;NORMAL;caiu duro
+LX-CON-08;CONSCIENCIA;POSITIVO_COM_NAO;nao acorda
+LX-CON-09;CONSCIENCIA;POSITIVO_COM_NAO;nao responde
+LX-CON-10;CONSCIENCIA;NORMAL;desacordado
+LX-CON-11;CONSCIENCIA;NORMAL;desacordada
+LX-CON-12;CONSCIENCIA;NORMAL;inconsciente
+LX-CON-13;CONSCIENCIA;NORMAL;passamento
+LX-CON-14;CONSCIENCIA;NORMAL;piripaque
+LX-CON-15;CONSCIENCIA;NORMAL;deu um troco
+LX-CON-16;CONSCIENCIA;NORMAL;dificil de acordar
+LX-CONV-01;CONSCIENCIA_VAGO;VAGO;molinha
+LX-CONV-02;CONSCIENCIA_VAGO;VAGO;molinho
+LX-CONV-03;CONSCIENCIA_VAGO;VAGO;caidinha
+LX-CONV-04;CONSCIENCIA_VAGO;VAGO;caidinho
+LX-CVS-01;CONVULSAO;NORMAL;convulsao
+LX-CVS-02;CONVULSAO;NORMAL;convulsionando
+LX-CVS-03;CONVULSAO;NORMAL;ataque epiletico
+LX-CVS-04;CONVULSAO;NORMAL;crise epiletica
+LX-CVS-05;CONVULSAO;NORMAL;ataque
+LX-CVS-06;CONVULSAO;NORMAL;tremedeira com olho virado
+LX-CVS-07;CONVULSAO;NORMAL;babando e tremendo
+LX-CVS-08;CONVULSAO;NORMAL;se debatendo
+LX-CVS-09;CONVULSAO;POSITIVO_COM_NAO;nao para de tremer
+LX-AVC-01;AVC;NORMAL;boca torta
+LX-AVC-02;AVC;NORMAL;rosto torto
+LX-AVC-03;AVC;NORMAL;cara torta
+LX-AVC-04;AVC;NORMAL;fala enrolada
+LX-AVC-05;AVC;NORMAL;falando enrolado
+LX-AVC-06;AVC;NORMAL;falando enrolada
+LX-AVC-07;AVC;NORMAL;enrolando a lingua
+LX-AVC-08;AVC;POSITIVO_COM_NAO;nao consegue falar
+LX-AVC-09;AVC;POSITIVO_COM_NAO;nao mexe o braco
+LX-AVC-10;AVC;POSITIVO_COM_NAO;nao sinto o braco
+LX-AVC-11;AVC;NORMAL;braco fraco
+LX-AVC-12;AVC;NORMAL;braco caiu
+LX-AVC-13;AVC;NORMAL;perdeu forca de um lado
+LX-AVC-14;AVC;NORMAL;dormencia de um lado
+LX-AVC-15;AVC;NORMAL;formigamento de um lado
+LX-AVC-16;AVC;NORMAL;derrame
+LX-AVC-17;AVC;NORMAL;avc
+LX-AVC-18;AVC;NORMAL;isquemia
+LX-AVCV-01;AVC_VAGO;VAGO;tontura forte
+LX-AVCV-02;AVC_VAGO;VAGO;vista escureceu
+LX-AVCV-03;AVC_VAGO;VAGO;perdi a visao
+LX-AVCV-04;AVC_VAGO;VAGO;formigamento
+LX-AVCV-05;AVC_VAGO;VAGO;dormencia
+LX-SAN-01;SANGUE;POSITIVO_COM_NAO;sangue nao para
+LX-SAN-02;SANGUE;POSITIVO_COM_NAO;nao para de sangrar
+LX-SAN-03;SANGUE;NORMAL;sangrando muito
+LX-SAN-04;SANGUE;NORMAL;jorrando sangue
+LX-SAN-05;SANGUE;NORMAL;esguichando
+LX-SAN-06;SANGUE;NORMAL;hemorragia
+LX-SAN-07;SANGUE;NORMAL;vomitando sangue
+LX-TRA-01;TRAUMA;NORMAL;atropelado
+LX-TRA-02;TRAUMA;NORMAL;atropelada
+LX-TRA-03;TRAUMA;NORMAL;batida de carro
+LX-TRA-04;TRAUMA;NORMAL;acidente de moto
+LX-TRA-05;TRAUMA;NORMAL;capotou
+LX-TRA-06;TRAUMA;NORMAL;caiu da laje
+LX-TRA-07;TRAUMA;NORMAL;caiu do telhado
+LX-TRA-08;TRAUMA;NORMAL;caiu de altura
+LX-TRA-09;TRAUMA;NORMAL;bateu a cabeca forte
+LX-TRA-10;TRAUMA;NORMAL;queimadura grande
+LX-TRA-11;TRAUMA;NORMAL;pegou fogo
+LX-TRA-12;TRAUMA;NORMAL;choque eletrico
+LX-TRA-13;TRAUMA;NORMAL;levou choque
+LX-TRA-14;TRAUMA;NORMAL;levei choque
+LX-TRA-15;TRAUMA;NORMAL;tomou choque
+LX-TRA-16;TRAUMA;NORMAL;tomei choque
+LX-TRA-17;TRAUMA;NORMAL;facada
+LX-TRA-18;TRAUMA;NORMAL;levei um tiro
+LX-ALE-01;ALERGIA;NORMAL;garganta fechando
+LX-ALE-02;ALERGIA;NORMAL;garganta inchada
+LX-ALE-03;ALERGIA;NORMAL;lingua inchada
+LX-ALE-04;ALERGIA;NORMAL;boca inchada
+LX-ALE-05;ALERGIA;NORMAL;labio inchando
+LX-ALE-06;ALERGIA;NORMAL;choque anafilatico
+LX-ALE-07;ALERGIA;NORMAL;alergia forte
+LX-VEN-01;VENENO;NORMAL;envenenado
+LX-VEN-02;VENENO;NORMAL;envenenada
+LX-VEN-03;VENENO;NORMAL;tomou veneno
+LX-VEN-04;VENENO;NORMAL;tomei veneno
+LX-VEN-05;VENENO;NORMAL;bebeu agua sanitaria
+LX-VEN-06;VENENO;NORMAL;bebeu produto de limpeza
+LX-VEN-07;VENENO;NORMAL;tomou muitos remedios
+LX-VEN-08;VENENO;NORMAL;tomou a cartela
+LX-VEN-09;VENENO;NORMAL;chumbinho
+LX-VEN-10;VENENO;NORMAL;overdose
+LX-VEN-11;VENENO;NORMAL;monte de comprimido
+LX-VEN-12;VENENO;NORMAL;monte de remedio
+LX-PRO-01;PROPOSITO;NORMAL;de proposito
+LX-GES-01;GESTANTE;NORMAL;sangrando gravida
+LX-GES-02;GESTANTE;NORMAL;perdendo liquido
+LX-GES-03;GESTANTE;NORMAL;bolsa estourou
+LX-GES-04;GESTANTE;POSITIVO_COM_NAO;nenem nao mexe
+LX-GES-05;GESTANTE;NORMAL;bebe parou de mexer
+LX-GES-06;GESTANTE;NORMAL;visao embacada
+LX-GES-07;GESTANTE;NORMAL;vendo pontinhos
+LX-SUI-01;SUICIDIO;NORMAL;quero morrer
+LX-SUI-02;SUICIDIO;NORMAL;vou me matar
+LX-SUI-03;SUICIDIO;NORMAL;me matar
+LX-SUI-04;SUICIDIO;NORMAL;tirar minha vida
+LX-SUI-05;SUICIDIO;NORMAL;acabar com tudo
+LX-SUI-06;SUICIDIO;POSITIVO_COM_NAO;nao aguento mais viver
+LX-SUI-07;SUICIDIO;NORMAL;vou desaparecer
+LX-SUI-08;SUICIDIO;NORMAL;sumir pra sempre
+LX-SUI-09;SUICIDIO;NORMAL;me cortar
+LX-SUI-10;SUICIDIO;NORMAL;me machucar
+LX-FEB-01;FEBRE;NORMAL;febre
+LX-FEB-02;FEBRE;NORMAL;febrinha
+LX-FEB-03;FEBRE;NORMAL;febrao
+LX-FEB-04;FEBRE;NORMAL;quentura
+LX-FEB-05;FEBRE;NORMAL;calafrio

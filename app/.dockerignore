@@ -1,0 +1,4 @@
+build/
+tami.properties
+dados/*.db
+dados/*.mv.db

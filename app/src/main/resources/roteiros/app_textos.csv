@@ -1,0 +1,236 @@
+tela;elemento;texto
+A01;chip;você
+A01;abertura;Oi! Me conta o que está acontecendo, do seu jeito. Pode falar ou escrever.
+A01;exemplo_pessoa;minha filha de 8 meses ta com febre desde ontem
+A02;titulo;Estou ouvindo.
+A02;apoio;Fale do seu jeito. Pode demorar o quanto precisar.
+A02;transcricao;O que eu estou ouvindo
+A02;botao;Parar de gravar
+A02;cancelar;CANCELAR
+A03;par;Você disse caiu ou saiu?
+A03;balao;Entendi isto. Confere pra mim? Pode tocar no texto e corrigir.
+A03;legenda;Em verde, os números. Em amarelo, palavras que eu posso ter ouvido errado.
+A03;botao_2;FALAR DE NOVO
+A03;botao_1;ENVIAR
+A03b;alerta;Pelo que eu ouvi, pode ser uma emergência. Não espere a conferência.
+A03b;botao_192;LIGAR 192 AGORA
+A03b;balao;Antes de conferir, olha isso:
+A03b;regra;Se a transcrição já indicar SAMU, o alerta aparece antes de qualquer conferência.
+A04;balao;Essa ajuda é para quem?
+A04;op_1;Para mim
+A04;op_2;Para outra pessoa
+A04;op_3;Para um bebê ou criança
+A04;idade;Quantos anos ou meses?
+A04;nota;Para adulto, também pergunto se está grávida.
+A05;balao;O bebê tem algum destes sinais agora?
+A05;s1;Muita dificuldade para respirar
+A05;s2;Lábios ou pele roxos
+A05;s3;Muito mole, difícil de acordar
+A05;s4;Manchas roxas que não somem ao apertar
+A05;ajuda;Basta um sinal para responder Sim. Toque no ? para ver o que é cada um.
+A05;sim;SIM, PELO MENOS UM
+A05;nao;NÃO, NENHUM
+A05;nao_sei;NÃO SEI
+A06;balao;Está acontecendo algum destes agora? Já marquei o que entendi da sua mensagem.
+A06;s1;Febre de 38 graus ou mais
+A06;s2;Não quer mamar nem beber nada
+A06;s3;Vômito que não para
+A06;s4;Chora sem parar e não acalma
+A06;nenhum;Nenhum destes
+A06b;pergunta;Você desmarcou Muita dificuldade para respirar. Esse sinal é de emergência. Ele está acontecendo agora?
+A06b;sim;SIM, ESTÁ ACONTECENDO
+A06b;nao;NÃO, ME ENGANEI
+A06b;nao_sei;NÃO SEI
+A07;balao;Qual foi a temperatura mais alta que você mediu?
+A07;nota;Pode usar vírgula ou ponto. Se o número parecer estranho, eu pergunto de novo.
+A07;nao_medi;NÃO MEDI
+A12;exemplo_pessoa;não aguento mais, queria sumir
+A12;acolhe;Obrigada por me contar. Você não está sozinho. Eu fico aqui com você.
+A12;cvv;CVV
+A12;cvv_txt;Conversar agora, 24 horas, de graça
+A12;samu_txt;Se você estiver em perigo agora
+A12;continua;Quer me contar mais? Pode ser no seu tempo.
+A13;balao;Vamos agir agora. Ligue para quem entende de envenenamento.
+A13;ciatox_txt;Engoliu ou tomou algo. 24 horas, de graça
+A13;samu_txt;Se desmaiar ou tiver falta de ar
+A13;agora;Agora
+A13;agora_1;Guarde a embalagem ou o que foi engolido.
+A13;agora_2;Não provoque vômito.
+A13;agora_3;Não dê nada para beber sem orientação.
+A13;botao;CONTINUAR CONVERSA
+A14;balao;Antes de testar, o nosso combinado:
+A14;p1;A Tami não é médica e não faz diagnóstico.
+A14;p2;Ela orienta para onde ir. Quem cuida é o serviço de saúde.
+A14;p3;Em emergência, ligue 192 sem esperar a Tami.
+A14;p4;É um teste: a Tami pode errar. Conte pra gente quando errar.
+A14;p5;Você pode sair do teste e apagar seus dados quando quiser.
+A14;link;Ler os termos completos
+A14;aceite;Li e aceito participar do teste.
+A14;botao;ACEITO
+A14;nota;Esse aceite é separado do consentimento de dados de saúde.
+A15;titulo;Estou sem internet agora.
+A15;frase;Mas a ajuda por telefone funciona normal, sem internet:
+A15;gratis;Ligar para o 192 é de graça e não precisa de crédito. Sua mensagem fica guardada e vai quando a internet voltar.
+A15;botao;TENTAR DE NOVO
+A16;titulo;Não consegui usar o microfone.
+A16;como;Como liberar
+A16;como_1;Abra os Ajustes do celular.
+A16;como_2;Toque em Tami.
+A16;como_3;Ligue o Microfone.
+A16;ajustes;ABRIR AJUSTES
+A16;escrever;ESCREVER EM VEZ DISSO
+A16b;titulo;Não entendi bem o áudio.
+A16b;frase;Pode ter tido barulho, ou o áudio cortou. Tenta de novo ou escreve pra mim.
+A16b;falar;FALAR DE NOVO
+A16b;escrever;ESCREVER
+B19;titulo;Histórico
+B20;titulo;Resumo
+B20;aviso;A Tami não faz diagnóstico. Este resumo é só o que foi contado para ela.
+B20;compartilhar;COMPARTILHAR
+B20;mostrar;MOSTRAR NA TELA
+B22;titulo;Pessoas que eu cuido
+B22;adicionar;ADICIONAR PESSOA
+B22;nota;Só guardo o que ajuda a orientar: idade, gravidez e doenças que a pessoa acompanha.
+B23;titulo;Eu
+B24;titulo;Meus dados
+B24;onde;Seus dados ficam guardados no Brasil. Não vendo e não passo para ninguém.
+B24;baixar;Baixar meus dados
+B24;retirar;Retirar o consentimento
+B24;apagar;Apagar tudo
+B24;politica;Ler a política de privacidade
+B25;titulo;Entrar na Tami
+B25;frase;Sem senha difícil: eu te mando um código.
+B25;campo;Celular ou e-mail
+B25;botao;RECEBER CÓDIGO
+B25;sem_conta;USAR SEM CONTA
+B26;balao;Isso te ajudou?
+B26;sim;Sim
+B26;mais_menos;Mais ou menos
+B26;nao;Não
+B26;campo;Quer contar mais? (opcional)
+B26;relatar;Relatar um problema
+B27;titulo;Configurações
+B27;letra;Tamanho da letra
+B27;notif;Notificações
+B27;som;Som do app
+B27;ler;Tami lê em voz alta
+B28;titulo;Perto de você
+B28;local;Usei sua localização só agora, para achar estes lugares.
+B28;rota;COMO CHEGAR
+B28;rota;COMO CHEGAR
+B28;rota;COMO CHEGAR
+B28;nota;Piorou no caminho? Ligue 192.
+C32;titulo;Lembretes
+C33;widget;Água: 4 de 8
+C33;widget_cta;Toque para conversar
+C33;nota;Widget da Tami na tela inicial
+C34;titulo;Aprender
+C35;titulo;Sobre a Tami
+C36;abertura;Oi! Me conta o que está acontecendo.
+B18b;nota;Direita e esquerda são as do corpo da pessoa, não as da tela. Por isso o lado direito aparece à esquerda.
+B18b;titulo;Onde na barriga?
+B18b;marcado;Você marcou: embaixo, lado direito
+B18b;muda;A DOR MUDA
+B21;agora;Como ela está agora?
+B21;melhor;Melhor
+B21;igual;Igual
+B21;pior;Pior
+B21;titulo;Acompanhamento
+B21;balao;Ontem você me contou da febre da sua filha. Como ela está agora?
+B21;nota;Se for emergência, não espere a Tami: ligue 192.
+C29;mapa;Últimas 15 semanas
+C29;titulo;Água
+C29;botao;+1 COPO
+C30;titulo;Sono
+C30;balao;Bom dia! Como você dormiu?
+C30;semana;Sua semana
+C31;sequencia;Suas duas semanas de água
+A09;levar;O que levar
+A09;levar_1;Cartão do SUS e documento
+A09;levar_2;Lista dos remédios que o bebê já usa
+A09;levar_3;Esta conversa: eu monto um resumo
+A09;piora;Piorou no caminho? Respiração difícil ou muito mole: ligue 192.
+A09;titulo;Vá hoje a uma UPA.
+A09;frase;Não precisa de ambulância, mas o bebê precisa ser visto hoje.
+A10;hoje;Vá hoje à UPA se
+A10;hoje_1;A febre passar de 3 dias
+A10;hoje_2;Aparecer falta de ar ou dor forte
+A10;hoje_3;A pessoa ficar muito mole ou confusa
+A10;piora;Se for emergência, não espere: ligue 192.
+A10;titulo;Procure o posto de saúde nos próximos dias.
+A10;frase;Marque uma consulta na sua UBS e leve o cartão do SUS.
+A11;observar;O que observar
+A11;observar_1;Se está bebendo água e fazendo xixi
+A11;observar_2;Se melhora ou piora
+A11;observar_3;Se aparece algum sinal novo
+A11;acompanhar;Posso te perguntar amanhã como você está?
+A11;piora;Piorou, falta de ar, dor forte ou desmaio? Ligue 192.
+A11;titulo;Dá para cuidar em casa por enquanto.
+A11;frase;Descanse e beba água. Eu fico de olho com você.
+A00;titulo;Oi, eu sou a Tami.
+A00;sub;Me conta o que está acontecendo. Pode ser com você ou com outra pessoa.
+A00;sugestoes;Pode começar por aqui
+A00;s1;Meu filho está com febre
+A00;s2;Bati a cabeça
+A00;s3;Estou com dor de barriga
+A00;intox;Engoliu ou tomou algo por engano?
+A08;rotulo;SAMU 192 · Emergência
+A08;titulo;Ligue 192 agora.
+A08;frase;Pelo que você contou, o bebê precisa de ajuda de emergência.
+A08;at_quem;Bebê de 8 meses
+A08;at_oque;Febre desde ontem e um sinal de alarme
+A08;at_desde;Desde ontem
+A08;at_onde;Fale seu endereço e um ponto de referência.
+A08;at_local;Usar minha localização
+A08;atendente;Diga ao atendente
+A08;viva_voz;Dica: ligue no viva-voz para ler daqui enquanto fala.
+A08;p1;Fique com o bebê e observe a respiração.
+A08;p2;Deixe a porta aberta e o endereço à mão.
+A08;p3;Não dê comida, bebida nem remédio.
+A08;enquanto;Enquanto a ajuda chega
+A08;botao;Ligar 192
+A08;avisar;Avisar alguém
+A08;ja_liguei;Já liguei
+B18;titulo;Onde dói?
+B18;ver_costas;Ver costas
+B18;marcado;Marcado:
+B18;zoom_curto;Lugar exato
+B18;dica;Toque no corpo. Pode marcar mais de um lugar.
+B18;botao;Continuar
+B18;ver_frente;Ver frente
+A03;nao_foi;Não foi isso que eu disse
+A06;enganei;Me enganei em um sinal
+A01;demora;Demorando? Veja o que fazer sem internet
+A02;mic_falha;O microfone não funciona?
+C29;conquistas;Ver conquistas
+B27;lembretes;Lembretes
+B27;widget;Widget na tela do celular
+B27;escuro;Modo escuro
+C35;tour;Conhecer a Tami em 1 minuto
+C35;crise;Como a Tami ajuda numa crise
+B17;ola;Boa noite, Jéssica.
+B17;sub;Estou aqui. Como posso ajudar?
+B17;cta;Falar com a Tami
+B17;cta_sub;Conte do seu jeito, por voz ou escrevendo
+B17;acomp;Febre da sua filha
+B17;acomp_quando;Ontem: UPA
+B17;acomp_q;Como ela está agora?
+B17;config;Deixe a Tami do seu jeito
+B17;aprender;Quando ir à UPA ou ao posto?
+B17;s_retomar;Continuar de onde parou
+B17;s_hoje;Hoje
+B17;s_mais;Para depois
+C31;semana;Esta semana
+C31;semana_n;6 de 7 dias com água
+C31;sem_culpa;Dia sem marcar não apaga nada. A semana sempre recomeça.
+C31;medalhas;Medalhas
+C31;regra;Medalhas são só de hábitos. Nada aqui depende de você estar doente.
+C31;titulo;Conquistas
+B22b;quem;Quem é?
+B22b;nome;Como você chama essa pessoa?
+B22b;idade;Idade
+B22b;idade_dica;A idade muda as perguntas que eu faço.
+B22b;saber;Tem algo que eu preciso saber sempre?
+B22b;salvar;Salvar pessoa
+B22b;cancelar;Cancelar
+B22b;titulo;Nova pessoa

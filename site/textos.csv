@@ -1,0 +1,534 @@
+pagina;secao;elemento;texto
+geral;faixa;texto;Emergência? Ligue 192
+geral;faixa;numero;192
+geral;menu;inicio;Início
+geral;menu;como;Como funciona
+geral;menu;seguranca;Segurança
+geral;menu;sobre;Sobre
+geral;menu;perguntas;Perguntas
+geral;menu;imprensa;Imprensa
+geral;menu;botao;Quero testar
+geral;menu;abrir;Menu
+geral;menu;fechar;Fechar
+geral;menu;pular;Pular para o conteúdo
+geral;mov;pausar;Pausar movimento
+geral;mov;ligar;Ligar movimento
+geral;mov;leve;Versão leve
+geral;aviso;texto;A Tami orienta, não dá diagnóstico.
+geral;aviso;emergencia;Em emergência, ligue 192 sem esperar a Tami.
+geral;rodape;titulo;Precisa de ajuda agora?
+geral;rodape;samu;192 · SAMU · Emergência de saúde
+geral;rodape;cvv;188 · CVV · Para conversar, 24 horas, de graça
+geral;rodape;ciatox;0800 722 6001 · CIATox · Engoliu ou tomou algo
+geral;rodape;policia;190 · Polícia · Alguém te machucando ou ameaçando
+geral;rodape;teste;A Tami está em teste e pode errar.
+geral;rodape;anvisa;Ainda não passou por avaliação da ANVISA nem por validação clínica.
+geral;rodape;autoria;Feita por Gabriel Gomes, estudante de Sistemas de Informação da FIAP.
+geral;rodape;contato;Fale comigo
+geral;rodape;privacidade;Política de privacidade
+geral;rodape;slogan;Falou em saúde? Tamo aqui.
+geral;rodape;frase;Cuidar começa com uma conversa.
+geral;rodape;paginas;Páginas
+geral;rodape;nao_mande;Não mande dados de saúde por mensagem. Em emergência, ligue 192.
+geral;convite;titulo;Quer testar a Tami?
+geral;convite;texto;O teste está começando aos poucos, por convite.
+geral;convite;botao;Quero testar
+inicio;meta;titulo;Tami · Falou em saúde? Tamo aqui.
+inicio;meta;descricao;A Tami é um app em teste que ajuda a decidir para onde ir: SAMU, UPA, posto ou casa.
+inicio;c1;selo;Em teste · ainda não está nas lojas
+inicio;c1;titulo;O jeito mais calmo de decidir para onde ir
+inicio;c1;sub;A Tami é um app que conversa com você e ajuda a decidir para onde ir.
+inicio;c1;voz;Pode escrever ou falar.
+inicio;c1;botao;Quero testar
+inicio;c1;link;Ver como funciona
+inicio;c1;destinos;Os 4 caminhos que a Tami pode indicar
+inicio;c1;rolar;Role para conhecer
+inicio;c2;rotulo;3h da manhã
+inicio;c2;titulo;Na hora do susto, a dúvida é para onde ir
+inicio;c2;d1;Pronto-socorro?
+inicio;c2;d2;Posto de saúde?
+inicio;c2;d3;Esperar até amanhã?
+inicio;c2;d4;Chamar a ambulância?
+inicio;c2;d5;Ligar para alguém?
+inicio;c2;texto;Com medo e com pressa, a gente decide no chute. A Tami ajuda a pensar com calma.
+inicio;c3;rotulo;A conversa
+inicio;c3;titulo;Você conta. Ela pergunta. Vocês decidem juntos
+inicio;c3;nota;Exemplo resumido: no app, esta conversa tem 15 perguntas. As daqui são iguais às do app.
+inicio;c3;m1;Torci o tornozelo jogando bola. Está inchado, mas consigo andar.
+inicio;c3;m2_intro;Obrigada por me contar. Agora vou te fazer algumas perguntas rápidas.
+inicio;c3;m2;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Sangramento forte que não para, mesmo apertando • Sofreu um acidente grave: trânsito, queda de altura, batida forte na cabeça, queimadura grande ou choque elétrico
+inicio;c3;m3;Não, nenhum
+inicio;c3;m4;De 0 a 10, quanto incomoda agora?
+inicio;c3;m5;0 a 3: fraco
+inicio;c3;r_rotulo;Cuidar em casa
+inicio;c3;r_titulo;Dá para cuidar disso em casa por enquanto.
+inicio;c3;r_frase;Se piorar, procure atendimento ou volte aqui.
+inicio;c3;pausar;Pausar conversa
+inicio;c3;continuar;Continuar conversa
+inicio;c3;de_novo;Ver de novo
+inicio;c4;rotulo;Quatro caminhos
+inicio;c4;titulo;Cada caminho tem uma cor e uma frase.
+inicio;c4;sub;Toque num caminho para ver o que ele quer dizer.
+inicio;c4;samu_rotulo;SAMU 192
+inicio;c4;samu_titulo;Ligue 192 agora
+inicio;c4;samu_texto;Para emergência. A Tami mostra o que dizer no telefone.
+inicio;c4;upa_rotulo;UPA hoje
+inicio;c4;upa_titulo;Vá hoje a uma UPA
+inicio;c4;upa_texto;Para ter atendimento ainda hoje.
+inicio;c4;ubs_rotulo;UBS nos próximos dias
+inicio;c4;ubs_titulo;Procure o posto de saúde nos próximos dias
+inicio;c4;ubs_texto;Para ir ao posto hoje ou nos próximos dias. Leve o cartão do SUS.
+inicio;c4;casa_rotulo;Cuidar em casa
+inicio;c4;casa_titulo;Dá para cuidar em casa por enquanto
+inicio;c4;casa_texto;Com os sinais para ficar de olho, se algo mudar.
+inicio;c5;rotulo;Onde dói
+inicio;c5;titulo;Difícil explicar? Mostre no corpo
+inicio;c5;texto;Toque no desenho, de frente ou de costas. Tem corpo de mulher, de homem e de criança.
+inicio;c5;alt;Desenho de corpo em linha, com a barriga marcada.
+inicio;c6;rotulo;Para quem tem pressa
+inicio;c6;titulo;Feita para quem está com medo e com pressa
+inicio;c6;voz_titulo;Fale em vez de escrever
+inicio;c6;voz_texto;Toque em Falar e conte do seu jeito. A Tami mostra o que ouviu.
+inicio;c6;ouvir_titulo;Ouça em vez de ler
+inicio;c6;ouvir_texto;O botão Ouvir lê as perguntas em voz alta.
+inicio;c6;cuido_titulo;Para quem você cuida
+inicio;c6;cuido_texto;Bebê, criança, adulto ou idoso. Você escolhe com quem está acontecendo.
+inicio;c6;resumo_titulo;Um resumo para o atendimento
+inicio;c6;resumo_texto;O que você contou e o caminho sugerido. Sem diagnóstico.
+inicio;c7;rotulo;Segurança primeiro
+inicio;c7;titulo;O que a Tami faz. E o que ela não faz
+inicio;c7;faz_titulo;A Tami faz
+inicio;c7;faz1;Pergunta primeiro sobre sinais de emergência
+inicio;c7;faz2;Ajuda a decidir para onde ir
+inicio;c7;faz3;Mostra 192, CVV 188 e CIATox quando o assunto pede
+inicio;c7;faz4;Na dúvida, sugere o caminho mais urgente
+inicio;c7;nao_titulo;A Tami não faz
+inicio;c7;nao1;Não dá diagnóstico
+inicio;c7;nao2;Não indica remédio, dose nem exame
+inicio;c7;nao3;Não substitui o atendimento de saúde
+inicio;c7;nao4;Não decide por você
+inicio;c7;dentro_titulo;Como ela funciona por dentro
+inicio;c7;dentro;A Tami segue regras escritas a partir de materiais públicos de saúde. Ela não usa inteligência artificial que inventa respostas.
+inicio;c7;anvisa;A Tami está em teste e pode errar. Ainda não passou por avaliação da ANVISA nem por validação clínica.
+inicio;c7;link;Ver tudo sobre segurança
+inicio;c8;rotulo;Quem faz
+inicio;c8;titulo;Um projeto independente, em teste
+inicio;c8;texto;Quem faz é Gabriel Gomes, estudante de Sistemas de Informação da FIAP.
+inicio;c8;t1_quando;Hoje
+inicio;c8;t1;O protótipo do app funciona, com conversa por texto e por voz.
+inicio;c8;t2_quando;Próximo passo
+inicio;c8;t2;Revisão das regras por profissionais de saúde.
+inicio;c8;t3_quando;Depois
+inicio;c8;t3;Teste com mais pessoas, por convite.
+inicio;c8;t4_quando;Lojas
+inicio;c8;t4;Ainda sem data.
+inicio;c8;link;Conhecer a história
+inicio;c9;titulo;Quer ajudar a deixar a Tami melhor?
+inicio;c9;texto;O teste está começando aos poucos, por convite. Sua opinião ajuda a deixar a Tami mais clara.
+inicio;c9;botao;Quero testar
+como;meta;titulo;Como a Tami funciona · Tami
+como;meta;descricao;Uma conversa curta: você conta, a Tami pergunta e ajuda a decidir para onde ir.
+como;topo;rotulo;Como funciona
+como;topo;titulo;Uma conversa curta, do susto até o próximo passo
+como;topo;sub;Você conta, a Tami pergunta e ajuda a decidir para onde ir.
+como;c1;titulo;1. Você conta o que está acontecendo
+como;c1;texto1;Pode escrever ou tocar em Falar. Do seu jeito, sem palavra difícil.
+como;c1;texto2;Pode ser com você ou com outra pessoa: bebê, criança, adulto ou idoso.
+como;c1;alt;Tela do app da Tami ouvindo a pessoa falar.
+como;c2;titulo;2. A Tami faz perguntas curtas
+como;c2;texto1;Uma pergunta de cada vez. Primeiro, ela pergunta sobre sinais de emergência.
+como;c2;texto2;Não sabe responder sobre um sinal de emergência? Toque em "Não sei". A Tami trata como se o sinal estivesse lá.
+como;c2;alt;Tela do app da Tami com uma pergunta e a lista de sinais de emergência.
+como;c3;titulo;3. Se precisar, mostre onde dói
+como;c3;texto1;Toque no desenho do corpo, de frente ou de costas.
+como;c3;texto2;Dá para escolher corpo de mulher, de homem ou de criança.
+como;c3;alt;Tela "Onde dói?" do app, com o corpo de frente e a barriga marcada.
+como;c4;titulo;4. Ela ajuda a decidir para onde ir
+como;c4;texto1;No fim, a Tami mostra um dos quatro caminhos. E o que fazer até chegar lá.
+como;c4;texto2;O botão para ligar 192 fica em todas as telas do app.
+como;c4;alt;Tela de resultado do app: "Vá hoje a uma UPA.", com o que levar.
+como;c5;titulo;5. Depois, um resumo para o atendimento
+como;c5;texto1;A Tami monta um resumo com o que você contou e o caminho sugerido.
+como;c5;texto2;Você mostra na tela ou manda por mensagem. O resumo não tem diagnóstico.
+como;c5;alt;Tela de resumo do app para mostrar no atendimento.
+como;dentro;titulo;Por dentro da Tami
+como;dentro;texto1;As regras vêm de materiais públicos, como NHS, MedlinePlus e Ministério da Saúde.
+como;dentro;texto2;Ela não usa inteligência artificial que inventa respostas. Cada pergunta e cada caminho estão escritos antes.
+como;dentro;texto3;As regras ainda vão passar por revisão de profissionais de saúde.
+como;limites;titulo;O que a Tami não faz
+como;limites;texto;Ela não dá diagnóstico. Não indica remédio, dose nem exame. Não substitui o atendimento de saúde.
+como;limites;link;Ver segurança e privacidade
+seguranca;meta;titulo;Segurança e privacidade · Tami
+seguranca;meta;descricao;O que a Tami faz e não faz, os números de emergência e o cuidado com seus dados.
+seguranca;topo;rotulo;Segurança
+seguranca;topo;titulo;Segurança vem antes de tudo
+seguranca;topo;sub;Na dúvida, a Tami sugere o caminho mais urgente. Quem decide é você.
+seguranca;agora;titulo;Em emergência, não espere
+seguranca;agora;texto;Ligue direto. Não precisa abrir a Tami antes.
+seguranca;regras;titulo;Regras escritas no app da Tami
+seguranca;regras;r1;Na dúvida, ela sugere o caminho mais urgente.
+seguranca;regras;r2;Se você não sabe responder sobre um sinal de emergência, ela trata como se tivesse.
+seguranca;regras;r3;Se alguém fala em se machucar, ela mostra o CVV 188 e o 192.
+seguranca;regras;r4;Se alguém engoliu ou tomou algo, ela mostra o CIATox.
+seguranca;regras;r5;Ela nunca indica remédio, dose ou exame.
+seguranca;teste;titulo;A Tami está em teste
+seguranca;teste;texto1;Ela ainda pode errar.
+seguranca;teste;texto2;As orientações seguem regras escritas a partir de materiais públicos de saúde. Ela não usa inteligência artificial que inventa respostas.
+seguranca;teste;texto3;As regras ainda vão passar por revisão de profissionais de saúde.
+seguranca;teste;texto4;A Tami ainda não passou por avaliação da ANVISA nem por validação clínica.
+seguranca;dados;titulo;Como a Tami cuida dos seus dados
+seguranca;dados;d1;No app, ela pede sua permissão antes de guardar qualquer coisa.
+seguranca;dados;d2;Funciona mesmo se você não aceitar guardar.
+seguranca;dados;d3;Não vende dados.
+seguranca;dados;d4;Este site não usa cookies nem rastreadores.
+seguranca;dados;link;Ler a política de privacidade
+sobre;meta;titulo;A história da Tami · Tami
+sobre;meta;descricao;A história da Tami, quem faz e em que pé ela está.
+sobre;topo;rotulo;Sobre
+sobre;topo;titulo;Um sonho de criança que virou app
+sobre;topo;sub;A Tami nasceu de um filme, de um curso e de uma amiga. Esta é a história.
+sobre;historia;titulo;A pergunta que começou tudo
+sobre;historia;texto1;Ir para o pronto-socorro? Esperar o posto abrir? Chamar a ambulância?
+sobre;historia;texto2;A Tami nasceu para ajudar nessa hora, com calma e em português simples.
+sobre;quem;titulo;Quem faz
+sobre;quem;texto1;Gabriel Gomes, estudante de Sistemas de Informação da FIAP, em São Paulo.
+sobre;quem;texto2;A Tami é um projeto independente.
+sobre;pe;titulo;Em que pé está
+sobre;pe;p1;O protótipo do app funciona, com conversa por texto e por voz.
+sobre;pe;p2;As regras vêm de materiais públicos, como NHS, MedlinePlus e Ministério da Saúde.
+sobre;pe;p3;Próximo passo: revisão das regras por profissionais de saúde.
+sobre;pe;p4;O app ainda não está nas lojas.
+sobre;guia;titulo;O que guia a Tami
+sobre;guia;g1_t;Na dúvida, o mais cuidadoso
+sobre;guia;g1;Se a Tami não tem certeza, ela sugere o caminho mais urgente.
+sobre;guia;g2_t;Português simples
+sobre;guia;g2;Frases curtas, sem palavra difícil, para quem está com medo e com pressa.
+sobre;guia;g3_t;Cada detalhe ajuda a entender
+sobre;guia;g3;Cada cor e cada desenho existem para a pessoa entender mais rápido.
+sobre;guia;g4_t;Saúde não é jogo
+sobre;guia;g4;A Tami não dá pontos nem prêmios por sintoma.
+sobre;contato;titulo;Quer conversar?
+sobre;contato;texto;Me chama no LinkedIn. Eu respondo assim que puder.
+perguntas;meta;titulo;Perguntas frequentes · Tami
+perguntas;meta;descricao;Respostas simples sobre o que a Tami é, como funciona, segurança e o teste.
+perguntas;topo;rotulo;Perguntas
+perguntas;topo;titulo;Perguntas frequentes
+perguntas;topo;sub;Respostas curtas para as dúvidas mais comuns.
+perguntas;q;p1;A Tami é um médico?
+perguntas;q;r1;Não. A Tami ajuda a decidir para onde ir. Ela não dá diagnóstico e não substitui o atendimento de saúde.
+perguntas;q;p2;E se for emergência?
+perguntas;q;r2;Ligue 192 sem esperar a Tami. No app, o botão do 192 fica em todas as telas.
+perguntas;q;p3;A Tami indica remédio?
+perguntas;q;r3;Não. Ela nunca indica remédio, dose ou exame.
+perguntas;q;p4;A Tami usa inteligência artificial?
+perguntas;q;r4;As orientações não usam inteligência artificial. Elas seguem regras escritas antes, a partir de materiais públicos de saúde.
+perguntas;q;p5;Dá para falar em vez de escrever?
+perguntas;q;r5;Sim. Toque em Falar e conte do seu jeito. A Tami mostra o que ouviu para você conferir.
+perguntas;q;p6;Funciona para quem eu cuido?
+perguntas;q;r6;Sim. Pode ser um bebê, uma criança, um adulto ou um idoso.
+perguntas;q;p7;Quanto custa?
+perguntas;q;r7;No teste, é de graça.
+perguntas;q;p8;Onde eu baixo o app?
+perguntas;q;r8;Ainda não está nas lojas. O teste está começando aos poucos, por convite.
+perguntas;q;p9;A Tami foi aprovada por algum órgão de saúde?
+perguntas;q;r9;Não. A Tami está em teste e pode errar. Ainda não passou por avaliação da ANVISA nem por validação clínica.
+perguntas;q;p10;O que acontece com o que eu conto?
+perguntas;q;r10;No app, a Tami pede sua permissão antes de guardar. Você pode usar sem guardar nada. Este site não usa cookies nem rastreadores.
+perguntas;q;p11;E se eu estiver pensando em me machucar?
+perguntas;q;r11;Você não precisa passar por isso sem ajuda. Ligue 188, do CVV, para conversar, 24 horas, de graça. Se estiver em perigo agora, ligue 192.
+perguntas;q;p12;Quem faz a Tami?
+perguntas;q;r12;Gabriel Gomes, estudante de Sistemas de Informação da FIAP. A Tami é um projeto independente e está em teste.
+beta;meta;titulo;Quero testar a Tami · Tami
+beta;meta;descricao;O teste da Tami está começando aos poucos, por convite. Peça o seu e conte o que achou.
+beta;topo;rotulo;Teste
+beta;topo;titulo;Quero testar a Tami
+beta;topo;sub;O teste está começando aos poucos, por convite. Quer participar?
+beta;limites;titulo;O que esperar do teste
+beta;limites;l1;O que funciona: conversa por texto e voz, os quatro caminhos e o "Onde dói?".
+beta;limites;l2;Ainda não tem: app nas lojas e revisão das regras por profissionais.
+beta;limites;l3;A Tami pode errar. Em emergência, ligue 192 sem esperar a Tami.
+beta;limites;l4;Ainda não passou por avaliação da ANVISA nem por validação clínica.
+beta;passos;titulo;Como funciona o convite
+beta;passos;p1;Você me chama no LinkedIn pedindo o convite.
+beta;passos;p2;Quando chegar a sua vez, eu mando o link.
+beta;passos;p3;Você usa a Tami e conta o que achou.
+beta;form;titulo;Peça seu convite
+beta;form;nome;Seu nome (opcional)
+beta;form;cidade;Sua cidade (opcional)
+beta;form;consentimento;Quero receber o convite e li a política de privacidade.
+beta;form;botao;Pedir convite no LinkedIn
+beta;form;nao_mande;Não mande dados de saúde. O convite não precisa disso. Antes, leia a
+beta;form;enviado;Seu app de e-mail deve abrir agora. É só tocar em enviar.
+beta;form;nao_abriu;Não abriu? Copie o endereço e mande um e-mail com "Quero testar a Tami".
+beta;form;copiar;Copiar mensagem
+beta;form;copiado;Copiada!
+beta;form;falta;Marque a caixa para continuar.
+beta;form;assunto;Quero testar a Tami
+imprensa;meta;titulo;Kit de imprensa · Tami
+imprensa;meta;descricao;A Tami em uma frase, fatos rápidos, marca, telas oficiais e contato.
+imprensa;topo;rotulo;Imprensa
+imprensa;topo;titulo;Kit de imprensa
+imprensa;topo;sub;Tudo o que você precisa para falar da Tami: textos, marca, telas e contato.
+imprensa;frase;titulo;A Tami em uma frase
+imprensa;frase;texto;App de orientação em saúde, em teste, que ajuda a decidir para onde ir.
+imprensa;paragrafo;titulo;Em um parágrafo
+imprensa;paragrafo;texto;A Tami é um projeto independente de Gabriel Gomes, estudante da FIAP. Ela conversa por texto ou voz e pergunta primeiro sobre sinais de emergência. Depois, ajuda a decidir entre SAMU, UPA, posto de saúde ou cuidar em casa. Ela segue regras escritas, sem inteligência artificial que inventa respostas. A Tami não dá diagnóstico, não indica remédio e não substitui o atendimento. Está em teste e pode errar. Ainda não passou por avaliação da ANVISA nem por validação clínica.
+imprensa;fatos;titulo;Fatos rápidos
+imprensa;fatos;f1;Fase: em teste, por convite.
+imprensa;fatos;f2;No teste: de graça.
+imprensa;fatos;f3;Quem faz: Gabriel Gomes, FIAP, São Paulo.
+imprensa;fatos;f4;O que faz: ajuda a decidir para onde ir.
+imprensa;fatos;f5;O que não faz: não dá diagnóstico nem indica remédio, dose ou exame.
+imprensa;fatos;f6;Como funciona: regras escritas, sem inteligência artificial que inventa respostas.
+imprensa;marca;titulo;Marca
+imprensa;marca;texto;O nome é sempre "Tami", e o logotipo é "tami" em minúsculas. O rosto não muda de desenho, só de expressão.
+imprensa;marca;cores;Cores
+imprensa;marca;fontes;Fontes: Fredoka nos títulos e Nunito no texto.
+imprensa;marca;baixar;Abrir monograma (PNG, 512 px)
+imprensa;telas;titulo;Telas oficiais
+imprensa;falar;titulo;Como falar da Tami
+imprensa;falar;sim_titulo;Diga
+imprensa;falar;nao_titulo;Evite
+imprensa;contato;titulo;Contato para imprensa
+privacidade;meta;titulo;Política de privacidade · Tami
+privacidade;topo;rotulo;Privacidade
+privacidade;topo;titulo;Política de privacidade
+p404;meta;titulo;Página não encontrada · Tami
+p404;meta;descricao;Essa página não existe.
+p404;topo;rotulo;Erro 404
+p404;topo;titulo;Essa página não existe
+p404;topo;sub;Mas o 192 continua aqui, se precisar.
+p404;topo;link;Voltar para o início
+
+imprensa;fatos;f7;ANVISA: ainda não avaliada. Sem validação clínica.
+geral;mov;aviso_leve;Mudei para a versão leve, para o site ficar rápido.
+inicio;c4;fantasma;Para onde ir?
+inicio;c4;sr;Quatro caminhos, cada um com sua cor e sua frase.
+inicio;c1;inst;Cuidar começa com uma conversa.
+inicio;orb;rotulo;Telas do app
+inicio;orb;titulo;Veja a Tami por dentro
+inicio;orb;sub;Arraste, use as setas ou toque nos pontos.
+inicio;orb;aria;Telas do app. Use as setas do teclado ou arraste para explorar.
+inicio;orb;anterior;Tela anterior
+inicio;orb;proxima;Próxima tela
+inicio;orb;ver;Ver tela
+inicio;orb;t1;Falar em vez de escrever
+inicio;orb;a1;Tela do app da Tami ouvindo a pessoa falar.
+inicio;orb;t2;Sinais de emergência
+inicio;orb;a2;Tela do app com a pergunta sobre sinais de emergência.
+inicio;orb;t3;Onde dói
+inicio;orb;a3;Tela "Onde dói?" com o corpo de frente e a barriga marcada.
+inicio;orb;t4;Pessoas que você cuida
+inicio;orb;a4;Tela do app com as pessoas que você cuida.
+inicio;orb;t5;Os quatro caminhos
+inicio;orb;a5;Os quatro caminhos da Tami, cada um com sua cor.
+inicio;orb;t6;Resumo para o atendimento
+inicio;orb;a6;Exemplo de resumo para mostrar no atendimento.
+perguntas;lado;titulo;Não achou sua dúvida?
+perguntas;lado;texto;Me chama no LinkedIn. Eu respondo assim que puder.
+beta;lado;titulo;Precisa de ajuda agora?
+inicio;intro;oi1;Olá, eu sou a Tami,
+inicio;intro;oi2;seu agente pessoal de saúde
+inicio;intro;pular;Pular abertura
+inicio;c3;esc_b1;fraco
+inicio;c3;esc_b2;médio
+inicio;c3;esc_b3;forte
+inicio;c3;esc_rotulo;Escala de 0 a 10. De 0 a 3, fraco. De 4 a 6, médio. De 7 a 10, forte ou muito forte.
+inicio;c5;dica;Experimente: toque no joelho, no ombro ou onde quiser e diga quanto dói.
+inicio;c5;quanto;Quanto dói aqui?
+inicio;c5;como;Como é a dor?
+inicio;c5;tipos;Pontada|Queimação|Latejando|Aperto|Formigamento|Peso
+inicio;c5;desmarcar;Desmarcar
+inicio;c5;pronto;Pronto
+inicio;c5;niveis;Sem dor|Fraco|Fraco|Fraco|Médio|Médio|Médio|Forte|Forte|Forte|Muito forte
+sobre;c1;rot;01 · O sonho
+sobre;c1;titulo;Meu filme favorito tem um robô que cuida das pessoas
+sobre;c1;t1;Desde criança, meu filme favorito é Operação Big Hero. Nele, o Baymax é um robô enfermeiro. Ele escuta, pergunta e cuida de quem está por perto.
+sobre;c1;t2;Eu sempre quis que existisse algo assim de verdade. A Tami é o meu jeito de começar.
+sobre;c2;rot;02 · A escala
+sobre;c2;titulo;Quanto dói, de 0 a 10?
+sobre;c2;t1;No filme, o Baymax pede para a pessoa dizer quanto dói numa escala. A Tami pergunta do mesmo jeito, com calma, para entender o que está acontecendo.
+sobre;c3;rot;03 · O curso
+sobre;c3;titulo;Escolhi Sistemas de Informação para melhorar a vida das pessoas
+sobre;c3;t1;Estudo na FIAP, em São Paulo. Com a Tami, eu uso o que aprendo para ajudar alguém numa hora difícil.
+sobre;c3;selo;FIAP · Sistemas de Informação · São Paulo
+sobre;c4;rot;04 · O nome
+sobre;c4;titulo;Tami é uma homenagem
+sobre;c4;t1;O nome vem da minha amiga Larissa Tami Hokama. Ela é médica e está me ajudando no projeto.
+sobre;c4;t2;A ajuda dela não é uma validação clínica. A revisão das regras por profissionais de saúde ainda vai acontecer.
+sobre;c4;cartao;Larissa Tami Hokama
+sobre;c4;cartao_sub;médica e amiga, a inspiração do nome
+sobre;disney;texto;A Tami é um projeto independente, sem ligação com a Disney ou com o filme.
+sobre;quem;assina;Gabriel Gomes
+sobre;quem;assina_sub;estudante de Sistemas de Informação da FIAP, criador da Tami
+marca;meta;titulo;Manual de marca · Tami
+marca;meta;descricao;Como usar o logo, o rosto, as cores, as fontes e a voz da Tami.
+marca;topo;rotulo;Marca
+marca;topo;titulo;Manual de marca da Tami
+marca;topo;sub;Logo, rosto, cores, fontes e voz. Tudo o que você precisa para usar a marca do jeito certo.
+geral;rodape;marca;Manual de marca
+imprensa;kit;pdf;Baixar o manual de marca (PDF)
+imprensa;kit;zip;Baixar os logos
+imprensa;kit;copiar;Copiar texto
+imprensa;kit;copiado;Copiado!
+imprensa;kit;copiar_email;Abrir o LinkedIn
+imprensa;kit;ver_manual;Ver o manual de marca completo
+beta;form;como;Mande uma mensagem no meu LinkedIn com esta frase. Se quiser, diga também a sua cidade.
+beta;form;mensagem;Quero testar a Tami
+perguntas;busca;rotulo;Procure sua dúvida
+perguntas;busca;exemplo;Ex.: remédio, emergência, custo
+perguntas;busca;nada;Nenhuma pergunta com essa palavra. Tente outra ou me chame no LinkedIn.
+beta;esperar;sim;Já funciona
+beta;esperar;ainda;Ainda não tem
+beta;esperar;importante;Importante
+privacidade;meta;descricao;Como a Tami cuida dos seus dados: o que guarda, por quê, onde, por quanto tempo e como você vê, baixa ou apaga tudo.
+privacidade;topo;sub;Versão 1.0, de 16 de novembro de 2026. Vale para este site e para o app da Tami em teste.
+privacidade;resumo;rotulo;Resumo
+privacidade;resumo;indice;Nesta página
+privacidade;resumo;t1;Saúde é dado sensível
+privacidade;resumo;s1;Só guardo com a sua permissão, numa caixa separada. Sem ela, a Tami orienta do mesmo jeito.
+privacidade;resumo;t2;Fica no Brasil
+privacidade;resumo;s2;Não vendo, não uso para propaganda e não treino inteligência artificial de ninguém.
+privacidade;resumo;t3;Site sem cookies
+privacidade;resumo;s3;Nem rastreadores, nem ferramentas de análise.
+privacidade;resumo;t4;Você manda
+privacidade;resumo;s4;Ver, baixar, corrigir ou apagar tudo, quando quiser, de graça.
+privacidade;quem;titulo;Quem cuida dos seus dados
+privacidade;quem;texto1;A Tami é um projeto pessoal de Gabriel Vasconcellos Gomes, estudante de Sistemas de Informação. Não é produto de faculdade, empresa, hospital ou governo.
+privacidade;quem;texto2;Pela LGPD, eu sou o controlador: decido quais dados entram e para quê. Também sou o encarregado. Sou eu quem responde às suas dúvidas e pedidos sobre dados.
+privacidade;quem;texto3;Para falar comigo sobre privacidade:
+privacidade;site;titulo;Este site
+privacidade;site;texto1;Não uso cookies, rastreadores nem ferramentas de análise.
+privacidade;site;texto2;As fontes, as imagens e os códigos ficam no próprio site. Nada é carregado de outras empresas.
+privacidade;site;texto3;O serviço que hospeda o site guarda registros técnicos, como a hora da visita. Isso acontece em qualquer site. Eu não uso esses registros para saber quem você é.
+privacidade;site;texto4;Se você pausar o movimento, essa escolha fica salva só no seu navegador.
+privacidade;convite;titulo;Quando você pede o convite
+privacidade;convite;texto1;O pedido é uma mensagem no LinkedIn. Eu vejo o que você escrever e o seu perfil público.
+privacidade;convite;texto2;Para que serve: mandar o convite e avisos sobre o teste. Mais nada.
+privacidade;convite;texto3;Por quanto tempo: só enquanto o teste durar. Depois, eu apago a conversa.
+privacidade;convite;texto4;Não mande dados de saúde por mensagem. O convite não precisa disso.
+privacidade;app;titulo;No app: o que a Tami guarda e por quê
+privacidade;app;texto;Cada dado tem um motivo. Se a Tami não precisa, não pede.
+privacidade;app;h1;O que
+privacidade;app;h2;Para quê
+privacidade;app;h3;Base na lei
+privacidade;app;h4;Por quanto tempo
+privacidade;app;r1a;Celular ou e-mail, se você criar conta
+privacidade;app;r1b;Mandar o código de entrada e avisos do teste. Dá para usar sem conta.
+privacidade;app;r1c;Seu consentimento
+privacidade;app;r1d;Até você apagar a conta ou o teste acabar
+privacidade;app;r2a;O que você conta: o que sente, sinais, onde dói e nível da dor
+privacidade;app;r2b;Orientar para onde ir e montar o resumo.
+privacidade;app;r2c;Consentimento específico para dados de saúde
+privacidade;app;r2d;Só fica guardado se você permitir
+privacidade;app;r3a;Pessoas que você cuida: idade, gravidez e doenças que a pessoa acompanha
+privacidade;app;r3b;Fazer as perguntas certas para cada pessoa.
+privacidade;app;r3c;Consentimento específico para dados de saúde
+privacidade;app;r3d;Até você apagar a pessoa ou a conta
+privacidade;app;r4a;Sua voz, se você falar em vez de escrever
+privacidade;app;r4b;Transformar a fala em texto.
+privacidade;app;r4c;Permissão do microfone, separada
+privacidade;app;r4d;O áudio é apagado logo depois. Fica só o texto
+privacidade;app;r5a;Sua localização
+privacidade;app;r5b;Achar serviços de saúde perto, só quando você pede.
+privacidade;app;r5c;Permissão do aparelho, na hora
+privacidade;app;r5d;Não guardo
+privacidade;app;r6a;Sua opinião e os problemas que você relatar
+privacidade;app;r6b;Corrigir erros e melhorar a Tami.
+privacidade;app;r6c;Seu consentimento
+privacidade;app;r6d;Até 6 meses depois do fim do teste
+privacidade;app;r7a;Registros técnicos: data, hora, versão do app e erros, sem o texto das conversas
+privacidade;app;r7b;Segurança e encontrar falhas.
+privacidade;app;r7c;Legítimo interesse
+privacidade;app;r7d;6 meses
+privacidade;saude;titulo;Dados de saúde pedem cuidado dobrado
+privacidade;saude;texto1;Pela LGPD, informação sobre saúde é dado pessoal sensível. Por isso a Tami pede uma permissão só para isso. Ela vem em destaque, separada do aceite do teste.
+privacidade;saude;texto2;A caixa vem desmarcada. Se você não marcar, a Tami orienta do mesmo jeito. Ela só não guarda o histórico.
+privacidade;saude;texto3;Você pode retirar a permissão quando quiser, em Meus dados. Daí em diante, nada novo é guardado. E você escolhe se apaga o que já estava lá.
+privacidade;saude;texto4;Seus dados de saúde não servem para decidir preço, emprego, seguro ou crédito. E a Tami não monta perfil seu para propaganda.
+privacidade;criancas;titulo;Crianças e adolescentes
+privacidade;criancas;texto1;O teste é só para maiores de 18 anos, convidados um a um.
+privacidade;criancas;texto2;Muita gente usa a Tami para cuidar de um filho. Nesse caso, quem conta e dá a permissão é você, o responsável. Uso esses dados só para orientar o cuidado da criança. Sempre no melhor interesse dela, como pedem a LGPD e o ECA Digital.
+privacidade;criancas;texto3;Se a conta for de alguém com menos de 18 anos, encerro o acesso. E apago os dados.
+privacidade;onde;titulo;Onde ficam e quem vê
+privacidade;onde;texto1;Os dados ficam em servidores no Brasil, sem cópia fora do país.
+privacidade;onde;texto2;Só eu tenho acesso, com senha e confirmação em duas etapas.
+privacidade;onde;texto3;A Tami não usa inteligência artificial que inventa respostas. Suas conversas não vão para empresas de inteligência artificial.
+privacidade;onde;texto4;Se um dia isso mudar, aviso antes e peço uma permissão nova. Vou dizer qual empresa recebe os dados, em que país e para quê.
+privacidade;compartilha;titulo;Com quem eu compartilho
+privacidade;compartilha;texto1;O resumo só sai do app quando você toca em Compartilhar ou Mostrar na tela. Você escolhe para quem.
+privacidade;compartilha;texto2;A empresa que hospeda o app guarda os dados para mim. Ela só pode usar do jeito que eu mandar, e nunca para os próprios fins.
+privacidade;compartilha;texto3;Se a Justiça mandar, entrego só o que a ordem pedir. E aviso você quando a lei permitir.
+privacidade;compartilha;nunca;O que eu nunca faço
+privacidade;compartilha;n1;Vender, alugar ou trocar seus dados
+privacidade;compartilha;n2;Usar seus dados para propaganda
+privacidade;compartilha;n3;Treinar inteligência artificial de outras empresas
+privacidade;compartilha;n4;Guardar o áudio da sua voz
+privacidade;compartilha;n5;Guardar a sua localização
+privacidade;compartilha;n6;Mandar seu resumo sem você tocar em Compartilhar
+privacidade;seguranca;titulo;Como eu protejo
+privacidade;seguranca;texto1;Tudo viaja criptografado e fica guardado criptografado.
+privacidade;seguranca;texto2;Senhas e chaves de acesso ficam fora do código do app.
+privacidade;seguranca;texto3;Os registros técnicos não guardam o texto das conversas.
+privacidade;seguranca;texto4;Guardo só o mínimo que a Tami precisa para funcionar. Menos dado guardado, menos risco.
+privacidade;risco;titulo;Se houver risco à vida
+privacidade;risco;texto1;Ninguém lê as conversas em tempo real. Quando a Tami percebe risco, ela mostra o 192 e o 188 na hora.
+privacidade;risco;texto2;Posso ver, ao revisar um erro, sinal de risco real e imediato para alguém. Nesse caso, posso falar com a pessoa ou chamar o 192. A LGPD permite isso para proteger a vida.
+privacidade;incidente;titulo;Se algo der errado
+privacidade;incidente;texto1;Pode acontecer um vazamento ou um acesso indevido que te prejudique. Nesse caso, aviso você direto. E aviso a ANPD em até 3 dias úteis, como manda a regra dela.
+privacidade;incidente;texto2;O aviso conta o que aconteceu e quais dados foram atingidos. Também diz o que eu já fiz e o que você pode fazer.
+privacidade;incidente;texto3;Todo incidente fica registrado, mesmo os pequenos que não precisam de aviso.
+privacidade;prazo;titulo;Por quanto tempo eu guardo
+privacidade;prazo;texto1;Enquanto você usar a Tami e mantiver a permissão.
+privacidade;prazo;texto2;Quando o teste acabar, apago tudo em até 6 meses. Antes disso, você pode apagar quando quiser.
+privacidade;prazo;texto3;Apagar é apagar mesmo. Os dados saem do app na hora. Das cópias de segurança, em até 30 dias.
+privacidade;direitos;titulo;Seus direitos
+privacidade;direitos;texto;A LGPD garante estes direitos. Todos são de graça.
+privacidade;direitos;d1;Saber se eu tenho dados seus
+privacidade;direitos;d2;Ver e baixar uma cópia
+privacidade;direitos;d3;Corrigir o que estiver errado
+privacidade;direitos;d4;Apagar tudo
+privacidade;direitos;d5;Retirar a permissão
+privacidade;direitos;d6;Saber com quem eu compartilhei
+privacidade;direitos;d7;Pedir explicação de uma orientação
+privacidade;direitos;d8;Reclamar na ANPD
+privacidade;direitos;d7x;A orientação da Tami vem de regras automáticas. Você pode pedir que eu mostre quais regras levaram a ela e que eu revise.
+privacidade;direitos;como;Como pedir
+privacidade;direitos;como1;No app: Eu ➜ Meus dados. Lá você baixa, retira a permissão ou apaga tudo.
+privacidade;direitos;como2;Ou me mande uma mensagem no LinkedIn. Respondo em até 15 dias.
+privacidade;direitos;como3;Você também pode sair do teste quando quiser, sem explicar o motivo.
+privacidade;direitos;anpd;Página da ANPD
+privacidade;mudancas;titulo;Quando esta política mudar
+privacidade;mudancas;texto1;Cada versão tem número e data, no topo da página.
+privacidade;mudancas;texto2;Se a mudança for grande, aviso no app antes. E peço o seu aceite de novo.
+privacidade;leis;titulo;As leis por trás desta página
+privacidade;leis;l1;Lei Geral de Proteção de Dados (Lei 13.709/2018)
+privacidade;leis;l2;Marco Civil da Internet (Lei 12.965/2014)
+privacidade;leis;l3;ECA Digital (Lei 15.211/2025)
+privacidade;leis;l4;Regulamento de incidentes da ANPD (Resolução CD/ANPD 15/2024)
+imprensa;falar;sub;Algumas palavras mudam o que a Tami é. Na dúvida, troque assim.
+imprensa;falar;pq;Por quê
+imprensa;falar;p1n;diagnostica
+imprensa;falar;p1s;ajuda a decidir para onde ir
+imprensa;falar;p1q;A Tami não diz qual doença a pessoa tem. Ela indica o caminho: 192, UPA, posto de saúde ou casa.
+imprensa;falar;p2n;médico virtual
+imprensa;falar;p2s;app de orientação em saúde
+imprensa;falar;p2q;Ela não é médica, enfermeira nem psicóloga. Não faz consulta.
+imprensa;falar;p3n;substitui o médico
+imprensa;falar;p3s;ajuda a chegar ao serviço certo
+imprensa;falar;p3q;Quem cuida da pessoa é o serviço de saúde. A Tami só ajuda a chegar lá.
+imprensa;falar;p4n;faz triagem
+imprensa;falar;p4s;orienta para onde ir
+imprensa;falar;p4q;Triagem é feita por profissionais, dentro do serviço de saúde.
+imprensa;falar;p5n;monitora a sua saúde
+imprensa;falar;p5s;conversa quando você precisa
+imprensa;falar;p5q;Ela não lê sinais do corpo nem acompanha exames.
+imprensa;falar;p6n;usa inteligência artificial que responde tudo
+imprensa;falar;p6s;segue regras escritas a partir de materiais públicos de saúde
+imprensa;falar;p6q;Ela não inventa respostas. Cada orientação vem de uma regra que dá para conferir.
+imprensa;falar;p7n;aprovada pela ANVISA
+imprensa;falar;p7s;está em teste
+imprensa;falar;p7q;Ainda não passou por avaliação da ANVISA nem por validação clínica.
+imprensa;falar;p8n;app do SUS
+imprensa;falar;p8s;projeto independente de um estudante
+imprensa;falar;p8q;Ela indica serviços do SUS, como UPA e posto. Mas não faz parte dele.

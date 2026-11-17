@@ -1,0 +1,75 @@
+tela;elemento;texto
+O01_SPLASH;nome;tami
+TODAS;botao_fixo;192
+TODAS;botao_fixo_acessivel;Emergência: ligar 192
+O04_OI;balao;Oi! Eu sou a Tami. Eu escuto e te mostro para onde ir.
+O04_OI;botao;CONTINUAR
+O05_SEGURANCA;balao;Antes de tudo: agora, você ou alguém aí está em perigo, foi machucado, tomou algo ou está pensando em se machucar?
+O05_SEGURANCA;opcao_sim;Sim
+O05_SEGURANCA;opcao_sim_sub;Eu te mostro na hora o que fazer
+O05_SEGURANCA;opcao_nao;Não, ninguém está em perigo
+O05_SEGURANCA;opcao_prefiro;Prefiro não dizer
+O05_SEGURANCA;opcao_prefiro_sub;Tudo bem. Vou te mostrar os números de ajuda
+O05B_CRISE;balao;Obrigada por me contar. Vamos cuidar disso agora, um passo de cada vez.
+O05B_CRISE;ligar_192;192 · SAMU · Emergência de saúde
+O05B_CRISE;ligar_190;190 · Polícia · Alguém te machucando ou ameaçando
+O05B_CRISE;ligar_188;188 · CVV · Para conversar, 24 horas, de graça
+O05B_CRISE;ligar_ciatox;0800 722 6001 · CIATox · Engoliu ou tomou algo
+O05B_CRISE;apoio;Se puder, fique perto de alguém de confiança. Eu continuo aqui com você.
+O05B_CRISE;link;ESTOU EM SEGURANÇA, CONTINUAR
+O06_CINCO;balao;Que bom! Agora são só 5 perguntas rápidas e a gente começa.
+O07_PARA_QUEM;balao;Para quem você costuma buscar ajuda?
+O07_PARA_QUEM;opcoes;Para mim | Para um bebê ou criança | Para meus pais ou avós | Para alguém que eu cuido | Para várias pessoas
+O08_CONVERSA;balao;Como você prefere conversar comigo?
+O08_CONVERSA;opcao_1;Falando · Você grava, eu transcrevo e você confere
+O08_CONVERSA;opcao_2;Escrevendo · Do seu jeito, sem precisar caprichar
+O08_CONVERSA;opcao_3;Os dois · Depende do dia
+O09_O_QUE_QUER;balao;O que eu posso fazer por você? Pode marcar mais de um.
+O09_O_QUE_QUER;opcoes;Saber para onde ir quando passar mal | Ajudar a cuidar de alguém da família | Lembrar de beber água | Dormir melhor | Só quero conhecer
+O09_O_QUE_QUER;botao;ESTOU DENTRO
+O11_SOBRE_VOCE;balao;Tem algo que eu preciso saber sempre? Pode marcar mais de um.
+O11_SOBRE_VOCE;opcoes;Estou grávida | Tenho uma doença que acompanho (Diabetes, pressão alta, asma...) | Tomo remédio todo dia | Nada disso | Prefiro contar depois
+O11_SOBRE_VOCE;nota;Você muda isso quando quiser no seu perfil.
+O12_NOTIFICACAO;balao;Posso te dar um oi de vez em quando? Para lembrar da água e perguntar como você dormiu. Nunca de madrugada.
+O12_NOTIFICACAO;botao;PODE ME LEMBRAR
+O12_NOTIFICACAO;link;AGORA NÃO
+O13_RESUMO;balao;Veja o que eu faço por você:
+O13_RESUMO;item_1;Te escuto do seu jeito · Falando ou escrevendo, com erro e tudo.
+O13_RESUMO;item_2;Mostro para onde ir · SAMU 192, UPA, posto de saúde ou cuidar em casa.
+O13_RESUMO;item_3;Fico com você · Lembretes de água, sono e de quem você cuida.
+O13_RESUMO;limite;O que eu não faço: não sou médica e não digo o nome do que você tem. Eu te ajudo a chegar em quem cuida.
+O14_PRONTO;balao;Prontinho! Agora me conta: o que está acontecendo?
+O14_PRONTO;botao_1;FALAR
+O14_PRONTO;botao_2;ESCREVER
+O15_COMEMORACAO;texto;Você bebeu água todos os dias desta semana. A Tami está orgulhosa.
+O03_BOAS_VINDAS;botao_1;Falar com a Tami
+O03_BOAS_VINDAS;botao_2;Já tenho conta
+O05_SEGURANCA;regra;Sim ou Prefiro não dizer ➜ O05B_CRISE. Não ➜ O10 (consentimento) ➜ primeira conversa
+O10_CONSENTIMENTO;ponto_1;Só pergunto o que ajuda a te orientar.
+O10_CONSENTIMENTO;ponto_2;Seus dados ficam guardados no Brasil e você pode apagar tudo quando quiser.
+O10_CONSENTIMENTO;ponto_3;Não vendo e não passo seus dados para ninguém.
+O10_CONSENTIMENTO;balao;Antes de falar da sua saúde: seus dados são seus.
+O10_CONSENTIMENTO;link;Ler a política de privacidade
+O10_CONSENTIMENTO;aceite;Você aceita que a Tami use o que você contar sobre saúde para te orientar e te acompanhar?
+O10_CONSENTIMENTO;botao;Aceito e continuo
+O10_CONSENTIMENTO;botao_nao;Agora não
+O10_CONSENTIMENTO;regra_nao;Sem aceitar, a Tami orienta do mesmo jeito, mas não guarda nada.
+O10_CONSENTIMENTO;regra;Nada vem marcado. Aceito e continuo ou Agora não, do mesmo tamanho. Sem aceite, a Tami orienta sem guardar nada.
+O10B_POLITICA;t0;O que eu guardo
+O10B_POLITICA;p0;O que você me conta sobre saúde e para quem é.
+O10B_POLITICA;t1;Onde fica
+O10B_POLITICA;p1;Em servidores no Brasil, protegido.
+O10B_POLITICA;t2;Quem vê
+O10B_POLITICA;p2;Só você. Eu não vendo nem passo para ninguém.
+O10B_POLITICA;t3;Como apagar
+O10B_POLITICA;p3;Perfil ➜ Meus dados ➜ Apagar tudo. Na hora.
+O10B_POLITICA;t4;Sem aceitar
+O10B_POLITICA;p4;Eu oriento do mesmo jeito, só não guardo nada.
+O10B_POLITICA;termos;Ler os termos de uso
+O15_COMEMORACAO;titulo;7 dias com água nesta semana!
+O03_BOAS_VINDAS;frase;Falou em saúde? Tamo aqui.
+O03_BOAS_VINDAS;explica;Você me conta o que está sentindo e eu te digo aonde ir: 192, UPA, posto ou cuidar em casa.
+O03_BOAS_VINDAS;botao_1;Falar com a Tami
+O03_BOAS_VINDAS;botao_2;Já tenho conta
+O03_BOAS_VINDAS;sem_conta;Não precisa de conta para começar.
+O03_BOAS_VINDAS;link_emergencia;É emergência? Ligue 192

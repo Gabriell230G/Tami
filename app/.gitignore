@@ -1,0 +1,8 @@
+build/
+tami.properties
+dados/*.db
+dados/*.mv.db
+dados/*.trace.db
+*.class
+__pycache__/
+*.pyc
