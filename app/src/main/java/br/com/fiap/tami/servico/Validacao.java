@@ -104,7 +104,8 @@ public final class Validacao {
             for (Opcao o : n.opcoes())
                 for (var e : o.efeitos())
                     if (e.acao() == br.com.fiap.tami.motor.Efeito.Acao.SINAL
-                            && (sinaisDoCaso.contains(e.valor()) || PARECIDOS.getOrDefault(o.codigo(), Set.of()).stream().anyMatch(sinaisDoCaso::contains)))
+                            && (sinaisDoCaso.contains(e.valor()) || PARECIDOS.getOrDefault(o.codigo(), Set.of()).stream().anyMatch(sinaisDoCaso::contains)
+                                || (o.codigo().equals("osso_dor") && motor != null && sinaisDoCaso.stream().anyMatch(motor::sinalDeFratura))))
                         r.add(o.codigo());
             return r.isEmpty() ? List.of("nenhum") : r;
         }

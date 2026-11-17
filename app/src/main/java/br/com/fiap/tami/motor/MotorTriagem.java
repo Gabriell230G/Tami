@@ -262,7 +262,7 @@ public final class MotorTriagem {
 
     /** Sinais da base que já viram item das perguntas LES_02 e LES_03: não se repetem na lista. */
     private static final Set<String> SINAIS_DA_TRILHA = Set.of("SA-C-120", "SA-C-121", "SA-C-122", "SA-C-123", "SA-C-124",
-        "SA-C-125", "SA-C-126", "SA-C-127", "SA-C-128", "SA-A-030", "SA-C-027", "SA-C-025");
+        "SA-C-125", "SA-C-126", "SA-C-127", "SA-C-128", "SA-C-129", "SA-A-030", "SA-C-027", "SA-C-025");
     /** Sinal de machucado, queda ou esporte (pela descrição). */
     private static final java.util.regex.Pattern SINAL_TRAUMA = java.util.regex.Pattern.compile(
         "\\b(pancada|queda|caiu|cair|caido|tombo|torc\\w*|batida|bateu|bater|bati|acidente|lesao|estalo|chute|machuc\\w*|treino|jogo|"
@@ -286,12 +286,25 @@ public final class MotorTriagem {
     private static final java.util.regex.Pattern SO_CRIANCA = java.util.regex.Pattern.compile("^(crianca|bebe|adolescente)\\b");
 
     enum Modo { LESAO, SEM_LESAO, GERAL }
+    /** Na lesão: só uma página de lista (a LES_03 cobre o resto). */
+    public static boolean LESAO_UMA_PAGINA = !"nao".equals(System.getProperty("tami.lesao.umaPagina"));
+    /** Na lesão: a lista só mostra sinais de machucado, queda e esporte (e o que o relato descreve com clareza). */
+    public static boolean LESAO_SO_TRAUMA = "sim".equals(System.getProperty("tami.lesao.soTrauma"));
 
     /** Este sinal da base fala de machucado, queda ou esporte? (usado também pela validação para responder a ORI_01) */
     public boolean sinalDeTrauma(String id) {
         if (conhecimento == null) return false;
         var s = conhecimento.sinal(id);
         return s != null && MECANISMO.matcher(br.com.fiap.tami.motor.lexico.Normalizador.normalizar(s.descricao())).find();
+    }
+
+    /** O sinal fala de osso quebrado? (a validação usa para responder o item "dor forte bem em cima do osso") */
+    public boolean sinalDeFratura(String id) {
+        if (conhecimento == null) return false;
+        var s = conhecimento.sinal(id);
+        // só o osso quebrado de agora (UPA ou SAMU na base); fratura antiga, por estresse ou de dedinho fica de fora
+        return s != null && s.destino().compareTo(Destino.UPA_HOJE) >= 0
+            && br.com.fiap.tami.motor.lexico.Normalizador.normalizar(s.descricao() + " " + s.termoMedico()).matches(".*\\b(fratur|quebrad|quebrou|quebrei).*");
     }
 
     private boolean cabeNaLista(BaseConhecimento.Candidato c, Modo modo, String contexto, Perfil perfilAtual, String regiaoAtual, double topo) {
@@ -308,7 +321,7 @@ public final class MotorTriagem {
         if (modo == Modo.LESAO) {
             if (!forte && !conhecimento.daRegiaoTocada(sinal.id(), regiaoAtual)) return false;
             if (!forte && CRONICO.matcher(d).find()) return false;   // machucado de agora: o que é de semanas fica de fora
-            return trauma || forte || c.cobertura() >= 0.4;
+            return trauma || forte || (!LESAO_SO_TRAUMA && c.cobertura() >= 0.4);
         }
         return !trauma || forte || !DEPOIS_DE_TRAUMA.matcher(d).find();   // SEM_LESAO: a pessoa disse que começou sozinho
     }
@@ -391,7 +404,7 @@ public final class MotorTriagem {
                     if (cabeNaLista(cn, modo, ctx, perfil, regiao, topo) && c.destino() == Destino.CUIDADO_EM_CASA && !cand.contains(c) && extra < 3) { cand.add(c); extra++; }
                 }
             }
-            if (cand.size() > tamanho)   // 2ª página, só se a pessoa marcar "nenhum" na 1ª, só se a pessoa marcar "nenhum" na 1ª
+            if (cand.size() > tamanho && !(modo == Modo.LESAO && LESAO_UMA_PAGINA))   // 2ª página, só se a pessoa marcar "nenhum" na 1ª, só se a pessoa marcar "nenhum" na 1ª
                 s.dinamicos.put(CONF_SINAIS_2, listaDeConfirmacao(CONF_SINAIS_2,
                     cand.subList(tamanho, cand.size()), "Nenhum destes também? Veja mais alguns:", s));
             if (!cand.isEmpty()) {

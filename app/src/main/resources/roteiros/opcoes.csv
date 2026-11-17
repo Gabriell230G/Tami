@@ -193,6 +193,7 @@ LES_02;nao_sei;Não sei;0;UPA:DUVIDA_SINAL_GRAVE
 LES_03;torto;Ficou torto ou parece fora do lugar;2;SINAL:SA-C-120
 LES_03;estalo;Ouvi um estalo ou senti algo quebrar na hora;2;SINAL:SA-C-123
 LES_03;apoiar;Não consigo apoiar o peso, dar uns 4 passos ou mexer a parte machucada;2;SINAL:SA-C-122
+LES_03;osso_dor;Dor forte bem em cima do osso, com inchaço logo depois da queda ou pancada;2;SINAL:SA-C-129
 LES_03;dormente;Ficou dormente ou formigando;2;SINAL:SA-C-125
 LES_03;inchaco;Inchaço ou roxo muito grande, que continua aumentando;2;SINAL:SA-C-126
 LES_03;cabeca;Bateu a cabeça e apagou por um instante, ou ficou tonto ou enjoado;2;SINAL:SA-C-025

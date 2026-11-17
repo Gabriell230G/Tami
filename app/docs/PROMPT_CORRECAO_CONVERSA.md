@@ -54,3 +54,41 @@ Nenhum desses erros é médico. São perguntas ruins para o caso.
 - "caí do telhado e o osso tá aparecendo" ➜ SAMU.
 - "dor na perna, inchada e vermelha na batata, sem ter batido" ➜ não entra na trilha de lesão.
 - A validação de 10 mil casos não pode perder sensibilidade para urgência (hoje 99,3%) nem aumentar a subtriagem crítica (hoje 0,75%).
+
+---
+
+## Situação (17/11/2026): feito
+
+| Item do prompt | Situação |
+| --- | --- |
+| Trilha de lesão (LES) com as 6 perguntas | Feito. A pergunta "Como aconteceu?" some quando o texto já diz (ex.: "no treino") |
+| "Como isso começou?" para braço, perna e costas | Feito. Não aparece se o texto já tem algo urgente |
+| Itens das perguntas 2 e 3 apontam para sinais da base | Feito. Sinais novos SA-C-120 a SA-C-129 (NHS: Sprains and strains, Broken leg, Broken arm or wrist) |
+| Item extra na pergunta 3 | "Dor forte bem em cima do osso, com inchaço logo depois": sem ele, criança mancando depois de cair e punho quebrado iam para a UBS |
+| Lista de confirmação | Na lesão: uma página só, sem itens de casos crônicos, sem os itens das perguntas 2 e 3, e só da região tocada. Sinais de grupo (câncer, colesterol, gravidez, anticoagulante...) só para quem é do grupo ou fala disso |
+| Dor de 0 a 10 com carinhas | Feito. 7 ou mais continua contando como dor forte |
+| Cuidados no resultado | Feito: lesão, ida à UPA, volta ao treino e casos gerais. Sem remédio |
+| Pancada no peito ou na barriga | Fica no caminho completo, que pergunta sobre peito e ar |
+
+### Duas regras do prompt que foram ajustadas, com o teste dos 10.000 casos
+
+1. **"Na lesão, mostre só sinais de trauma".** Testado ao pé da letra, perdia 12 casos urgentes a mais (alguns de SAMU indo para casa). Ficou assim: sinais de trauma, mais os que o relato descreve com clareza.
+2. **"Fora da lesão, esconda sinais de trauma".** Escondia casos como "idosa com osteoporose sentiu dor forte nas costas ao se abaixar". Ficou assim: só esconde depois que a pessoa responde "Começou sozinho".
+
+### Os 4 testes
+
+| Relato | Resultado |
+| --- | --- |
+| "estou com dor na perna, acho que luxei" | 7 perguntas, pergunta a origem, cuidar em casa com os cuidados |
+| "torci o pé no judô e não consigo pisar" | UPA hoje |
+| "caí do telhado e o osso tá aparecendo" | SAMU 192 |
+| "dor na perna, inchada e vermelha na batata, sem ter batido" | Não entra na trilha de lesão |
+
+### Validação (10.000 casos)
+
+| | Antes | Agora |
+| --- | --- | --- |
+| Urgentes que foram para UPA ou SAMU | 99,29% | 99,38% |
+| Grave mandado para mais leve | 36 (0,75%) | 32 (0,66%) |
+| Destino exato | 83,4% | 83,9% |
+| Perguntas por conversa (média) | 10,8 | 10,1 |
