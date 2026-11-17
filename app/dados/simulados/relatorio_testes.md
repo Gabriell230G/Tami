@@ -8,14 +8,14 @@ Cada caso é uma pessoa simulada com uma ficha escondida (idade, o que aconteceu
 
 | Medida | Antes | Depois |
 | --- | --- | --- |
-| Destino exato | 65,7% (63,6% a 67,8%) | 70,8% (68,7% a 72,7%) |
+| Destino exato | 65,7% (63,6% a 67,8%) | 71,0% (68,9% a 72,9%) |
 | Urgentes que foram para UPA ou SAMU | 99,9% (99,5% a 100,0%) | 100,0% (99,7% a 100,0%) |
 | Urgente mandado para UBS ou casa | 0,1% (0,0% a 0,5%) | 0,0% (0,0% a 0,3%) |
-| Conversas com pergunta ou item sem relação | 54,7% (52,5% a 56,9%) | 35,7% (33,6% a 37,8%) |
-| Conversas em que faltou uma pergunta importante | 3,6% (2,9% a 4,5%) | 8,1% (6,9% a 9,3%) |
+| Conversas com pergunta ou item sem relação | 54,7% (52,5% a 56,9%) | 21,9% (20,2% a 23,8%) |
+| Conversas em que faltou uma pergunta importante | 3,6% (2,9% a 4,5%) | 8,0% (6,9% a 9,3%) |
 | UBS ou casa sem nenhum cuidado no fim | 0,0% (0,0% a 0,8%) | 0,0% (0,0% a 0,7%) |
-| Perguntas por conversa (média) | 6,89 | 4,71 |
-| Nota de uma pessoa real (0 a 10) | 7,97 | 9,08 |
+| Perguntas por conversa (média) | 6,89 | 4,44 |
+| Nota de uma pessoa real (0 a 10) | 7,97 | 9,43 |
 
 Intervalos de confiança de 95% pelo método de Wilson.
 
@@ -23,20 +23,20 @@ Intervalos de confiança de 95% pelo método de Wilson.
 
 | Medida | Antes | Depois |
 | --- | --- | --- |
-| Destino exato | 67,9% (67,0% a 68,8%) | 73,2% (72,3% a 74,1%) |
-| Urgentes que foram para UPA ou SAMU | 99,9% (99,8% a 99,9%) | 99,9% (99,7% a 99,9%) |
-| Urgente mandado para UBS ou casa | 0,1% (0,1% a 0,2%) | 0,1% (0,1% a 0,3%) |
-| Conversas com pergunta ou item sem relação | 54,7% (53,7% a 55,6%) | 35,8% (34,9% a 36,8%) |
-| Conversas em que faltou uma pergunta importante | 3,9% (3,5% a 4,3%) | 8,4% (7,8% a 8,9%) |
+| Destino exato | 67,9% (67,0% a 68,8%) | 74,1% (73,2% a 74,9%) |
+| Urgentes que foram para UPA ou SAMU | 99,9% (99,8% a 99,9%) | 99,9% (99,8% a 100,0%) |
+| Urgente mandado para UBS ou casa | 0,1% (0,1% a 0,2%) | 0,1% (0,0% a 0,2%) |
+| Conversas com pergunta ou item sem relação | 54,7% (53,7% a 55,6%) | 21,9% (21,1% a 22,7%) |
+| Conversas em que faltou uma pergunta importante | 3,9% (3,5% a 4,3%) | 8,5% (8,0% a 9,1%) |
 | UBS ou casa sem nenhum cuidado no fim | 0,0% (0,0% a 0,2%) | 0,0% (0,0% a 0,1%) |
-| Perguntas por conversa (média) | 6,88 | 4,67 |
-| Nota de uma pessoa real (0 a 10) | 7,98 | 9,08 |
+| Perguntas por conversa (média) | 6,88 | 4,39 |
+| Nota de uma pessoa real (0 a 10) | 7,98 | 9,41 |
 
 ## 3. Os 20 problemas mais comuns antes das correções
 
 ### 1. Mais cuidadosa que o necessário (destino mais urgente que o esperado)
 
-**3185 conversas antes ➜ 2651 depois.** Famílias mais atingidas: Febre e dengue (287), Urina e região íntima (276), Pele (256).
+**3185 conversas antes ➜ 2563 depois.** Famílias mais atingidas: Febre e dengue (287), Urina e região íntima (276), Pele (256).
 
 - "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana" ➜ esperado UBS_EM_BREVE, a Tami deu UPA_HOJE
 - "bati com forca na prota febre" ➜ esperado CUIDADO_EM_CASA, a Tami deu UBS_EM_BREVE
@@ -44,7 +44,7 @@ Intervalos de confiança de 95% pelo método de Wilson.
 
 ### 2. Lista com item de outra parte do corpo
 
-**2827 conversas antes ➜ 1008 depois.** Famílias mais atingidas: Barriga (300), Pele (298), Cirurgia, crônicos e 'não é nada' (258).
+**2827 conversas antes ➜ 906 depois.** Famílias mais atingidas: Barriga (300), Pele (298), Cirurgia, crônicos e 'não é nada' (258).
 
 Causa: A lista não sabia onde era o problema quando a pessoa não tocava no corpo.
 
@@ -54,7 +54,7 @@ Causa: A lista não sabia onde era o problema quando a pessoa não tocava no cor
 
 ### 3. Perguntas demais para o caso
 
-**2676 conversas antes ➜ 479 depois.** Famílias mais atingidas: Urina e região íntima (360), Intoxicação e animais (346), Pele (334).
+**2676 conversas antes ➜ 328 depois.** Famílias mais atingidas: Urina e região íntima (360), Intoxicação e animais (346), Pele (334).
 
 Causa: O caminho genérico tem 8 perguntas de emergência e 6 gerais, além da lista.
 
@@ -64,7 +64,7 @@ Causa: O caminho genérico tem 8 perguntas de emergência e 6 gerais, além da l
 
 ### 4. Item de "depois de queda ou pancada" para quem não se machucou
 
-**1366 conversas antes ➜ 583 depois.** Famílias mais atingidas: Urina e região íntima (140), Saúde mental e crise (140), Intoxicação e animais (135).
+**1366 conversas antes ➜ 402 depois.** Famílias mais atingidas: Urina e região íntima (140), Saúde mental e crise (140), Intoxicação e animais (135).
 
 Causa: A lista mostrava sinais de "depois de queda" para quem não caiu.
 
@@ -74,7 +74,7 @@ Causa: A lista mostrava sinais de "depois de queda" para quem não caiu.
 
 ### 5. Item de cirurgia para quem não operou
 
-**1316 conversas antes ➜ 462 depois.** Famílias mais atingidas: Febre e dengue (158), Barriga (136), Gravidez e pós-parto (133).
+**1316 conversas antes ➜ 340 depois.** Famílias mais atingidas: Febre e dengue (158), Barriga (136), Gravidez e pós-parto (133).
 
 Causa: A base tem 215 sinais de pós-operatório e a busca por palavras parecidas trazia todos para quem tinha febre ou dor.
 
@@ -84,7 +84,7 @@ Causa: A base tem 215 sinais de pós-operatório e a busca por palavras parecida
 
 ### 6. Pergunta de veneno ou remédio demais sem motivo no relato
 
-**1009 conversas antes ➜ 1000 depois.** Famílias mais atingidas: Idosos e anticoagulante (184), Pele (149), Cirurgia, crônicos e 'não é nada' (145).
+**1009 conversas antes ➜ 172 depois.** Famílias mais atingidas: Idosos e anticoagulante (184), Pele (149), Cirurgia, crônicos e 'não é nada' (145).
 
 Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
@@ -94,7 +94,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 7. Item de gravidez ou parto para quem não está grávida
 
-**709 conversas antes ➜ 358 depois.** Famílias mais atingidas: Bebês e crianças (96), Urina e região íntima (90), Febre e dengue (82).
+**709 conversas antes ➜ 61 depois.** Famílias mais atingidas: Bebês e crianças (96), Urina e região íntima (90), Febre e dengue (82).
 
 - "meu bebe de 23 meses gripe que n melhora tbm caatrro faz mais de dez dias hj" ➜ CONF_SINAIS: Gripe ou covid com febre em idoso, grávida, criança pequena ou pessoa com doença crônica
 - "febre e sou transplantado essa semana sou transplantado" ➜ CONF_SINAIS: Febre nos dias ou semanas depois do parto ou da cesárea
@@ -102,7 +102,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 8. Pergunta de alergia com inchaço sem motivo no relato
 
-**612 conversas antes ➜ 638 depois.** Famílias mais atingidas: Cabeça e tontura (124), Barriga (68), Pancada, corte e queimadura (60).
+**612 conversas antes ➜ 19 depois.** Famílias mais atingidas: Cabeça e tontura (124), Barriga (68), Pancada, corte e queimadura (60).
 
 Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
@@ -112,7 +112,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 9. Machucado que não entrou na trilha de machucado
 
-**569 conversas antes ➜ 493 depois.** Famílias mais atingidas: Pancada, corte e queimadura (232), Machucado no esporte (148), Queda (147).
+**569 conversas antes ➜ 494 depois.** Famílias mais atingidas: Pancada, corte e queimadura (232), Machucado no esporte (148), Queda (147).
 
 - "cancer na lingua to fazendo quimio"
 - "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana"
@@ -120,7 +120,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 10. Item de câncer para quem não tem
 
-**543 conversas antes ➜ 88 depois.** Famílias mais atingidas: Barriga (82), Febre e dengue (70), Cabeça e tontura (58).
+**543 conversas antes ➜ 74 depois.** Famílias mais atingidas: Barriga (82), Febre e dengue (70), Cabeça e tontura (58).
 
 - "to gravida de 10 semanas vendo pontinhos brilhando e gravida c dor de cabeca forte desde cedo alem disso fique" ➜ CONF_SINAIS_2: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
 - "vive sangrando a boca tbm gengiva sangrando toda hora" ➜ CONF_SINAIS_2: Sangramento que não para ou manchas roxas grandes em quem faz tratamento de câncer
@@ -128,7 +128,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 11. Item de transplante ou HIV para quem não tem
 
-**332 conversas antes ➜ 181 depois.** Famílias mais atingidas: Urina e região íntima (113), Barriga (54), Cirurgia, crônicos e 'não é nada' (44).
+**332 conversas antes ➜ 23 depois.** Famílias mais atingidas: Urina e região íntima (113), Barriga (54), Cirurgia, crônicos e 'não é nada' (44).
 
 - "cancer na lingua to fazendo quimio" ➜ CONF_SINAIS: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
 - "deve ser bobeira mas perdendo xixi depois de tirar a prostata faz uns 2 dias to fazendo quimio" ➜ CONF_SINAIS_2: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer
@@ -144,7 +144,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 13. Item de criança ou bebê para adulto
 
-**310 conversas antes ➜ 267 depois.** Famílias mais atingidas: Urina e região íntima (40), Machucado no esporte (39), Febre e dengue (38).
+**310 conversas antes ➜ 270 depois.** Famílias mais atingidas: Urina e região íntima (40), Machucado no esporte (39), Febre e dengue (38).
 
 - "meu vo de 68 anos reclama de pele queimada de produto" ➜ CONF_SINAIS_2: Criança, bebê ou idoso com queimadura que fez bolha
 - "corrimento com odor que nao melhora agora pouco" ➜ CONF_SINAIS: Criança ativa com dor atrás do calcanhar que piora correndo ou pulando e melhora no descanso, andando normal
@@ -152,7 +152,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 14. Pergunta de se machucar de propósito num machucado comum
 
-**284 conversas antes ➜ 247 depois.** Famílias mais atingidas: Pancada, corte e queimadura (152), Machucado no esporte (95), Queda (37).
+**284 conversas antes ➜ 249 depois.** Famílias mais atingidas: Pancada, corte e queimadura (152), Machucado no esporte (95), Queda (37).
 
 - "cancer na lingua to fazendo quimio" ➜ FIL_08: pensar em se machucar
 - "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana" ➜ FIL_08: pensar em se machucar
@@ -160,7 +160,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 15. Item de diabetes para quem não tem
 
-**280 conversas antes ➜ 62 depois.** Famílias mais atingidas: Febre e dengue (43), Idosos e anticoagulante (41), Cabeça e tontura (35).
+**280 conversas antes ➜ 53 depois.** Famílias mais atingidas: Febre e dengue (43), Idosos e anticoagulante (41), Cabeça e tontura (35).
 
 - "fiz canal e a dor voltou e fiz canal e segue doendo faz uns 2 dias e tbm hipoglicemia" ➜ CONF_SINAIS_2: Pessoa com diabetes que ficou confusa de repente
 - "meu vo de 69 anos tá: levou uma pancada ulcera de pressao, machucado de ficar acamado hoje de manha" ➜ CONF_SINAIS: Diabético com ferida ou bolha no pé que não cicatriza
@@ -176,7 +176,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 17. Pergunta de confusão e sonolência num machucado de braço ou perna
 
-**197 conversas antes ➜ 157 depois.** Famílias mais atingidas: Pancada, corte e queimadura (92), Machucado no esporte (86), Queda (19).
+**197 conversas antes ➜ 155 depois.** Famílias mais atingidas: Pancada, corte e queimadura (92), Machucado no esporte (86), Queda (19).
 
 - "meu vo de 84 aons, bateu na quina da mesa dedo ainda n estica sozinho, ponta do dedo ainda caida essa semana" ➜ GEN_01: confusão e sonolência
 - "ca de esofago faco tratamento de cnacer" ➜ GEN_01: confusão e sonolência
@@ -184,7 +184,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 18. Item de diálise para quem não faz
 
-**158 conversas antes ➜ 164 depois.** Famílias mais atingidas: Urina e região íntima (41), Queda (17), Cirurgia, crônicos e 'não é nada' (17).
+**158 conversas antes ➜ 2 depois.** Famílias mais atingidas: Urina e região íntima (41), Queda (17), Cirurgia, crônicos e 'não é nada' (17).
 
 - "to de 8 semanas de barriga e sangrando agora" ➜ CONF_SINAIS_2: Fístula da hemodiálise sangrando muito e sem parar mesmo apertando
 - "acho q nao e nada mas anida nao escuta depois do tubinho faz 2 semnaas" ➜ CONF_SINAIS: Fístula da hemodiálise parou de vibrar ou de fazer o barulhinho
@@ -192,7 +192,7 @@ Causa: O filtro geral fazia as 8 perguntas de emergência para todo mundo.
 
 ### 19. Vômito ou diarreia sem perguntar se bebe líquido e faz xixi
 
-**146 conversas antes ➜ 152 depois.** Famílias mais atingidas: Barriga (146).
+**146 conversas antes ➜ 155 depois.** Famílias mais atingidas: Barriga (146).
 
 Causa: Não existia pergunta sobre beber líquido e fazer xixi no caminho genérico.
 
@@ -202,7 +202,7 @@ Causa: Não existia pergunta sobre beber líquido e fazer xixi no caminho genér
 
 ### 20. Item de remédio para afinar o sangue para quem não toma
 
-**123 conversas antes ➜ 67 depois.** Famílias mais atingidas: Pancada, corte e queimadura (50), Urina e região íntima (23), Pele (13).
+**123 conversas antes ➜ 21 depois.** Famílias mais atingidas: Pancada, corte e queimadura (50), Urina e região íntima (23), Pele (13).
 
 - "tomei um chute crise de sinusite, dor ou pressão no rosto e na testa agora pouco" ➜ CONF_SINAIS: Adulto bateu a cabeça de leve, sem desmaio, sem vômito e sem remédio para afinar o sangue
 - "bati com forca na prota febre" ➜ CONF_SINAIS_2: Adulto bateu a cabeça de leve, sem desmaio, sem vômito e sem remédio para afinar o sangue
@@ -212,21 +212,21 @@ Causa: Não existia pergunta sobre beber líquido e fazer xixi no caminho genér
 
 | Família | Casos | Nota antes | Nota depois | Perguntas depois | Destino exato depois | Problema mais comum depois |
 | --- | --- | --- | --- | --- | --- | --- |
-| Barriga | 656 | 6,95 | 9,04 | 5,5 | 77,1% | Vômito ou diarreia sem perguntar se bebe líquido e faz xixi |
-| Bebês e crianças | 656 | 8,79 | 9,48 | 4,4 | 76,1% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Cabeça e tontura | 669 | 8,57 | 9,17 | 3,3 | 82,5% | faltou:sinais_avc |
-| Cirurgia, crônicos e 'não é nada' | 674 | 7,42 | 8,92 | 5,4 | 77,7% | Pergunta de veneno ou remédio demais sem motivo no relato |
-| Febre e dengue | 669 | 7,48 | 8,8 | 5,8 | 63,7% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Gravidez e pós-parto | 659 | 8,04 | 9,01 | 5,0 | 68,3% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Idosos e anticoagulante | 661 | 8,31 | 9,18 | 3,7 | 70,5% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Intoxicação e animais | 669 | 8,36 | 9,12 | 4,3 | 77,1% | faltou:sinais_graves_intox |
-| Machucado no esporte | 668 | 7,73 | 9,18 | 4,2 | 69,3% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Pancada, corte e queimadura | 686 | 7,53 | 8,71 | 3,7 | 71,9% | Machucado que não entrou na trilha de machucado |
-| Peito e falta de ar | 673 | 8,24 | 9,02 | 4,3 | 71,8% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Pele | 663 | 7,35 | 9,05 | 7,0 | 67,7% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
-| Queda | 657 | 9,27 | 9,65 | 1,6 | 84,5% | Machucado que não entrou na trilha de machucado |
-| Saúde mental e crise | 660 | 8,77 | 9,27 | 5,4 | 70,3% | Perguntas demais para o caso |
-| Urina e região íntima | 680 | 6,98 | 8,66 | 6,6 | 69,9% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Barriga | 656 | 6,95 | 9,27 | 5,3 | 77,9% | Vômito ou diarreia sem perguntar se bebe líquido e faz xixi |
+| Bebês e crianças | 656 | 8,79 | 9,76 | 4,1 | 77,0% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Cabeça e tontura | 669 | 8,57 | 9,51 | 3,0 | 83,0% | faltou:sinais_avc |
+| Cirurgia, crônicos e 'não é nada' | 674 | 7,42 | 9,43 | 5,0 | 79,8% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Febre e dengue | 669 | 7,48 | 9,22 | 5,6 | 64,3% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Gravidez e pós-parto | 659 | 8,04 | 9,21 | 4,9 | 68,4% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Idosos e anticoagulante | 661 | 8,31 | 9,7 | 3,3 | 69,9% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Intoxicação e animais | 669 | 8,36 | 9,27 | 4,2 | 77,7% | faltou:sinais_graves_intox |
+| Machucado no esporte | 668 | 7,73 | 9,45 | 4,1 | 69,2% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Pancada, corte e queimadura | 686 | 7,53 | 9,08 | 3,5 | 72,9% | Machucado que não entrou na trilha de machucado |
+| Peito e falta de ar | 673 | 8,24 | 9,29 | 4,1 | 72,7% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Pele | 663 | 7,35 | 9,48 | 6,5 | 69,2% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Queda | 657 | 9,27 | 9,77 | 1,6 | 84,5% | Machucado que não entrou na trilha de machucado |
+| Saúde mental e crise | 660 | 8,77 | 9,61 | 4,3 | 74,7% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
+| Urina e região íntima | 680 | 6,98 | 9,13 | 6,5 | 70,1% | Mais cuidadosa que o necessário (destino mais urgente que o esperado) |
 
 ## 5. O que ainda falta (de propósito ou para a próxima rodada)
 

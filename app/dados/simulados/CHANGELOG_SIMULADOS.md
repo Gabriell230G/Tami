@@ -160,3 +160,77 @@ A meta era passar de 9,2 no treino. Parou em **9,08 no treino e 9,08 na prova**,
 **Os 8 testes que precisavam passar:** CVV 188 aparece em "não aguento mais, quero morrer"; CIATox em "meu filho bebeu água sanitária"; "luxei no treino de judô" com 6 perguntas; joelho torto no judô ➜ UPA; queda do telhado ➜ SAMU; dor na batata da perna não vai para a trilha do machucado; "vomitando tudo desde ontem e quase não fiz xixi" ➜ pergunta de beber e fazer xixi e UPA; "ardendo pra fazer xixi, sem febre" ➜ trilha da urina com 6 perguntas e sem a pergunta de febre.
 
 **Atenção ao número oficial (`dados/validacao.json`):** ele conta como subtriagem crítica também o caso de SAMU que foi para UPA. Por essa conta foi de 27 para 35: os 24 urgentes para UBS ou casa caíram (26 ➜ 24), mas 10 casos que pediam SAMU agora vão para UPA (continuam urgentes, um nível abaixo). Exemplos: idoso de 62 anos que caiu de costas com dor forte (a lista do machucado tem uma página e o item de SAMU ficou de fora), criança com pintinhas roxas (marca o item de UPA e a página com o de SAMU não aparece). **Testado e desfeito:** pôr os itens de SAMU no topo da lista. Resolveu 5 desses 10, mas empurrou outros itens para fora da primeira página e o teste antigo caiu para 98,73% e 61 urgentes para UBS ou casa. Fica como pendência para a revisão médica.
+
+---
+
+# Rodada 3: meta de nota 9,5
+
+Ponto de partida: o fim da rodada 2 (treino 9,08, prova 9,08). Mesmas regras: os dois testes de segurança depois de cada mudança e o avaliador congelado.
+
+## O que mudou
+
+1. **Remédio que baixa a imunidade.** "Febre usando remédio para artrite", "remédio de reumatismo", metotrexato e parecidos contam como imunidade baixa. Agora acha o sinal de febre ou feridas na boca nesse grupo e manda para a UPA. Fonte: NHS (methotrexate, DMARDs), sinal SA-I-016 da base. Corrigiu 3 dos 8 urgentes que iam para UBS ou casa no treino.
+2. **Alergia e veneno só quando faz sentido.** A pergunta de alergia sai quando o problema é só na cabeça; ela aparece com sinal de alergia no relato (inchaço, lábio, picada, urticária) ou com gatilho mais sintoma ("comi camarão e estou com coceira"). A de veneno aparece sempre para criança com menos de 5 anos e, para os outros, quando o relato dá motivo, inclusive remédio trocado ou tomado a mais. Antes ia para toda criança e todo idoso.
+3. **Lista: grupos.**
+   - O item que tem a idade como sujeito e uma condição ("Criança que não faz xixi depois da cirurgia de fimose") só aparece se a pessoa tiver a condição.
+   - Item de vários grupos mostra só o grupo da pessoa: um bebê vê "Gripe ou covid com febre em criança pequena ou pessoa com doença crônica", sem "idoso" e "grávida".
+   - Sangramento vaginal e menstruação não aparecem para homem; testículo e próstata não aparecem para mulher.
+   - "Hemodiálise" passou a ser reconhecida como grupo.
+4. **Lista: machucado e parte do corpo.**
+   - Item "depois de queda ou pancada" sai para quem não contou nada que machuque, usando só as palavras de machucado de verdade. "Depois de exercício" e "no calor" seguem outra regra.
+   - Quando a pessoa não citou parte do corpo nenhuma, o item de uma parte do corpo sem nenhuma palavra em comum sai, menos os do grupo dela (a gestante continua vendo "bebê mexendo menos na barriga").
+   - "Ficar de pé" não conta mais como "pé".
+5. **Segunda página da lista.** Continua com até 10 itens e só aparece se a primeira tinha item grave e a pessoa marcou "Nenhum". Agora traz só item grave, item de cuidar em casa e item que sobe de nível para aquela pessoa. O item comum de UBS saiu.
+6. **Dor forte de repente.** "Cólica fortíssima do nada" responde sozinho a pergunta de começou de repente e forte, e "dor insuportável" responde a dor.
+7. **Trilha curta de saúde mental (MEN).** Tristeza, ansiedade, insônia, parar de fumar ou de beber, sem nada urgente no texto e em quem não é idoso: pergunta do risco agora ➜ lista ➜ há quanto tempo. Cuidados no fim: conversar com alguém, sono e comida em horário, evitar álcool, mexer o corpo, procurar ajuda na hora se vier vontade de se machucar.
+
+## Testado e desfeito
+
+| Tentativa | Por que saiu |
+| --- | --- |
+| Segunda página com no máximo 6 itens | Teste antigo: 99,34% e 32 urgentes para UBS ou casa |
+| Segunda página só com itens graves (sem os de casa e os que sobem de nível) | Perdeu gestante com resfriado longo e idosa anticoagulada que caiu; destino exato caiu de 82,6% para 81,1% |
+| Tirar da lista todo item muito abaixo do mais parecido com o relato | Teste antigo: 99,29% e 34 |
+| Tirar todo item de parte do corpo sem ligação forte quando a pessoa não diz onde é | Perdeu criança pequena que começou a mancar e grávida com ferida genital |
+| Tirar item de UBS sem palavra em comum | Nota igual (9,40): o lugar vazio na página era ocupado por outro item |
+
+## Números
+
+| | Fim da rodada 2 | Fim da rodada 3 |
+| --- | --- | --- |
+| Nota no treino (régua nova) | 9,08 | **9,41** |
+| Nota na prova (régua nova / antiga) | 9,08 / 8,83 | **9,43** / 9,16 |
+| Conversas com item ou pergunta sem relação (prova) | 35,7% | 22,0% |
+| Perguntas por conversa (prova, média / máximo) | 4,71 / 15 | 4,44 / 15 |
+| Urgentes para UPA ou SAMU (prova) | 100% | 100% |
+| Urgentes para UBS ou casa (treino / prova) | 8 / 0 | 5 / 0 |
+| Teste antigo: urgentes para UPA ou SAMU | 99,50% | 99,50% |
+| Teste antigo: urgentes para UBS ou casa | 24 | 24 |
+| Teste antigo: destino exato | 82,4% | 82,6% |
+| Teste antigo: perguntas por caso | 6,1 | 5,7 |
+
+A prova desta rodada também rodou uma vez só, no fim, e nenhuma mudança foi feita olhando para ela.
+
+## Por que não chegou a 9,5 na régua oficial
+
+Os pontos que sobram vêm quase todos de três fontes:
+
+1. **Itens graves que precisam ficar.** Cada tentativa de tirar mais itens graves da lista derrubou o teste antigo (ver tabela acima).
+2. **Erros da régua congelada.** Ela marca como "sem relação":
+   - "tontura ao ficar **de pé**" e "dor no **pé** da barriga" como item da perna;
+   - "manchas que aparecem **sem pancada**" como item de machucado;
+   - "**Bebeu** muito e não acorda" como item de bebê.
+
+   Ela também cobra "faltou perguntar falta de ar, dor no peito, AVC" quando a tela de emergência já perguntou. Só esses casos são 863 pontos no treino.
+3. **Perguntas da regra de segurança.** Pergunta de crise em quem se machucou mas caiu no caminho geral por ter algo urgente no texto.
+
+| | Régua oficial | Sem os erros conhecidos da régua (item 2) |
+| --- | --- | --- |
+| Treino | 9,41 | 9,50 |
+| Prova | 9,43 | 9,51 |
+
+A régua não foi mudada. A conta da direita é só para mostrar o tamanho do erro dela. Mudar a régua de verdade pede uma segunda auditoria, igual à do Passo 1.
+
+**Conversas com UBS ou casa e mais de 8 perguntas:** 277 de 2.000 na prova (eram 389 no começo da rodada 2).
+
+**Os 8 testes que precisavam passar:** continuam passando (CVV 188, CIATox, luxação no judô com 6 perguntas, joelho torto ➜ UPA, queda do telhado ➜ SAMU, batata da perna fora da trilha do machucado, vômito com pouco xixi ➜ pergunta de beber e UPA, ardor ao urinar sem febre ➜ trilha da urina com 6 perguntas).

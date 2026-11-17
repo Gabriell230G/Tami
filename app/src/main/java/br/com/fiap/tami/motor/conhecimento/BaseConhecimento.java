@@ -259,6 +259,9 @@ public final class BaseConhecimento {
     private static final java.util.regex.Pattern SEMANAS = java.util.regex.Pattern.compile("\\b(\\d{1,2}) semanas\\b");
     private static final java.util.regex.Pattern MESES_GRAVIDEZ = java.util.regex.Pattern.compile("\\b(\\d) mes(es)?\\b");
 
+    private static final java.util.regex.Pattern REMEDIO_IMUNIDADE = java.util.regex.Pattern.compile(
+        "\\b(remedio|remedios|medicamento|tratamento)( forte)?( (para|pra|de|do|da|contra))? (a |o )?(artrite|reumatismo|reumatoide|lupus|psoriase|imunidade|crohn|retocolite)\\b|\\b(metotrexato|leflunomida|azatioprina|imunossupressor\\w*|biologico)\\b");
+
     /** Grupos, fatores, idade calculada, semanas de gestação e sinônimos: o "eu" usado na subida de nível. */
     public Set<String> eu(String texto, Perfil perfil, Set<String> fatores) {
         if (fatores == null) fatores = Set.of();
@@ -272,6 +275,8 @@ public final class BaseConhecimento {
         if (m < 60) eu.add("crianca pequena");
         if (m >= 600) eu.add("maior de 50 anos");
         String n = br.com.fiap.tami.motor.lexico.Normalizador.normalizar(texto);
+        // sprint 6: remédio de artrite, reumatismo, lúpus ou psoríase costuma baixar a imunidade (NHS: methotrexate, DMARDs)
+        if (REMEDIO_IMUNIDADE.matcher(n).find()) eu.add("imunossuprimido");
         if (perfil.gestante()) {
             var sem = SEMANAS.matcher(n);
             while (sem.find()) if (Integer.parseInt(sem.group(1)) < 37) eu.add("menos de 37 semanas");

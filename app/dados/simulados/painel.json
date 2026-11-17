@@ -61,12 +61,12 @@
  },
  "depois": {
   "destino_exato": {
-   "x": 1415,
+   "x": 1419,
    "n": 2000,
-   "p": 0.7075,
+   "p": 0.7095,
    "ic95": [
-    0.6872,
-    0.727
+    0.6892,
+    0.729
    ]
   },
   "sensibilidade_urgente": {
@@ -88,189 +88,189 @@
    ]
   },
   "com_irrelevante": {
-   "x": 714,
+   "x": 439,
    "n": 2000,
-   "p": 0.357,
+   "p": 0.2195,
    "ic95": [
-    0.3363,
-    0.3783
+    0.2019,
+    0.2382
    ]
   },
   "com_falta": {
-   "x": 161,
+   "x": 160,
    "n": 2000,
-   "p": 0.0805,
+   "p": 0.08,
    "ic95": [
-    0.0694,
-    0.0932
+    0.0689,
+    0.0927
    ]
   },
   "sem_cuidado": {
    "x": 0,
-   "n": 546,
+   "n": 549,
    "p": 0.0,
    "ic95": [
-    0.0,
-    0.007
+    -0.0,
+    0.0069
    ]
   },
-  "nota_media": 9.08,
-  "perguntas_media": 4.71
+  "nota_media": 9.43,
+  "perguntas_media": 4.44
  },
  "problemas": [
   {
    "problema": "Lista com item de outra parte do corpo",
-   "casos": 198
-  },
-  {
-   "problema": "Pergunta de veneno ou remédio demais sem motivo no relato",
-   "casos": 189
-  },
-  {
-   "problema": "Pergunta de alergia com inchaço sem motivo no relato",
-   "casos": 130
-  },
-  {
-   "problema": "Item de \"depois de queda ou pancada\" para quem não se machucou",
-   "casos": 127
+   "casos": 169
   },
   {
    "problema": "Machucado que não entrou na trilha de machucado",
    "casos": 107
+  },
+  {
+   "problema": "Item de \"depois de queda ou pancada\" para quem não se machucou",
+   "casos": 85
+  },
+  {
+   "problema": "Perguntas demais para o caso",
+   "casos": 73
+  },
+  {
+   "problema": "Item de cirurgia para quem não operou",
+   "casos": 65
   }
  ],
  "por_familia": [
   {
    "familia": "Barriga",
    "nota_antes": 6.95,
-   "nota": 9.04,
-   "perguntas": 5.5
+   "nota": 9.27,
+   "perguntas": 5.3
   },
   {
    "familia": "Bebês e crianças",
    "nota_antes": 8.79,
-   "nota": 9.48,
-   "perguntas": 4.4
+   "nota": 9.76,
+   "perguntas": 4.1
   },
   {
    "familia": "Cabeça e tontura",
    "nota_antes": 8.57,
-   "nota": 9.17,
-   "perguntas": 3.3
+   "nota": 9.51,
+   "perguntas": 3.0
   },
   {
    "familia": "Cirurgia, crônicos e 'não é nada'",
    "nota_antes": 7.42,
-   "nota": 8.92,
-   "perguntas": 5.4
+   "nota": 9.43,
+   "perguntas": 5.0
   },
   {
    "familia": "Febre e dengue",
    "nota_antes": 7.48,
-   "nota": 8.8,
-   "perguntas": 5.8
+   "nota": 9.22,
+   "perguntas": 5.6
   },
   {
    "familia": "Gravidez e pós-parto",
    "nota_antes": 8.04,
-   "nota": 9.01,
-   "perguntas": 5.0
+   "nota": 9.21,
+   "perguntas": 4.9
   },
   {
    "familia": "Idosos e anticoagulante",
    "nota_antes": 8.31,
-   "nota": 9.18,
-   "perguntas": 3.7
+   "nota": 9.7,
+   "perguntas": 3.3
   },
   {
    "familia": "Intoxicação e animais",
    "nota_antes": 8.36,
-   "nota": 9.12,
-   "perguntas": 4.3
+   "nota": 9.27,
+   "perguntas": 4.2
   },
   {
    "familia": "Machucado no esporte",
    "nota_antes": 7.73,
-   "nota": 9.18,
-   "perguntas": 4.2
+   "nota": 9.45,
+   "perguntas": 4.1
   },
   {
    "familia": "Pancada, corte e queimadura",
    "nota_antes": 7.53,
-   "nota": 8.71,
-   "perguntas": 3.7
+   "nota": 9.08,
+   "perguntas": 3.5
   },
   {
    "familia": "Peito e falta de ar",
    "nota_antes": 8.24,
-   "nota": 9.02,
-   "perguntas": 4.3
+   "nota": 9.29,
+   "perguntas": 4.1
   },
   {
    "familia": "Pele",
    "nota_antes": 7.35,
-   "nota": 9.05,
-   "perguntas": 7.0
+   "nota": 9.48,
+   "perguntas": 6.5
   },
   {
    "familia": "Queda",
    "nota_antes": 9.27,
-   "nota": 9.65,
+   "nota": 9.77,
    "perguntas": 1.6
   },
   {
    "familia": "Saúde mental e crise",
    "nota_antes": 8.77,
-   "nota": 9.27,
-   "perguntas": 5.4
+   "nota": 9.61,
+   "perguntas": 4.3
   },
   {
    "familia": "Urina e região íntima",
    "nota_antes": 6.98,
-   "nota": 8.66,
-   "perguntas": 6.6
+   "nota": 9.13,
+   "perguntas": 6.5
   }
  ],
  "exemplos": [
   {
    "relato": "cheiro de peixe que piora depois da relação faz 2 semanas",
    "comentario": "Perguntou de veneno ou remédio demais sem ter nada a ver comigo.",
-   "nota": 6
-  },
-  {
-   "relato": "travo os denets",
-   "comentario": "Mostrou 4 coisa(s) de outra parte do corpo.",
-   "nota": 6
+   "nota": 5
   },
   {
    "relato": "depois da cachaca a ingua doi desde ontem",
-   "comentario": "Perguntou de gravidez, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar se está conseguindo beber líquido e fazer xixi.",
+   "comentario": "Mostrou 3 coisa(s) de outra parte do corpo. Faltou perguntar se está conseguindo beber líquido e fazer xixi.",
    "nota": 6
   },
   {
-   "relato": "minha mae de 79 anos, irritação agora pouco",
-   "comentario": "Perguntou de gravidez, idoso, veneno ou remédio demais sem ter nada a ver comigo. Faltou perguntar sinais de AVC.",
-   "nota": 4
+   "relato": "pontos do parto cocando muito agora pouco",
+   "comentario": "Perguntou de cirurgia sem ter nada a ver comigo. Faltou perguntar sangramento na gravidez e sinais de pressão alta na gravidez.",
+   "nota": 6
   },
   {
-   "relato": "acho q n e nada mas dtm tbm atm desde ontem",
-   "comentario": "Perguntou de gravidez sem ter nada a ver comigo.",
-   "nota": 5
+   "relato": "deve ser bobeira mas carpo operado e formigamento aumentou faz uns 2 dias",
+   "comentario": "Perguntou de cirurgia sem ter nada a ver comigo.",
+   "nota": 3
+  },
+  {
+   "relato": "rosto e pernas inchados com febre faz 3 dias",
+   "comentario": "Perguntou de gravidez, cirurgia sem ter nada a ver comigo.",
+   "nota": 6
   }
  ],
  "bons": [
   {
+   "relato": "minha pequena de 8 anos ta  crianca contou q pediram segredo de toque hj e tbm carocinho c pontinha branca",
+   "comentario": "Conversa boa, direto ao ponto.",
+   "nota": 10
+  },
+  {
+   "relato": "minha avo de 75 anos ta com urina vermelha e urina cor de sangue hj ah e corte superficial",
+   "comentario": "Conversa boa, direto ao ponto.",
+   "nota": 10
+  },
+  {
    "relato": "vomitou um negocio prteo",
-   "comentario": "Conversa boa, direto ao ponto.",
-   "nota": 10
-  },
-  {
-   "relato": "vmoito cor de chocolate escuro faz 3 dias",
-   "comentario": "Conversa boa, direto ao ponto.",
-   "nota": 10
-  },
-  {
-   "relato": "minha mae de 62 anos ta c vovó c falta de ar de repente",
    "comentario": "Conversa boa, direto ao ponto.",
    "nota": 10
   }
