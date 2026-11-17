@@ -32,6 +32,13 @@ public final class EstatisticaService {
 
     public Map<String, Object> validacao() { return validacao; }
 
+    private volatile Map<String, Object> simulados;
+
+    /** Resultado das conversas simuladas (ferramentas/simulados), para a aba do painel. */
+    public void guardarSimulados(Map<String, Object> s) { this.simulados = s; }
+
+    public Map<String, Object> simulados() { return simulados; }
+
     /** Estatística do uso, calculada sobre o que está no banco agora. */
     public Map<String, Object> uso() {
         List<EstatisticaDAO.LinhaConversa> cs = dao.conversas();

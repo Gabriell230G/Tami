@@ -4,8 +4,8 @@ FIL_02;FIL;2;UNICA;S;S;;FAR_03;Você (ou a pessoa que precisa de ajuda) tem dor,
 FIL_03;FIL;3;UNICA;S;S;;;Agora ou nas últimas horas, você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Ficou desacordado (apagou) ou está muito difícil de acordar • Ficou confuso de repente • Convulsão (ataque);
 FIL_04;FIL;4;UNICA;S;S;;;De repente, você (ou a pessoa que precisa de ajuda) teve algum destes sinais? • Boca torta • Fala enrolada • Fraqueza ou formigamento de um lado do corpo;Peça para a pessoa sorrir, levantar os dois braços e repetir uma frase. Se não tiver ninguém com você, faça isso na frente do espelho. Veja se um lado da boca cai, se um braço cai ou se a fala sai enrolada.
 FIL_05;FIL;5;UNICA;S;S;;;Você (ou a pessoa que precisa de ajuda) tem algum destes sinais? • Sangramento forte que não para, mesmo apertando • Sofreu um acidente grave: trânsito, queda de altura, batida forte na cabeça, queimadura grande ou choque elétrico;
-FIL_06;FIL;6;UNICA;S;S;;FAR_02;Depois de uma picada, comida ou remédio, inchou alguma destas partes? • Rosto • Lábios • Língua • Garganta;
-FIL_07;FIL;7;UNICA;S;S;;;Alguém engoliu, bebeu ou respirou algo perigoso? Por exemplo: veneno, produto de limpeza ou remédio demais.;
+FIL_06;FIL;6;UNICA;S;S;FLAG:podeAlergia;FAR_02;Depois de uma picada, comida ou remédio, inchou alguma destas partes? • Rosto • Lábios • Língua • Garganta;
+FIL_07;FIL;7;UNICA;S;S;FLAG:podeIntox;;Alguém engoliu, bebeu ou respirou algo perigoso? Por exemplo: veneno, produto de limpeza ou remédio demais.;
 FIL_08;FIL;8;UNICA;S;S;;;Você (ou a pessoa que precisa de ajuda) está pensando em se machucar ou em tirar a própria vida?;
 FIL_C01;FIL;9;UNICA;S;N;CRIANCA;;O bebê ou a criança tem algum destes sinais? • Não consegue mamar nem beber nada • Vomita tudo o que toma • Está molinho, caidinho, diferente do normal, mas acorda;
 FIL_C02;FIL;10;UNICA;S;N;MENOR_3M;;Você mediu a temperatura do bebê debaixo do braço (axila, sovaco)? Quanto deu?;
@@ -50,11 +50,12 @@ GEN_02;GEN;2;UNICA;N;N;;;De 0 a 10, quanto incomoda agora?;
 GEN_03;GEN;3;UNICA;S;N;;;Algum destes é verdade sobre o que está acontecendo? • Começou de repente e forte • Está piorando rápido;
 GEN_04;GEN;4;UNICA;S;N;;;Tem febre ou calafrio?;
 GEN_05;GEN;5;UNICA;S;N;SEM_RISCO_NO_PERFIL;;Você (ou a pessoa que precisa de ajuda) tem diabetes, imunidade baixa (defesa do corpo fraca) ou outra doença que precisa de acompanhamento médico?;
-GEN_06;GEN;6;UNICA;N;N;;;Há quanto tempo começou?;
-GEN_FIM;GEN;7;DECISAO;N;N;;;;
+GEN_06;GEN;7;UNICA;N;N;;;Há quanto tempo começou?;
+GEN_FIM;GEN;8;DECISAO;N;N;;;;
 ORI_01;ORI;1;UNICA;N;S;;;Como isso começou?;Assim eu sei quais perguntas fazem sentido para você.
 LES_01;LES;1;UNICA;N;S;;;Como aconteceu?;
 LES_02;LES;2;MULTI;S;S;;;Agora, algum destes está acontecendo?;Marque todos que valem. Se nenhum, toque em Nenhum destes.
 LES_03;LES;3;MULTI;S;N;;;E algum destes?;Marque todos que valem. Se nenhum, toque em Nenhum destes.
 LES_04;LES;6;UNICA;N;N;NAO_HOJE;;Desde que machucou, como está?;
 LES_FIM;LES;7;DECISAO;N;N;;;;
+BEB_01;GEN;6;UNICA;N;N;FLAG:barriga;;Você (ou a pessoa que precisa de ajuda) está conseguindo beber líquidos e fazer xixi?;Se vomita tudo o que bebe ou quase não faz xixi, o corpo pode estar perdendo água demais.

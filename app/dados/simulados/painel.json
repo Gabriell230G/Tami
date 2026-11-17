@@ -1,0 +1,278 @@
+{
+ "casos": 12000,
+ "prova": 2000,
+ "antes": {
+  "destino_exato": {
+   "x": 1353,
+   "n": 2000,
+   "p": 0.6765,
+   "ic95": [
+    0.6557,
+    0.6966
+   ]
+  },
+  "sensibilidade_urgente": {
+   "x": 1195,
+   "n": 1197,
+   "p": 0.9983,
+   "ic95": [
+    0.9939,
+    0.9995
+   ]
+  },
+  "subtriagem_critica": {
+   "x": 2,
+   "n": 1197,
+   "p": 0.0017,
+   "ic95": [
+    0.0005,
+    0.0061
+   ]
+  },
+  "com_irrelevante": {
+   "x": 1318,
+   "n": 2000,
+   "p": 0.659,
+   "ic95": [
+    0.6379,
+    0.6795
+   ]
+  },
+  "com_falta": {
+   "x": 114,
+   "n": 2000,
+   "p": 0.057,
+   "ic95": [
+    0.0477,
+    0.068
+   ]
+  },
+  "sem_cuidado": {
+   "x": 24,
+   "n": 483,
+   "p": 0.0497,
+   "ic95": [
+    0.0336,
+    0.0729
+   ]
+  },
+  "nota_media": 6.58,
+  "perguntas_media": 7.6
+ },
+ "depois": {
+  "destino_exato": {
+   "x": 1369,
+   "n": 2000,
+   "p": 0.6845,
+   "ic95": [
+    0.6638,
+    0.7045
+   ]
+  },
+  "sensibilidade_urgente": {
+   "x": 1195,
+   "n": 1197,
+   "p": 0.9983,
+   "ic95": [
+    0.9939,
+    0.9995
+   ]
+  },
+  "subtriagem_critica": {
+   "x": 2,
+   "n": 1197,
+   "p": 0.0017,
+   "ic95": [
+    0.0005,
+    0.0061
+   ]
+  },
+  "com_irrelevante": {
+   "x": 1134,
+   "n": 2000,
+   "p": 0.567,
+   "ic95": [
+    0.5452,
+    0.5886
+   ]
+  },
+  "com_falta": {
+   "x": 99,
+   "n": 2000,
+   "p": 0.0495,
+   "ic95": [
+    0.0408,
+    0.0599
+   ]
+  },
+  "sem_cuidado": {
+   "x": 0,
+   "n": 493,
+   "p": 0.0,
+   "ic95": [
+    0.0,
+    0.0077
+   ]
+  },
+  "nota_media": 7.7,
+  "perguntas_media": 7.0
+ },
+ "problemas": [
+  {
+   "problema": "Perguntas demais para o caso",
+   "casos": 542
+  },
+  {
+   "problema": "Lista com item de outra parte do corpo",
+   "casos": 521
+  },
+  {
+   "problema": "Item de \"depois de queda ou pancada\" para quem não se machucou",
+   "casos": 391
+  },
+  {
+   "problema": "Item de cirurgia para quem não operou",
+   "casos": 311
+  },
+  {
+   "problema": "Pergunta de veneno ou remédio demais sem motivo no relato",
+   "casos": 236
+  }
+ ],
+ "por_familia": [
+  {
+   "familia": "Barriga",
+   "nota_antes": 5.67,
+   "nota": 6.81,
+   "perguntas": 8.2
+  },
+  {
+   "familia": "Bebês e crianças",
+   "nota_antes": 8.02,
+   "nota": 8.57,
+   "perguntas": 6.5
+  },
+  {
+   "familia": "Cabeça e tontura",
+   "nota_antes": 7.37,
+   "nota": 8.25,
+   "perguntas": 4.7
+  },
+  {
+   "familia": "Cirurgia, crônicos e 'não é nada'",
+   "nota_antes": 6.03,
+   "nota": 7.22,
+   "perguntas": 7.8
+  },
+  {
+   "familia": "Febre e dengue",
+   "nota_antes": 5.47,
+   "nota": 7.33,
+   "perguntas": 8.9
+  },
+  {
+   "familia": "Gravidez e pós-parto",
+   "nota_antes": 5.62,
+   "nota": 7.13,
+   "perguntas": 8.1
+  },
+  {
+   "familia": "Idosos e anticoagulante",
+   "nota_antes": 7.28,
+   "nota": 8.04,
+   "perguntas": 4.9
+  },
+  {
+   "familia": "Intoxicação e animais",
+   "nota_antes": 7.76,
+   "nota": 8.28,
+   "perguntas": 6.5
+  },
+  {
+   "familia": "Machucado no esporte",
+   "nota_antes": 6.4,
+   "nota": 7.58,
+   "perguntas": 6.3
+  },
+  {
+   "familia": "Pancada, corte e queimadura",
+   "nota_antes": 6.83,
+   "nota": 7.61,
+   "perguntas": 4.7
+  },
+  {
+   "familia": "Peito e falta de ar",
+   "nota_antes": 7.17,
+   "nota": 8.07,
+   "perguntas": 6.3
+  },
+  {
+   "familia": "Pele",
+   "nota_antes": 5.23,
+   "nota": 6.8,
+   "perguntas": 10.8
+  },
+  {
+   "familia": "Queda",
+   "nota_antes": 8.66,
+   "nota": 9.27,
+   "perguntas": 1.8
+  },
+  {
+   "familia": "Saúde mental e crise",
+   "nota_antes": 7.23,
+   "nota": 8.47,
+   "perguntas": 7.1
+  },
+  {
+   "familia": "Urina e região íntima",
+   "nota_antes": 4.92,
+   "nota": 6.91,
+   "perguntas": 10.8
+  }
+ ],
+ "exemplos": [
+  {
+   "relato": "menstruacao sumida apos a aspiracao faz 3 dias",
+   "comentario": "Faltou perguntar sangramento na gravidez e sinais de pressão alta na gravidez. Foram 14 perguntas, cansa.",
+   "nota": 6
+  },
+  {
+   "relato": "bolha na mao da enxada tbm bolha no pe de tanto andar",
+   "comentario": "Perguntou de diabetes sem ter nada a ver comigo.",
+   "nota": 6
+  },
+  {
+   "relato": "cicatriz la embaixo atrapalhando apos parto faz umas 2 horas",
+   "comentario": "Perguntou de gravidez sem ter nada a ver comigo. Faltou perguntar sangramento na gravidez e sinais de pressão alta na gravidez. Foram 14 perguntas, cansa.",
+   "nota": 0
+  },
+  {
+   "relato": "minha avo de 73 anos tá: febre faz semanas e ninguem descobre ja tem meses",
+   "comentario": "Perguntou de gravidez, idoso, cirurgia sem ter nada a ver comigo. Foram 19 perguntas, cansa.",
+   "nota": 4
+  },
+  {
+   "relato": "dor de cabeca de nervoso, dor de cabeca de tanto trabalhar faz umas 2 horas",
+   "comentario": "Perguntou de câncer, transplante ou HIV, alergia com inchaço sem ter nada a ver comigo.",
+   "nota": 4
+  }
+ ],
+ "bons": [
+  {
+   "relato": "meu filho de 8 anos ta com dente saiu inteiro e tbm claridade incomodando apos exame de vista",
+   "comentario": "Conversa boa, direto ao ponto.",
+   "nota": 10
+  },
+  {
+   "relato": "cai em casa depois do tombo n seguro o xixi hj",
+   "comentario": "Conversa boa, direto ao ponto.",
+   "nota": 10
+  },
+  {
+   "relato": "provavelmente nao e nada malieta e sangrando tbm voltou de rondonia delirando c febre faz umas 2 horas e tbm bebi demais",
+   "comentario": "Conversa boa, direto ao ponto.",
+   "nota": 10
+  }
+ ]
+}

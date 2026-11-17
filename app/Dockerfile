@@ -15,6 +15,7 @@ COPY --from=compila /app/build/classes build/classes
 COPY lib lib
 COPY web web
 COPY dados/validacao.json dados/validacao.json
+COPY dados/simulados/painel.json dados/simulados/painel.json
 ENV TAMI_MODO=demonstracao
 EXPOSE 8080
 # 512 MB no plano grátis: deixa folga para a JVM

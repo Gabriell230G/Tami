@@ -6,3 +6,5 @@ dados/*.trace.db
 *.class
 __pycache__/
 *.pyc
+dados/simulados/conversas_*.jsonl
+dados/simulados/casos_simulados.jsonl

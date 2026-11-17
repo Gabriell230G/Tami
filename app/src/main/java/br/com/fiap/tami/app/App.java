@@ -91,6 +91,11 @@ public final class App {
             @SuppressWarnings("unchecked") Map<String, Object> v = (Map<String, Object>) Json.ler(Files.readString(val, StandardCharsets.UTF_8));
             estatistica.guardarValidacao(v);
         }
+        Path sim = raiz.resolve("dados/simulados/painel.json");
+        if (Files.exists(sim)) {
+            @SuppressWarnings("unchecked") Map<String, Object> v = (Map<String, Object>) Json.ler(Files.readString(sim, StandardCharsets.UTF_8));
+            estatistica.guardarSimulados(v);
+        }
         Simulador simulador = new Simulador(motor, arvore, new ConversaDAO(fabrica), new UsuarioDAO(fabrica), new DorDAO(fabrica), new FeedbackDAO(fabrica), textos).comFiltro(sinalDAO);
         Servidor servidor = new Servidor(raiz.resolve("web"), fabrica, arvore, conversas, estatistica, simulador);
         servidor.iniciar(config.porta());

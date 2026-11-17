@@ -202,3 +202,7 @@ LES_03;nao_sei;Não sei;0;
 LES_04;melhorando;Está melhorando;0;
 LES_04;igual;Está igual;0;FLAG:semMelhora
 LES_04;piorando;Está piorando;2;UPA:LESAO_PIORANDO
+BEB_01;S;Sim, bebo e faço xixi normal;0;EXIGE:BLK-HIDRATAR
+BEB_01;pouco;Bebo, mas faço bem menos xixi que o normal;1;UBS_MESMO_DIA:DESIDRATACAO_LEVE & EXIGE:BLK-HIDRATAR
+BEB_01;N;Não consigo: vomito tudo ou quase não faço xixi;2;UPA:DESIDRATACAO
+BEB_01;nao_sei;Não sei;0;

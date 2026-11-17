@@ -96,6 +96,7 @@ Este repositório também guarda o **app** (pasta `app/`), feito para a Global S
 | Banco de dados | PostgreSQL (Supabase) ou Oracle, com JDBC, DAOs e transações. 11 tabelas |
 | Telas | HTML, CSS e JavaScript puro, sem biblioteca |
 | Estatística | Intervalo de confiança de Wilson, kappa de Cohen, qui-quadrado, correlação de Pearson e matriz de confusão |
+| Testes | 10.000 casos para o destino e 12.000 conversas simuladas com feedback de cada uma (`app/dados/simulados/relatorio_testes.md`) |
 
 O motor foi testado com **10.000 casos escritos de propósito com armadilhas** (erro de digitação, negação, texto vago, sintoma no passado). O painel do app mostra os resultados.
 

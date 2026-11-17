@@ -669,7 +669,28 @@
         </div>`;
     };
 
-    const ABAS = [["motor", "Motor", abaMotor], ["uso", "Uso real", abaUso], ["banco", "Banco", abaBanco]];
+    const abaSimulados = () => {
+      const s = e.simulados;
+      if (!s) return '<p class="vazio">Rode ferramentas/simulados para ver as conversas simuladas.</p>';
+      const a = s.antes, d = s.depois, num2 = (x) => num(Math.round(x * 100) / 100);
+      const comp = (rot, k, inverso) => { const va = a[k].p, vd = d[k].p, melhor = inverso ? vd < va : vd > va;
+        return `<div class="pn-kpi"><span class="pn-kpi-rot">${rot}</span><span class="pn-kpi-v">${pct(vd)}</span><span class="pn-kpi-pe">antes: ${pct(va)} <b class="pn-seta ${melhor ? "bom" : vd === va ? "" : "ruim"}">${vd === va ? "=" : melhor ? "melhorou" : "piorou"}</b></span></div>`; };
+      const maxP = Math.max(1, ...s.problemas.map((p) => p.casos));
+      return `<div class="pn-kpis">
+          <div class="pn-kpi escuro"><span class="pn-kpi-rot">Nota de uma pessoa real (0 a 10)</span><span class="pn-kpi-v">${num2(d.nota_media)}</span><span class="pn-kpi-pe">antes: ${num2(a.nota_media)} · ${num(s.prova)} conversas da prova final</span></div>
+          ${comp("Conversas com pergunta sem relação", "com_irrelevante", true)}
+          ${comp("Urgentes que foram para UPA ou SAMU", "sensibilidade_urgente")}
+          <div class="pn-kpi"><span class="pn-kpi-rot">Perguntas por conversa</span><span class="pn-kpi-v">${num2(d.perguntas_media)}</span><span class="pn-kpi-pe">antes: ${num2(a.perguntas_media)}</span></div>
+        </div>
+        <div class="pn-grade">
+          ${card("Os 5 problemas que mais sobraram", "Na prova final, depois das correções.", barras(s.problemas.map((p) => ({ rot: p.problema, v: p.casos, tip: `${p.problema}: ${p.casos} conversas` })), maxP, (x) => num(x)), "largo2")}
+          ${card("Nota por família de caso", "Antes e depois das correções (0 a 10).", `<table class="pn-tabela"><thead><tr><th>Família</th><th>Antes</th><th>Depois</th><th>Perguntas</th></tr></thead><tbody>${s.por_familia.map((f) => `<tr><td>${esc(f.familia)}</td><td>${num2(f.nota_antes)}</td><td><b>${num2(f.nota)}</b></td><td>${num(f.perguntas)}</td></tr>`).join("")}</tbody></table>`)}
+          ${card("O que as pessoas simuladas disseram", "Comentários de conversas com nota 6 ou menos, e de nota 10.", `<ul class="pn-falas">${[...s.exemplos, ...s.bons].map((x) => `<li><span class="pn-nota-bola ${x.nota >= 9 ? "bom" : x.nota >= 6 ? "" : "ruim"}">${x.nota}</span><div><b>“${esc(x.relato)}”</b><br><span>${esc(x.comentario)}</span></div></li>`).join("")}</ul>`)}
+        </div>
+        <p class="pn-rodape">${num(s.casos)} casos simulados a partir da base de sinais (NHS, MedlinePlus, Ministério da Saúde). O destino esperado ainda precisa de revisão médica. A pessoa simulada responde com sinceridade, às vezes "Não sei" e às vezes se confunde.</p>`;
+    };
+
+    const ABAS = [["motor", "Motor", abaMotor], ["simulados", "Conversas simuladas", abaSimulados], ["uso", "Uso real", abaUso], ["banco", "Banco", abaBanco]];
     const desenhar = () => {
       tela.innerHTML = `<div class="pn">
         <header class="pn-topo"><div><span class="rotulo">Painel</span><h1>Como a Tami está indo</h1></div>

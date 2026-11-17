@@ -90,3 +90,4 @@ bloco;BLK-EI-LESAO;;Enquanto vai para lá • Não force nem tente colocar no lu
 bloco;BLK-VOLTA-TREINO;;Volta ao treino • Volte só quando conseguir mexer e apoiar sem dor • Comece leve e aumente aos poucos • Avise seu professor ou treinador para adaptar o treino;SIM
 bloco;BLK-CASA-GERAL;;Enquanto isso • Descanse • Beba água ao longo do dia • Durma bem • Anote como você está: se piorar ou aparecer algo novo, procure atendimento antes;SIM
 bloco;BLK-SP-LESAO;;Procure a UPA se a dor ficar muito forte, se o inchaço ou o roxo aumentarem, se não conseguir apoiar ou mexer, ou se ficar dormente, gelado ou roxo. Procure a UBS se não melhorar em alguns dias.;SIM
+bloco;BLK-EI-GERAL;;Enquanto vai para lá • Se estiver se sentindo mal, não vá dirigindo: peça para alguém levar você • Leve um documento, o cartão do SUS e a lista dos remédios que você já usa • Se piorar no caminho, ligue 192;SIM

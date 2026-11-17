@@ -101,6 +101,7 @@ public final class MotorTriagem {
         boolean semMachucar = SEM_LESAO.matcher(norm).find();
         boolean lesao = conhecimento != null && !febre && !semMachucar && !OPEROU.matcher(norm).find()
             && LESAO.matcher(FALSA_LESAO.matcher(norm).replaceAll(" ")).find();
+        if (regiao == null || regiao.isBlank()) regiao = regiaoDoTexto(norm);   // sprint 5: o app já acha pela árvore; aqui vale para quem chama o motor direto
         String grande = BaseConhecimento.grandeRegiao(regiao);
         boolean membro = grande != null && (grande.equals("bracos") || grande.equals("pernas") || grande.equals("costas"));
         if (lesao && grande != null && (grande.equals("peito") || grande.equals("barriga"))) lesao = false;   // pancada no tronco: o filtro geral pergunta peito e ar
@@ -203,6 +204,10 @@ public final class MotorTriagem {
             }
         }
         glicose(s, textoLivre, perfil, fatores);   // sprint 3 (item 6): o número da glicemia escrito no relato
+        // sprint 5: alergia e veneno só se perguntam quando o relato ou a pessoa dão motivo (criança e idoso: sempre o veneno)
+        if (PODE_ALERGIA.matcher(norm).find() || (grande != null && grande.equals("cabeca"))) s.flags.add("podeAlergia");
+        if (perfil.crianca() || perfil.idoso() || PODE_INTOX.matcher(norm).find()) s.flags.add("podeIntox");
+        if (BARRIGA.matcher(norm).find() || (grande != null && grande.equals("barriga"))) s.flags.add("barriga");
         // sprint 4: escolhe a rota no fim, quando já se sabe tudo o que o texto disse
         boolean urgente = s.doTexto.keySet().stream().anyMatch(k -> k.startsWith("FIL_")) || s.flags.contains("convulsao")
             || URGENTES.stream().anyMatch(g -> a.presente(g) && !soNoPassado(a, g, s.textoLivre()));
@@ -237,6 +242,34 @@ public final class MotorTriagem {
         + "golpe|chute|chutaram|soco|socaram|levei um (golpe|chute|soco|tombo)|pisei num prego|pisou num prego|pulou de cabeca|pulei de cabeca|machuquei|machucou|machucad\\w*|lesionei|estiramento|distensao|"
         + "contusao|fratur\\w*|quebrei|quebrou|trinc\\w*|pisei errado|virei o pe|virou o pe|estalou|estralou|"
         + "no treino|treinando|no judo|no jogo|jogando bola|na luta|lutando|no futebol|na academia|correndo)\\b");
+    /** Sprint 5: motivos para perguntar de alergia (FIL_06) e de veneno ou remédio demais (FIL_07). */
+    private static final java.util.regex.Pattern PODE_ALERGIA = java.util.regex.Pattern.compile(
+        "\\b(alerg\\w*|picad\\w*|picou|ferroada|abelha|vespa|formiga|comi|comeu|comida|camarao|amendoim|remedio|antibiotico|injecao|vacina|"
+        + "incha\\w*|inchou|coceira|cocando|placas|vergoes|urticaria|labio\\w*|lingua|garganta|rosto|falta de ar|respir\\w*|sufoc\\w*|chiado)\\b");
+    private static final java.util.regex.Pattern PODE_INTOX = java.util.regex.Pattern.compile(
+        "\\b(engol\\w*|bebeu|bebi|tomou|tomei|remedio\\w*|comprimido\\w*|produto\\w*|veneno|gas|fumaca|cheiro|vomit\\w*|sonolen\\w*|confus\\w*|"
+        + "desmai\\w*|tont\\w*|convuls\\w*|nao acorda|bebida|alcool|droga\\w*|planta|cogumelo|agua sanitaria|soda|chumbinho|inset\\w*|tremor|tremendo|babando|enjo\\w*)\\b");
+    private static final java.util.regex.Pattern BARRIGA = java.util.regex.Pattern.compile(
+        "\\b(vomit\\w*|vomt\\w*|diarr\\w*|caganeira|desarranj\\w*|intestino solto|coco mole|enjo\\w*|nausea\\w*|virose|gastro\\w*)\\b");
+
+    /** Primeira parte do corpo citada no relato (nome que a árvore e a base entendem), ou null. */
+    private static final String[][] REGIAO_TEXTO = {
+        {"tornozelo", "Tornozelo"}, {"joelho", "Joelho"}, {"canela", "Canela"}, {"panturrilha|batata da perna", "Batata da perna"}, {"coxa", "Coxa"},
+        {"perna|pernas", "Perna"}, {"calcanhar|pe|pes|dedao do pe|dedinho do pe", "Pé"}, {"punho|pulso", "Mão"}, {"mao|maos|dedo|dedos", "Mão"},
+        {"antebraco", "Antebraço"}, {"cotovelo", "Cotovelo"}, {"ombro|clavicula", "Ombro"}, {"braco|bracos", "Braço"}, {"lombar", "Lombar"},
+        {"costas|coluna", "Costas"}, {"nuca|pescoco", "Nuca"}, {"cabeca|testa", "Cabeça"}, {"olho|olhos|rosto|boca|dente|nariz|orelha|ouvido|queixo|labio", "Rosto"},
+        {"garganta", "Garganta"}, {"peito|costela|costelas", "Peito"}, {"umbigo", "Em volta do umbigo"}, {"virilha", "Virilha"}, {"barriga|estomago", "Barriga"}};
+
+    static String regiaoDoTexto(String norm) {
+        int melhor = Integer.MAX_VALUE;
+        String nome = null;
+        for (String[] r : REGIAO_TEXTO) {
+            var m = java.util.regex.Pattern.compile("\\b(" + r[0] + ")\\b").matcher(norm);
+            if (m.find() && m.start() < melhor) { melhor = m.start(); nome = r[1]; }
+        }
+        return nome;
+    }
+
     /** Recuperação de cirurgia não é a trilha de machucado (D-019 cuida dela). */
     private static final java.util.regex.Pattern OPEROU = java.util.regex.Pattern.compile(
         "\\b(operei|operou|operad[oa]|cirurgia|artroscopia|pos operatorio|laqueadura|curetagem|plastica|lipo|protese|implante|colocaram (a|o|uma|um))\\b");
@@ -273,17 +306,27 @@ public final class MotorTriagem {
         "\\b(pancada|queda|caiu|cair|caido|tombo|torc\\w*|batida|bateu|bater|bati|acidente|chute|machuc\\w*|estalo|fratur\\w*|desloc\\w*|"
         + "golpe|soco|puxao|tranco|fisgada|atropel\\w*|agredid\\w*|mergulh\\w*|engessad\\w*|gesso)\\b");
     /** Sinal que só vale para um grupo: só entra na lista se a pessoa for do grupo ou falar dele (grupo ➜ palavras no relato). */
+    private static final String CIRURGIA = "cirurgi\\w*|operad\\w*|operacao|pos operatorio|corte da cirurgia|pontos da cirurgia|colonoscopia|endoscopia|biopsia|cateterismo|protese|placa e parafusos|haste de metal|dreno|sonda";
+    private static final String GRAVIDEZ = "gravidez|gravida|gestante|gestacao|parto|amament\\w*|puerper\\w*|resguardo|placenta|cesarea|cesaria";
     private static final Map<String, java.util.regex.Pattern> QUALIFICADORES = Map.of(
-        "cancer|quimio\\w*", java.util.regex.Pattern.compile("\\b(cancer|tumor|quimio\\w*|radio\\w*|oncolog\\w*|metastase)"),
+        "osteoporose", java.util.regex.Pattern.compile("\\bosteopor\\w*"),
+        "cancer|quimio\\w*", java.util.regex.Pattern.compile("\\b(cancer|tumor|quimio\\w*|radioterapia|imunoterapia|oncolog\\w*|metastase)"),
         "colesterol", java.util.regex.Pattern.compile("\\b(colesterol|estatina|sinvastatina|atorvastatina|rosuvastatina)"),
-        "gravidez|gravida|gestante|gestacao|parto|amament\\w*", java.util.regex.Pattern.compile("\\b(gravid\\w*|gestant\\w*|gestacao|semanas|parto|pari|bebe (nao )?mex\\w*|pre natal|amament\\w*|puerper\\w*|resguardo|cesarea|cesaria|curetagem|aborto|abortei|perdi o bebe|gestacao|placenta|ultrassom|transvaginal|cesa\\w*|nasceu|tive (o |a |meu |minha )?(bebe|nenem|filh\\w*|fi\\w{2,3})|ganhei (o |a |meu |minha )?(bebe|nenem|filh\\w*))"),
+        GRAVIDEZ, java.util.regex.Pattern.compile("\\b(gravid\\w*|gestant\\w*|gestacao|(de|com) \\d+ semanas|\\d+ semanas (de|e)|semanas de (gravidez|gestacao)|parto|pari|bebe (nao )?mex\\w*|pre natal|amament\\w*|puerper\\w*|resguardo|cesarea|cesaria|curetagem|aborto|abortei|perdi o bebe|gestacao|placenta|ultrassom|transvaginal|cesa\\w*|nasceu|(tive|teve|ganhei|ganhou) (o |a |um |uma |meu |minha )?(bebe|nenem|filh\\w*|fi\\w{2,3}))"),
         "transplant\\w*", java.util.regex.Pattern.compile("\\btransplant"),
         "dialise", java.util.regex.Pattern.compile("\\b(dialise|hemodialise|fistula|renal|rim)"),
         "hiv", java.util.regex.Pattern.compile("\\b(hiv|aids|soropositiv\\w*)"),
         "afinar o sangue|anticoagul\\w*", java.util.regex.Pattern.compile("\\b(afinar|afina o sangue|anticoag\\w*|varfarina|marevan|xarelto|rivaroxabana|apixabana|eliquis|clopidogrel|aas)"),
-        "insulina|diabet\\w*", java.util.regex.Pattern.compile("\\b(insulina|diabet\\w*|glicose|glicemia|acucar no sangue)"));
+        "insulina|diabet\\w*", java.util.regex.Pattern.compile("\\b(insulina|diabet\\w*|glicose|glicemia|acucar no sangue)"),
+        CIRURGIA,
+            java.util.regex.Pattern.compile("\\b(cirur\\w*|cirug\\w*|ciru\\w*|oper\\w*|ope\\w*ei|opeou|pontos|dreno|sonda|bolsinha|bolsa de colostomia|colonoscop\\w*|endoscop\\w*|biopsia|cateter\\w*|"
+                + "prote\\w*|placa|parafuso|pino|haste|lipo\\w*|plastica|abdomino\\w*|cesar\\w*|csarea|cesaera|laqueadura|vasectomia|artroscop\\w*|curetagem|puncao|tireoid\\w*|transplant\\w*|"
+                + "ostomia|colostom\\w*|colos\\w*|clostom\\w*|gesso|tala|marca passo|aparelh\\w*|silicone|peitos novos|implante|lasik|laser|blefaro\\w*|amigdala\\w*|adenoide|vesicula|"
+                + "hernia|apendic\\w*|polipo|colposcopia|bypass|valvula|safena|menisco|lca|manguito|coloquei|colocou|colocaram|tirei|tirou|tiraram|retirada|exame)"));
     private static final java.util.regex.Pattern SO_IDOSO = java.util.regex.Pattern.compile("^(idoso|idosa|pessoa idosa)\\b");
-    private static final java.util.regex.Pattern SO_CRIANCA = java.util.regex.Pattern.compile("^(crianca|bebe|adolescente)\\b");
+    private static final java.util.regex.Pattern SO_CRIANCA = java.util.regex.Pattern.compile("^(crianca|bebe)\\b");
+    /** "Bebê mexendo menos na barriga" fala da gestante, não de uma criança. */
+    private static final java.util.regex.Pattern FETO = java.util.regex.Pattern.compile("\\b(mex\\w*|semanas|barriga|gravid\\w*|gestant\\w*|chut\\w*)\\b");
 
     enum Modo { LESAO, SEM_LESAO, GERAL }
     /** Na lesão: só uma página de lista (a LES_03 cobre o resto). */
@@ -311,12 +354,29 @@ public final class MotorTriagem {
         var sinal = c.sinal();
         if (modo == Modo.LESAO && SINAIS_DA_TRILHA.contains(sinal.id())) return false;
         boolean forte = c.cobertura() >= 0.6;   // o relato descreve este sinal com clareza: entra sempre
+        boolean grave = sinal.destino().compareTo(Destino.UPA_HOJE) >= 0;
         String d = br.com.fiap.tami.motor.lexico.Normalizador.normalizar(sinal.descricao());
-        if (!forte && SO_IDOSO.matcher(d).find() && !perfilAtual.idoso()) return false;
-        if (!forte)
-            for (var q : QUALIFICADORES.entrySet())
-                if (java.util.regex.Pattern.compile("\\b(" + q.getKey() + ")\\b").matcher(d).find() && !q.getValue().matcher(contexto).find()) return false;
-        if (modo == Modo.GERAL) return true;
+        // sprint 5: sinal que fala de um grupo ("em idoso", "na gravidez", "em quem tem câncer") só entra se a pessoa for de
+        // pelo menos um dos grupos citados; o grave ainda entra se o relato já descreve parte dele
+        Set<String> citados = gruposDoSinal(d);
+        Set<String> meus = gruposDaPessoa(perfilAtual, contexto);
+        if (!citados.isEmpty() && java.util.Collections.disjoint(citados, meus)) {
+            // idade a gente sabe com certeza quando o sinal é sobre ela ("Idoso caiu...", "Criança pequena chora...")
+            boolean impossivel = IDADES.containsAll(citados) && SUJEITO_IDADE.matcher(d).find();
+            double minimo = GRUPO_GRAVE_MINIMO;
+            if (impossivel || !grave || c.cobertura() < minimo) return false;
+        }
+        if (modo == Modo.GERAL) {
+            if (grave) {   // na dúvida, o item grave fica; só sai o de outra parte do corpo ou de "depois de queda" que o relato nem começa a descrever
+                boolean perto = c.cobertura() >= GRAVE_LONGE_MINIMO || c.nota() >= 0.5 * topo;
+                if (!perto && !conhecimento.daRegiaoTocada(sinal.id(), regiaoAtual)) return false;
+                if (!perto && DEPOIS_DE_TRAUMA.matcher(d).find() && !MECANISMO.matcher(contexto).find()) return false;
+                return true;
+            }
+            if (c.nota() < 0.35 * topo && !conhecimento.daRegiaoTocada(sinal.id(), regiaoAtual)) return false;   // item leve de outra parte do corpo
+            if (DEPOIS_DE_TRAUMA.matcher(d).find() && !MECANISMO.matcher(contexto).find()) return false;        // "depois de queda" sem queda
+            return true;
+        }
         boolean trauma = SINAL_TRAUMA.matcher(d).find();
         if (modo == Modo.LESAO) {
             if (!forte && !conhecimento.daRegiaoTocada(sinal.id(), regiaoAtual)) return false;
@@ -325,6 +385,41 @@ public final class MotorTriagem {
         }
         return !trauma || forte || !DEPOIS_DE_TRAUMA.matcher(d).find();   // SEM_LESAO: a pessoa disse que começou sozinho
     }
+
+    /** Item grave de um grupo de que a pessoa não é: entra só se o relato já descreve esta parte dele (0 a 1). */
+    public static double GRUPO_GRAVE_MINIMO = Double.parseDouble(System.getProperty("tami.grupoGrave", "0.45"));
+    /** Item grave de outra parte do corpo: entra se o relato descreve esta parte dele, ou se está entre os mais parecidos. */
+    public static double GRAVE_LONGE_MINIMO = Double.parseDouble(System.getProperty("tami.graveLonge", "0.2"));
+    private static final Set<String> IDADES = Set.of("crianca", "adolescente", "adulto", "idoso");
+    private static final java.util.regex.Pattern SUJEITO_IDADE = java.util.regex.Pattern.compile("^(idos[oa]|pessoa idosa|crianca|bebe|adolescente|adulto|menino|menina)\\b");
+
+    /** Grupos citados na descrição de um sinal. */
+    private static Set<String> gruposDoSinal(String d) {
+        Set<String> g = new HashSet<>();
+        boolean feto = java.util.regex.Pattern.compile("\\bbebe\\b.{0,40}\\b(mex\\w*|chut\\w*|na barriga|semanas)|\\b(gravid\\w*|gestant\\w*)").matcher(d).find();
+        if (!feto && java.util.regex.Pattern.compile("\\b(crianca|criancas|bebe|bebes|menino|menina|recem nascid\\w*|lactente)\\b").matcher(d).find()) g.add("crianca");
+        if (java.util.regex.Pattern.compile("\\bidos[oa]s?\\b").matcher(d).find()) g.add("idoso");
+        if (java.util.regex.Pattern.compile("\\badolescentes?\\b").matcher(d).find()) g.add("adolescente");
+        if (java.util.regex.Pattern.compile("^adultos?\\b").matcher(d).find()) g.add("adulto");
+        if (feto) g.add("gestante");
+        for (var q : QUALIFICADORES.entrySet())
+            if (java.util.regex.Pattern.compile("\\b(" + q.getKey() + ")\\b").matcher(d).find()) g.add(q.getKey());
+        return g;
+    }
+
+    /** Grupos a que a pessoa pertence: pela idade, pela gravidez e pelo que ela contou. */
+    private static Set<String> gruposDaPessoa(Perfil p, String contexto) {
+        Set<String> g = new HashSet<>();
+        if (p.crianca()) g.add("crianca");
+        if (p.idadeMeses() >= 156 && p.idadeMeses() < 216) { g.add("adolescente"); g.add("crianca"); }
+        if (p.idadeMeses() >= 216) g.add("adulto");
+        if (p.idoso()) g.add("idoso");
+        for (var q : QUALIFICADORES.entrySet()) if (q.getValue().matcher(contexto).find()) g.add(q.getKey());
+        if (p.gestante()) { g.add("gestante"); g.add(GRAVIDEZ); }
+        if (g.contains(GRAVIDEZ)) g.add("gestante");
+        return g;
+    }
+
 
     /** Sinal de problema que vem aos poucos ou se repete (não combina com um machucado de agora). */
     private static final java.util.regex.Pattern CRONICO = java.util.regex.Pattern.compile(
@@ -861,6 +956,13 @@ public final class MotorTriagem {
         for (Disparo d : finais) for (String x : d.exige()) if (x.equals("CVV188") || x.equals("DISQUE_INTOX")) exige.add(x);
         if ("S".equals(s.doTexto.get("FIL_08"))) exige.add("CVV188");
         if ("LES".equals(s.queixa) && fim == Destino.SAMU_192) exige.add("BLK-EI-TRAUMA");   // sprint 4: não mexer em quem caiu forte
+        // sprint 5: todo resultado leva o que fazer agora (UPA: enquanto vai; UBS ou casa: cuidados e quando voltar)
+        if (fim == Destino.UPA_HOJE && exige.stream().noneMatch(x -> x.startsWith("BLK-EI") || x.equals("MATERNIDADE") || x.equals("DISQUE_INTOX")))
+            exige.add("BLK-EI-GERAL");
+        if (fim.compareTo(Destino.UPA_HOJE) < 0 && exige.stream().noneMatch(x -> x.startsWith("BLK-CASA") || x.startsWith("BLK-SP") || x.equals("BLK-HIDRATAR"))) {
+            exige.add("BLK-CASA-GERAL");
+            exige.add("BLK-SP-GEN");
+        }
         List<String> motivos = doNivel.stream().map(Disparo::motivo).distinct().toList();
         boolean porNaoSei = doNivel.stream().anyMatch(Disparo::porNaoSei);
 

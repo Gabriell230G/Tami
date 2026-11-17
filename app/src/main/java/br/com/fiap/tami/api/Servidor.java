@@ -189,7 +189,7 @@ public final class Servidor {
         put("/api/conversas/{id}/avaliacao", r -> conversas.avaliar(r.p("id"), Feedback.Avaliacao.valueOf(r.texto("avaliacao")), r.texto("comentario")));
 
         // ---------- estatística ----------
-        get("/api/estatisticas", r -> Mapa.de("uso", estatistica.uso(), "validacao", estatistica.validacao()));
+        get("/api/estatisticas", r -> Mapa.de("uso", estatistica.uso(), "validacao", estatistica.validacao(), "simulados", estatistica.simulados()));
         post("/api/demo/simular", r -> {   // só na máquina de quem roda o app: no link público não dá para encher o banco
             if (!"local".equals(r.query().get("_origem"))) throw new IllegalStateException("Conversas de teste só podem ser geradas rodando o app no computador.");
             Integer n = r.inteiro("quantidade");

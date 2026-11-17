@@ -17,6 +17,17 @@ Outros comandos (no terminal, na pasta do projeto):
 - `scripts\rodar.bat validar` ➜ roda os 10.000 casos de teste (uns 7 minutos) e grava `dados\validacao.json`
 - `scripts\rodar.bat zerar` ➜ apaga e recria as tabelas
 
+## Conversas simuladas (teste da conversa, não só do destino)
+
+```
+python3 ferramentas/simulados/gerar_casos.py      # 12.000 casos com ficha escondida (2.000 guardados para a prova)
+python3 ferramentas/simulados/simular.py treino   # roda no motor e dá feedback de cada conversa (uns 7 minutos)
+python3 ferramentas/simulados/simular.py prova
+python3 ferramentas/simulados/relatorio.py        # relatório e a aba "Conversas simuladas" do painel
+```
+
+Resultados em `dados/simulados/`: `relatorio_testes.md`, `CHANGELOG_SIMULADOS.md`, `feedback_*.jsonl` (uma linha por conversa) e `casos_simulados.csv`.
+
 ## Publicar (link para outras pessoas testarem)
 
 O `Dockerfile` desta pasta compila e roda o app. No Render, o `render.yaml` da raiz do repositório faz tudo:

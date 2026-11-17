@@ -1,0 +1,1522 @@
+{
+ "conversas": 10000,
+ "erros": 0,
+ "destino_exato": {
+  "x": 6620,
+  "n": 10000,
+  "p": 0.662,
+  "ic95": [
+   0.6527,
+   0.6712
+  ]
+ },
+ "sensibilidade_urgente": {
+  "x": 6070,
+  "n": 6081,
+  "p": 0.9982,
+  "ic95": [
+   0.9968,
+   0.999
+  ]
+ },
+ "subtriagem_critica": {
+  "x": 11,
+  "n": 6081,
+  "p": 0.0018,
+  "ic95": [
+   0.001,
+   0.0032
+  ]
+ },
+ "perguntas_media": 7.44,
+ "perguntas_mediana": 7,
+ "com_irrelevante": {
+  "x": 6552,
+  "n": 10000,
+  "p": 0.6552,
+  "ic95": [
+   0.6458,
+   0.6645
+  ]
+ },
+ "com_falta": {
+  "x": 487,
+  "n": 10000,
+  "p": 0.0487,
+  "ic95": [
+   0.0447,
+   0.0531
+  ]
+ },
+ "sem_cuidado": {
+  "x": 149,
+  "n": 2291,
+  "p": 0.065,
+  "ic95": [
+   0.0556,
+   0.0759
+  ]
+ },
+ "nota_media": 6.64,
+ "problemas": [
+  {
+   "problema": "irrelevante:grupo:cirurgia",
+   "casos": 3837,
+   "familias": [
+    [
+     "Urina e região íntima",
+     409
+    ],
+    [
+     "Pele",
+     402
+    ],
+    [
+     "Febre e dengue",
+     369
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-06-02003",
+     "relato": "minha avo de 74 anos, caroco na axila doi apos beber e ingua doi com alcool hj",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar se está conseguindo beber líquido e fazer xixi. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Homem com caroço no peito ou na axila ou com líquido saindo do bico do peito",
+      "CONF_SINAIS: Inchaço novo na mama com prótese meses ou anos depois, ou caroços pequenos e doloridos (Prótese de silicone na mama)"
+     ]
+    },
+    {
+     "caso": "SIM-13-02006",
+     "relato": "queria fechar os olhos e pronto faz uns 2 dias",
+     "comentario": "Perguntou de cirurgia sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Mão difícil de abrir e fechar depois de tirar a tala (cirurgia com placa e parafusos no braço, punho ou mão)",
+      "CONF_SINAIS: Mão difícil de abrir e fechar depois de tirar a tala ou o gesso (cirurgia com fios no osso)"
+     ]
+    },
+    {
+     "caso": "SIM-05-02007",
+     "relato": "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem meses",
+     "comentario": "Perguntou de osteoporose, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Febre junto com dor nas costas (cuidados da vértebra quebrada por osteoporose)",
+      "CONF_SINAIS_2: Quadril operado voltando a doer, inchar, estalar ou ficar mais duro meses ou anos depois (Prótese de quadril)"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:pergunta_FIL_06",
+   "casos": 3396,
+   "familias": [
+    [
+     "Urina e região íntima",
+     465
+    ],
+    [
+     "Febre e dengue",
+     394
+    ],
+    [
+     "Barriga",
+     375
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-06-02003",
+     "relato": "minha avo de 74 anos, caroco na axila doi apos beber e ingua doi com alcool hj",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar se está conseguindo beber líquido e fazer xixi. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Homem com caroço no peito ou na axila ou com líquido saindo do bico do peito",
+      "CONF_SINAIS: Inchaço novo na mama com prótese meses ou anos depois, ou caroços pequenos e doloridos (Prótese de silicone na mama)"
+     ]
+    },
+    {
+     "caso": "SIM-05-02007",
+     "relato": "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem meses",
+     "comentario": "Perguntou de osteoporose, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Febre junto com dor nas costas (cuidados da vértebra quebrada por osteoporose)",
+      "CONF_SINAIS_2: Quadril operado voltando a doer, inchar, estalar ou ficar mais duro meses ou anos depois (Prótese de quadril)"
+     ]
+    },
+    {
+     "caso": "SIM-10-02009",
+     "relato": "nao sei se e serio, to gravida de 31 semanas pontada forte na boca do estomago",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS_2: Dor forte na barriga depois de cirurgia bariátrica",
+      "CONF_SINAIS_2: Dificuldade para respirar ou sangramento forte na boca (mandíbula amarrada ou operada)"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "seguranca:sobretriagem",
+   "casos": 3338,
+   "familias": [
+    [
+     "Febre e dengue",
+     306
+    ],
+    [
+     "Urina e região íntima",
+     294
+    ],
+    [
+     "Pele",
+     273
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-13-02006",
+     "relato": "queria fechar os olhos e pronto faz uns 2 dias",
+     "comentario": "Perguntou de cirurgia sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Mão difícil de abrir e fechar depois de tirar a tala (cirurgia com placa e parafusos no braço, punho ou mão)",
+      "CONF_SINAIS: Mão difícil de abrir e fechar depois de tirar a tala ou o gesso (cirurgia com fios no osso)"
+     ]
+    },
+    {
+     "caso": "SIM-05-02007",
+     "relato": "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem meses",
+     "comentario": "Perguntou de osteoporose, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Febre junto com dor nas costas (cuidados da vértebra quebrada por osteoporose)",
+      "CONF_SINAIS_2: Quadril operado voltando a doer, inchar, estalar ou ficar mais duro meses ou anos depois (Prótese de quadril)"
+     ]
+    },
+    {
+     "caso": "SIM-15-02012",
+     "relato": "cabeca latejando depois da cirurgia na coluna ah e xixi rosinha depois da cistoscopia",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Pancada na cabeça durante o jogo e ficou zonzo, com dor de cabeça ou enjoo",
+      "CONF_SINAIS: Dor na perna ou no braço voltando igual à de antes da cirurgia (Cirurgia de hérnia de disco)"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:pergunta_FIL_07",
+   "casos": 3288,
+   "familias": [
+    [
+     "Pele",
+     497
+    ],
+    [
+     "Urina e região íntima",
+     492
+    ],
+    [
+     "Febre e dengue",
+     455
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-05-02007",
+     "relato": "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem meses",
+     "comentario": "Perguntou de osteoporose, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Febre junto com dor nas costas (cuidados da vértebra quebrada por osteoporose)",
+      "CONF_SINAIS_2: Quadril operado voltando a doer, inchar, estalar ou ficar mais duro meses ou anos depois (Prótese de quadril)"
+     ]
+    },
+    {
+     "caso": "SIM-10-02019",
+     "relato": "gravida de 9 semanas, to gravida e com manchas vermelhas e febre",
+     "comentario": "Perguntou de alergia com inchaço, veneno ou remédio demais sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS_2: Manchas roxas ou pontinhos vermelhos na pele que aparecem sem pancada",
+      "FIL_06: alergia com inchaço"
+     ]
+    },
+    {
+     "caso": "SIM-05-02022",
+     "relato": "suspeita de zika, zika faz 2 semanas",
+     "comentario": "Perguntou de gravidez, alergia com inchaço, veneno ou remédio demais sem ter nada a ver comigo. Faltou perguntar sinais de alerta da febre. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Febre nos dias ou semanas depois do parto",
+      "CONF_SINAIS: Dor de cabeça, tontura ou dificuldade de concentrar que dura mais de 2 semanas depois da batida"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "muitas_perguntas",
+   "casos": 2962,
+   "familias": [
+    [
+     "Urina e região íntima",
+     362
+    ],
+    [
+     "Pele",
+     346
+    ],
+    [
+     "Intoxicação e animais",
+     326
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-06-02003",
+     "relato": "minha avo de 74 anos, caroco na axila doi apos beber e ingua doi com alcool hj",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar se está conseguindo beber líquido e fazer xixi. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Homem com caroço no peito ou na axila ou com líquido saindo do bico do peito",
+      "CONF_SINAIS: Inchaço novo na mama com prótese meses ou anos depois, ou caroços pequenos e doloridos (Prótese de silicone na mama)"
+     ]
+    },
+    {
+     "caso": "SIM-05-02022",
+     "relato": "suspeita de zika, zika faz 2 semanas",
+     "comentario": "Perguntou de gravidez, alergia com inchaço, veneno ou remédio demais sem ter nada a ver comigo. Faltou perguntar sinais de alerta da febre. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Febre nos dias ou semanas depois do parto",
+      "CONF_SINAIS: Dor de cabeça, tontura ou dificuldade de concentrar que dura mais de 2 semanas depois da batida"
+     ]
+    },
+    {
+     "caso": "SIM-08-02023",
+     "relato": "rosto cheio de espinha e acne",
+     "comentario": "Perguntou de cirurgia, veneno ou remédio demais sem ter nada a ver comigo. Foram 15 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Formigamento ou dormência no rosto ou nos lábios depois da cirurgia de tireoide (Cirurgia de tireoide)",
+      "FIL_07: veneno ou remédio demais"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:outra_parte_do_corpo",
+   "casos": 2838,
+   "familias": [
+    [
+     "Pele",
+     300
+    ],
+    [
+     "Barriga",
+     297
+    ],
+    [
+     "Pancada, corte e queimadura",
+     280
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-06-02003",
+     "relato": "minha avo de 74 anos, caroco na axila doi apos beber e ingua doi com alcool hj",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar se está conseguindo beber líquido e fazer xixi. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Homem com caroço no peito ou na axila ou com líquido saindo do bico do peito",
+      "CONF_SINAIS: Inchaço novo na mama com prótese meses ou anos depois, ou caroços pequenos e doloridos (Prótese de silicone na mama)"
+     ]
+    },
+    {
+     "caso": "SIM-15-02012",
+     "relato": "cabeca latejando depois da cirurgia na coluna ah e xixi rosinha depois da cistoscopia",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Pancada na cabeça durante o jogo e ficou zonzo, com dor de cabeça ou enjoo",
+      "CONF_SINAIS: Dor na perna ou no braço voltando igual à de antes da cirurgia (Cirurgia de hérnia de disco)"
+     ]
+    },
+    {
+     "caso": "SIM-05-02015",
+     "relato": "dor nas costas ou do lado embaixo das costelas e infeccao urinaria subiu pro rim",
+     "comentario": "Mostrou 2 coisa(s) de outra parte do corpo.",
+     "detalhe": [
+      "CONF_SINAIS: Dor na barriga ou no ombro depois da pancada nas costelas (cuidados em casa da costela quebrada)",
+      "CONF_SINAIS: Olhos amarelos com febre ou calafrio e dor do lado direito em cima da barriga"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:trauma_sem_machucado",
+   "casos": 2293,
+   "familias": [
+    [
+     "Pele",
+     286
+    ],
+    [
+     "Saúde mental e crise",
+     220
+    ],
+    [
+     "Febre e dengue",
+     201
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-13-02006",
+     "relato": "queria fechar os olhos e pronto faz uns 2 dias",
+     "comentario": "Perguntou de cirurgia sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Mão difícil de abrir e fechar depois de tirar a tala (cirurgia com placa e parafusos no braço, punho ou mão)",
+      "CONF_SINAIS: Mão difícil de abrir e fechar depois de tirar a tala ou o gesso (cirurgia com fios no osso)"
+     ]
+    },
+    {
+     "caso": "SIM-05-02007",
+     "relato": "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem meses",
+     "comentario": "Perguntou de osteoporose, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Febre junto com dor nas costas (cuidados da vértebra quebrada por osteoporose)",
+      "CONF_SINAIS_2: Quadril operado voltando a doer, inchar, estalar ou ficar mais duro meses ou anos depois (Prótese de quadril)"
+     ]
+    },
+    {
+     "caso": "SIM-15-02012",
+     "relato": "cabeca latejando depois da cirurgia na coluna ah e xixi rosinha depois da cistoscopia",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Pancada na cabeça durante o jogo e ficou zonzo, com dor de cabeça ou enjoo",
+      "CONF_SINAIS: Dor na perna ou no braço voltando igual à de antes da cirurgia (Cirurgia de hérnia de disco)"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "orientacao:upa_sem_enquanto_isso",
+   "casos": 2179,
+   "familias": [
+    [
+     "Febre e dengue",
+     327
+    ],
+    [
+     "Gravidez e pós-parto",
+     245
+    ],
+    [
+     "Bebês e crianças",
+     242
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-05-02007",
+     "relato": "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem meses",
+     "comentario": "Perguntou de osteoporose, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Febre junto com dor nas costas (cuidados da vértebra quebrada por osteoporose)",
+      "CONF_SINAIS_2: Quadril operado voltando a doer, inchar, estalar ou ficar mais duro meses ou anos depois (Prótese de quadril)"
+     ]
+    },
+    {
+     "caso": "SIM-10-02009",
+     "relato": "nao sei se e serio, to gravida de 31 semanas pontada forte na boca do estomago",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS_2: Dor forte na barriga depois de cirurgia bariátrica",
+      "CONF_SINAIS_2: Dificuldade para respirar ou sangramento forte na boca (mandíbula amarrada ou operada)"
+     ]
+    },
+    {
+     "caso": "SIM-10-02019",
+     "relato": "gravida de 9 semanas, to gravida e com manchas vermelhas e febre",
+     "comentario": "Perguntou de alergia com inchaço, veneno ou remédio demais sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS_2: Manchas roxas ou pontinhos vermelhos na pele que aparecem sem pancada",
+      "FIL_06: alergia com inchaço"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "rota:machucado_fora_da_trilha",
+   "casos": 594,
+   "familias": [
+    [
+     "Pancada, corte e queimadura",
+     225
+    ],
+    [
+     "Machucado no esporte",
+     161
+    ],
+    [
+     "Queda",
+     157
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-01-02026",
+     "relato": "no futsal doi o ossinho do tornozleo e ossinho do lado do pe doi faz umas 2 horas",
+     "comentario": "Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo. Foram 11 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Dor que piora ao voltar a apoiar ou inchaço que aumenta na batata da perna (placa e parafusos no tornozelo)",
+      "CONF_SINAIS_2: Dor de garganta forte de um lado só com dificuldade para abrir a boca ou voz abafada"
+     ]
+    },
+    {
+     "caso": "SIM-12-02059",
+     "relato": "to c muito medo meu pai de 60 anos, caiu da escada caiu e levantou sozinho hj de manha",
+     "comentario": "Conversa boa, direto ao ponto.",
+     "detalhe": []
+    },
+    {
+     "caso": "SIM-12-02069",
+     "relato": "nunca senti nada assim minha avo de 63 anos  levanta e fica tonta e tonto ao ficar de pe",
+     "comentario": "Conversa boa, direto ao ponto.",
+     "detalhe": []
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:grupo:gravidez",
+   "casos": 568,
+   "familias": [
+    [
+     "Gravidez e pós-parto",
+     119
+    ],
+    [
+     "Saúde mental e crise",
+     87
+    ],
+    [
+     "Urina e região íntima",
+     64
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-05-02022",
+     "relato": "suspeita de zika, zika faz 2 semanas",
+     "comentario": "Perguntou de gravidez, alergia com inchaço, veneno ou remédio demais sem ter nada a ver comigo. Faltou perguntar sinais de alerta da febre. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Febre nos dias ou semanas depois do parto",
+      "CONF_SINAIS: Dor de cabeça, tontura ou dificuldade de concentrar que dura mais de 2 semanas depois da batida"
+     ]
+    },
+    {
+     "caso": "SIM-08-02025",
+     "relato": "dor no fundo da boca faz 2 semanas",
+     "comentario": "Perguntou de gravidez, veneno ou remédio demais sem ter nada a ver comigo. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Falta de ar que começou de repente, com dor no peito que piora ao respirar",
+      "CONF_SINAIS: Muita sede, muito xixi, vômito, dor na barriga e respiração rápida e funda"
+     ]
+    },
+    {
+     "caso": "SIM-10-02046",
+     "relato": "ciclo n votlou depois da curetagem essa semana",
+     "comentario": "Perguntou de gravidez, alergia com inchaço, veneno ou remédio demais sem ter nada a ver comigo. Faltou perguntar sangramento na gravidez e sinais de pressão alta na gravidez. Foram 15 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Tristeza ou ansiedade forte que não passa depois da perda da gravidez (Curetagem ou aspiração do útero)",
+      "CONF_SINAIS: Febre nos dias ou semanas depois do parto ou da cesárea"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:grupo:crianca",
+   "casos": 438,
+   "familias": [
+    [
+     "Saúde mental e crise",
+     63
+    ],
+    [
+     "Machucado no esporte",
+     50
+    ],
+    [
+     "Pele",
+     43
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-01-02055",
+     "relato": "correndo no parque dor no osso do pe depois de torcer agora pouco e tbm espinha da barba",
+     "comentario": "Mostrou 1 coisa(s) de outra parte do corpo.",
+     "detalhe": [
+      "CONF_SINAIS: Criança ou adolescente com dor no joelho ou no calcanhar junto com febre, pele vermelha e quente no lugar ou sem conseguir apoiar o pé no chão"
+     ]
+    },
+    {
+     "caso": "SIM-05-02072",
+     "relato": "febrinha todo dia sem motivo desde o comeco do ano",
+     "comentario": "Perguntou de cirurgia, gravidez, alergia com inchaço sem ter nada a ver comigo. Foram 20 perguntas, cansa. No fim não deu nenhuma dica do que fazer em casa.",
+     "detalhe": [
+      "CONF_SINAIS: Criança que começou a andar torto, perder o equilíbrio ou mudar o jeito de ser sem motivo",
+      "CONF_SINAIS: Febre ou calafrios nos dias depois de uma cirurgia"
+     ]
+    },
+    {
+     "caso": "SIM-04-02117",
+     "relato": "n enxergo de longe dedse o comeco do ano",
+     "comentario": "Perguntou de gravidez, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Objeto espetado no olho ou pancada forte no olho com sangue, dor forte ou visão alterada",
+      "CONF_SINAIS_2: Sangue ou manchinha na calcinha no começo da gravidez, cólica leve, borra marrom"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:pergunta_FIL_02",
+   "casos": 341,
+   "familias": [
+    [
+     "Pancada, corte e queimadura",
+     169
+    ],
+    [
+     "Machucado no esporte",
+     121
+    ],
+    [
+     "Queda",
+     51
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-01-02026",
+     "relato": "no futsal doi o ossinho do tornozleo e ossinho do lado do pe doi faz umas 2 horas",
+     "comentario": "Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo. Foram 11 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Dor que piora ao voltar a apoiar ou inchaço que aumenta na batata da perna (placa e parafusos no tornozelo)",
+      "CONF_SINAIS_2: Dor de garganta forte de um lado só com dificuldade para abrir a boca ou voz abafada"
+     ]
+    },
+    {
+     "caso": "SIM-03-02094",
+     "relato": "nao sei se e serio, levei uma pancada roxo no corpo sem pancada essa semana",
+     "comentario": "Perguntou de dor no peito, AVC, alergia com inchaço sem ter nada a ver comigo. Foram 11 perguntas, cansa.",
+     "detalhe": [
+      "FIL_02: dor no peito",
+      "FIL_04: AVC"
+     ]
+    },
+    {
+     "caso": "SIM-03-02105",
+     "relato": "n sei se e serio dor forte no dedo faz umas 2 horas",
+     "comentario": "Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Dor forte na barriga depois de cirurgia bariátrica",
+      "CONF_SINAIS: Dor muito forte na barriga depois da cirurgia de apendicite (Cirurgia de apendicite)"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:pergunta_FIL_08",
+   "casos": 299,
+   "familias": [
+    [
+     "Pancada, corte e queimadura",
+     152
+    ],
+    [
+     "Machucado no esporte",
+     110
+    ],
+    [
+     "Queda",
+     37
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-01-02026",
+     "relato": "no futsal doi o ossinho do tornozleo e ossinho do lado do pe doi faz umas 2 horas",
+     "comentario": "Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo. Foram 11 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Dor que piora ao voltar a apoiar ou inchaço que aumenta na batata da perna (placa e parafusos no tornozelo)",
+      "CONF_SINAIS_2: Dor de garganta forte de um lado só com dificuldade para abrir a boca ou voz abafada"
+     ]
+    },
+    {
+     "caso": "SIM-03-02094",
+     "relato": "nao sei se e serio, levei uma pancada roxo no corpo sem pancada essa semana",
+     "comentario": "Perguntou de dor no peito, AVC, alergia com inchaço sem ter nada a ver comigo. Foram 11 perguntas, cansa.",
+     "detalhe": [
+      "FIL_02: dor no peito",
+      "FIL_04: AVC"
+     ]
+    },
+    {
+     "caso": "SIM-03-02105",
+     "relato": "n sei se e serio dor forte no dedo faz umas 2 horas",
+     "comentario": "Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Dor forte na barriga depois de cirurgia bariátrica",
+      "CONF_SINAIS: Dor muito forte na barriga depois da cirurgia de apendicite (Cirurgia de apendicite)"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:grupo:osteoporose",
+   "casos": 249,
+   "familias": [
+    [
+     "Idosos e anticoagulante",
+     51
+    ],
+    [
+     "Febre e dengue",
+     46
+    ],
+    [
+     "Cirurgia, crônicos e 'não é nada'",
+     21
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-05-02007",
+     "relato": "minha mae de 64 anos ta com dor nas juntas depois da chikungunya e dor nas juntas desde a chikungunya ja tem meses",
+     "comentario": "Perguntou de osteoporose, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Febre junto com dor nas costas (cuidados da vértebra quebrada por osteoporose)",
+      "CONF_SINAIS_2: Quadril operado voltando a doer, inchar, estalar ou ficar mais duro meses ou anos depois (Prótese de quadril)"
+     ]
+    },
+    {
+     "caso": "SIM-14-02062",
+     "relato": "tontura ao deitar ou virar na cama faz 2 semanas",
+     "comentario": "Perguntou de osteoporose sem ter nada a ver comigo. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Sensação de que vai desmaiar no calor ou em pé que melhora ao deitar com as pernas para cima",
+      "CONF_SINAIS: Dor que acorda à noite ou piora quando deita (cuidados da vértebra quebrada por osteoporose)"
+     ]
+    },
+    {
+     "caso": "SIM-12-02074",
+     "relato": "meu pai de 86 anos, tombo leve sem machucado, caiu sentado e ja levantou desde ontem",
+     "comentario": "Perguntou de idoso, osteoporose sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Dor forte nas costas depois de queda em idoso ou em quem tem osteoporose"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:pergunta_FIL_04",
+   "casos": 249,
+   "familias": [
+    [
+     "Machucado no esporte",
+     112
+    ],
+    [
+     "Pancada, corte e queimadura",
+     108
+    ],
+    [
+     "Queda",
+     29
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-01-02026",
+     "relato": "no futsal doi o ossinho do tornozleo e ossinho do lado do pe doi faz umas 2 horas",
+     "comentario": "Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo. Foram 11 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Dor que piora ao voltar a apoiar ou inchaço que aumenta na batata da perna (placa e parafusos no tornozelo)",
+      "CONF_SINAIS_2: Dor de garganta forte de um lado só com dificuldade para abrir a boca ou voz abafada"
+     ]
+    },
+    {
+     "caso": "SIM-03-02094",
+     "relato": "nao sei se e serio, levei uma pancada roxo no corpo sem pancada essa semana",
+     "comentario": "Perguntou de dor no peito, AVC, alergia com inchaço sem ter nada a ver comigo. Foram 11 perguntas, cansa.",
+     "detalhe": [
+      "FIL_02: dor no peito",
+      "FIL_04: AVC"
+     ]
+    },
+    {
+     "caso": "SIM-03-02105",
+     "relato": "n sei se e serio dor forte no dedo faz umas 2 horas",
+     "comentario": "Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Dor forte na barriga depois de cirurgia bariátrica",
+      "CONF_SINAIS: Dor muito forte na barriga depois da cirurgia de apendicite (Cirurgia de apendicite)"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:grupo:imunossuprimido",
+   "casos": 229,
+   "familias": [
+    [
+     "Urina e região íntima",
+     69
+    ],
+    [
+     "Barriga",
+     49
+    ],
+    [
+     "Cirurgia, crônicos e 'não é nada'",
+     36
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-15-02082",
+     "relato": "pele descascando na quimio agora pouco faco tratamento de cancer",
+     "comentario": "Perguntou de câncer, transplante ou HIV, cirurgia sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer",
+      "CONF_SINAIS_2: Pele em volta do estoma irritada, vermelha ou machucada (Cirurgia do intestino com bolsinha (colostomia))"
+     ]
+    },
+    {
+     "caso": "SIM-06-02110",
+     "relato": "minha avo de 78 anos tá: colica em onda com tumor intestinal faco tratamento de cancer",
+     "comentario": "Perguntou de câncer, transplante ou HIV sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Fraqueza, peso ou dormência nas pernas ou perda do controle do xixi ou cocô em quem tem câncer",
+      "CONF_SINAIS: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer"
+     ]
+    },
+    {
+     "caso": "SIM-15-02276",
+     "relato": "acho q n e nada mas corte q n estanca na quimio essa semana faco tratamento de cancer",
+     "comentario": "Perguntou de câncer, transplante ou HIV, cirurgia sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Dor de cabeça nova em quem tem imunidade baixa ou já teve câncer",
+      "CONF_SINAIS: Precisou cortar os fios ou elásticos numa emergência (mandíbula amarrada ou operada)"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:pergunta_GEN_01",
+   "casos": 220,
+   "familias": [
+    [
+     "Machucado no esporte",
+     104
+    ],
+    [
+     "Pancada, corte e queimadura",
+     94
+    ],
+    [
+     "Queda",
+     22
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-01-02026",
+     "relato": "no futsal doi o ossinho do tornozleo e ossinho do lado do pe doi faz umas 2 horas",
+     "comentario": "Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo. Foram 11 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Dor que piora ao voltar a apoiar ou inchaço que aumenta na batata da perna (placa e parafusos no tornozelo)",
+      "CONF_SINAIS_2: Dor de garganta forte de um lado só com dificuldade para abrir a boca ou voz abafada"
+     ]
+    },
+    {
+     "caso": "SIM-03-02094",
+     "relato": "nao sei se e serio, levei uma pancada roxo no corpo sem pancada essa semana",
+     "comentario": "Perguntou de dor no peito, AVC, alergia com inchaço sem ter nada a ver comigo. Foram 11 perguntas, cansa.",
+     "detalhe": [
+      "FIL_02: dor no peito",
+      "FIL_04: AVC"
+     ]
+    },
+    {
+     "caso": "SIM-03-02105",
+     "relato": "n sei se e serio dor forte no dedo faz umas 2 horas",
+     "comentario": "Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Dor forte na barriga depois de cirurgia bariátrica",
+      "CONF_SINAIS: Dor muito forte na barriga depois da cirurgia de apendicite (Cirurgia de apendicite)"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "faltou:beber_e_xixi",
+   "casos": 211,
+   "familias": [
+    [
+     "Barriga",
+     211
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-06-02003",
+     "relato": "minha avo de 74 anos, caroco na axila doi apos beber e ingua doi com alcool hj",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar se está conseguindo beber líquido e fazer xixi. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Homem com caroço no peito ou na axila ou com líquido saindo do bico do peito",
+      "CONF_SINAIS: Inchaço novo na mama com prótese meses ou anos depois, ou caroços pequenos e doloridos (Prótese de silicone na mama)"
+     ]
+    },
+    {
+     "caso": "SIM-06-02060",
+     "relato": "dor de estomago q sempre volta e barriga inchada todo dia agora",
+     "comentario": "Perguntou de cirurgia sem ter nada a ver comigo. Faltou perguntar se está conseguindo beber líquido e fazer xixi. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Barriga inchada e dolorida que vai piorando depois da cirurgia (Cirurgia de hérnia na virilha)",
+      "CONF_SINAIS: Barriga inchada ou dor na barriga que vai piorando depois da cirurgia por vídeo (Retirada de mioma)"
+     ]
+    },
+    {
+     "caso": "SIM-06-02092",
+     "relato": "nao sei se e serio, orelha de cachorro na abdomino e queloide depois da plastica da barriga",
+     "comentario": "Perguntou de cirurgia, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar se está conseguindo beber líquido e fazer xixi. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Inchaço novo, duro e doloroso que cresce em um lugar operado (Plástica da barriga)",
+      "CONF_SINAIS: Falta de ar ou dor no peito nos dias ou semanas depois de uma cirurgia"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:grupo:quimioterapia",
+   "casos": 169,
+   "familias": [
+    [
+     "Cabeça e tontura",
+     31
+    ],
+    [
+     "Febre e dengue",
+     30
+    ],
+    [
+     "Pele",
+     17
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-08-02063",
+     "relato": "deve ser bobeira mas coceira forte, alergia na pele faz uns 2 dias alem disso pele descascando da agua sanitaria",
+     "comentario": "Perguntou de câncer, cirurgia sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Manchas vermelhas espalhadas com bolhas ou pele soltando em quem faz quimioterapia ou imunoterapia",
+      "CONF_SINAIS: Pele em volta do estoma irritada, vermelha ou machucada (Cirurgia do intestino com bolsinha (colostomia))"
+     ]
+    },
+    {
+     "caso": "SIM-06-02084",
+     "relato": "vomitando sem parar, nem agua para no estomago",
+     "comentario": "Perguntou de câncer, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Vômitos que não deixam beber nem segurar o remédio durante a quimioterapia",
+      "CONF_SINAIS: Vômitos que não param e impedem de beber nos dias depois de uma cirurgia"
+     ]
+    },
+    {
+     "caso": "SIM-05-02226",
+     "relato": "acho q nao e nada mas perna formigando e subindo desde ontem",
+     "comentario": "Perguntou de câncer, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Formigamento, fraqueza ou perda do controle do xixi depois de queda ou pancada nas costas ou no pescoço",
+      "CONF_SINAIS: Fraqueza, peso ou dormência nas pernas ou perda do controle do xixi ou cocô em quem tem câncer"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:grupo:renal",
+   "casos": 163,
+   "familias": [
+    [
+     "Urina e região íntima",
+     45
+    ],
+    [
+     "Queda",
+     18
+    ],
+    [
+     "Pele",
+     15
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-02-02056",
+     "relato": "levei um tombo de bicicleta pulso c um degaru tbm caiu e o pulso ficou estranho faz uns 2 dias",
+     "comentario": "Perguntou de diálise sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Fístula da hemodiálise parou de vibrar ou de fazer o barulhinho"
+     ]
+    },
+    {
+     "caso": "SIM-02-02133",
+     "relato": "nunca senti nada assim dor no pulso do lado do dedao hj",
+     "comentario": "Perguntou de diálise, dor no peito, AVC sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Mulher com cansaço fora do comum, enjoo ou falta de ar que surgiram de repente, mesmo sem dor no peito",
+      "CONF_SINAIS: Crise com coração disparado, falta de ar, dor no peito e medo de morrer, pela primeira vez"
+     ]
+    },
+    {
+     "caso": "SIM-09-02148",
+     "relato": "minha mae sangrou depois da menopausa e ja parei de menstruar e sangrei desde segunda",
+     "comentario": "Perguntou de diálise, cirurgia, alergia com inchaço sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS_2: Fístula da hemodiálise sangrando muito e sem parar mesmo apertando",
+      "CONF_SINAIS_2: Sangramento forte pelo nariz que não para depois de cirurgia no nariz (Cirurgia do septo do nariz)"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "cuidados:faltou",
+   "casos": 149,
+   "familias": [
+    [
+     "Pancada, corte e queimadura",
+     42
+    ],
+    [
+     "Machucado no esporte",
+     29
+    ],
+    [
+     "Queda",
+     25
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-05-02072",
+     "relato": "febrinha todo dia sem motivo desde o comeco do ano",
+     "comentario": "Perguntou de cirurgia, gravidez, alergia com inchaço sem ter nada a ver comigo. Foram 20 perguntas, cansa. No fim não deu nenhuma dica do que fazer em casa.",
+     "detalhe": [
+      "CONF_SINAIS: Criança que começou a andar torto, perder o equilíbrio ou mudar o jeito de ser sem motivo",
+      "CONF_SINAIS: Febre ou calafrios nos dias depois de uma cirurgia"
+     ]
+    },
+    {
+     "caso": "SIM-02-02161",
+     "relato": "escorreguei no banheiro ponta do dedo caiu na limpeza",
+     "comentario": "Perguntou de cirurgia sem ter nada a ver comigo. No fim não deu nenhuma dica do que fazer em casa.",
+     "detalhe": [
+      "CONF_SINAIS: Corte da cirurgia abrindo ou pontos se soltando"
+     ]
+    },
+    {
+     "caso": "SIM-02-02245",
+     "relato": "tropecei na rua dente com canal partiu",
+     "comentario": "Perguntou de gravidez sem ter nada a ver comigo. No fim não deu nenhuma dica do que fazer em casa.",
+     "detalhe": [
+      "CONF_SINAIS: Dor nas costas com fraqueza ou dormência nas duas pernas",
+      "CONF_SINAIS: Febre nos dias ou semanas depois do parto"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "faltou:apoiar_mexer",
+   "casos": 116,
+   "familias": [
+    [
+     "Machucado no esporte",
+     48
+    ],
+    [
+     "Pancada, corte e queimadura",
+     48
+    ],
+    [
+     "Queda",
+     14
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-01-02210",
+     "relato": "jogando volei tostao na coxa tbm paulistinha faz umas 2 horas",
+     "comentario": "Me machuquei e ela nem perguntou como foi. Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo. Faltou perguntar como se machucou e se consegue apoiar ou mexer. Foram 15 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Falta de ar, confusão ou pintinhas vermelhas no peito ou no pescoço nos três primeiros dias depois da fratura (haste de metal no osso da coxa)",
+      "CONF_SINAIS: Não consegue mais apoiar a perna de repente ou dor forte nova na coxa (haste de metal no osso da coxa)"
+     ]
+    },
+    {
+     "caso": "SIM-03-02330",
+     "relato": "casquinha cor de mel em volta do nariz e da boca faz uns 2 dias",
+     "comentario": "Me machuquei e ela nem perguntou como foi. Perguntou de cirurgia, dor no peito, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar como se machucou e se consegue apoiar ou mexer. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Nariz voltando a entupir como antes meses depois da cirurgia do septo (Cirurgia do septo do nariz)",
+      "CONF_SINAIS: Cirurgia ou pontos que estão bem (sem dor forte, sem pus e sem febre), só com dúvida de retirar os pontos, pegar o resultado ou voltar ao trabalho, ao peso ou ao esporte"
+     ]
+    },
+    {
+     "caso": "SIM-01-02407",
+     "relato": "no futsal esgotado mesmo descansando agora",
+     "comentario": "Me machuquei e ela nem perguntou como foi. Perguntou de diálise, dor no peito, AVC sem ter nada a ver comigo. Faltou perguntar como se machucou e se consegue apoiar ou mexer. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS_2: Fístula da hemodiálise sangrando muito e sem parar mesmo apertando",
+      "FIL_02: dor no peito"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "faltou:mecanismo",
+   "casos": 115,
+   "familias": [
+    [
+     "Pancada, corte e queimadura",
+     48
+    ],
+    [
+     "Machucado no esporte",
+     47
+    ],
+    [
+     "Queda",
+     14
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-01-02210",
+     "relato": "jogando volei tostao na coxa tbm paulistinha faz umas 2 horas",
+     "comentario": "Me machuquei e ela nem perguntou como foi. Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo. Faltou perguntar como se machucou e se consegue apoiar ou mexer. Foram 15 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Falta de ar, confusão ou pintinhas vermelhas no peito ou no pescoço nos três primeiros dias depois da fratura (haste de metal no osso da coxa)",
+      "CONF_SINAIS: Não consegue mais apoiar a perna de repente ou dor forte nova na coxa (haste de metal no osso da coxa)"
+     ]
+    },
+    {
+     "caso": "SIM-03-02330",
+     "relato": "casquinha cor de mel em volta do nariz e da boca faz uns 2 dias",
+     "comentario": "Me machuquei e ela nem perguntou como foi. Perguntou de cirurgia, dor no peito, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar como se machucou e se consegue apoiar ou mexer. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Nariz voltando a entupir como antes meses depois da cirurgia do septo (Cirurgia do septo do nariz)",
+      "CONF_SINAIS: Cirurgia ou pontos que estão bem (sem dor forte, sem pus e sem febre), só com dúvida de retirar os pontos, pegar o resultado ou voltar ao trabalho, ao peso ou ao esporte"
+     ]
+    },
+    {
+     "caso": "SIM-01-02407",
+     "relato": "no futsal esgotado mesmo descansando agora",
+     "comentario": "Me machuquei e ela nem perguntou como foi. Perguntou de diálise, dor no peito, AVC sem ter nada a ver comigo. Faltou perguntar como se machucou e se consegue apoiar ou mexer. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS_2: Fístula da hemodiálise sangrando muito e sem parar mesmo apertando",
+      "FIL_02: dor no peito"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:pergunta_GEN_04",
+   "casos": 111,
+   "familias": [
+    [
+     "Machucado no esporte",
+     50
+    ],
+    [
+     "Pancada, corte e queimadura",
+     46
+    ],
+    [
+     "Queda",
+     15
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-01-02210",
+     "relato": "jogando volei tostao na coxa tbm paulistinha faz umas 2 horas",
+     "comentario": "Me machuquei e ela nem perguntou como foi. Perguntou de cirurgia, dor no peito, AVC sem ter nada a ver comigo. Faltou perguntar como se machucou e se consegue apoiar ou mexer. Foram 15 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Falta de ar, confusão ou pintinhas vermelhas no peito ou no pescoço nos três primeiros dias depois da fratura (haste de metal no osso da coxa)",
+      "CONF_SINAIS: Não consegue mais apoiar a perna de repente ou dor forte nova na coxa (haste de metal no osso da coxa)"
+     ]
+    },
+    {
+     "caso": "SIM-03-02330",
+     "relato": "casquinha cor de mel em volta do nariz e da boca faz uns 2 dias",
+     "comentario": "Me machuquei e ela nem perguntou como foi. Perguntou de cirurgia, dor no peito, alergia com inchaço sem ter nada a ver comigo. Faltou perguntar como se machucou e se consegue apoiar ou mexer. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS: Nariz voltando a entupir como antes meses depois da cirurgia do septo (Cirurgia do septo do nariz)",
+      "CONF_SINAIS: Cirurgia ou pontos que estão bem (sem dor forte, sem pus e sem febre), só com dúvida de retirar os pontos, pegar o resultado ou voltar ao trabalho, ao peso ou ao esporte"
+     ]
+    },
+    {
+     "caso": "SIM-01-02407",
+     "relato": "no futsal esgotado mesmo descansando agora",
+     "comentario": "Me machuquei e ela nem perguntou como foi. Perguntou de diálise, dor no peito, AVC sem ter nada a ver comigo. Faltou perguntar como se machucou e se consegue apoiar ou mexer. Foram 16 perguntas, cansa.",
+     "detalhe": [
+      "CONF_SINAIS_2: Fístula da hemodiálise sangrando muito e sem parar mesmo apertando",
+      "FIL_02: dor no peito"
+     ]
+    }
+   ]
+  },
+  {
+   "problema": "irrelevante:grupo:diabetico",
+   "casos": 80,
+   "familias": [
+    [
+     "Idosos e anticoagulante",
+     22
+    ],
+    [
+     "Gravidez e pós-parto",
+     10
+    ],
+    [
+     "Cirurgia, crônicos e 'não é nada'",
+     8
+    ]
+   ],
+   "exemplos": [
+    {
+     "caso": "SIM-08-02256",
+     "relato": "unha infeccionada, dedo inchado da unha encravada essa semana",
+     "comentario": "Perguntou de cirurgia, diabetes, veneno ou remédio demais sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Dor ou inchaço que aparece de repente no peito operado ou no braço (Retirada da mama (com ou sem reconstrução))",
+      "CONF_SINAIS: Braço do lado operado inchando depois de cirurgia no ombro (Artroscopia do ombro)"
+     ]
+    },
+    {
+     "caso": "SIM-01-02392",
+     "relato": "jogando bola roxo no pe hj e tbm calo na mao abriu",
+     "comentario": "Perguntou de diabetes sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Diabético com ferida ou bolha no pé que não cicatriza",
+      "CONF_SINAIS: Corte fundo, grande, aberto, com algo enfiado, em cima de uma junta, no rosto ou na palma da mão"
+     ]
+    },
+    {
+     "caso": "SIM-12-02644",
+     "relato": "deve ser bobeira mas xixi vermelho c remedio pra afinar, xixi c sangue e tomo marevan agora tomo remedio pra afinar o sangue",
+     "comentario": "Perguntou de remédio para afinar o sangue, diabetes sem ter nada a ver comigo.",
+     "detalhe": [
+      "CONF_SINAIS: Toma remédio para afinar o sangue e bateu a cabeça, mesmo sem sintomas",
+      "CONF_SINAIS: Pessoa com diabetes, pressão alta, doença dos rins, do coração ou outra doença crônica com suspeita de dengue, mesmo sem sinal de alarme"
+     ]
+    }
+   ]
+  }
+ ],
+ "por_familia": {
+  "Barriga": {
+   "casos": 673,
+   "nota": 5.67,
+   "perguntas": 8.8,
+   "destino_exato": 0.688,
+   "problemas": [
+    [
+     "irrelevante:pergunta_FIL_06",
+     375
+    ],
+    [
+     "irrelevante:grupo:cirurgia",
+     350
+    ],
+    [
+     "irrelevante:outra_parte_do_corpo",
+     297
+    ]
+   ]
+  },
+  "Bebês e crianças": {
+   "casos": 674,
+   "nota": 8.02,
+   "perguntas": 6.9,
+   "destino_exato": 0.7,
+   "problemas": [
+    [
+     "irrelevante:pergunta_FIL_06",
+     325
+    ],
+    [
+     "orientacao:upa_sem_enquanto_isso",
+     242
+    ],
+    [
+     "seguranca:sobretriagem",
+     200
+    ]
+   ]
+  },
+  "Cabeça e tontura": {
+   "casos": 667,
+   "nota": 7.37,
+   "perguntas": 5.0,
+   "destino_exato": 0.738,
+   "problemas": [
+    [
+     "irrelevante:pergunta_FIL_06",
+     233
+    ],
+    [
+     "irrelevante:pergunta_FIL_07",
+     205
+    ],
+    [
+     "irrelevante:grupo:cirurgia",
+     192
+    ]
+   ]
+  },
+  "Cirurgia, crônicos e 'não é nada'": {
+   "casos": 668,
+   "nota": 6.03,
+   "perguntas": 8.5,
+   "destino_exato": 0.693,
+   "problemas": [
+    [
+     "irrelevante:pergunta_FIL_07",
+     379
+    ],
+    [
+     "irrelevante:pergunta_FIL_06",
+     313
+    ],
+    [
+     "irrelevante:outra_parte_do_corpo",
+     259
+    ]
+   ]
+  },
+  "Febre e dengue": {
+   "casos": 670,
+   "nota": 5.47,
+   "perguntas": 9.8,
+   "destino_exato": 0.542,
+   "problemas": [
+    [
+     "irrelevante:pergunta_FIL_07",
+     455
+    ],
+    [
+     "irrelevante:pergunta_FIL_06",
+     394
+    ],
+    [
+     "irrelevante:grupo:cirurgia",
+     369
+    ]
+   ]
+  },
+  "Gravidez e pós-parto": {
+   "casos": 672,
+   "nota": 5.62,
+   "perguntas": 8.9,
+   "destino_exato": 0.577,
+   "problemas": [
+    [
+     "irrelevante:pergunta_FIL_07",
+     393
+    ],
+    [
+     "irrelevante:pergunta_FIL_06",
+     370
+    ],
+    [
+     "irrelevante:grupo:cirurgia",
+     297
+    ]
+   ]
+  },
+  "Idosos e anticoagulante": {
+   "casos": 670,
+   "nota": 7.28,
+   "perguntas": 5.0,
+   "destino_exato": 0.64,
+   "problemas": [
+    [
+     "seguranca:sobretriagem",
+     241
+    ],
+    [
+     "irrelevante:grupo:cirurgia",
+     212
+    ],
+    [
+     "irrelevante:pergunta_FIL_06",
+     210
+    ]
+   ]
+  },
+  "Intoxicação e animais": {
+   "casos": 658,
+   "nota": 7.76,
+   "perguntas": 7.0,
+   "destino_exato": 0.687,
+   "problemas": [
+    [
+     "muitas_perguntas",
+     326
+    ],
+    [
+     "irrelevante:grupo:cirurgia",
+     216
+    ],
+    [
+     "seguranca:sobretriagem",
+     206
+    ]
+   ]
+  },
+  "Machucado no esporte": {
+   "casos": 660,
+   "nota": 6.4,
+   "perguntas": 6.8,
+   "destino_exato": 0.656,
+   "problemas": [
+    [
+     "irrelevante:grupo:cirurgia",
+     264
+    ],
+    [
+     "irrelevante:pergunta_FIL_07",
+     249
+    ],
+    [
+     "seguranca:sobretriagem",
+     226
+    ]
+   ]
+  },
+  "Pancada, corte e queimadura": {
+   "casos": 677,
+   "nota": 6.83,
+   "perguntas": 5.0,
+   "destino_exato": 0.725,
+   "problemas": [
+    [
+     "irrelevante:outra_parte_do_corpo",
+     280
+    ],
+    [
+     "rota:machucado_fora_da_trilha",
+     225
+    ],
+    [
+     "irrelevante:grupo:cirurgia",
+     222
+    ]
+   ]
+  },
+  "Peito e falta de ar": {
+   "casos": 642,
+   "nota": 7.17,
+   "perguntas": 6.8,
+   "destino_exato": 0.662,
+   "problemas": [
+    [
+     "irrelevante:grupo:cirurgia",
+     260
+    ],
+    [
+     "irrelevante:pergunta_FIL_07",
+     247
+    ],
+    [
+     "seguranca:sobretriagem",
+     217
+    ]
+   ]
+  },
+  "Pele": {
+   "casos": 666,
+   "nota": 5.23,
+   "perguntas": 11.6,
+   "destino_exato": 0.589,
+   "problemas": [
+    [
+     "irrelevante:pergunta_FIL_07",
+     497
+    ],
+    [
+     "irrelevante:grupo:cirurgia",
+     402
+    ],
+    [
+     "muitas_perguntas",
+     346
+    ]
+   ]
+  },
+  "Queda": {
+   "casos": 660,
+   "nota": 8.66,
+   "perguntas": 2.0,
+   "destino_exato": 0.832,
+   "problemas": [
+    [
+     "rota:machucado_fora_da_trilha",
+     157
+    ],
+    [
+     "irrelevante:outra_parte_do_corpo",
+     151
+    ],
+    [
+     "seguranca:sobretriagem",
+     109
+    ]
+   ]
+  },
+  "Saúde mental e crise": {
+   "casos": 674,
+   "nota": 7.23,
+   "perguntas": 7.7,
+   "destino_exato": 0.642,
+   "problemas": [
+    [
+     "muitas_perguntas",
+     304
+    ],
+    [
+     "irrelevante:pergunta_FIL_06",
+     298
+    ],
+    [
+     "irrelevante:grupo:cirurgia",
+     261
+    ]
+   ]
+  },
+  "Urina e região íntima": {
+   "casos": 669,
+   "nota": 4.92,
+   "perguntas": 11.9,
+   "destino_exato": 0.561,
+   "problemas": [
+    [
+     "irrelevante:pergunta_FIL_07",
+     492
+    ],
+    [
+     "irrelevante:pergunta_FIL_06",
+     465
+    ],
+    [
+     "irrelevante:grupo:cirurgia",
+     409
+    ]
+   ]
+  }
+ }
+}
