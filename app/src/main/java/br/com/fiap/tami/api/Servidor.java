@@ -263,7 +263,8 @@ public final class Servidor {
             for (Rota rota : rotas) {
                 Matcher m = rota.caminho().matcher(caminho);
                 if (!m.matches()) continue;
-                if (!rota.metodo().equals(ex.getRequestMethod())) continue;
+                String metodo = "HEAD".equals(ex.getRequestMethod()) ? "GET" : ex.getRequestMethod();
+                if (!rota.metodo().equals(metodo)) continue;
                 Map<String, String> params = new HashMap<>();
                 for (String nome : nomesDosGrupos(rota.caminho().pattern())) params.put(nome, m.group(nome));
                 String corpo = new String(ex.getRequestBody().readAllBytes(), StandardCharsets.UTF_8);
@@ -318,10 +319,22 @@ public final class Servidor {
     }
 
     private static void responder(HttpExchange ex, int status, String json) throws IOException {
-        byte[] b = json.getBytes(StandardCharsets.UTF_8);
         ex.getResponseHeaders().set("Content-Type", "application/json; charset=utf-8");
         ex.getResponseHeaders().set("Cache-Control", "no-store");
-        ex.sendResponseHeaders(status, b.length);
+        enviar(ex, status, json.getBytes(StandardCharsets.UTF_8));
+    }
+
+    /**
+     * Manda a resposta. HEAD vai sem corpo (o Render e outros proxies usam HEAD para ver se o app está de pé), e a conexão
+     * fecha no fim: atrás de um proxy, conexão reaproveitada que o servidor do Java já fechou virava erro de vez em quando.
+     */
+    private static void enviar(HttpExchange ex, int status, byte[] b) throws IOException {
+        ex.getResponseHeaders().set("Connection", "close");
+        if ("HEAD".equals(ex.getRequestMethod())) {
+            ex.sendResponseHeaders(status, -1);
+            return;
+        }
+        ex.sendResponseHeaders(status, b.length == 0 ? -1 : b.length);
         try (OutputStream os = ex.getResponseBody()) { os.write(b); }
     }
 
@@ -333,9 +346,7 @@ public final class Servidor {
         if (caminho.equals("/") || caminho.isBlank()) caminho = "/index.html";
         Path p = pastaWeb.resolve(caminho.substring(1)).normalize();
         if (!p.startsWith(pastaWeb) || !Files.isRegularFile(p)) {
-            byte[] b = "Não encontrado".getBytes(StandardCharsets.UTF_8);
-            ex.sendResponseHeaders(404, b.length);
-            try (OutputStream os = ex.getResponseBody()) { os.write(b); }
+            enviar(ex, 404, "Não encontrado".getBytes(StandardCharsets.UTF_8));
             return;
         }
         String nome = p.getFileName().toString();
@@ -343,7 +354,6 @@ public final class Servidor {
         byte[] b = Files.readAllBytes(p);
         ex.getResponseHeaders().set("Content-Type", TIPOS.getOrDefault(ext, "application/octet-stream"));
         ex.getResponseHeaders().set("Cache-Control", "no-cache");
-        ex.sendResponseHeaders(200, b.length);
-        try (OutputStream os = ex.getResponseBody()) { os.write(b); }
+        enviar(ex, 200, b);
     }
 }
