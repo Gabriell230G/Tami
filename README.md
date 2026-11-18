@@ -77,6 +77,13 @@ A Tami é um app que conversa com você em português simples, pergunta primeiro
 
 As orientações seguem **regras escritas a partir de materiais públicos de saúde**, como NHS, MedlinePlus e Ministério da Saúde. A Tami não usa inteligência artificial que inventa respostas. Na dúvida, ela sugere o caminho mais urgente.
 
+## Documentação da Global Solution
+
+A documentação completa do projeto (FIAP, Global Solution 2026, CitizenTech) está em **[docs/Tami_GS2026_Documentacao.pdf](docs/Tami_GS2026_Documentacao.pdf)**: problema e público, arquitetura, banco de dados, fluxo e telas, especificações, testes com estatística, métodos ágeis e desafios técnicos.
+
+- Diagramas e prints em [docs/diagramas/](docs/diagramas/)
+- Roteiros dos vídeos: [pitch](docs/ROTEIRO_VIDEO_1_PITCH.md) e [técnico](docs/ROTEIRO_VIDEO_2_TECNICO.md)
+
 ## Teste o app
 
 O app está aberto para um grupo pequeno de testadores. **[Abrir a Tami](https://tami-app.onrender.com/)**
@@ -109,7 +116,8 @@ Precisa do Java 17 ou mais novo.
 ```bash
 cd app
 cp tami.properties.exemplo tami.properties   # sem mudar nada, usa um banco local (H2)
-./scripts/rodar.sh                           # no Windows: scriptsodar.bat
+./scripts/rodar.sh                           # no Windows: scripts
+odar.bat
 # abra http://localhost:8080
 ```
 
