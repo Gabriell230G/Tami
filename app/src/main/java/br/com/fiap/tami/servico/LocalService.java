@@ -41,7 +41,7 @@ public final class LocalService {
     /** Tipos de unidade do CNES. UPA: 73 pronto atendimento, 20 pronto-socorro geral. UBS: 2 centro de saúde/UBS, 1 posto. */
     private static final Map<String, int[]> TIPOS = Map.of("UPA", new int[]{73, 20}, "UBS", new int[]{2, 1});
 
-    private record Municipio(String codigo, String nome, double lat, double lon) {}
+    private record Municipio(String codigo, String nome, double lat, double lon, String uf) {}
     private record Unidade(String nome, String rotulo, String endereco, String telefone, String turno, double lat, double lon) {}
     private record Cache(long quando, List<Unidade> unidades) {}
 
@@ -56,7 +56,7 @@ public final class LocalService {
             while ((linha = br.readLine()) != null) {
                 if (linha.startsWith("#") || linha.startsWith("codigo")) continue;
                 String[] c = linha.split(";");
-                municipios.add(new Municipio(c[0], c[1], Double.parseDouble(c[2]), Double.parseDouble(c[3])));
+                municipios.add(new Municipio(c[0], c[1], Double.parseDouble(c[2]), Double.parseDouble(c[3]), UF.getOrDefault(c[4], "")));
             }
         } catch (Exception e) {
             throw new IllegalStateException("Não consegui ler conhecimento/municipios.csv", e);
@@ -77,15 +77,17 @@ public final class LocalService {
 
         List<Unidade> todas = new ArrayList<>();
         boolean falhou = false;
+        Map<Unidade, Municipio> deOnde = new HashMap<>();
         for (Municipio m : consultar) {
-            try { todas.addAll(unidades(m.codigo, tipo)); } catch (RuntimeException e) { falhou = true; }
+            try { for (Unidade u : unidades(m.codigo, tipo)) { todas.add(u); deOnde.put(u, m); } } catch (RuntimeException e) { falhou = true; }
         }
         List<Map<String, Object>> lista = todas.stream()
             .sorted(Comparator.comparingDouble(u -> km(lat, lon, u.lat, u.lon)))
             .limit(3)
             .map(u -> Mapa.de("nome", u.nome, "rotulo", u.rotulo, "endereco", u.endereco, "telefone", u.telefone, "turno", u.turno,
                 "distanciaKm", Math.round(km(lat, lon, u.lat, u.lon) * 10) / 10.0,
-                "comoChegar", String.format(Locale.ROOT, "https://www.google.com/maps/dir/?api=1&destination=%.6f,%.6f", u.lat, u.lon)))
+                "comoChegar", "https://www.google.com/maps/dir/?api=1&destination=" + java.net.URLEncoder.encode(
+                    u.nome + ", " + u.endereco.replace(" · ", ", ") + ", " + deOnde.get(u).nome + (deOnde.get(u).uf.isEmpty() ? "" : " - " + deOnde.get(u).uf), StandardCharsets.UTF_8)))
             .toList();
         return Mapa.de("tipo", tipo, "municipio", perto.get(0).nome, "unidades", lista, "fonte", "CNES, Ministério da Saúde",
             "aviso", falhou && lista.isEmpty() ? "Não consegui falar com o cadastro do Ministério da Saúde agora." : null,
@@ -102,6 +104,7 @@ public final class LocalService {
             Unidade u = converter(e, tipo);
             if (u != null) out.add(u);
         }
+        out = semCoordenadaGenerica(out);
         cache.put(chave, new Cache(System.currentTimeMillis(), out));
         return out;
     }
@@ -151,6 +154,26 @@ public final class LocalService {
         return new Unidade(titulo(nome), rotulo, endereco, texto(e.get("numero_telefone_estabelecimento")), turno,
             ((Number) la).doubleValue(), ((Number) lo).doubleValue());
     }
+
+    /**
+     * Algumas unidades vêm no cadastro com a coordenada "padrão" do centro da cidade em vez da real.
+     * Quando 3 ou mais unidades de nomes diferentes estão a menos de 150 m umas das outras, a coordenada
+     * é tratada como genérica e essas unidades saem da conta da distância.
+     */
+    private static List<Unidade> semCoordenadaGenerica(List<Unidade> l) {
+        List<Unidade> out = new ArrayList<>();
+        for (Unidade u : l) {
+            long perto = l.stream().filter(v -> v != u && km(u.lat, u.lon, v.lat, v.lon) < 0.15 && !v.nome.equals(u.nome)).count();
+            if (perto < 2) out.add(u);
+        }
+        return out;
+    }
+
+    private static final Map<String, String> UF = Map.ofEntries(Map.entry("11", "RO"), Map.entry("12", "AC"), Map.entry("13", "AM"), Map.entry("14", "RR"),
+        Map.entry("15", "PA"), Map.entry("16", "AP"), Map.entry("17", "TO"), Map.entry("21", "MA"), Map.entry("22", "PI"), Map.entry("23", "CE"),
+        Map.entry("24", "RN"), Map.entry("25", "PB"), Map.entry("26", "PE"), Map.entry("27", "AL"), Map.entry("28", "SE"), Map.entry("29", "BA"),
+        Map.entry("31", "MG"), Map.entry("32", "ES"), Map.entry("33", "RJ"), Map.entry("35", "SP"), Map.entry("41", "PR"), Map.entry("42", "SC"),
+        Map.entry("43", "RS"), Map.entry("50", "MS"), Map.entry("51", "MT"), Map.entry("52", "GO"), Map.entry("53", "DF"));
 
     private static String texto(Object o) { return o == null ? "" : String.valueOf(o).trim(); }
 
