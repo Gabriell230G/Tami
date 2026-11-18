@@ -342,3 +342,6 @@ main { flex: 1; min-width: 0; padding: 28px 18px 80px; outline: none; }
 .pn-falas span:not(.pn-nota-bola) { color: var(--texto-2); }
 .pn-nota-bola { flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font: 700 15px "TamiFredoka"; background: var(--aviso-suave); color: var(--aviso-texto); }
 .pn-nota-bola.bom { background: #E6F6EC; color: #1E6B3C; } .pn-nota-bola.ruim { background: var(--vermelho-suave); color: var(--vermelho-texto); }
+.perto .unidade{display:grid;gap:4px;padding:14px 16px;border:2px solid #E3E6FB;border-radius:18px;background:#fff}
+.perto .unidade .chips{margin-top:6px}
+.perto a.chip{display:inline-flex;align-items:center;text-decoration:none;color:#1B1F4A}

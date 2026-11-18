@@ -391,9 +391,16 @@
         <h1>${d.titulo}</h1>
         <p style="font-size:19px">${esc(r.mensagem)}</p>
         ${r.destino === "SAMU_192" ? `<a class="btn btn-v cheio" href="tel:192">${ICONE.fone} Ligar 192 agora</a>` : ""}
+        ${r.destino === "SAMU_192" ? `<p class="nota" style="color:inherit;margin:4px 0 0">Acidente, incêndio, alguém preso ou num lugar difícil de chegar (como um andar alto sem elevador)? Os Bombeiros também atendem: <a href="tel:193" style="color:inherit;font-weight:800">ligue 193</a>.</p>` : ""}
         ${simples.length ? `<ul class="blocos">${simples.map((b) => `<li>${esc(b.texto)}</li>`).join("")}</ul>` : ""}
         ${r.porNaoSei ? '<p class="nota" style="color:inherit">Você respondeu “Não sei” em uma pergunta de emergência. Na dúvida, eu fico com o caminho mais cuidadoso.</p>' : ""}
       </section>
+      ${["UPA_HOJE", "UBS_EM_BREVE", "CUIDADO_EM_CASA"].includes(r.destino) ? `<section class="cartao perto" style="display:grid;gap:12px" data-perto="${r.destino === "UPA_HOJE" ? "UPA" : "UBS"}">
+        <h2 style="font-size:24px">${r.destino === "UPA_HOJE" ? "Qual é a UPA mais perto?" : r.destino === "UBS_EM_BREVE" ? "Qual é o posto (UBS) mais perto?" : "Se precisar, qual é o posto mais perto?"}</h2>
+        <p class="nota">A Tami procura no cadastro oficial do Ministério da Saúde (CNES). Sua localização serve só para essa busca: ela não é guardada.</p>
+        <button class="btn btn-s" data-buscar-perto>Usar minha localização</button>
+        <div data-perto-lista style="display:grid;gap:10px"></div>
+      </section>` : ""}
       ${r.crise ? `<section class="crise"><b style="font:700 22px TamiFredoka">Você não precisa passar por isso sozinho.</b><p>${esc((r.blocos.find((b) => b.codigo === "CVV188") || {}).texto || "Ligue 188 (CVV): é de graça e funciona 24 horas.")}</p><a class="btn cheio" href="tel:188">${ICONE.fone} Ligar 188 (CVV)</a></section>` : ""}
       ${listas.map((b) => { const [tit, ...itens] = b.texto.split(/\s*•\s*/); return `<section class="cartao cuidados"><span class="cuid-ic">${b.codigo.startsWith("BLK-EI") ? "➜" : "✓"}</span><h2>${esc(tit)}</h2><ul>${itens.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></section>`; }).join("")}
       ${r.sinaisConfirmados && r.sinaisConfirmados.length ? `<div class="cartao"><span class="rotulo">O que pesou</span><ul style="margin:8px 0 0;padding-left:20px">${r.sinaisConfirmados.map((s) => `<li>${esc(s)}</li>`).join("")}</ul></div>` : ""}
@@ -446,6 +453,27 @@
     tela.querySelector("[data-enviar-coment]").onclick = async () => {
       await api("PUT", `/api/conversas/${conversa.id}/avaliacao`, { avaliacao: aval, comentario: tela.querySelector("#coment").value });
       tela.querySelector("[data-aval-resp]").textContent = "Obrigada! Isso ajuda a Tami a melhorar.";
+    };
+    const perto = tela.querySelector("[data-perto]");
+    if (perto) perto.querySelector("[data-buscar-perto]").onclick = () => {
+      const lista = perto.querySelector("[data-perto-lista]"), botao = perto.querySelector("[data-buscar-perto]"), tipo = perto.dataset.perto;
+      const mapa = `<a class="btn btn-s" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${tipo === "UPA" ? "UPA" : "UBS+posto+de+saude"}">Procurar no mapa</a>`;
+      if (!navigator.geolocation) { lista.innerHTML = `<p class="nota">Este navegador não informa a localização.</p>${mapa}`; return; }
+      botao.disabled = true; botao.textContent = "Procurando...";
+      navigator.geolocation.getCurrentPosition(async (pos) => {
+        try {
+          const res = await api("GET", `/api/perto?tipo=${tipo}&lat=${pos.coords.latitude.toFixed(5)}&lon=${pos.coords.longitude.toFixed(5)}`);
+          lista.innerHTML = res.unidades.length ? res.unidades.map((u) => `<div class="unidade">
+              <span class="rotulo">${esc(u.rotulo)} · ${String(u.distanciaKm).replace(".", ",")} km em linha reta · ${esc(u.turno)}</span>
+              <b style="font-size:18px">${esc(u.nome)}</b>
+              <span class="nota">${esc(u.endereco)}</span>
+              <div class="chips"><a class="chip" target="_blank" rel="noopener" href="${esc(u.comoChegar)}">Como chegar</a>${u.telefone ? `<a class="chip" href="tel:${esc(u.telefone.replace(/\D/g, ""))}">Ligar ${esc(u.telefone)}</a>` : ""}</div>
+            </div>`).join("") + `<p class="nota">Fonte: ${esc(res.fonte)}. Confirme o horário por telefone antes de ir.</p>`
+            : `<p class="nota">${esc(res.aviso || "Não achei nenhuma unidade perto no cadastro.")}</p>${mapa}`;
+          botao.hidden = true;
+        } catch (e) { lista.innerHTML = mapa; botao.disabled = false; botao.textContent = "Tentar de novo"; }
+      }, () => { lista.innerHTML = `<p class="nota">Sem a localização, dá para procurar direto no mapa.</p>${mapa}`; botao.disabled = false; botao.textContent = "Usar minha localização"; },
+      { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 });
     };
     tela.querySelector("[data-nova]").onclick = () => { conversa = null; ir("#/para-quem"); };
     if (Number.isInteger(conversa.dor) && !conversa.dorGuardada) {   // a dor já veio da conversa: marca e guarda sozinha

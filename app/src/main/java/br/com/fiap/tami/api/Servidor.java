@@ -102,6 +102,8 @@ public final class Servidor {
     private final Path pastaWeb;
     private HttpServer http;
 
+    private final br.com.fiap.tami.servico.LocalService local = new br.com.fiap.tami.servico.LocalService();
+
     public Servidor(Path pastaWeb, ConexaoFactory fabrica, ArvoreRegioes arvore, ConversaService conversas,
                     EstatisticaService estatistica, Simulador simulador) {
         this.pastaWeb = pastaWeb;
@@ -187,6 +189,11 @@ public final class Servidor {
             return Mapa.de("id", r.p("id"), "nivel", nivel);
         });
         put("/api/conversas/{id}/avaliacao", r -> conversas.avaliar(r.p("id"), Feedback.Avaliacao.valueOf(r.texto("avaliacao")), r.texto("comentario")));
+
+        // ---------- onde fica a mais perto (CNES, Ministério da Saúde) ----------
+        // A localização da pessoa não é gravada: serve só para achar o município e calcular a distância.
+        get("/api/perto", r -> local.perto(Double.parseDouble(r.query().get("lat")), Double.parseDouble(r.query().get("lon")),
+            String.valueOf(r.query().get("tipo")).toUpperCase()));
 
         // ---------- estatística ----------
         get("/api/estatisticas", r -> Mapa.de("uso", estatistica.uso(), "validacao", estatistica.validacao(), "simulados", estatistica.simulados()));
