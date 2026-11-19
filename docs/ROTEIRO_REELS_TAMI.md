@@ -1,6 +1,6 @@
 # Tami · Reels "O círculo" (estrutura do vídeo de referência)
 
-Vídeo de cerca de 2min50s, que serve para o YouTube da GS e para divulgar a Tami (no Reels, use a versão curta de 60 s indicada no fim do roteiro). Ele segue **a mesma estrutura, quadro a quadro**, do vídeo de referência (o do teste do círculo), com texto 100% nosso.
+Vídeo de cerca de 2min55s, que serve para o YouTube da GS e para divulgar a Tami (no Reels, use a versão curta de 60 s indicada no fim do roteiro). Ele segue **a mesma estrutura, quadro a quadro**, do vídeo de referência (o do teste do círculo), com texto 100% nosso.
 
 ---
 
@@ -79,10 +79,10 @@ Então o nosso círculo não é um truque: é a história real de como se mede d
 | curiosidade ➜ algoritmo | dúvida ➜ barra de pesquisa |
 | "o problema não é consumir conteúdo, é que a gente parou de ser ARTISTA" | "o problema não é pesquisar, é que a gente ficou SEM ALGUÉM pra perguntar" |
 | "só como as coisas SÃO, e não como poderiam SER" | "a dor vira só MEDO, e não um PRÓXIMO PASSO" |
-| (não tem produto) | "por isso eu criei a TAMI" (3 segundos, antes do final) |
-| "olha pra esse círculo de novo: o que você enxerga?" | você desenha o rosto da Tami no post-it: "olha pra esse círculo de novo: agora, o que você enxerga?" |
+| (não tem produto) | a Tami, o app na tela e os motivos para abrir o link hoje |
+| "olha pra esse círculo de novo: o que você enxerga?" | volta na escala de dor do começo: "a sua dor pode ser um 6, mas a sua cara não precisa ser um 10" |
 
-### O roteiro (versão longa, cerca de 2min50s)
+### O roteiro (versão longa, cerca de 2min55s)
 
 A mesma estrutura da referência, esticada para caber o contexto, o produto e a confiança. As 9 engrenagens continuam todas lá, só que com **dois ganchos no meio** em vez de um (aos 0:45 e a 1:20), porque um vídeo de quase 3 minutos precisa de mais de um motivo para a pessoa ficar.
 
@@ -104,15 +104,14 @@ A mesma estrutura da referência, esticada para caber o contexto, o produto e a 
 | **0:08 a 0:11** | 🎥 A | "essa é a" ➜ **ESCALA DE DOR** | Isso aqui é a escala de dor de carinhas. |
 | **0:11 a 0:13** | 🎥 A | "usada no" ➜ **MUNDO TODO**, com um globo desenhado por cima de você. | Usada em hospital no mundo todo. |
 | **0:13 a 0:18** | 📄 B | "nasceu de" ➜ **CRIANÇAS** ➜ "desenhando em" ➜ **6 CÍRCULOS** (seis círculos à mão, da carinha feliz até a chorando) | Ela nasceu de crianças desenhando a própria dor em seis círculos. |
-| **0:18 a 0:20** | 🎥 A | "hoje em mais de" ➜ **60 LÍNGUAS** (gigante, atrás da sua cabeça) | Hoje ela tá em mais de sessenta línguas. |
-| **0:20 a 0:24** | 📄 B | "o objetivo é" **MEDIR** ➜ "o quanto" **DÓI** ➜ o seu rosto recortado em papel rasgado ➜ "mas não o quão" ➜ **PERDIDO VOCÊ TÁ** | O objetivo é medir o quanto dói. Mas não o quão perdido você tá. |
+| **0:18 a 0:24** | 📄 B | "o objetivo é" **MEDIR** ➜ "o quanto" **DÓI** ➜ o seu rosto recortado em papel rasgado ➜ "mas não o quão" ➜ **PERDIDO VOCÊ TÁ** | O objetivo é medir o quanto dói. Mas não o quão perdido você tá. |
 
 #### 3 · O contexto e a quebra (0:24 a 0:45)
 
 | Tempo | Cena | Texto na tela | 🎤 O que falar |
 |---|---|---|---|
-| **0:24 a 0:29** | 📄 B | "quando dói, a pergunta é" ➜ **PRA ONDE EU VOU?** ➜ quatro palavras caindo uma por uma: **UPA · POSTO · AMA · SAMU** | Porque quando dói, a pergunta de verdade é: pra onde eu vou? UPA, posto, AMA, SAMU? |
-| **0:29 a 0:35** | 🎥 A | "uma médica me contou" ➜ "o povo não sabe a diferença" ➜ "só sabe que" ➜ **TEM MÉDICO LÁ** | Uma médica que trabalhou em posto de saúde me contou: o povo não sabe a diferença. Só sabe que tem médico lá. |
+| **0:24 a 0:29** | 📄 B | "quando dói, a pergunta é" ➜ **PRA ONDE EU VOU?** ➜ quatro palavras caindo uma por uma: **UPA · POSTO · AMA · SAMU** | Quando dói, a pergunta de verdade é: pra onde eu vou? UPA, posto, AMA, SAMU? |
+| **0:29 a 0:35** | 🎥 A | "uma médica me contou" ➜ "o povo não sabe a diferença" ➜ "só sabe que" ➜ **TEM MÉDICO LÁ** | Uma médica me contou: o povo não sabe a diferença. Só sabe que tem médico lá. |
 | **0:35 a 0:41** | 🎥 A + 🎬 C | "BH" ➜ **7 MESES** de UPA ➜ uma caneta desenha dez carinhas por cima do vídeo e pinta quase oito ➜ "quase" **8 EM 10** ➜ "não eram" **URGENTES**. Fonte no canto: *Prefeitura de BH, jan. a jul. de 2026 (76,2%)*. | Em Belo Horizonte, em sete meses, quase oito em cada dez atendimentos na UPA não eram urgentes. |
 | **0:41 a 0:45** | 🎥 A | "e o erro vai pros dois lados" ➜ "tem gente que fica em casa quando era" ➜ **GRAVE** | E o erro vai pros dois lados: tem gente que fica em casa quando era grave. |
 
@@ -121,10 +120,10 @@ A mesma estrutura da referência, esticada para caber o contexto, o produto e a 
 | Tempo | Cena | Texto na tela | 🎤 O que falar |
 |---|---|---|---|
 | **0:45 a 0:46** | 🎥 A (mais perto) | "mas" ➜ **POR QUÊ?** (branco, enorme) | Mas por quê? |
-| **0:46 a 0:51** | 📄 B | "me responde" ➜ **QUANDO** ➜ "foi a última vez que você" ➜ **PERGUNTOU** ➜ "antes de" ➜ **PESQUISAR?** | Me responde: quando foi a última vez que você perguntou pra alguém antes de pesquisar? |
+| **0:46 a 0:51** | 📄 B | "me responde" ➜ **QUANDO** ➜ "foi a última vez que você" ➜ **PERGUNTOU** ➜ "antes de" ➜ **PESQUISAR?** | Me responde: quando foi a última vez que você perguntou antes de pesquisar? |
 | **0:51 a 0:56** | 🎬 C | A carinha da vó ➜ "antes tinha a" **VÓ** ➜ "que já sabia se era" **VIROSE** | Antes tinha a vó, que olhava e já sabia se era virose ou se era pra correr. |
 | **0:56 a 1:00** | 🎬 C (você deitado na cama, à noite, rosto iluminado pelo celular, câmera de cima) | "e hoje a gente levou toda" **DÚVIDA** ➜ "pra uma" **BARRA DE PESQUISA** | Hoje a gente levou toda dúvida pra uma barra de pesquisa. |
-| **1:00 a 1:08** | 📄 B | As carinhas de antes, uma por corte: **DORZINHA** ➜ **NÃO PASSOU** ➜ **VOU PESQUISAR** ➜ **3º RESULTADO** | Uma dorzinha. Não passou. Vou pesquisar. [pausa] E no terceiro resultado você já tá se despedindo da família. |
+| **1:00 a 1:08** | 📄 B | As carinhas de antes, uma por corte: **DORZINHA** ➜ **NÃO PASSOU** ➜ **VOU PESQUISAR** ➜ **3º RESULTADO** | Uma dorzinha. Não passou. Pesquisou. [pausa] E no terceiro resultado já tá se despedindo da família. |
 
 #### 5 · A tese (1:08 a 1:20)
 
@@ -138,37 +137,45 @@ A mesma estrutura da referência, esticada para caber o contexto, o produto e a 
 | Tempo | Cena | Texto na tela | 🎤 O que falar |
 |---|---|---|---|
 | **1:20 a 1:23** | 🎥 A (mais perto) | "e se" ➜ **TIVESSE?** | E se tivesse alguém? |
-| **1:23 a 1:28** | 📄 B | `clipe_C_vira_tami.mp4` (a cara de pânico vira o avatar da Tami) ➜ "conheça a" **TAMI** | Foi isso que eu criei. A Tami: uma agente de saúde pessoal, no celular, de graça. |
+| **1:23 a 1:28** | 📄 B | `clipe_C_vira_tami.mp4` (a cara de pânico vira o avatar da Tami) ➜ "conheça a" **TAMI** | Foi isso que eu criei: a Tami, uma agente de saúde pessoal. |
 | **1:28 a 1:33** | 📱 D | "você conta" ➜ **DO SEU JEITO** (gravação: digitar a dor do joelho no judô) | Você conta o que sente, do seu jeito. |
 | **1:33 a 1:38** | 📱 D | "primeiro" ➜ **EMERGÊNCIA?** (tela com o botão do 192) | Primeiro ela vê se é emergência: se for, é um toque pro 192. |
 | **1:38 a 1:43** | 📱 D | "lembra delas?" ➜ **AS CARINHAS** (a escala de dor do app, tocar no 6) | Se não for, ela pergunta pouco. E lembra das carinhas? Aqui elas medem a sua dor. |
-| **1:43 a 1:49** | 📱 D | "e te dá o" ➜ **PRÓXIMO PASSO** (o resultado com os cuidados) | E te dá o próximo passo: UPA hoje, posto em breve ou cuidado em casa, com o que fazer até lá. |
+| **1:43 a 1:49** | 📱 D | "e te dá o" ➜ **PRÓXIMO PASSO** (o resultado com os cuidados) | E te dá o próximo passo: UPA hoje, posto em breve ou cuidar em casa. |
 | **1:49 a 1:54** | 📱 D | "o SUS" ➜ **MAIS PERTO** ➜ **RESUMO** (lista com "Como chegar" e o resumo para o atendimento) | Mostra o SUS mais perto e monta um resumo pro atendimento. |
 | **1:54 a 1:58** | 📄 B | `11h_familia.png`: **MÃE · PAI · VÓ** e "e você" | E cuida de quem você cuida: mãe, pai, vó... e você. |
 
-#### 7 · A confiança e o futuro (1:58 a 2:28)
+#### 7 · Por que usar a Tami (1:58 a 2:24)
+
+O objetivo deste bloco é um só: dar motivo para a pessoa abrir o link **hoje**. Cada linha é um benefício para quem assiste, e não uma característica técnica.
 
 | Tempo | Cena | Texto na tela | 🎤 O que falar |
 |---|---|---|---|
-| **1:58 a 2:00** | 🎥 A | "ela não é" ➜ **MÉDICA** (riscada em vermelho) | E não: ela não é médica. |
-| **2:00 a 2:06** | 📄 B | **NÃO DIAGNOSTICA** ➜ **NÃO INDICA REMÉDIO** ➜ "segue" **945 SINAIS** "com fonte" | Não diagnostica. Não indica remédio. E cada sinal de alerta tem fonte. |
-| **2:06 a 2:13** | 🎥 A | **99,5%** (gigante, atrás da sua cabeça) ➜ "dos urgentes foram pra" **UPA OU SAMU** ➜ "em" **10.000 CASOS** | Eu testei com dez mil casos: noventa e nove e meio por cento dos urgentes foram pra UPA ou SAMU. |
-| **2:13 a 2:19** | 📄 B | "cada pessoa no" ➜ **LUGAR CERTO** ➜ "na" ➜ **HORA CERTA** | A ideia é simples: cada pessoa no lugar certo, na hora certa. |
-| **2:19 a 2:28** | 📄 B | **HOJE** orienta ➜ **AMANHÃ** revisão médica ➜ **DEPOIS** acompanha (a linha do `17_roadmap.png`) | Hoje, ela orienta. Amanhã, revisão médica de toda a base. Depois, acompanha: te pergunta no dia seguinte como você tá. |
+| **1:58 a 2:04** | 🎥 A | **SEM BAIXAR** ➜ **SEM CONTA** ➜ **DE GRAÇA** (uma palavra por batida) | Sem baixar, sem conta, de graça. Abre o link e conversa, até às três da manhã. |
+| **2:04 a 2:09** | 📄 B | "antes de" ➜ **SAIR DE CASA** ➜ "você já sabe se é" ➜ **UPA, POSTO OU CASA** | Antes de sair de casa, você já sabe pra onde ir, sem perder horas na fila errada. |
+| **2:09 a 2:15** | 🎥 A | "e se for grave" ➜ **ELA NÃO DEIXA PASSAR** ➜ **99,5%** (gigante, atrás da sua cabeça) ➜ "dos urgentes foram pra UPA ou SAMU" ➜ "em" **10.000 CASOS** de teste | E se for grave, ela não deixa passar: em dez mil casos de teste, noventa e nove e meio por cento dos urgentes foram pra UPA ou SAMU. |
+| **2:15 a 2:24** | 📄 B | "ela não é" ➜ **MÉDICA** (riscada) ➜ **NÃO DIAGNOSTICA** ➜ **NÃO INDICA REMÉDIO** ➜ "sua localização" **NÃO FICA SALVA** | Ela não é médica: não diagnostica e não indica remédio. E a sua localização não fica guardada. |
 
-#### 8 · O fecho em loop (2:28 a 2:42)
+#### 8 · O fecho na escala de dor (2:24 a 2:50)
+
+O vídeo abre com "que cara você teria?" e com a escala de dor de carinhas. O fecho volta **na escala**, e responde a pergunta do começo.
 
 | Tempo | Cena | Texto na tela | 🎤 O que falar |
 |---|---|---|---|
-| **2:28 a 2:33** | 🎥 A (outro ângulo, mais perto, com o post-it limão) | "porque quem cuida de si fica" ➜ **MAIS TEMPO POR PERTO** | Porque quem cuida de si fica mais tempo por perto. |
-| **2:33 a 2:37** | 🎥 A (mesmo ângulo) | "então olha pra esse" ➜ **CÍRCULO** ➜ "de" **NOVO**. Você desenha no post-it o círculo, os **dois olhos de pílula** e **o sorriso**. | Então olha pra esse círculo de novo... |
-| **2:37 a 2:42** | 🎥 A | Você vira o post-it para a câmera ➜ "agora, o que você" ➜ **ENXERGA?** | ...e me fala: agora, o que você enxerga? |
+| **2:24 a 2:28** | 🎥 A (outro ângulo, mais perto, segurando uma tira de papel com as seis carinhas da escala, da feliz até a chorando) | "lembra da" ➜ **ESCALA** | Lembra da escala de dor do começo? Ela vai de zero a dez. |
+| **2:28 a 2:32** | 📄 B | As seis carinhas em fila, com 0, 2, 4, 6, 8 e 10 embaixo. Um círculo de caneta marca o **6** ➜ "a sua dor pode ser um" ➜ **6** | A sua dor pode ser um seis... |
+| **2:32 a 2:36** | 📄 B | A carinha de pânico do começo, com **10** do lado ➜ "mas a sua cara não precisa ser um" ➜ **10** | ...mas a sua cara não precisa ser um dez. |
+| **2:36 a 2:41** | 📄 B | A carinha de pânico vai se acalmando até ficar tranquila ➜ "quando você sabe o" ➜ **PRÓXIMO PASSO** ➜ "a dor continua, mas o" ➜ **PÂNICO VAI EMBORA** | Porque quando você sabe o próximo passo, a dor continua lá. Mas o pânico vai embora. |
+| **2:41 a 2:46** | 🎥 A (mesmo ângulo, olhando para a câmera) | "da próxima vez que doer" ➜ "antes de pesquisar" ➜ **PERGUNTA PRA TAMI**, com o link `tami-app.onrender.com` embaixo | Então, da próxima vez que doer, antes de pesquisar... pergunta pra Tami. |
+| **2:46 a 2:50** | 📄 B | `20_final.png`: o avatar, **"FALOU EM SAÚDE? TAMO AQUI."** e o link | Falou em saúde? Tamo aqui. |
 
-Sem tela final: termina na pergunta e recomeça sozinho. Para o YouTube da GS, se quiser, acrescente 2 segundos de `20_final.png` com "Falou em saúde? Tamo aqui." depois da pergunta.
+A tela final fica 1 segundo a mais, sem fala, para quem quiser anotar o link.
 
-**Contagem:** 421 palavras. No ritmo da referência (2,6 por segundo) dá 2min42s; com as pausas, cerca de 2min50s. Fica abaixo dos 3 minutos da GS, mas sem folga: fale no ritmo da referência, sem arrastar. Se passar, corte primeiro "Hoje ela tá em mais de sessenta línguas" e "A ideia é simples: cada pessoa no lugar certo, na hora certa".
+**Para a GS:** a banca pede roadmap. Na versão do YouTube, acrescente 3 segundos de `17_roadmap.png` (HOJE orienta ➜ PRÓXIMO revisão médica ➜ DEPOIS acompanha) logo depois da linha "Ela não é médica", sem fala, só com o beat.
 
-**Versão curta (60 s), para o Reels:** use só os blocos 1, 2 (sem "60 línguas"), 3 (só o 8 em 10), 4 (sem as carinhas), 5 e o 8, trocando o bloco 6 por uma frase: "Por isso eu criei a Tami: ela te diz o próximo passo."
+**Contagem:** 437 palavras. No ritmo da referência (2,6 por segundo) dá 2min48s; com as pausas, cerca de 2min55s. Fica abaixo dos 3 minutos da GS, mas sem folga: fale no ritmo da referência, sem arrastar. Se passar, corte primeiro "sem perder horas na fila errada" e "E a sua localização não fica guardada".
+
+**Versão curta (60 s), para o Reels:** use só os blocos 1, 2, 3 (só o 8 em 10), 4 (sem as carinhas), 5 e o 8, trocando os blocos 6 e 7 por uma frase: "Por isso eu criei a Tami: sem baixar, sem conta, ela te diz o próximo passo."
 
 ### Legenda para o post (sugestão)
 
@@ -183,7 +190,7 @@ Sem tela final: termina na pergunta e recomeça sozinho. Para o YouTube da GS, s
 
 1. **Formato:** grave **em pé (9:16)** se a prioridade for divulgar no Instagram e no TikTok; o mesmo vídeo vai para o YouTube. Se for só para a GS, deitado (16:9) fica melhor no computador da banca.
 2. **Celular no tripé**, à altura do peito, você sentado no chão ou no sofá com luz quente de lado. É a cena A.
-3. **Grave as falas A de uma vez**, e depois a última parte (2:28 a 2:42) **de outro ângulo, mais perto**, com o post-it limão e uma caneta azul-escura. Ensaie desenhar o rosto da Tami no post-it: círculo, dois tracinhos grossos para os olhos, bem separados, e um sorriso pequeno no meio.
+3. **Grave as falas A de uma vez**, e depois o fecho (2:24 a 2:46) **de outro ângulo, mais perto**, segurando uma tira de papel limão com as seis carinhas da escala desenhadas a caneta (da feliz até a chorando, com 0, 2, 4, 6, 8 e 10 embaixo). Na fala "a sua dor pode ser um seis", circule o 6 com a caneta, ao vivo.
 4. **A cena C da cama**: celular preso no alto, apontado para baixo, quarto escuro, só a luz do celular no seu rosto. Uns 5 segundos bastam.
 5. **No CapCut**: uma palavra por vez, no tempo exato da fala. Pequena em Poppins Bold e grande em fonte condensada grossa (a Anton com textura "gasta" é a mais parecida). Corte seco entre as cenas.
 6. **Música**: o beat da Tami (`beat/Tami_beat_89bpm_completo.mp3`) bem baixinho.
