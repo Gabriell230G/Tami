@@ -14,12 +14,12 @@ Vídeo de **até 3 minutos**: **1 minuto** para contar o que é a Tami e **2 min
 
 ## Antes de gravar (5 minutos de preparo)
 
-1. Abra quatro abas: o app (`https://tami-app.onrender.com`), o **Supabase** do projeto da Tami (Table Editor), os **Logs** do serviço no Render e o **VS Code** com o projeto.
+1. Abra os **slides do vídeo técnico** (Tami · Vídeo técnico, 13 slides, a fala de cada um está nas notas) e deixe só quatro abas no Chrome: o app (`https://tami-app.onrender.com`) e o **Supabase** com `t_tami_conversa`, `t_tami_resposta` e `t_tami_dor` (já filtradas em `id_conversa > 7`, para não aparecer relato de testador). Código, figuras e log do Render já estão nos slides: não precisa abrir VS Code nem GitHub.
 2. Abra o app uma vez antes, para o Render "acordar" (a primeira resposta pode levar uns 30 segundos).
 3. No app, crie uma conta **só para o vídeo**: apelido "Teste GS", contato `teste.gs@exemplo.com`. Nunca use dados reais.
 4. No Supabase, as tabelas aparecem em minúsculas (`t_tami_conversa`): o PostgreSQL guarda assim os nomes sem aspas.
 5. **Nunca** mostre a aba de variáveis do Render nem o `tami.properties`: a senha do banco não pode aparecer.
-6. No VS Code, aumente a fonte (Ctrl + `+` três vezes) para o código ficar legível no vídeo.
+6. Grave os slides no modo **Apresentar** (tela cheia). Para trocar entre slide e app, use Alt + Tab.
 
 ---
 
@@ -31,23 +31,23 @@ O vídeo tem **duas partes**: no primeiro minuto você conta **o que é a Tami**
 
 | Tempo | 🖥️ ⌨️ Na tela e o que clicar | 🎤 O que falar |
 |---|---|---|
-| **0:00 a 0:14**<br>O gancho | 🎥 Você falando para a câmera, meio rindo, de quimono se tiver. Na tela: "é só eu ou" ➜ **TODA VEZ QUE EU ME MACHUCO** ➜ uma palavra por vez: **UPA? POSTO? PRONTO-SOCORRO? CASA?** | É só eu, ou toda vez que você se machuca fica com a mesma dúvida? [pausa] Vou pra UPA? Pro posto? Pro pronto-socorro? Ou fico em casa? Eu treino judô, então essa dúvida aparece toda semana. |
-| **0:14 a 0:18**<br>Não é só você | 🖥️ **8 EM 10** ➜ "não eram" **URGENTES**. Fonte no canto: *Prefeitura de BH, jan. a jul. de 2026 (76,2%)*. | E não é só a gente: em BH, quase oito em cada dez atendimentos na UPA não eram urgentes. |
-| **0:18 a 0:26**<br>A Tami | 🖥️ O avatar da Tami e o slogan. | Pra isso eu criei a Tami: uma agente de saúde no celular, de graça. [pausa] Bora ver o que ela faz e como foi feita. |
+| **0:00 a 0:14**<br>O gancho | 🎥 Você falando para a câmera, meio rindo, de quimono se tiver, com o **slide 1 (capa)** ao fundo ou em corte. ➜ **Slide 2 (A dúvida)**: os quatro papéis UPA? POSTO? PRONTO-SOCORRO? OU CASA? | É só eu, ou toda vez que você se machuca fica com a mesma dúvida? [pausa] Vou pra UPA? Pro posto? Pro pronto-socorro? Ou fico em casa? Eu treino judô, então essa dúvida aparece toda semana. |
+| **0:14 a 0:18**<br>Não é só você | 🖥️ Ainda no **slide 2**: o **8 EM 10** com a fonte (Prefeitura de BH, jan. a jul. de 2026, 76,2%). | E não é só a gente: em BH, quase oito em cada dez atendimentos na UPA não eram urgentes. |
+| **0:18 a 0:26**<br>A Tami | 🖥️ **Slide 3 (A Tami)**. | Pra isso eu criei a Tami: uma agente de saúde no celular, de graça. [pausa] Bora ver o que ela faz e como foi feita. |
 | **0:26 a 0:47**<br>Como ela funciona | ⌨️ Gravação do app: digitar "torci o tornozelo no treino" ➜ as perguntas ➜ a escala de dor ➜ o resultado "cuidar em casa" com os cuidados ➜ "Usar minha localização" (num lugar público). | Você conta o que sente, do seu jeito. Ela confere primeiro se é emergência. Depois pergunta pouco e diz o próximo passo: SAMU, UPA hoje, posto em breve ou cuidar em casa. |
-| **0:47 a 0:58**<br>O limite | 🖥️ **NÃO DIAGNOSTICA · NÃO INDICA REMÉDIO · 945 SINAIS COM FONTE** | Ela não diagnostica e não indica remédio: segue regras com fonte. [pausa] Agora, como isso foi feito. |
+| **0:47 a 0:58**<br>O limite | 🖥️ Volta ao **slide 3**: o papel verde "Não diagnostica e não indica remédio". | Ela não diagnostica e não indica remédio: segue regras com fonte. [pausa] Agora, como isso foi feito. |
 
 ### Parte 2 · Como foi feita (0:58 a 2:58)
 
 | Tempo | 🖥️ ⌨️ Na tela e o que clicar | 🎤 O que falar |
 |---|---|---|
-| **0:58 a 1:15**<br>O desenho | 🖥️ Figura `04_arquitetura.png`. ⌨️ Aba **Logs** do Render, na linha "Tami no ar". | Por trás, é um programa em Java num servidor na internet, que guarda tudo num banco PostgreSQL. [pausa] O app conversa com o Java, e o Java conversa com o banco. |
-| **1:15 a 1:35**<br>Gravar | ⌨️ App, logado como "Teste GS", com o painel **"Por dentro"** (botão `<>`) aberto ➜ mandar o relato. 🖥️ O painel mostra `POST /api/conversas` e `INSERT INTO T_TAMI_CONVERSA`. ⌨️ Responder até o resultado. ⌨️ Supabase ➜ `t_tami_conversa` e `t_tami_resposta`: as linhas novas. | Esse painel mostra tudo por dentro. Quando eu mando o relato, o Java grava uma conversa nova no banco: é uma inserção. [pausa] No fim, ele grava o destino e, como eu dei permissão, cada resposta, tudo de uma vez. Se der erro no meio, nada fica pela metade. |
+| **0:58 a 1:15**<br>O desenho | 🖥️ **Slide 4 (Arquitetura)** ➜ **slide 5 (No ar)**, com as linhas reais do log do Render. | Por trás, é um programa em Java num servidor na internet, que guarda tudo num banco PostgreSQL. [pausa] O app conversa com o Java, e o Java conversa com o banco. |
+| **1:15 a 1:35**<br>Gravar | 🖥️ **Slide 6 (O banco)** por 2 segundos. ⌨️ App, logado como "Teste GS", com o painel **"Por dentro"** (botão `<>`) aberto ➜ mandar o relato. 🖥️ O painel mostra `POST /api/conversas` e `INSERT INTO T_TAMI_CONVERSA`. ⌨️ Responder até o resultado. ⌨️ Supabase ➜ `t_tami_conversa` e `t_tami_resposta`: as linhas novas. | Esse painel mostra tudo por dentro. Quando eu mando o relato, o Java grava uma conversa nova no banco: é uma inserção. [pausa] No fim, ele grava o destino e, como eu dei permissão, cada resposta, tudo de uma vez. Se der erro no meio, nada fica pela metade. |
 | **1:35 a 1:50**<br>Atualizar e ler | ⌨️ App ➜ "Onde dói, e quanto?" ➜ 6 ➜ Guardar ➜ 3 ➜ Guardar. ⌨️ Supabase ➜ `t_tami_dor`: o nível foi de 6 para 3. ⌨️ App ➜ "Ver resumo para o atendimento". | Se eu marco dor seis e depois mudo pra três, ele atualiza a mesma linha. [pausa] E o resumo pro atendimento é uma leitura que junta tudo. |
-| **1:50 a 2:08**<br>Os dados | ⌨️ VS Code: `servico/ConversaService.java`, linhas 120 e 121 (a permissão de saúde), por 3 segundos. ⌨️ App ➜ Meus dados: os botões "Baixar meus dados" e "Apagar tudo". | Que dados ficam? Sem conta, só idade, parte do corpo e destino, pra estatística. O que a pessoa escreve só é guardado se ela tiver conta e der permissão. [pausa] Ela pode baixar os dados ou apagar tudo. E a localização nunca é gravada. |
-| **2:08 a 2:25**<br>O que veio do curso | ⌨️ VS Code: `dao/DorDAO.java` linha 14 (`extends BaseDAO`) e linha 18 (o `inserir`). 🖥️ Figura `06_der.png` (as onze tabelas e as ligações entre elas), por 3 segundos, sem fala. | Do curso, usei orientação a objetos: cada parte do banco tem uma classe que cuida dela, o DAO, e todas herdam de uma classe base. Os comandos usam PreparedStatement, que impede que o texto da pessoa vire comando no banco. |
-| **2:25 a 2:40**<br>Desafio 1 | ⌨️ VS Code: `servico/LocalService.java`, linhas 36 a 38. 🖥️ No app, a lista de UPAs com "Como chegar". | Primeiro desafio: achar a UPA real mais perto, na base do Ministério da Saúde. Ela devolve só vinte por vez. Então busco várias páginas ao mesmo tempo e guardo por doze horas, pra ficar rápido. |
-| **2:40 a 2:58**<br>Desafio 2 e fim | 🖥️ Figura `11_kanban.png` (o quadro de tarefas) ➜ Figura `20_matriz.png` ➜ no fim, o avatar com **"Falou em saúde? Tamo aqui."** | Segundo desafio: melhorar sem perder segurança. Trabalhei em ciclos curtos, com um quadro de tarefas, e cada mudança roda dez mil casos de teste. Se um urgente vai pra casa, eu desfaço. [pausa] Resultado: noventa e nove e meio por cento dos urgentes no lugar certo. Falou em saúde? Tamo aqui. |
+| **1:50 a 2:08**<br>Os dados | 🖥️ **Slide 7 (Os dados)**, com `ConversaService.java` linhas 120 e 121 (a permissão de saúde). ⌨️ App ➜ Meus dados: os botões "Baixar meus dados" e "Apagar tudo". | Que dados ficam? Sem conta, só idade, parte do corpo e destino, pra estatística. O que a pessoa escreve só é guardado se ela tiver conta e der permissão. [pausa] Ela pode baixar os dados ou apagar tudo. E a localização nunca é gravada. |
+| **2:08 a 2:25**<br>O que veio do curso | 🖥️ **Slide 8 (Do curso)**, com `DorDAO.java` linhas 14 a 21 (`extends BaseDAO`, o `inserir` e o `PreparedStatement`) ➜ **slide 9 (11 tabelas)** por 3 segundos, sem fala. | Do curso, usei orientação a objetos: cada parte do banco tem uma classe que cuida dela, o DAO, e todas herdam de uma classe base. Os comandos usam PreparedStatement, que impede que o texto da pessoa vire comando no banco. |
+| **2:25 a 2:40**<br>Desafio 1 | 🖥️ **Slide 10 (Desafio 1)**, com `LocalService.java` linhas 36 a 38. Se quiser, mostre no app a lista com "Como chegar". | Primeiro desafio: achar a UPA real mais perto, na base do Ministério da Saúde. Ela devolve só vinte por vez. Então busco várias páginas ao mesmo tempo e guardo por doze horas, pra ficar rápido. |
+| **2:40 a 2:58**<br>Desafio 2 e fim | 🖥️ **Slide 11 (Desafio 2)** ➜ **slide 12 (Resultado, 99,5%)** ➜ **slide 13**: o avatar com **"Falou em saúde? Tamo aqui."** | Segundo desafio: melhorar sem perder segurança. Trabalhei em ciclos curtos, com um quadro de tarefas, e cada mudança roda dez mil casos de teste. Se um urgente vai pra casa, eu desfaço. [pausa] Resultado: noventa e nove e meio por cento dos urgentes no lugar certo. Falou em saúde? Tamo aqui. |
 
 ## Contagem
 

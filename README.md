@@ -82,6 +82,7 @@ As orientações seguem **regras escritas a partir de materiais públicos de sa�
 A documentação completa do projeto (FIAP, Global Solution 2026, CitizenTech) está em **[docs/Tami_GS2026_Documentacao.pdf](docs/Tami_GS2026_Documentacao.pdf)**: problema e público, arquitetura, banco de dados, fluxo e telas, especificações, testes com estatística, métodos ágeis e desafios técnicos.
 
 - Diagramas e prints em [docs/diagramas/](docs/diagramas/)
+- Vídeos no YouTube: [pitch](https://youtube.com/shorts/PQwOoTw_ibQ) e [vídeo técnico](https://youtu.be/ulI5rDNCbj8)
 - Roteiros dos vídeos: [pitch](docs/ROTEIRO_VIDEO_1_PITCH.md) e [técnico](docs/ROTEIRO_VIDEO_2_TECNICO.md)
 
 ## Teste o app
