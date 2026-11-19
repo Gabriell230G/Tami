@@ -70,7 +70,7 @@ Dê uma nota de 0 a 10 para cada critério, com **uma frase de motivo** e **a fa
 | Gancho (0 a 5 s) | Prende antes do segundo 3? Faz a pessoa se ver no vídeo? |
 | Retenção no meio | Os dois ganchos funcionam? Tem trecho em que a pessoa sairia? |
 | Clareza da proposta | Em uma frase, dá para entender o que a Tami faz? |
-| Valor percebido | Fica claro por que usar **hoje**? Os casos leves (lesão, músculo, gripe) aparecem tanto quanto a emergência? |
+| Valor percebido | Fica claro por que usar **hoje**? Os casos leves (lesão, músculo, torção) aparecem tanto quanto a emergência? |
 | Prova e confiança | Os números entram na hora certa, sem parecer palestra? |
 | Emoção | Tem um momento que toca (família, medo, alívio)? |
 | Humor | As piadas são naturais e não cansam? |
@@ -87,7 +87,7 @@ Entregue:
 
 1. **Três opções de final**, cada uma com a fala completa e o que aparece na tela, e diga qual você escolhe e por quê. Os finais precisam voltar nas carinhas da escala de dor e terminar com "Falou em saúde? Tamo aqui."
 2. **O roteiro completo, versão longa**, em tabela: `Tempo | Cena (A, B, C ou D) | Texto na tela (pequeno ➜ GRANDE) | O que falar`. Marque em negrito a palavra que fica grande na tela.
-3. Um bloco obrigatório sobre **os casos que não são urgentes**, com um exemplo concreto e cotidiano (músculo distendido no treino, torção no tornozelo, gripe forte), mostrando o cuidado em casa, o que é normal sentir e o sinal de alerta para procurar atendimento.
+3. Um bloco obrigatório sobre **os casos que não são urgentes**, com um exemplo concreto e cotidiano (músculo distendido no treino, torção no tornozelo, pancada), mostrando o cuidado em casa, o que é normal sentir e o sinal de alerta para procurar atendimento.
 4. **A contagem de palavras** e a duração estimada.
 5. **A versão curta (até 60 s)**, tirada da longa.
 6. **A legenda do post** (até 4 linhas, com o link) e **3 opções de título** para o YouTube.

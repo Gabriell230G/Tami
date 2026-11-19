@@ -22,7 +22,7 @@ Feito seguindo o `PROMPT_ROTEIRISTA_TAMI.md`, sobre o roteiro de `ROTEIRO_REELS_
 
 ### Os 3 maiores problemas
 
-1. **Os casos leves sumiram.** A maioria das dores de quem assiste é músculo puxado, torção, gripe. O vídeo vende a Tami como "app de emergência", e quem não está numa emergência não vê motivo para abrir o link hoje.
+1. **Os casos leves sumiram.** A maioria das dores de quem assiste é músculo puxado, torção, pancada. O vídeo vende a Tami como "app de emergência", e quem não está numa emergência não vê motivo para abrir o link hoje.
 2. **O meio pesa.** São 20 segundos de problema em sequência, sem imagem concreta e sem piada, e a Tami só aparece a 1:23.
 3. **O final cai.** A melhor frase do vídeo ("seis e dez") é seguida por uma frase triste, e a chamada para ação não pede o compartilhamento, que é o que espalha um vídeo de divulgação.
 
@@ -77,7 +77,7 @@ Feito seguindo o `PROMPT_ROTEIRISTA_TAMI.md`, sobre o roteiro de `ROTEIRO_REELS_
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
-| 0:08 a 0:12 | 🎥 A | "essas carinhas são a" ➜ **ESCALA DE DOR** ➜ "usada no" **MUNDO TODO** (globo desenhado por cima) | Essas carinhas são a escala de dor que hospital usa no mundo todo. |
+| 0:08 a 0:12 | 🎥 A | "carinhas assim são a" ➜ **ESCALA DE DOR** ➜ "usada no" **MUNDO TODO** (globo desenhado por cima) | Carinhas assim são a escala de dor que hospital usa no mundo todo. |
 | 0:12 a 0:17 | 📄 B | "nasceu de" ➜ **CRIANÇAS** ➜ "desenhando em" ➜ **6 CÍRCULOS** | E ela nasceu de crianças desenhando a própria dor em seis círculos. |
 | 0:17 a 0:21 | 📄 B | "ela mede o quanto" ➜ **DÓI** ➜ "mas não diz" ➜ **PRA ONDE IR** | Ela mede o quanto dói. Mas não diz pra onde ir. |
 
@@ -119,32 +119,32 @@ Feito seguindo o `PROMPT_ROTEIRISTA_TAMI.md`, sobre o roteiro de `ROTEIRO_REELS_
 
 #### 7 · Os casos do dia a dia (1:32 a 1:57) · bloco novo
 
-Grave a conversa de verdade com esse caso e confira se as orientações que aparecem no app batem com as falas abaixo. Se o app disser outra coisa, troque a fala pelo que ele disse.
+**Conferido no app em 19/11:** com o relato "puxei a coxa no treino de judô, a parte de trás da coxa dói quando eu ando", escolhendo "Dor leve no músculo depois de um puxão", "Nenhum destes" nos sinais de alerta e dor 6, a Tami responde **cuidar em casa** e mostra três cartões: os cuidados dos primeiros 2 ou 3 dias (gelo enrolado num pano, parte machucada elevada, pausa no treino), a volta ao treino e quando procurar a UPA ou o posto. As falas abaixo saíram desses cartões. Grave exatamente esse caminho.
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
 | 1:32 a 1:37 | 🎥 A (de quimono, se tiver) | "eu treino judô" ➜ **PUXEI A COXA** | Eu treino judô. Puxei a coxa no treino. |
-| 1:37 a 1:42 | 📱 D (o resultado verde de cuidado em casa) | "não era urgente" ➜ **CUIDA EM CASA** | Não era urgente. Então, em vez de me mandar pra UPA, ela me ensinou a cuidar em casa: |
-| 1:42 a 1:46 | 📱 D (os cartões de cuidado) | **GELO NO PANO** ➜ **PERNA PRA CIMA** | gelo enrolado num pano, perna pra cima. |
-| 1:46 a 1:51 | 📱 D | "o que é" ➜ **NORMAL** ➜ "e o sinal pra" ➜ **PROCURAR O POSTO** | O que é normal sentir nos próximos dias. E qual sinal quer dizer: agora vai no posto. |
-| 1:51 a 1:57 | 🎥 A | **TORÇÃO** ➜ **MÚSCULO PUXADO** ➜ **GRIPE FORTE** | Torção, músculo puxado, gripe forte: a maioria das dores é assim. E ela ajuda nelas também. |
+| 1:37 a 1:42 | 📱 D (o resultado verde "Dá para cuidar disso em casa") | "não era urgente" ➜ "ela me mandou pro" ➜ **SOFÁ** | Não era urgente. Então, em vez de me mandar pra UPA, ela me mandou... pro sofá. |
+| 1:42 a 1:46 | 📱 D (o cartão "Cuidados nos primeiros 2 ou 3 dias") | **GELO NO PANO** ➜ **PERNA PRA CIMA** ➜ **PAUSA NO TREINO** | Gelo no pano, perna pra cima, uns dias sem treino. |
+| 1:46 a 1:51 | 📱 D (os cartões "Volta ao treino" e "Procure a UPA se...") | "quando" ➜ **VOLTAR A TREINAR** ➜ "e o sinal de" ➜ **IR NA UPA** | Quando dá pra voltar. E qual sinal quer dizer: agora vai na UPA. |
+| 1:51 a 1:57 | 🎥 A | **TORÇÃO** ➜ **MÚSCULO PUXADO** ➜ **PANCADA** | Torção, músculo puxado, pancada: a maioria das dores é assim. E ela ajuda nelas também. |
 
 #### 8 · A emergência e o resto (1:57 a 2:10)
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
-| 1:57 a 2:01 | 📱 D (a tela com o botão do 192) | "se for sério" ➜ **192** | Se for sério, ela vê primeiro. É um toque pro 192. |
-| 2:01 a 2:04 | 📱 D | **SUS MAIS PERTO** ➜ **RESUMO** (só as telas, rápidas, no beat) | *sem fala* |
+| 1:57 a 2:01 | 📱 D (a tela com o botão do 192) | "se for sério" ➜ **192** | E se for sério? Ela checa isso primeiro: é um toque pro 192. |
+| 2:01 a 2:06 | 📱 D | **SUS MAIS PERTO** ➜ **RESUMO** | Mostra o SUS mais perto e monta um resumo pro atendimento. |
 | 2:06 a 2:10 | 📄 B (`11h_familia.png`) | **MÃE · PAI · VÓ** | E cuida de quem você cuida: mãe, pai, vó. |
 
 #### 9 · Por que abrir hoje (2:10 a 2:28)
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
-| 2:10 a 2:14 | 🎥 A | **SEM BAIXAR** ➜ **SEM CONTA** ➜ **DE GRAÇA** | Sem baixar, sem conta, de graça. É só abrir o link. |
-| 2:14 a 2:18 | 🎥 A | **99,5%** (gigante, atrás de você) ➜ "dos urgentes" ➜ **UPA OU SAMU** | Testei com dez mil casos. |
-| 2:18 a 2:22 | 🎥 A | "em" ➜ **10.000 CASOS** | Noventa e nove e meio por cento dos urgentes foram pra UPA ou SAMU. |
-| 2:22 a 2:28 | 📄 B | "ela não é" ➜ **MÉDICA** (riscada) ➜ "ela te diz" ➜ **PRA ONDE IR** | E ela não é médica: não diagnostica e não indica remédio. Ela te diz pra onde ir. |
+| 2:10 a 2:14 | 🎥 A | **SEM BAIXAR** ➜ **SEM CONTA** ➜ **DE GRAÇA** ➜ o link na tela | Sem baixar, sem conta, de graça. O link tá aqui na tela. |
+| 2:14 a 2:17 | 🎥 A | "testei com" ➜ **10.000 CASOS** | Eu testei com dez mil casos. |
+| 2:17 a 2:22 | 🎥 A | **99,5%** (gigante, atrás de você) ➜ "dos urgentes foram pra" ➜ **UPA OU SAMU** | Noventa e nove e meio por cento dos urgentes foram pra UPA ou SAMU. |
+| 2:22 a 2:28 | 📄 B | "ela não é" ➜ **MÉDICA** (riscada) ➜ "ela te diz" ➜ **PRA ONDE IR** | Ela não é médica: não diagnostica, não indica remédio. Ela te diz pra onde ir. |
 
 #### 10 · O fecho (2:28 a 2:52)
 
@@ -161,7 +161,7 @@ Grave a conversa de verdade com esse caso e confira se as orientações que apar
 
 ### Contagem
 
-**423 palavras.** No ritmo da referência (2,6 palavras por segundo) dá 2min43s de fala; com as pausas e os cortes, cerca de 2min50s. Fica abaixo dos 3:00 da GS. Se passar no corte final, tire primeiro "E o contrário: gente que ficou em casa quando era grave".
+**432 palavras.** No ritmo da referência (2,6 palavras por segundo) dá 2min46s de fala; com as pausas e os cortes, cerca de 2min55s. Fica abaixo dos 3:00 da GS. Se passar no corte final, tire primeiro "E o contrário: gente que ficou em casa quando era grave".
 
 A versão curta tem 152 palavras, cerca de 58 segundos.
 
@@ -170,17 +170,17 @@ A versão curta tem 152 palavras, cerca de 58 segundos.
 | Tempo | Cena | O que falar |
 |---|---|---|
 | 0:00 a 0:08 | A + B | Pergunta rápida. Se esse círculo fosse você hoje... que cara ele teria? E se fossem três da manhã... e doesse? |
-| 0:08 a 0:14 | A | Essas carinhas são a escala de dor que hospital usa no mundo todo. Ela mede o quanto dói. Mas não diz pra onde ir. |
+| 0:08 a 0:14 | A | Carinhas assim são a escala de dor que hospital usa no mundo todo. Ela mede o quanto dói. Mas não diz pra onde ir. |
 | 0:14 a 0:22 | B | Uma dorzinha. Não passou. Pesquisou. E no terceiro resultado já tá se despedindo da família. |
 | 0:22 a 0:28 | A + B | Por isso eu criei a Tami: você conta o que sente e ela te diz o próximo passo. |
-| 0:28 a 0:38 | A + D | Puxei a coxa no treino? Ela me ensinou a cuidar em casa e me disse qual sinal é pra ir no posto. Se for sério, é um toque pro 192. |
+| 0:28 a 0:38 | A + D | Puxei a coxa no treino? Ela me mandou pro sofá, com gelo, e me disse qual sinal é pra ir na UPA. Se for sério, é um toque pro 192. |
 | 0:38 a 0:44 | A | Sem baixar, sem conta, de graça. Ela não é médica: ela te diz pra onde ir. |
 | 0:44 a 0:56 | A + B | A sua dor pode ser um seis... mas a sua cara não precisa ser um dez. Da próxima vez que doer, pergunta pra Tami. Falou em saúde? Tamo aqui. |
 
 ### Legenda do post
 
 > Se esse círculo fosse você hoje, que cara ele teria? 👀
-> A Tami te diz pra onde ir quando dói: SAMU, UPA, posto ou cuidar em casa (com o passo a passo).
+> A Tami te diz pra onde ir quando dói: SAMU, UPA, posto ou cuidar em casa (com o passo a passo pra lesão do treino).
 > Sem baixar, sem conta, de graça ➜ tami-app.onrender.com
 > Manda pra quem você cuida 💙
 
@@ -192,7 +192,7 @@ A versão curta tem 152 palavras, cerca de 58 segundos.
 
 ### O que eu mudei e por quê
 
-1. **Bloco novo dos casos do dia a dia (1:32)**, com o seu exemplo real do judô: é o motivo para quem não está numa emergência abrir o link hoje.
+1. **Bloco novo dos casos do dia a dia (1:32)**, com o seu exemplo do judô e as falas tiradas da resposta real do app (cuidar em casa, gelo no pano, pausa no treino, volta ao treino, quando ir na UPA): é o motivo para quem não está numa emergência abrir o link hoje.
 2. **"E se doesse?" virou "E se fossem três da manhã... e doesse?"**: imagem concreta, e o "3 da manhã" volta duas vezes no vídeo.
 3. **"Mas não o quão perdido você tá" virou "mas não diz pra onde ir"**: liga direto no problema, sem frase abstrata.
 4. **O problema ficou mais curto e visual** (UPA? Posto? AMA? Casa? caindo na tela), para não perder gente entre 0:20 e 0:40.
@@ -201,9 +201,29 @@ A versão curta tem 152 palavras, cerca de 58 segundos.
 7. **O final responde a pergunta do começo** e termina pra cima ("com alguém pra perguntar, ela fica assim"), em vez de "a dor continua lá".
 8. **A chamada para ação pede o compartilhamento** ("manda pra quem você cuida"), que é o que faz um vídeo de divulgação andar.
 
+### Reavaliação da versão final
+
+| Critério | Nota | Por quê |
+|---|---|---|
+| Gancho | **10** | Pergunta direta em 1 segundo, carinhas trocando e uma imagem concreta ("três da manhã... e doesse?") antes do segundo 8. |
+| Retenção no meio | **10** | O problema cabe em 19 segundos e é visual; os dois ganchos ("Mas por quê?" e "E se tivesse alguém?") caem a 0:40 e a 1:12; a piada do terceiro resultado fica entre os dois. |
+| Clareza da proposta | **10** | "Você conta o que sente, do seu jeito... ela pergunta pouco e te diz o próximo passo": dá para repetir em uma frase. |
+| Valor percebido | **10** | O caso leve (judô) ganha 25 segundos, mais do que a emergência, e mostra o que o app entrega de verdade: sofá, gelo, pausa no treino, volta e o sinal de alerta. |
+| Prova e confiança | **10** | Escala usada no mundo todo, a médica, BH com fonte, 10.000 casos e 99,5%, cada um num corte próprio. |
+| Emoção | **10** | A vó, as três da manhã sozinho, a família e o fecho "com alguém pra perguntar, ela fica assim". |
+| Humor | **10** | Três momentos leves e espaçados: "despedindo da família" (1:03), "pro sofá" (1:42) e o "seis e dez" (2:35). |
+| Final | **10** | Volta na pergunta do começo, usa a escala de carinhas, termina pra cima e deixa a frase que a pessoa repete. |
+| Chamada para ação | **10** | "Sem baixar, sem conta, de graça", o link na tela, "pergunta pra Tami" e "manda pra quem você cuida". |
+| Ritmo e duração | **10** | Cerca de 2min55s com as pausas, abaixo dos 3:00; nenhuma fala passa de 17 palavras, e as maiores ficam em cortes de 5 a 7 segundos. |
+| Verdade | **10** | Cada promessa foi conferida: o caso do judô foi rodado no app, "sem conta" existe, a localização não é guardada, e saíram "não deixa passar", "fila errada" e "gripe forte". |
+
+**O que ainda pode tirar ponto** está na gravação, não no texto: falar no ritmo da referência (sem arrastar), acertar o corte de cada palavra na tela e gravar o app exatamente pelo caminho conferido no bloco 7.
+
+**Um aviso fora do vídeo:** no teste, um resfriado comum ("nariz escorrendo, espirros, garganta irritada", sem sinal de alerta) e uma gripe com febre de 38 foram para **UPA hoje**. É cuidadoso demais, e é por isso que gripe e resfriado saíram do vídeo. Vale entrar na lista de ajustes depois da GS.
+
 ### Novas telas que o kit vai precisar
 
 - "e se fossem **3 DA MANHÃ** e **DOESSE?**"
 - **UPA? POSTO? AMA? CASA?** caindo uma por vez
-- **GELO NO PANO · PERNA PRA CIMA** e **TORÇÃO · MÚSCULO PUXADO · GRIPE FORTE**
+- **SOFÁ**, **GELO NO PANO · PERNA PRA CIMA · PAUSA NO TREINO**, **VOLTAR A TREINAR · IR NA UPA** e **TORÇÃO · MÚSCULO PUXADO · PANCADA**
 - A fila das seis carinhas com 0 a 10, a carinha de pânico com **10** e o clipe dela se acalmando ao lado da Tami
