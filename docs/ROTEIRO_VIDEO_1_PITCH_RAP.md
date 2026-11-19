@@ -85,11 +85,11 @@ Tudo rima. Cada linha é um compasso e as rimas vêm em pares (a linha 1 rima co
 | Tempo | 🖥️ Na tela | 🎤 O que rimar |
 |---|---|---|
 | **1:15 a 1:21** | `10_dois_lados.png` (a UPA cheia e a casa). | Fila cheia de quem podia espe**rar**... [pausa] e espera longa pra quem não **podia**. |
-| **1:21 a 1:28** | `19_com_a_tami.png` (o rosto da Tami) ➜ `11a_conversa.png` com a gravação do app. | O nome dela é Tami: saúde no bolso, na hora, de **graça**. / Você conta do seu jeito, ela escuta o que se **passa**. |
-| **1:28 a 1:35** | `11b_emergencia.png` (a tela com o botão do 192). | Se for emergência, ela não enrola, não deixa pra de**pois**: / é um toque na tela e você já liga pro um-nove-**dois**. |
-| **1:35 a 1:42** | `11c_poucas_perguntas.png` (a escala de dor) ➜ `11d_proximo_passo.png`. | Se não for, pergunta pouco, pergunta certo, sem ser**mão**, / e te dá o próximo passo, com o que fazer até lá na **mão**. |
+| **1:21 a 1:28** | `19_com_a_tami.png` (o rosto da Tami) ➜ `11a_conversa.png` com a gravação do app. | Ela é a Tami: saúde no bolso, na hora, de **graça**. / Cê conta do seu jeito, ela escuta o que se **passa**. |
+| **1:28 a 1:35** | `11b_emergencia.png` (a tela com o botão do 192). | Se for emergência, não enrola, não deixa pra de**pois**: / é um toque na tela e cê já liga pro um-nove-**dois**. |
+| **1:35 a 1:42** | `11c_poucas_perguntas.png` (a escala de dor) ➜ `11d_proximo_passo.png`. | Se não for, pergunta pouco, pergunta certo, sem ser**mão**, / e te dá o próximo passo, com o plano na **mão**. |
 | **1:42 a 1:49** | `11e_mais_perto.png` (a lista com "Como chegar"). | SAMU, UPA, posto ou cuidado no **lar**: / ela te mostra o caminho e o SUS mais perto pra che**gar**. |
-| **1:49 a 1:56** | `11f_resumo.png` ➜ `11g_quem_voce_cuida.png`. | Monta um resumo pro atendimento, pra você não esque**cer**, / e cuida de quem você cuida: mãe, pai, vó, quem precisar de **você**. |
+| **1:49 a 1:56** | `11f_resumo.png` ➜ `11g_quem_voce_cuida.png`. | Monta um resumo pro atendimento, pra não esque**cer**, / e cuida de quem cê cuida: mãe, pai, vó... e **você**. |
 | **1:56 a 2:03** | `12_nao_diagnostica.png` ➜ `13_nao_remedio.png` ➜ `14_945_sinais.png`. | E não, ela não é médica: não diagnostica, não re**ceita**, / segue regra com fonte, sinal por sinal, conta **feita**. |
 | **2:03 a 2:09** | `15_numero_995.png` (99,5% · 10.000 casos). | Testei com dez mil casos, e o número é de res**peito**: / noventa e nove e meio dos urgentes no caminho **certo**. |
 | **2:09 a 2:20** | `16_ods.png` ➜ `17_roadmap.png`. | Saúde pra todos, menos desigualdade na **fila**. / Hoje ela orienta. Amanhã, um médico re**visa**. / Depois ela acompanha e te chama no outro **dia**: / "e aí, melhorou?", que é o que um amigo fa**ria**. |
@@ -156,6 +156,22 @@ Se passar de 3:00 no corte final, tire primeiro o par "Monta um resumo... / e cu
 **Cuidado antes de usar:** um beat de produtor quase nunca é livre. Normalmente ele é "free for non-profit" (exige crédito no título, por exemplo "prod. Fulano") ou exige comprar uma licença. Além disso, como esse beat já está numa música lançada, o YouTube pode reconhecer o áudio e marcar o seu vídeo com uma reivindicação de direitos autorais, ou até bloquear em algum país. Num vídeo que a banca vai assistir hoje, isso é um risco.
 
 **O mais seguro para hoje:** um beat parecido e livre, na **Biblioteca de Áudio do YouTube** (no YouTube Studio, gênero "Hip Hop & Rap", humor "Calmo" ou "Triste") ou na biblioteca do CapCut. Procure **por volta de 89 BPM, com piano ou violão e batida leve**. Como o roteiro foi escrito em 89 BPM, qualquer beat nessa faixa encaixa nas rimas. Anote o nome da faixa na descrição do vídeo.
+
+## O que o vídeo de referência ensina
+
+Analisei a gravação do vídeo do Nauta que você mandou:
+
+- **O tempo é 89 BPM**, o mesmo que o Shazam deu para o beat. Cada compasso dura uns 2,7 segundos. O roteiro foi escrito nesse tempo, então encaixa.
+- **As linhas dele são curtas**: cabem duas por compasso. As nossas são mais longas, uma por compasso, com 12 a 14 sílabas. Se alguma linha ficar apertada quando você ensaiar, fale mais solto e corte uma palavra pequena ("o", "que", "e").
+- **A energia sobe no fim de cada estrofe** (a cada 3 ou 4 compassos) e volta a baixar no começo da próxima. Faça igual: comece cada estrofe mais contido e dê mais força nas duas últimas linhas.
+- **O corte de câmera é rápido**: troca a cada 3 ou 4 segundos, mais ou menos a cada linha, e sempre muda de lugar (garagem, banheiro, câmera de cima girando).
+- **A legenda é pequena, amarela, em itálico, no meio da tela**, uma linha por vez. Faça igual, mas em **limão**, que é a cor da Tami.
+
+## Ideias de cena tiradas da referência (todas dá para fazer sozinho)
+
+- **O espelho**: o EU 29 se olha no espelho do banheiro e quem aparece no reflexo é o EU 19. Grave duas vezes no mesmo lugar, com o celular parado no tripé, uma com cada roupa, e no CapCut use máscara para juntar as duas.
+- **Câmera de cima girando**: celular preso no alto, apontado para baixo, e você deitado na cama com o celular na mão (EU 19). No CapCut, gire o vídeo devagar. Fica ótimo na estrofe da "encruzilhada".
+- **Garagem ou corredor à noite** para o fecho ("quem cuida de si fica mais tempo por perto"), com o EU 29 andando em direção à câmera.
 
 ## Como gravar sozinho
 
