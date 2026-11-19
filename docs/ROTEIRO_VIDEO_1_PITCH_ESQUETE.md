@@ -1,76 +1,82 @@
-# Tami · Pitch em versão esquete (alternativa ao roteiro principal)
+# Tami · Pitch em versão esquete
 
-Versão de humor do vídeo 1, no clima das esquetes de humor brasileiras: uma situação comum que vai ficando absurda, atuação séria (sem rir da própria piada), corte seco e uma virada no fim. O texto e as piadas são originais.
+Vídeo 1 (pitch comercial, até 3 minutos), no clima das esquetes de humor brasileiras: uma situação que todo mundo reconhece, atuação séria, corte seco e uma virada no fim. Texto e piadas originais.
 
-**Duração:** até 3 minutos. A esquete ocupa só o primeiro minuto; o resto é o pitch de verdade, com números, fonte e o app na tela. O enunciado pede "argumentos e embasamento consistente", então a graça abre a porta e os dados fecham a venda.
+## A ideia do vídeo em uma frase
 
-**Elenco:** 2 pessoas já resolvem. Você faz o paciente do judô e o narrador; uma pessoa amiga faz a recepcionista; os outros pacientes podem ser feitos por vocês dois trocando de roupa e de lugar. Com 3 ou 4 amigos fica melhor ainda.
+**"Todo grupo de amigos tem aquela amiga médica que responde mensagem às 2 da manhã. A maioria das pessoas não tem. Agora tem: a Tami, um agente de saúde pessoal no celular."**
 
-**Cenário:** uma mesa, uma cadeira, um computador velho ou uma caixa fingindo ser um, e uma plaquinha de papel na mesa que muda entre as cenas: **"PRONTO ATENDIMENTO"** e depois **"POSTO DE SAÚDE"**. Não grave dentro de uma UPA ou UBS de verdade, para não filmar pacientes nem precisar de autorização.
+O vídeo vende a Tami como **agente de saúde pessoal**: ela conversa, acolhe, diz para onde ir, o que fazer até lá, onde fica a unidade mais perto, cuida também de quem você cuida e monta o resumo para o atendimento. A confusão entre UPA e UBS aparece só como prova de que o problema existe, não como o centro.
 
-**A regra de ouro do humor aqui:** a piada é a confusão de **para onde ir**, nunca quem está passando mal nem os profissionais de saúde. Quem está grave é tratado a sério e a resposta certa (192) aparece na hora.
+**Duração:** cerca de 2min50s. A esquete abre e fecha; o meio é o produto na tela.
 
-**Legenda:** 🎬 cena · 🎤 fala · 🖥️ o que aparece na tela.
+**Elenco:** 2 pessoas resolvem. Uma pessoa amiga faz **a Amiga Médica** (jaleco ou só um crachá de papel escrito "Dra."); você faz o narrador e o "rapidinho" da festa. As mensagens que chegam no celular dela são texto na tela, então não precisa de mais gente.
 
----
+**Cenário:** um quarto escuro (cena 1), um canto com copos e luz de festa (cena 2) e a mesma cama (fim). Nada de marca de aplicativo de mensagem: as mensagens aparecem como balões genéricos criados na edição.
 
-## Ato 1 · A esquete (0:00 a 1:00)
+**Regra de ouro:** a graça está nas mensagens e na paciência dela, nunca em quem está doente nem na profissão. Ela é a heroína da esquete.
 
-🎬 **Plano parado, de frente para a mesa.** Recepcionista com cara de quem já viu de tudo. Plaquinha na mesa: **PRONTO ATENDIMENTO**.
-
-🖥️ Cartela no canto, letra pequena: *"Uma noite qualquer. Uma recepção qualquer."*
-
-| Quem | 🎤 Fala |
-|---|---|
-| **Recepcionista** | Próximo. |
-| **Paciente 1** *(com uma sacolinha cheia de caixas de remédio)* | Boa noite! Vim renovar a receita do remédio da pressão. |
-| **Recepcionista** | Senhor, aqui é pronto atendimento. |
-| **Paciente 1** | Mas tem médico, né? |
-| **Recepcionista** *(olha para a câmera, pausa longa)* | ...Tem. Senha quarenta e sete. |
-| **Paciente 2** *(enrolado num cobertor, com uma tosse exagerada que para na hora em que fala)* | Moça, é gripe. Só preciso do atestado. |
-| **Recepcionista** | Começou quando? |
-| **Paciente 2** | Quando meu chefe marcou reunião pra amanhã às sete. |
-| **Recepcionista** | Senha quarenta e oito. |
-| **Você** *(de quimono, pulando num pé só, segurando o joelho)* | Luxei o joelho no treino! |
-| **Recepcionista** *(pela primeira vez, animada)* | Esse sim é aqui! Senta! |
-| **Você** *(sentando, aliviado)* | Ufa. Acertei alguma coisa hoje. |
-
-🎬 **Corte seco.** A plaquinha agora diz **POSTO DE SAÚDE**. Mesma recepcionista, outra blusa.
-
-| Quem | 🎤 Fala |
-|---|---|
-| **Paciente 3** *(mão no peito, suando, falando baixo, sem exagero: aqui ninguém faz graça)* | Moça... tá apertando meu peito. E o braço tá esquisito. |
-| **Recepcionista** *(levanta na hora, séria)* | Senhor, senta aqui. Isso é emergência. *(pega o telefone)* Alô, SAMU? |
-
-🎬 **Congela a imagem.** Som de disco arranhando.
-
-🖥️ Texto grande, branco no fundo azul da Tami: **"Um foi no lugar errado porque era leve. O outro, porque era grave."** E logo abaixo: **"Ninguém sabe para onde ir."**
+**Legenda:** 🎬 cena · 🎤 fala · 🖥️ o que aparece na tela · [pausa] é 1 segundo de silêncio.
 
 ---
 
-## Ato 2 · O pitch (1:00 a 2:40)
+## Ato 1 · A Amiga Médica (0:00 a 0:45)
+
+🎬 **Quarto escuro.** A Amiga Médica dorme. O celular na mesinha acende e vibra. Ela abre um olho.
+
+| Quem | 🖥️ Mensagem que chega | 🎤 Resposta dela (falando enquanto digita) |
+|---|---|---|
+| **23:47** | *"Amiga, isso aqui é normal?"* e uma foto **toda borrada** (borrão total, sem nada real) | *(sem abrir direito os olhos)* "Manda foto com luz." |
+| **00:31** | *"Minha mãe caiu do banquinho, levo ela onde???"* | *(senta na cama na hora, séria)* "Ela bateu a cabeça? Toma remédio pra afinar o sangue? Me liga." |
+| **01:52** | *"luxei o joelho no treino kkkk e agora"* | *(deita de novo, olhando o teto)* "Gelo. E para de rir." |
+| **02:40** | *"Amiga, é dengue ou é só preguiça?"* e logo depois *"esquece, é preguiça"* | *(não responde; puxa o cobertor por cima da cabeça)* |
+
+🎬 **Corte seco. Festa.** Ela com um copo na mão. Alguém (você, de outra roupa) chega por trás.
+
+| Quem | 🎤 Fala |
+|---|---|
+| **Você** | Você é médica, né? Rapidinho... *(começa a levantar a manga da camisa)* |
+| **Amiga Médica** *(sem olhar)* | Não. |
+
+🎬 **Congela a imagem.**
+
+🖥️ Texto grande, branco no fundo azul da Tami: **"Todo mundo tem uma amiga médica."** [pausa] A palavra "Todo mundo" é riscada e vira **"Quase ninguém tem uma amiga médica."**
+
+---
+
+## Ato 2 · A Tami (0:45 a 2:35)
 
 | Tempo | 🖥️ Na tela | 🎤 O que falar |
 |---|---|---|
-| **1:00 a 1:20**<br>A virada | Você, de quimono, sentado na cadeira da recepção, falando direto para a câmera. Aparece o cartão **76,2%** com a fonte: *Prefeitura de Belo Horizonte, jan. a jul. de 2026*. | Parece piada. Não é. Em Belo Horizonte, setenta e seis por cento dos atendimentos nas UPAs, de janeiro a julho deste ano, não eram urgentes. [pausa] E uma médica que atendeu em UBS me explicou o motivo: o povo não sabe a diferença de UPA, UBS e AMA. Só sabe que tem médico lá. |
-| **1:20 a 1:30**<br>A Tami | Logo da Tami (`00_logo.png`) com o slogan. | Por isso eu criei a Tami. Ela responde a pergunta que todo mundo faz na hora do susto: para onde eu vou? |
-| **1:30 a 2:05**<br>Como funciona | Gravação da tela do celular: relato "Tomei um golpe no treino de judô e acho que luxei o joelho, dói muito" ➜ tela de emergência ➜ escala de dor com rostos ➜ resultado com os cuidados ➜ num resultado de UBS, "Usar minha localização" e a lista com "Como chegar". | Você conta do seu jeito, até escrevendo errado. A Tami confere os sinais de emergência numa tela só e faz poucas perguntas. [pausa] No fim, um de quatro caminhos: ligar 192, UPA hoje, posto nos próximos dias ou cuidar em casa. Sempre com o que fazer até lá e a unidade do SUS mais perto. |
-| **2:05 a 2:25**<br>Por que confiar | Texto na tela, uma linha por vez: **"Não diagnostica" · "Não indica remédio" · "945 sinais com fonte"** e depois o número grande **99,5%**, com a legenda *"dos urgentes foram para UPA ou SAMU · 10.000 casos de teste"*. | Ela não é médica: não dá diagnóstico e não indica remédio. Segue regras com fonte, do NHS ao Ministério da Saúde. E foi testada com dez mil casos: noventa e nove e meio por cento dos urgentes foram para UPA ou SAMU. |
-| **2:25 a 2:40**<br>Impacto e futuro | Figura `03_ods.png` e depois a coluna "Próximo" da figura `11_kanban.png`. | Menos gente na UPA sem precisar, mais espaço para quem é urgente. Os próximos passos são a revisão médica completa, mais testes com pessoas e parcerias com postos de saúde. |
+| **0:45 a 1:05**<br>O problema | Você de quimono, sentado, falando para a câmera. Cartão **76,2%** com a fonte: *Prefeitura de Belo Horizonte, jan. a jul. de 2026*. | Quem não tem essa amiga fica sozinho na hora do susto. E aí, ou vai para a UPA sem precisar, ou fica em casa quando era grave. [pausa] Em Belo Horizonte, setenta e seis por cento dos atendimentos nas UPAs, de janeiro a julho deste ano, não eram urgentes. |
+| **1:05 a 1:15**<br>Apresentação | Logo da Tami (`00_logo.png`) e o slogan. | Por isso eu criei a Tami. Um agente de saúde pessoal, no celular, de graça. |
+| **1:15 a 1:50**<br>O produto, parte 1 | Gravação da tela do celular, com cortes rápidos: digitar "Tomei um golpe no treino de judô e acho que luxei o joelho, dói muito" ➜ tela de emergência ➜ escala de dor com rostos, tocar no 6 ➜ resultado verde rolando pelos cuidados das primeiras horas. | Você conversa com ela do seu jeito, como mandaria mensagem para aquela amiga. Ela confere primeiro se é emergência. Depois pergunta pouco, só o que importa. [pausa] E responde o que fazer: ligar 192, ir à UPA hoje, ao posto nos próximos dias ou cuidar em casa, com os cuidados até lá. |
+| **1:50 a 2:15**<br>O produto, parte 2 | Continua a gravação: num resultado de UBS, "Usar minha localização" e a lista com "Como chegar" ➜ "Ver resumo para o atendimento" ➜ tela de Pessoas com "Mãe" e "Filho" cadastrados (numa conta de teste) ➜ Histórico. | Ela mostra a unidade do SUS mais perto, com o caminho. Monta um resumo para você mostrar no atendimento. E cuida também de quem você cuida: sua mãe, seu filho, seu avô. |
+| **2:15 a 2:35**<br>Por que confiar | Texto na tela, uma linha por vez: **"Não diagnostica" · "Não indica remédio" · "945 sinais com fonte"** e o número grande **99,5%**, com a legenda *"dos urgentes foram para UPA ou SAMU · 10.000 casos de teste"*. | A Tami não é médica e não finge ser: não dá diagnóstico nem indica remédio. Ela segue regras com fonte. E foi testada com dez mil casos: noventa e nove e meio por cento dos urgentes foram para UPA ou SAMU. |
 
 ---
 
-## Ato 3 · A volta da piada (2:40 a 2:55)
+## Ato 3 · O futuro e a volta da piada (2:35 a 2:55)
 
-🎬 **De volta à recepção, plaquinha PRONTO ATENDIMENTO.** Silêncio. A recepcionista tomando café, tranquila, sem fila.
+| Tempo | 🖥️ Na tela | 🎤 O que falar |
+|---|---|---|
+| **2:35 a 2:45**<br>Para onde vai | Esboços das próximas telas (pasta `diagramas/`: `40_wire_conversa.png` e `41_wire_resultado.png`), com o selo **"Em breve"**. | Hoje ela orienta. O próximo passo é acompanhar: perguntar no dia seguinte como você está, entender sua voz e lembrar do seu remédio. |
 
-| Quem | 🎤 Fala |
-|---|---|
-| **Recepcionista** *(estranhando o silêncio)* | ...Próximo? |
-| **Paciente 1** *(entra só com a sacolinha)* | Não, não. A Tami falou que meu caso é no posto. Só vim devolver a caneta. |
-| **Recepcionista** *(olha para a câmera, sorri pela primeira vez)* | Tamo aqui. |
+🎬 **De volta ao quarto escuro.** A Amiga Médica dorme. O celular acende **uma vez só**.
+
+🖥️ **02:13** · *"Amiga, relaxa. Perguntei pra Tami."*
+
+🎬 Ela lê, sorri, vira para o lado e dorme. [pausa]
 
 🖥️ Tela final: logo da Tami, **"Falou em saúde? Tamo aqui."** e `tami-app.onrender.com`.
+
+---
+
+## Opcional: a origem do nome (só com o ok dela)
+
+Se a sua amiga médica autorizar, troque a fala do bloco **1:05** por esta, que conta de onde vem o nome e amarra a esquete com a vida real:
+
+> 🎤 "Por isso eu criei a Tami. O nome é de uma amiga médica de verdade, que vivia recebendo essas mensagens. Agora a Tami é um agente de saúde pessoal, no celular, de graça."
 
 ---
 
@@ -78,28 +84,24 @@ Versão de humor do vídeo 1, no clima das esquetes de humor brasileiras: uma si
 
 | Parte | Palavras faladas |
 |---|---|
-| Esquete (atos 1 e 3) | 99 |
-| Pitch (ato 2) | 201 |
-| **Total** | **300 palavras ➜ 2min00s de fala a 150 por minuto, mais as pausas da esquete** |
+| Esquete (atos 1 e 3) | 27 |
+| Narração (atos 2 e 3) | 210 |
+| **Total** | **237 palavras ➜ 1min34s de fala a 150 por minuto; com as mensagens na tela e as pausas, cerca de 2min50s** |
 
-As esquetes têm pausas e respiros que fazem parte da graça, então o tempo real fica maior que a conta de palavras. Grave e cronometre. Se passar de 3:00, corte nesta ordem:
-1. a fala "Começou quando?" e a resposta do chefe;
-2. a frase "Segue regras com fonte, do NHS ao Ministério da Saúde";
-3. a parte do kanban no bloco "Impacto e futuro".
+## Dicas para o humor funcionar
 
-## Dicas de gravação para o humor funcionar
-
-- **Câmera parada**, num tripé ou apoiada em livros, em plano aberto mostrando a mesa inteira. Esquete boa quase não mexe a câmera.
-- **Ninguém ri.** Quanto mais séria a recepcionista, mais engraçado fica. O olhar para a câmera vale mais que qualquer fala.
-- **Corte seco** entre as falas: tire todo silêncio que não for de propósito. No CapCut, use "Remover silêncios" e depois devolva só as pausas da piada.
-- **Som limpo**: grave a voz de perto, com o celular escondido na mesa ou um microfone de lapela barato. Áudio ruim mata a piada.
-- **O Paciente 3 é sério.** Nada de careta. É ali que o vídeo mostra que a Tami não brinca com emergência.
-- **A cena do app** (1:30) é gravada da tela do celular, como no roteiro principal. Faça a busca da unidade mais perto num lugar público, para não aparecer o endereço da sua casa.
+- **A Amiga Médica não ri.** A graça é a cara de sono dela e a paciência infinita. Ela responde sério até o "é dengue ou preguiça".
+- **As mensagens são o roteiro.** Crie os balões no CapCut (texto com fundo arredondado, como uma notificação) e deixe cada um na tela uns 2 segundos, o bastante para ler.
+- **A mensagem da mãe que caiu é séria.** Ela senta na hora e pergunta o que importa. É o momento que mostra que saúde não é brincadeira e prepara a entrada da Tami.
+- **Câmera parada**, plano aberto, só a luz do celular no rosto dela na cena do quarto.
+- **Corte seco** entre as mensagens. No CapCut, use "Remover silêncios" e devolva só as pausas de propósito.
+- **Cena do app:** grave a tela do celular numa conta de teste com "Mãe" e "Filho" cadastrados, e faça a busca da unidade mais perto num lugar público, para não aparecer o endereço da sua casa.
 
 ## Checklist
 
 - [ ] Quem aparece no vídeo autorizou o uso da imagem.
-- [ ] A médica autorizou a citação, com o nome ou só "médica que atuou em UBS".
+- [ ] A "foto" da primeira mensagem é um borrão, sem nada real.
 - [ ] O número 76,2% aparece com a fonte na tela.
-- [ ] Nenhuma marca ou logotipo real de UPA, UBS ou prefeitura no cenário (só plaquinhas de papel).
+- [ ] Nenhuma marca de aplicativo de mensagem nem de UPA, UBS ou prefeitura.
+- [ ] Se usar a origem do nome, a amiga autorizou.
 - [ ] Duração final de até 3:00.
