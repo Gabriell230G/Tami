@@ -38,75 +38,69 @@ O que prende: começa engraçado ("sou você, só que com dor nas costas"), vira
 
 ## Parte 2 · Os versos (0:15 a 1:05)
 
-Cada estrofe tem 4 linhas, uma por compasso. A câmera fica em quem está rimando. As palavras em **negrito** são onde o som "bate": dê um pouco mais de força nelas e, se quiser, faça a palavra aparecer na tela no estilo do kit.
+Tudo rima. Cada linha é um compasso e as rimas vêm em pares (a linha 1 rima com a 2, a 3 com a 4). As sílabas em **negrito** são onde o som bate: dê mais força nelas. A câmera fica em quem está rimando.
 
-**EU 29** *(som de "or" e "ora")*
-> Larga esse celular, cê tá caçando o **pior**
-> digitou "dor de cabeça", já virou um **tumor**
+**EU 29** *(rima em "or" e "ora")*
+> Larga esse celular, cê tá lendo o pi**or**
+> digitou "dor de cabeça" e já virou tum**or**
 > três da manhã, a mente a mil por **hora**
-> e ninguém pra dizer se espera ou se vai **agora**
+> sem ninguém pra dizer se espera ou se vai a**gora**
 
-**EU 19** *(som de "iço" e "eiro")*
+**EU 19** *(rima em "isso" e "eiro")*
 > Fácil falar, cê já passou por **isso**
-> UPA lotada, e o posto só depois do **serviço**
-> se eu vou e é nada, perdi o dia **inteiro**
-> se eu fico e é grave, quem chega **primeiro**?
+> UPA lotada e o posto só depois do ser**viço**
+> se eu vou e é nada, perdi o dia in**teiro**
+> se eu fico e é grave, quem me avisa pri**meiro**?
 
-**EU 29** *(som de "ada", "ado" e "erro")*
+**EU 29** *(rima em "ada", "ado" e "erro")*
 > É, eu lembro bem dessa encruzi**lhada**
 > a gente chutava, e às vezes chutava er**rada**
 > e a fila da UPA? Em BH saiu o **dado**:
 > quase oito em cada dez podia ter espe**rado**
-> faixa-preta se achando de aço, de **ferro**
+> faixa-preta, se achando de aço, de **ferro**
 > mas o corpo avisa baixinho antes do **erro**
 
-**EU 19** *(primeira linha)* e **EU 29** *(o resto)* *(som de "anos", "ente" e "em")*
+**EU 19** *(primeira linha)* e **EU 29** *(o resto)* *(rima em "anos", "ente" e "em")*
 > Tá, e o que muda daqui a dez **anos**?
-> Mudam os **planos**, e a dúvida vira de mais **gente**
-> a mãe liga cedo: "filho, dói aqui na **frente**"
+> Mudam os **planos**, e muda quem **sente**:
+> a mãe liga cedo, "filho, dói aqui na **frente**"
 > o pai diz que é nada, que tá tudo **bem**
 > e quem nem cuidava de si vai cuidar de al**guém**
 
-### Os sons que combinam, além do fim da linha
-
-- **"pior" ➜ "dor" ➜ "tumor"**: o mesmo "or" aparece no meio da linha 2, então a rima bate duas vezes.
-- **"vou" e "é nada" / "fico" e "é grave"**: as duas linhas têm o mesmo molde, só trocando as palavras. O ouvido sente a simetria.
-- **"lhada", "rada", "dado", "rado"**: quatro linhas seguidas no mesmo som, e o número entra no meio do verso, sem quebrar o clima. Na tela, nessas duas linhas: `09_numero_762.png` (76,2% com a fonte), por 3 segundos.
-- **"faixa", "achando", "aço"**: o som de "a" se repete e dá peso à linha.
-- **"anos" ➜ "planos"**: a pergunta do EU 19 já entrega a rima para o EU 29 responder.
-- **"cuidava" ➜ "cuidar"**: a mesma palavra volta mudada; é a ideia do vídeo inteiro numa linha.
-
 ## Parte 3 · A virada (1:05 a 1:15)
 
-🎵 O beat **abaixa bem** (só o grave e a batida, quase sumindo).
+🎵 O beat **abaixa bem** (só o grave e a batida). Ainda rimado, mas falado devagar.
 
 | Quem | 🎤 Fala | 🖥️ Na tela |
 |---|---|---|
-| **EU 19** *(senta na cama, sério pela primeira vez)* | Então me fala o que fazer, já que cê veio do futuro. | |
-| **EU 29** | Eu não vim trazer resposta. [pausa] Vim trazer alguém pra perguntar. | |
+| **EU 19** *(senta na cama, sério pela primeira vez)* | Então me fala, já que cê veio do fu**turo**: o que eu faço sozinho, de madrugada, no es**curo**? | |
+| **EU 29** | Eu não vim trazer resposta. [pausa] Vim trazer alguém pra pergun**tar**. | |
 | **EU 19** | Tipo um médico no bolso? | |
-| **EU 29** *(sorri)* | Médico ela não é. Mas sabe pra onde te levar. | Corte para `clipe_C_vira_tami.mp4` (a lupa vira o rosto da Tami). |
+| **EU 29** *(sorri)* | Médico ela não é... mas sabe pra onde te le**var**. | Corte para `clipe_C_vira_tami.mp4` (a lupa vira o rosto da Tami). |
 
-## Parte 4 · O pitch (1:15 a 2:22)
+## Parte 4 · O pitch rimado (1:15 a 2:20)
 
-🎵 Beat baixinho por baixo de tudo. 🎤 É a voz do **EU 29**, falada no ritmo do beat, sem rimar, mas com frases que ecoam umas nas outras (repetições, pares e trios). 🖥️ As telas do kit e a gravação do app.
+🎵 O beat **volta pela metade** (mais baixo que nos versos). 🎤 O **EU 29** rima, mais calmo, quase conversando. 🖥️ As telas do kit trocam a cada par de linhas e mostram os números exatos, com fonte.
 
-| Tempo | 🖥️ Na tela | 🎤 O que falar |
+| Tempo | 🖥️ Na tela | 🎤 O que rimar |
 |---|---|---|
-| **1:15 a 1:21** | `10_dois_lados.png` (a UPA cheia e a casa). | Esse chute custa caro: fila cheia de quem podia esperar... [pausa] e espera longa pra quem não podia. |
-| **1:21 a 1:27** | `19_com_a_tami.png` (o rosto da Tami no quadriculado) ou `sobre_05_pessoal.png` por cima de você. | Ela se chama Tami. Agente de saúde pessoal: no seu bolso, na sua hora, de graça. |
-| **1:27 a 1:35** | `11a_conversa.png` ➜ `11b_emergencia.png`, com a gravação do app no papel rasgado. | Você conta do seu jeito. Ela vê primeiro se é emergência: se for, é um toque e é o 192. |
-| **1:35 a 1:46** | `11c_poucas_perguntas.png` ➜ `11d_proximo_passo.png`. | Pergunta pouco, pergunta certo, e te dá o próximo passo: SAMU, UPA hoje, posto nos próximos dias ou cuidado em casa, com o que fazer até lá. |
-| **1:46 a 1:55** | `11e_mais_perto.png` ➜ `11f_resumo.png` ➜ `11g_quem_voce_cuida.png`. | Mostra o SUS mais perto, com o caminho na mão. E cuida de quem você cuida: a mãe, o pai, a vó. |
-| **1:55 a 2:09** | `12_nao_diagnostica.png` ➜ `13_nao_remedio.png` ➜ `14_945_sinais.png` ➜ `15_numero_995.png`. | Não dá diagnóstico. Não indica remédio. Não inventa: segue regra com fonte. [pausa] Dez mil casos de teste: noventa e nove e meio por cento dos urgentes foram pra UPA ou SAMU. |
-| **2:09 a 2:22** | `16_ods.png` ➜ `17_roadmap.png`. | Lugar certo, hora certa: saúde pra todos, menos desigualdade. Hoje, ela orienta. Amanhã, revisão médica de toda a base. Depois, acompanha: te pergunta no dia seguinte como você tá. |
+| **1:15 a 1:21** | `10_dois_lados.png` (a UPA cheia e a casa). | Fila cheia de quem podia espe**rar**... [pausa] e espera longa pra quem não **podia**. |
+| **1:21 a 1:28** | `19_com_a_tami.png` (o rosto da Tami) ➜ `11a_conversa.png` com a gravação do app. | O nome dela é Tami: saúde no bolso, na hora, de **graça**. / Você conta do seu jeito, ela escuta o que se **passa**. |
+| **1:28 a 1:35** | `11b_emergencia.png` (a tela com o botão do 192). | Se for emergência, ela não enrola, não deixa pra de**pois**: / é um toque na tela e você já liga pro um-nove-**dois**. |
+| **1:35 a 1:42** | `11c_poucas_perguntas.png` (a escala de dor) ➜ `11d_proximo_passo.png`. | Se não for, pergunta pouco, pergunta certo, sem ser**mão**, / e te dá o próximo passo, com o que fazer até lá na **mão**. |
+| **1:42 a 1:49** | `11e_mais_perto.png` (a lista com "Como chegar"). | SAMU, UPA, posto ou cuidado no **lar**: / ela te mostra o caminho e o SUS mais perto pra che**gar**. |
+| **1:49 a 1:56** | `11f_resumo.png` ➜ `11g_quem_voce_cuida.png`. | Monta um resumo pro atendimento, pra você não esque**cer**, / e cuida de quem você cuida: mãe, pai, vó, quem precisar de **você**. |
+| **1:56 a 2:03** | `12_nao_diagnostica.png` ➜ `13_nao_remedio.png` ➜ `14_945_sinais.png`. | E não, ela não é médica: não diagnostica, não re**ceita**, / segue regra com fonte, sinal por sinal, conta **feita**. |
+| **2:03 a 2:09** | `15_numero_995.png` (99,5% · 10.000 casos). | Testei com dez mil casos, e o número é de res**peito**: / noventa e nove e meio dos urgentes no caminho **certo**. |
+| **2:09 a 2:20** | `16_ods.png` ➜ `17_roadmap.png`. | Saúde pra todos, menos desigualdade na **fila**. / Hoje ela orienta. Amanhã, um médico re**visa**. / Depois ela acompanha e te chama no outro **dia**: / "e aí, melhorou?", que é o que um amigo fa**ria**. |
 
-### Os ecos da narração
+### Onde o som bate
 
-- **"Fila cheia de quem podia esperar... e espera longa pra quem não podia"**: responde ao "podia ter esperado" do verso e vira do avesso no meio. É a linha mais forte do pitch: fale devagar.
-- **"no seu bolso, na sua hora, de graça"**: trio curto, no tempo da batida.
-- **"Pergunta pouco, pergunta certo"** e **"Não dá... Não indica... Não inventa"**: a repetição no começo faz a narração soar como verso, mesmo sem rima.
-- **"Lugar certo, hora certa"** e **"Hoje... Amanhã... Depois"**: dá a sensação de caminho, que é o que o roadmap é.
+- **Rimas perfeitas** (o fim da palavra é igual): pior/tumor, hora/agora, isso/serviço, inteiro/primeiro, encruzilhada/errada, dado/esperado, ferro/erro, sente/frente, bem/alguém, futuro/escuro, graça/passa, depois/dois, sermão/mão, lar/chegar, receita/feita, dia/faria.
+- **Rimas de vogal** (o som das vogais combina, mesmo sem ser igual): respeito/certo, fila/revisa.
+- **Rimas no meio da linha**: "**dor** de cabeça" já antecipa o "tum**or**"; "**anos**" puxa "**planos**"; "pergunta **pouco**, pergunta **certo**" e "não diagnostica, não receita" repetem o começo para dar balanço.
+- **A linha que vira do avesso**: "fila cheia de quem podia esperar... e espera longa pra quem não podia". Responde ao "podia ter esperado" do verso. Fale devagar.
+- **O 192**: fale "um-nove-dois", como no verso. Rima com "depois" e é como a pessoa disca.
 
 ## Parte 5 · O fecho (2:22 a 2:50)
 
@@ -143,19 +137,25 @@ Se a sua amiga médica autorizar, na Parte 4 troque "Ela se chama Tami." por:
 | Parte | Palavras | Ritmo | Tempo |
 |---|---|---|---|
 | 1 · Abertura | 33 | fala normal, com pausas | 0:15 |
-| 2 · Versos (19 linhas) | 166 | no beat, cerca de 85 BPM | 0:50 |
-| 3 · Virada | 37 | devagar | 0:10 |
-| 4 · Pitch | 162 | 150 por minuto, com pausas | 1:07 |
+| 2 · Versos (19 linhas) | 164 | no beat, cerca de 89 BPM | 0:50 |
+| 3 · Virada | 43 | devagar, beat baixo | 0:10 |
+| 4 · Pitch rimado (19 linhas) | 196 | no beat, mais calmo | 1:05 |
 | 5 · Fecho | 55 | no beat e depois devagar | 0:28 |
-| **Total** | **453 palavras** | | **cerca de 2min50s** |
+| **Total** | **491 palavras** | | **cerca de 2min50s** |
 
-Se passar de 3:00 no corte final, tire primeiro "Lugar certo, hora certa: saúde pra todos, menos desigualdade" (o `16_ods.png` pode ficar na tela sem fala).
+Se passar de 3:00 no corte final, tire primeiro o par "Monta um resumo... / e cuida de quem você cuida..." e depois "Saúde pra todos, menos desigualdade na fila" (as telas podem ficar sem fala).
 
 ## O beat
 
-- Procure um **lo-fi ou boom bap calmo, entre 80 e 90 BPM**, na Biblioteca de Áudio do YouTube ou na biblioteca de músicas do CapCut. Confira se a faixa é livre para usar no YouTube e anote o nome dela na descrição do vídeo.
-- Prefira um beat com **piano ou guitarra** e batida leve: o clima é de conversa de madrugada, não de batalha.
-- Escolha o beat **antes** de gravar: você vai rimar em cima dele.
+**O do vídeo do Nauta.** O Shazam reconheceu o beat como "Espero Yo", do Resiliente (Lion Records, 2023, **89 BPM**). Nem a Apple Music nem o Shazam mostram quem produziu, o que costuma indicar um beat comprado de um produtor no YouTube ou no BeatStars. Para achar o instrumental:
+
+1. No YouTube, busque **"Resiliente Espero Yo"** e abra a descrição do clipe ou do áudio: quase sempre está escrito "prod." ou "beat by".
+2. Busque esse nome com **"instrumental"** ou **"free beat"** no YouTube e no BeatStars.
+3. Se não achar, procure nos comentários do vídeo do Nauta. Às vezes alguém já perguntou o nome do beat.
+
+**Cuidado antes de usar:** um beat de produtor quase nunca é livre. Normalmente ele é "free for non-profit" (exige crédito no título, por exemplo "prod. Fulano") ou exige comprar uma licença. Além disso, como esse beat já está numa música lançada, o YouTube pode reconhecer o áudio e marcar o seu vídeo com uma reivindicação de direitos autorais, ou até bloquear em algum país. Num vídeo que a banca vai assistir hoje, isso é um risco.
+
+**O mais seguro para hoje:** um beat parecido e livre, na **Biblioteca de Áudio do YouTube** (no YouTube Studio, gênero "Hip Hop & Rap", humor "Calmo" ou "Triste") ou na biblioteca do CapCut. Procure **por volta de 89 BPM, com piano ou violão e batida leve**. Como o roteiro foi escrito em 89 BPM, qualquer beat nessa faixa encaixa nas rimas. Anote o nome da faixa na descrição do vídeo.
 
 ## Como gravar sozinho
 
