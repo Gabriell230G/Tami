@@ -36,61 +36,79 @@ O que prende: começa engraçado ("sou você, só que com dor nas costas"), vira
 
 🎵 **O beat entra** logo depois da última palavra.
 
-## Parte 2 · Os versos (0:15 a 1:00)
+## Parte 2 · Os versos (0:15 a 1:05)
 
-Cada estrofe tem 4 linhas, uma por compasso. A câmera fica em quem está rimando. As palavras em **negrito** podem aparecer na tela, no estilo do kit (`sobre_*.png`, ou escreva no CapCut com a mesma fonte).
+Cada estrofe tem 4 linhas, uma por compasso. A câmera fica em quem está rimando. As palavras em **negrito** são onde o som "bate": dê um pouco mais de força nelas e, se quiser, faça a palavra aparecer na tela no estilo do kit.
 
-**EU 29**
-> Larga esse celular, cê tá lendo o pior
-> digitou "dor de cabeça" e saiu com um **tumor**
-> três da manhã, coração acelerado
-> e ninguém pra te dizer se tá **certo ou errado**
+**EU 29** *(som de "or" e "ora")*
+> Larga esse celular, cê tá caçando o **pior**
+> digitou "dor de cabeça", já virou um **tumor**
+> três da manhã, a mente a mil por **hora**
+> e ninguém pra dizer se espera ou se vai **agora**
 
-**EU 19**
-> Fácil falar, cê já passou por isso
-> UPA lotada, posto só depois do serviço
-> se eu for e não for nada, perco o **dia inteiro**
-> se eu ficar e for grave, quem me avisa **primeiro**?
+**EU 19** *(som de "iço" e "eiro")*
+> Fácil falar, cê já passou por **isso**
+> UPA lotada, e o posto só depois do **serviço**
+> se eu vou e é nada, perdi o dia **inteiro**
+> se eu fico e é grave, quem chega **primeiro**?
 
-**EU 29**
-> É, eu lembro bem dessa encruzilhada
-> a gente **chutava**, e às vezes chutava errada
-> cê se acha de ferro, faixa-preta, imbatível
-> mas o corpo avisa num volume **quase inaudível**
+**EU 29** *(som de "ada", "ado" e "erro")*
+> É, eu lembro bem dessa encruzi**lhada**
+> a gente chutava, e às vezes chutava er**rada**
+> e a fila da UPA? Em BH saiu o **dado**:
+> quase oito em cada dez podia ter espe**rado**
+> faixa-preta se achando de aço, de **ferro**
+> mas o corpo avisa baixinho antes do **erro**
 
-**EU 19** *(primeira linha)* e **EU 29** *(o resto)*
-> Tá, e o que é que muda daqui a dez anos?
-> Muda que a pergunta passa a ser de mais gente
-> a **mãe** liga cedo: "filho, dói aqui na frente"
-> o **pai** diz que é nada, finge que tá tudo bem
-> e cê, que nem cuidava de si, vai **cuidar de alguém**
+**EU 19** *(primeira linha)* e **EU 29** *(o resto)* *(som de "anos", "ente" e "em")*
+> Tá, e o que muda daqui a dez **anos**?
+> Mudam os **planos**, e a dúvida vira de mais **gente**
+> a mãe liga cedo: "filho, dói aqui na **frente**"
+> o pai diz que é nada, que tá tudo **bem**
+> e quem nem cuidava de si vai cuidar de al**guém**
 
-## Parte 3 · A virada (1:00 a 1:15)
+### Os sons que combinam, além do fim da linha
+
+- **"pior" ➜ "dor" ➜ "tumor"**: o mesmo "or" aparece no meio da linha 2, então a rima bate duas vezes.
+- **"vou" e "é nada" / "fico" e "é grave"**: as duas linhas têm o mesmo molde, só trocando as palavras. O ouvido sente a simetria.
+- **"lhada", "rada", "dado", "rado"**: quatro linhas seguidas no mesmo som, e o número entra no meio do verso, sem quebrar o clima. Na tela, nessas duas linhas: `09_numero_762.png` (76,2% com a fonte), por 3 segundos.
+- **"faixa", "achando", "aço"**: o som de "a" se repete e dá peso à linha.
+- **"anos" ➜ "planos"**: a pergunta do EU 19 já entrega a rima para o EU 29 responder.
+- **"cuidava" ➜ "cuidar"**: a mesma palavra volta mudada; é a ideia do vídeo inteiro numa linha.
+
+## Parte 3 · A virada (1:05 a 1:15)
 
 🎵 O beat **abaixa bem** (só o grave e a batida, quase sumindo).
 
 | Quem | 🎤 Fala | 🖥️ Na tela |
 |---|---|---|
 | **EU 19** *(senta na cama, sério pela primeira vez)* | Então me fala o que fazer, já que cê veio do futuro. | |
-| **EU 29** | Eu não vim te dar a resposta. [pausa] Vim te dar alguém pra perguntar. | |
+| **EU 29** | Eu não vim trazer resposta. [pausa] Vim trazer alguém pra perguntar. | |
 | **EU 19** | Tipo um médico no bolso? | |
-| **EU 29** *(sorri)* | Médico ela não é. Mas sabe pra onde te mandar. | Corte para `clipe_C_vira_tami.mp4` (a lupa vira o rosto da Tami). |
+| **EU 29** *(sorri)* | Médico ela não é. Mas sabe pra onde te levar. | Corte para `clipe_C_vira_tami.mp4` (a lupa vira o rosto da Tami). |
 
-## Parte 4 · O pitch (1:15 a 2:25)
+## Parte 4 · O pitch (1:15 a 2:22)
 
-🎵 Beat baixinho por baixo de tudo. 🎤 É a voz do **EU 29** narrando (grave só o áudio). 🖥️ As telas do kit e a gravação do app.
+🎵 Beat baixinho por baixo de tudo. 🎤 É a voz do **EU 29**, falada no ritmo do beat, sem rimar, mas com frases que ecoam umas nas outras (repetições, pares e trios). 🖥️ As telas do kit e a gravação do app.
 
 | Tempo | 🖥️ Na tela | 🎤 O que falar |
 |---|---|---|
-| **1:15 a 1:24** | `09_numero_762.png` (76,2% com a fonte). | Esse chute custa caro. Em Belo Horizonte, setenta e seis por cento dos atendimentos nas UPAs, de janeiro a julho deste ano, não eram urgentes. |
-| **1:24 a 1:30** | `sobre_05_pessoal.png` por cima de você (EU 29) ou o rosto da Tami no quadriculado (`19_com_a_tami.png`). | Ela se chama Tami. Uma agente de saúde pessoal. No celular, de graça. |
-| **1:30 a 1:38** | `11a_conversa.png` ➜ `11b_emergencia.png`, com a gravação do app no papel rasgado. | Você conta o que sente, do seu jeito. Ela confere primeiro se é emergência: se for, é um toque pro 192. |
-| **1:38 a 1:48** | `11c_poucas_perguntas.png` ➜ `11d_proximo_passo.png`. | Pergunta só o que importa e te diz o próximo passo: SAMU, UPA hoje, posto nos próximos dias ou cuidado em casa, com o que fazer até lá. |
-| **1:48 a 1:59** | `11e_mais_perto.png` ➜ `11f_resumo.png` ➜ `11g_quem_voce_cuida.png`. | Mostra a unidade do SUS mais perto, com o caminho. Monta um resumo pro atendimento. E cuida de quem você cuida: sua mãe, seu pai, sua vó. |
-| **1:59 a 2:12** | `12_nao_diagnostica.png` ➜ `13_nao_remedio.png` ➜ `14_945_sinais.png` (o número fica só na tela) ➜ `15_numero_995.png`. | Ela não dá diagnóstico, não indica remédio e só segue regras com fonte. Testei com dez mil casos: noventa e nove e meio por cento dos urgentes foram pra UPA ou SAMU. |
-| **2:12 a 2:25** | `16_ods.png` ➜ `17_roadmap.png`. | Cada pessoa no lugar certo, na hora certa: saúde pra todos e menos desigualdade. Hoje ela orienta. Próximo passo: revisão médica de toda a base. Depois, perguntar no dia seguinte como você está. |
+| **1:15 a 1:21** | `10_dois_lados.png` (a UPA cheia e a casa). | Esse chute custa caro: fila cheia de quem podia esperar... [pausa] e espera longa pra quem não podia. |
+| **1:21 a 1:27** | `19_com_a_tami.png` (o rosto da Tami no quadriculado) ou `sobre_05_pessoal.png` por cima de você. | Ela se chama Tami. Agente de saúde pessoal: no seu bolso, na sua hora, de graça. |
+| **1:27 a 1:35** | `11a_conversa.png` ➜ `11b_emergencia.png`, com a gravação do app no papel rasgado. | Você conta do seu jeito. Ela vê primeiro se é emergência: se for, é um toque e é o 192. |
+| **1:35 a 1:46** | `11c_poucas_perguntas.png` ➜ `11d_proximo_passo.png`. | Pergunta pouco, pergunta certo, e te dá o próximo passo: SAMU, UPA hoje, posto nos próximos dias ou cuidado em casa, com o que fazer até lá. |
+| **1:46 a 1:55** | `11e_mais_perto.png` ➜ `11f_resumo.png` ➜ `11g_quem_voce_cuida.png`. | Mostra o SUS mais perto, com o caminho na mão. E cuida de quem você cuida: a mãe, o pai, a vó. |
+| **1:55 a 2:09** | `12_nao_diagnostica.png` ➜ `13_nao_remedio.png` ➜ `14_945_sinais.png` ➜ `15_numero_995.png`. | Não dá diagnóstico. Não indica remédio. Não inventa: segue regra com fonte. [pausa] Dez mil casos de teste: noventa e nove e meio por cento dos urgentes foram pra UPA ou SAMU. |
+| **2:09 a 2:22** | `16_ods.png` ➜ `17_roadmap.png`. | Lugar certo, hora certa: saúde pra todos, menos desigualdade. Hoje, ela orienta. Amanhã, revisão médica de toda a base. Depois, acompanha: te pergunta no dia seguinte como você tá. |
 
-## Parte 5 · O fecho (2:25 a 2:55)
+### Os ecos da narração
+
+- **"Fila cheia de quem podia esperar... e espera longa pra quem não podia"**: responde ao "podia ter esperado" do verso e vira do avesso no meio. É a linha mais forte do pitch: fale devagar.
+- **"no seu bolso, na sua hora, de graça"**: trio curto, no tempo da batida.
+- **"Pergunta pouco, pergunta certo"** e **"Não dá... Não indica... Não inventa"**: a repetição no começo faz a narração soar como verso, mesmo sem rima.
+- **"Lugar certo, hora certa"** e **"Hoje... Amanhã... Depois"**: dá a sensação de caminho, que é o que o roadmap é.
+
+## Parte 5 · O fecho (2:22 a 2:50)
 
 🎵 O beat **volta inteiro**. 🎬 De volta ao quarto.
 
@@ -125,13 +143,13 @@ Se a sua amiga médica autorizar, na Parte 4 troque "Ela se chama Tami." por:
 | Parte | Palavras | Ritmo | Tempo |
 |---|---|---|---|
 | 1 · Abertura | 33 | fala normal, com pausas | 0:15 |
-| 2 · Versos (17 linhas) | 149 | no beat, cerca de 85 BPM | 0:45 |
-| 3 · Virada | 40 | devagar | 0:15 |
-| 4 · Pitch | 179 | 150 por minuto | 1:10 |
-| 5 · Fecho | 55 | no beat e depois devagar | 0:30 |
-| **Total** | **456 palavras** | | **cerca de 2min55s** |
+| 2 · Versos (19 linhas) | 166 | no beat, cerca de 85 BPM | 0:50 |
+| 3 · Virada | 37 | devagar | 0:10 |
+| 4 · Pitch | 162 | 150 por minuto, com pausas | 1:07 |
+| 5 · Fecho | 55 | no beat e depois devagar | 0:28 |
+| **Total** | **453 palavras** | | **cerca de 2min50s** |
 
-Se passar de 3:00 no corte final, tire primeiro a linha do ODS ("Cada pessoa no lugar certo...") e depois "Monta um resumo pro atendimento".
+Se passar de 3:00 no corte final, tire primeiro "Lugar certo, hora certa: saúde pra todos, menos desigualdade" (o `16_ods.png` pode ficar na tela sem fala).
 
 ## O beat
 
@@ -153,7 +171,7 @@ Se passar de 3:00 no corte final, tire primeiro a linha do ODS ("Cada pessoa no 
 ## Checklist
 
 - [ ] Beat livre para uso no YouTube, com o nome na descrição.
-- [ ] O número 76,2% aparece com a fonte.
+- [ ] O número 76,2% aparece na tela com a fonte, no verso do "quase oito em cada dez".
 - [ ] Nenhuma marca real na tela e nenhum dado pessoal real no app.
 - [ ] Se usar a origem do nome, a amiga autorizou.
 - [ ] Duração final de até 3:00.
