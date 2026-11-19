@@ -36,10 +36,10 @@ Feito seguindo o `PROMPT_ROTEIRISTA_TAMI.md`, sobre o roteiro de `ROTEIRO_REELS_
 
 | Tela | Fala |
 |---|---|
-| Você segura a tira de papel com as seis carinhas. | Lembra da pergunta do começo? Que cara você teria? |
+| Você segura a tira de papel com as carinhas de 0 a 10. | Lembra das carinhas? |
 | A fila de carinhas; a caneta circula o 6. | A sua dor pode ser um seis... |
 | A carinha de pânico com **10** do lado. | ...mas a sua cara não precisa ser um dez. |
-| A carinha de pânico vai se acalmando até sorrir, e a Tami aparece do lado. | Com alguém pra perguntar, ela fica assim. |
+| Você mostra a tira para a câmera; a carinha de pânico se acalma e sorri, e a Tami aparece do lado. | Então olha pra essas carinhas de novo e me fala: com alguém do lado, qual delas é você? |
 | Você olhando para a câmera: **PERGUNTA PRA TAMI** e o link. | Da próxima vez que doer, antes de pesquisar, pergunta pra Tami. E manda pra quem você cuida. |
 | `20_final.png` | Falou em saúde? Tamo aqui. |
 
@@ -59,62 +59,62 @@ Feito seguindo o `PROMPT_ROTEIRISTA_TAMI.md`, sobre o roteiro de `ROTEIRO_REELS_
 | A carinha da mãe (`11h_familia.png`, só a mãe). | Um dia, quem vai escolher uma delas às três da manhã pode ser a sua mãe. |
 | Link na tela, com **MANDA PRA ELA**. | Manda o link pra ela hoje. Falou em saúde? Tamo aqui. |
 
-**Por que o Final 1:** ele usa a frase mais forte do vídeo ("seis e dez"), responde a pergunta do começo e termina pra cima, com a carinha sorrindo ao lado da Tami. Do Final 3 eu aproveitei o "manda pra quem você cuida", que faz o vídeo circular. O Final 2 é bom para o Reels, mas repete o gancho sem acrescentar nada.
+**Por que o Final 1:** ele usa a frase mais forte do vídeo ("seis e dez"), fecha com o mesmo molde do vídeo de referência ("então olha pra essas carinhas de novo e me fala") e termina pra cima, com a carinha sorrindo ao lado da Tami. Do Final 3 eu aproveitei o "manda pra quem você cuida", que faz o vídeo circular. O Final 2 é bom para o Reels, mas repete o gancho sem acrescentar nada.
 
 ### O roteiro completo (versão longa)
 
 **Legenda:** 🎥 **A** = você falando · 📄 **B** = papel quadriculado limão · 🎬 **C** = imagem extra · 📱 **D** = gravação do app em papel rasgado · "[pausa]" = 1 segundo. Em negrito, a palavra que fica grande na tela.
 
-#### 1 · O gancho (0:00 a 0:08)
+#### 1 · O gancho (0:00 a 0:05)
 
 | Tempo | Cena | Texto na tela (pequeno ➜ GRANDE) | O que falar |
 |---|---|---|---|
 | 0:00 a 0:01 | 🎥 A | "pergunta" ➜ **RÁPIDA** | Pergunta rápida. |
 | 0:01 a 0:05 | 📄 B | "se esse" ➜ **VOCÊ** (o círculo se desenha em volta) ➜ as carinhas trocando ➜ "que" **CARA** "ele teria?" | Se esse círculo fosse você hoje... que cara ele teria? |
-| 0:05 a 0:08 | 📄 B | "e se fossem" ➜ **3 DA MANHÃ** ➜ "e" **DOESSE?** (a carinha de dor) | E se fossem três da manhã... e doesse? |
 
-#### 2 · A autoridade (0:08 a 0:21)
-
-| Tempo | Cena | Texto na tela | O que falar |
-|---|---|---|---|
-| 0:08 a 0:12 | 🎥 A | "carinhas assim são a" ➜ **ESCALA DE DOR** ➜ "usada no" **MUNDO TODO** (globo desenhado por cima) | Carinhas assim são a escala de dor que hospital usa no mundo todo. |
-| 0:12 a 0:17 | 📄 B | "nasceu de" ➜ **CRIANÇAS** ➜ "desenhando em" ➜ **6 CÍRCULOS** | E ela nasceu de crianças desenhando a própria dor em seis círculos. |
-| 0:17 a 0:21 | 📄 B | "ela mede o quanto" ➜ **DÓI** ➜ "mas não diz" ➜ **PRA ONDE IR** | Ela mede o quanto dói. Mas não diz pra onde ir. |
-
-#### 3 · O problema (0:21 a 0:40)
+#### 2 · As carinhas que todo mundo já viu (0:05 a 0:18)
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
-| 0:21 a 0:25 | 📄 B | **UPA?** ➜ **POSTO?** ➜ **AMA?** ➜ **CASA?** (caindo uma por vez) | UPA? Posto? AMA? Casa? |
-| 0:25 a 0:30 | 🎥 A | "uma médica me contou" ➜ "só sabe que" ➜ **TEM MÉDICO LÁ** | Uma médica me contou: o povo não sabe a diferença. Só sabe que tem médico lá. |
-| 0:30 a 0:35 | 🎥 A + 🎬 C | A caneta desenha dez carinhas e pinta quase oito ➜ **8 EM 10** ➜ "não eram" **URGENTES**. Fonte no canto: *Prefeitura de BH, jan. a jul. de 2026 (76,2%)*. | Em BH, quase oito em cada dez atendimentos na UPA não eram urgentes. |
-| 0:35 a 0:40 | 🎥 A | "e o contrário:" ➜ "ficou em casa e era" ➜ **GRAVE** | E o contrário: gente que ficou em casa quando era grave. |
+| 0:05 a 0:10 | 🎥 A + 🎬 C | Por cima de você, desenhado à mão: um totem com quatro botões de carinha, da verde sorrindo até a vermelha brava ➜ "você já viu" **ESSAS CARINHAS** | Aposto que você já viu essas carinhas: no totem do banheiro do aeroporto, avaliando um atendimento. |
+| 0:10 a 0:14 | 📄 B | As carinhas viram uma fila de 0 a 10 ➜ "na saúde, elas viram a" ➜ **ESCALA DE DOR** | Na saúde, elas viram a escala de dor, usada no mundo todo. |
+| 0:14 a 0:18 | 📄 B | "o objetivo é medir o quanto" ➜ **DÓI** ➜ "mas ela não diz" ➜ **PRA ONDE IR** | O objetivo é medir o quanto dói. Mas ela não te diz pra onde ir. |
 
-#### 4 · O gancho do meio e a saudade (0:40 a 1:03)
-
-| Tempo | Cena | Texto na tela | O que falar |
-|---|---|---|---|
-| 0:40 a 0:41 | 🎥 A (mais perto) | "mas" ➜ **POR QUÊ?** | Mas por quê? |
-| 0:41 a 0:46 | 📄 B | "me responde" ➜ **QUANDO** ➜ "você" **PERGUNTOU** ➜ "antes de" **PESQUISAR?** | Me responde: quando foi a última vez que você perguntou antes de pesquisar? |
-| 0:46 a 0:51 | 🎬 C | A carinha da vó ➜ "antes tinha a" **VÓ** | Antes tinha a vó, que olhava e já sabia se era virose ou se era pra correr. |
-| 0:51 a 0:55 | 🎬 C (você na cama, rosto iluminado pelo celular) | **3 DA MANHÃ** ➜ "sozinho com uma" **BARRA DE PESQUISA** | Hoje é você, três da manhã, sozinho com uma barra de pesquisa. |
-| 0:55 a 1:03 | 📄 B | **DORZINHA** ➜ **NÃO PASSOU** ➜ **PESQUISOU** ➜ **3º RESULTADO** | Uma dorzinha. Não passou. Pesquisou. [pausa] E no terceiro resultado já tá se despedindo da família. |
-
-#### 5 · A tese (1:03 a 1:12)
+#### 3 · O problema (0:18 a 0:42)
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
-| 1:03 a 1:08 | 🎥 A | "o problema não é pesquisar" ➜ "é ficar" ➜ **SEM ALGUÉM** | O problema não é pesquisar. É que a gente ficou sem alguém pra perguntar. |
-| 1:08 a 1:12 | 📄 B | "e a dor vira" ➜ **MEDO** ➜ "em vez de" ➜ **PRÓXIMO PASSO** | E aí a dor vira medo, em vez de virar um próximo passo. |
+| 0:18 a 0:23 | 🎥 A | **UPA?** ➜ **POSTO?** ➜ **PRONTO-SOCORRO?** ➜ **CASA?** (uma por vez, em cima de você) | E quando dói, a dúvida é: eu vou na UPA? No posto? No pronto-socorro? Ou fico em casa? |
+| 0:23 a 0:28 | 🎥 A | "uma médica me contou" ➜ "só sabe que" ➜ **TEM MÉDICO LÁ** | Uma médica me contou: o povo não sabe a diferença. Só sabe que tem médico lá. |
+| 0:28 a 0:31 | 🎥 A (mais perto, meio sem graça) | "sendo sincero" ➜ **EU TAMBÉM NÃO SABIA** | E sendo bem sincero? Até então, eu também não sabia. |
+| 0:31 a 0:38 | 🎥 A + 🎬 C | "a prefeitura de BH" ➜ **ANALISOU** ➜ a caneta desenha dez carinhas e pinta quase oito ➜ **8 EM 10** ➜ "não eram" **URGENTES**. Fonte no canto: *Prefeitura de BH, jan. a jul. de 2026 (76,2%)*. | A prefeitura de BH analisou os atendimentos das UPAs: quase oito em cada dez não eram urgentes. |
+| 0:38 a 0:42 | 🎥 A | "e o contrário:" ➜ "ficou em casa e era" ➜ **GRAVE** | E tem o contrário: quem fica em casa quando era grave. |
+
+#### 4 · O gancho do meio e a saudade (0:42 a 1:02)
+
+| Tempo | Cena | Texto na tela | O que falar |
+|---|---|---|---|
+| 0:42 a 0:43 | 🎥 A (mais perto) | "mas" ➜ **POR QUÊ?** | Mas por quê? |
+| 0:43 a 0:47 | 📄 B | "me responde" ➜ **QUANDO** ➜ "você parou de" ➜ **PERGUNTAR?** | Me responde: quando que você parou de perguntar pra alguém? |
+| 0:47 a 0:52 | 🎬 C | A carinha da vó ➜ "antes tinha a" **VÓ** | Antes tinha a vó, que olhava e já sabia se era virose ou se era pra correr. |
+| 0:52 a 0:55 | 🎬 C (você na cama, à noite, rosto iluminado pelo celular) | **3 DA MANHÃ** ➜ "você e uma" ➜ **BARRA DE PESQUISA** | Hoje, às três da manhã, é você e uma barra de pesquisa. |
+| 0:55 a 1:02 | 📄 B | **DORZINHA** ➜ **NÃO PASSOU** ➜ **PESQUISOU** ➜ **3º RESULTADO** | Uma dorzinha. Não passou. Pesquisou. [pausa] E no terceiro resultado já tá se despedindo da família. |
+
+#### 5 · A tese (1:02 a 1:12)
+
+| Tempo | Cena | Texto na tela | O que falar |
+|---|---|---|---|
+| 1:02 a 1:07 | 🎥 A | "na minha visão" ➜ "o problema não é a gente pesquisar" ➜ "é que a gente ficou" ➜ **SEM ALGUÉM** | Na minha visão, o problema não é a gente pesquisar. O problema é que a gente ficou sem alguém pra perguntar. |
+| 1:07 a 1:12 | 📄 B | "e aí faz com que a gente veja a dor só como" ➜ **MEDO** ➜ "e não como um" ➜ **PRÓXIMO PASSO** | E aí faz com que a gente veja a dor só como medo, e não como um próximo passo. |
 
 #### 6 · O segundo gancho e a Tami (1:12 a 1:32)
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
 | 1:12 a 1:14 | 🎥 A (mais perto) | "e se" ➜ **TIVESSE?** | E se tivesse alguém? |
-| 1:14 a 1:19 | 📄 B | `clipe_C_vira_tami.mp4` ➜ "conheça a" **TAMI** | Foi isso que eu criei: a Tami. Uma agente de saúde no seu celular. |
+| 1:14 a 1:19 | 📄 B | `clipe_C_vira_tami.mp4` ➜ "conheça a" **TAMI** | Foi isso que eu criei: a Tami, uma agente de saúde no celular. |
 | 1:19 a 1:23 | 📱 D | "você conta" ➜ **DO SEU JEITO** | Você conta o que sente, do seu jeito. |
-| 1:23 a 1:28 | 📱 D | "olha elas aí" ➜ **AS CARINHAS** (a escala do app, tocar no 6) | E olha as carinhas aí: é com elas que ela mede a sua dor. |
+| 1:23 a 1:28 | 📱 D | "olha elas aí" ➜ **AS CARINHAS** (a escala do app, tocar no 6) | E olha as carinhas aí: é com elas que ela mede a dor. |
 | 1:28 a 1:32 | 📱 D | "e te diz o" ➜ **PRÓXIMO PASSO** | Ela pergunta pouco e te diz o próximo passo. |
 
 #### 7 · Os casos do dia a dia (1:32 a 1:57) · bloco novo
@@ -123,59 +123,60 @@ Feito seguindo o `PROMPT_ROTEIRISTA_TAMI.md`, sobre o roteiro de `ROTEIRO_REELS_
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
-| 1:32 a 1:37 | 🎥 A (de quimono, se tiver) | "eu treino judô" ➜ **PUXEI A COXA** | Eu treino judô. Puxei a coxa no treino. |
+| 1:32 a 1:37 | 🎥 A (de quimono, se tiver) | "eu treino judô" ➜ **PUXEI A COXA** | Eu treino judô. Puxei a coxa. |
 | 1:37 a 1:42 | 📱 D (o resultado verde "Dá para cuidar disso em casa") | "não era urgente" ➜ "ela me mandou pro" ➜ **SOFÁ** | Não era urgente. Então, em vez de me mandar pra UPA, ela me mandou... pro sofá. |
 | 1:42 a 1:46 | 📱 D (o cartão "Cuidados nos primeiros 2 ou 3 dias") | **GELO NO PANO** ➜ **PERNA PRA CIMA** ➜ **PAUSA NO TREINO** | Gelo no pano, perna pra cima, uns dias sem treino. |
-| 1:46 a 1:51 | 📱 D (os cartões "Volta ao treino" e "Procure a UPA se...") | "quando" ➜ **VOLTAR A TREINAR** ➜ "e o sinal de" ➜ **IR NA UPA** | Quando dá pra voltar. E qual sinal quer dizer: agora vai na UPA. |
-| 1:51 a 1:57 | 🎥 A | **TORÇÃO** ➜ **MÚSCULO PUXADO** ➜ **PANCADA** | Torção, músculo puxado, pancada: a maioria das dores é assim. E ela ajuda nelas também. |
+| 1:46 a 1:51 | 📱 D (os cartões "Volta ao treino" e "Procure a UPA se...") | "e o sinal de" ➜ **IR NA UPA** | E qual sinal quer dizer: agora vai na UPA. |
+| 1:51 a 1:57 | 🎥 A | **TORÇÃO** ➜ **MÚSCULO PUXADO** ➜ **PANCADA** | Torção, músculo puxado, pancada: ela ajuda nessas também. |
 
 #### 8 · A emergência e o resto (1:57 a 2:10)
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
-| 1:57 a 2:01 | 📱 D (a tela com o botão do 192) | "se for sério" ➜ **192** | E se for sério? Ela checa isso primeiro: é um toque pro 192. |
-| 2:01 a 2:06 | 📱 D | **SUS MAIS PERTO** ➜ **RESUMO** | Mostra o SUS mais perto e monta um resumo pro atendimento. |
+| 1:57 a 2:01 | 📱 D (a tela com o botão do 192) | "se for sério" ➜ **192** | Se for sério, é um toque pro 192. |
+| 2:01 a 2:06 | 📱 D | **SUS MAIS PERTO** ➜ **RESUMO** | Mostra o SUS mais perto. |
 | 2:06 a 2:10 | 📄 B (`11h_familia.png`) | **MÃE · PAI · VÓ** | E cuida de quem você cuida: mãe, pai, vó. |
 
 #### 9 · Por que abrir hoje (2:10 a 2:28)
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
-| 2:10 a 2:14 | 🎥 A | **SEM BAIXAR** ➜ **SEM CONTA** ➜ **DE GRAÇA** ➜ o link na tela | Sem baixar, sem conta, de graça. O link tá aqui na tela. |
+| 2:10 a 2:14 | 🎥 A | **SEM BAIXAR** ➜ **SEM CONTA** ➜ **DE GRAÇA** ➜ o link na tela | Sem baixar, sem conta, de graça. |
 | 2:14 a 2:17 | 🎥 A | "testei com" ➜ **10.000 CASOS** | Eu testei com dez mil casos. |
 | 2:17 a 2:22 | 🎥 A | **99,5%** (gigante, atrás de você) ➜ "dos urgentes foram pra" ➜ **UPA OU SAMU** | Noventa e nove e meio por cento dos urgentes foram pra UPA ou SAMU. |
-| 2:22 a 2:28 | 📄 B | "ela não é" ➜ **MÉDICA** (riscada) ➜ "ela te diz" ➜ **PRA ONDE IR** | Ela não é médica: não diagnostica, não indica remédio. Ela te diz pra onde ir. |
+| 2:22 a 2:28 | 📄 B | "ela não é" ➜ **MÉDICA** (riscada) ➜ **NÃO DIAGNOSTICA** ➜ **NÃO INDICA REMÉDIO** | Ela não é médica: não diagnostica, não indica remédio. |
 
 #### 10 · O fecho (2:28 a 2:52)
 
 | Tempo | Cena | Texto na tela | O que falar |
 |---|---|---|---|
-| 2:28 a 2:32 | 🎥 A (outro ângulo, mais perto, segurando a tira com as seis carinhas) | "lembra da" ➜ **PERGUNTA?** | Lembra da pergunta do começo? Que cara você teria? |
-| 2:32 a 2:35 | 📄 B | A fila de carinhas com 0, 2, 4, 6, 8 e 10; a caneta circula o **6** | A sua dor pode ser um seis... |
-| 2:35 a 2:38 | 📄 B | A carinha de pânico com **10** | ...mas a sua cara não precisa ser um dez. |
-| 2:38 a 2:41 | 📄 B | A carinha de pânico se acalma até sorrir, e a Tami aparece do lado | Com alguém pra perguntar, ela fica assim. |
-| 2:41 a 2:48 | 🎥 A (mesmo ângulo) | **PERGUNTA PRA TAMI** ➜ `tami-app.onrender.com` ➜ "e manda pra" **QUEM VOCÊ CUIDA** | Da próxima vez que doer, antes de pesquisar, pergunta pra Tami. E manda pra quem você cuida. |
+| 2:28 a 2:31 | 🎥 A (outro ângulo, mais perto, segurando a tira com as carinhas de 0 a 10) | "lembra das" ➜ **CARINHAS?** | Lembra das carinhas? |
+| 2:31 a 2:34 | 📄 B | A fila de carinhas; a caneta circula o **6** | A sua dor pode ser um seis... |
+| 2:34 a 2:37 | 📄 B | A carinha de pânico com **10** | ...mas a sua cara não precisa ser um dez. |
+| 2:37 a 2:42 | 🎥 A (segurando a tira para a câmera) | "então olha pra essas carinhas de novo" ➜ "com alguém do lado" ➜ **QUAL É VOCÊ?** (a carinha de pânico se acalma e sorri, e a Tami aparece do lado) | Então olha pra essas carinhas de novo e me fala: com alguém do lado, qual delas é você? |
+| 2:42 a 2:48 | 🎥 A (mesmo ângulo) | **PERGUNTA PRA TAMI** ➜ o link ➜ "e manda pra" **QUEM VOCÊ CUIDA** | Da próxima vez que doer, antes de pesquisar, pergunta pra Tami. E manda pra quem você cuida. |
 | 2:48 a 2:52 | 📄 B (`20_final.png`) | **FALOU EM SAÚDE? TAMO AQUI.** | Falou em saúde? Tamo aqui. |
 
 **Para a GS:** acrescente 3 segundos de `17_roadmap.png` (HOJE orienta ➜ PRÓXIMO revisão médica ➜ DEPOIS acompanha), sem fala, entre o bloco 9 e o 10.
 
 ### Contagem
 
-**432 palavras.** No ritmo da referência (2,6 palavras por segundo) dá 2min46s de fala; com as pausas e os cortes, cerca de 2min55s. Fica abaixo dos 3:00 da GS. Se passar no corte final, tire primeiro "E o contrário: gente que ficou em casa quando era grave".
+**437 palavras.** No ritmo da referência (2,6 palavras por segundo) dá 2min48s de fala; com as pausas e os cortes, cerca de 2min55s. Fica abaixo dos 3:00 da GS. Se passar no corte final, tire primeiro "E o contrário: gente que ficou em casa quando era grave".
 
-A versão curta tem 152 palavras, cerca de 58 segundos.
+A versão curta tem 154 palavras, cerca de 59 segundos.
 
 ### A versão curta (até 60 s)
 
 | Tempo | Cena | O que falar |
 |---|---|---|
-| 0:00 a 0:08 | A + B | Pergunta rápida. Se esse círculo fosse você hoje... que cara ele teria? E se fossem três da manhã... e doesse? |
-| 0:08 a 0:14 | A | Carinhas assim são a escala de dor que hospital usa no mundo todo. Ela mede o quanto dói. Mas não diz pra onde ir. |
-| 0:14 a 0:22 | B | Uma dorzinha. Não passou. Pesquisou. E no terceiro resultado já tá se despedindo da família. |
-| 0:22 a 0:28 | A + B | Por isso eu criei a Tami: você conta o que sente e ela te diz o próximo passo. |
-| 0:28 a 0:38 | A + D | Puxei a coxa no treino? Ela me mandou pro sofá, com gelo, e me disse qual sinal é pra ir na UPA. Se for sério, é um toque pro 192. |
-| 0:38 a 0:44 | A | Sem baixar, sem conta, de graça. Ela não é médica: ela te diz pra onde ir. |
-| 0:44 a 0:56 | A + B | A sua dor pode ser um seis... mas a sua cara não precisa ser um dez. Da próxima vez que doer, pergunta pra Tami. Falou em saúde? Tamo aqui. |
+| 0:00 a 0:05 | A + B | Pergunta rápida. Se esse círculo fosse você hoje... que cara ele teria? |
+| 0:05 a 0:13 | A + C | Aposto que você já viu essas carinhas. Na saúde, elas viram a escala de dor. Ela mede o quanto dói. Mas não te diz pra onde ir. |
+| 0:13 a 0:20 | A | UPA? Posto? Pronto-socorro? Ou fico em casa? Sendo sincero, até pouco tempo eu também não sabia. |
+| 0:20 a 0:27 | B | Uma dorzinha. Não passou. Pesquisou. E no terceiro resultado já tá se despedindo da família. |
+| 0:27 a 0:33 | A + B | Por isso eu criei a Tami: você conta o que sente e ela te diz o próximo passo. |
+| 0:33 a 0:42 | A + D | Puxei a coxa no judô? Ela me mandou pro sofá, com gelo, e me disse qual sinal é pra ir na UPA. Se for sério, é um toque pro 192. |
+| 0:42 a 0:46 | A | Sem baixar, sem conta, de graça. |
+| 0:46 a 0:58 | A + B | A sua dor pode ser um seis... mas a sua cara não precisa ser um dez. Da próxima vez que doer, pergunta pra Tami. Falou em saúde? Tamo aqui. |
 
 ### Legenda do post
 
@@ -192,24 +193,24 @@ A versão curta tem 152 palavras, cerca de 58 segundos.
 
 ### O que eu mudei e por quê
 
-1. **Bloco novo dos casos do dia a dia (1:32)**, com o seu exemplo do judô e as falas tiradas da resposta real do app (cuidar em casa, gelo no pano, pausa no treino, volta ao treino, quando ir na UPA): é o motivo para quem não está numa emergência abrir o link hoje.
-2. **"E se doesse?" virou "E se fossem três da manhã... e doesse?"**: imagem concreta, e o "3 da manhã" volta duas vezes no vídeo.
-3. **"Mas não o quão perdido você tá" virou "mas não diz pra onde ir"**: liga direto no problema, sem frase abstrata.
-4. **O problema ficou mais curto e visual** (UPA? Posto? AMA? Casa? caindo na tela), para não perder gente entre 0:20 e 0:40.
-5. **"Ela não deixa passar" e "sem perder horas na fila errada" saíram**: prometiam mais do que o app garante.
-6. **A linha do 99,5% foi dividida em dois cortes**: 27 palavras num corte só não dá para ler.
-7. **O final responde a pergunta do começo** e termina pra cima ("com alguém pra perguntar, ela fica assim"), em vez de "a dor continua lá".
-8. **A chamada para ação pede o compartilhamento** ("manda pra quem você cuida"), que é o que faz um vídeo de divulgação andar.
+1. **Saiu "E se fossem três da manhã... e doesse?"**: era uma dúvida solta. Agora, depois do gancho, vem algo que todo mundo reconhece: as carinhas do totem do banheiro do aeroporto e da avaliação de atendimento.
+2. **A escala de dor ficou fácil de acreditar**: ela aparece como "a versão da saúde" das carinhas que a pessoa já conhece, sem frase que pareça tirada do nada.
+3. **A dúvida virou sua, em primeira pessoa** ("eu vou na UPA? No posto? No pronto-socorro? Ou fico em casa?"), e entrou o "sendo bem sincero? Até então, eu também não sabia", que deixa você do lado de quem assiste.
+4. **As falas imitam mais o molde da referência**: "A prefeitura de BH analisou...", "Me responde: quando que você parou de perguntar pra alguém?", "Na minha visão, o problema não é a gente pesquisar. O problema é que...", "E aí faz com que a gente veja a dor só como medo, e não como um próximo passo" e "Então olha pra essas carinhas de novo e me fala...".
+5. **Bloco dos casos do dia a dia (1:32)**, com o exemplo do judô e as falas tiradas da resposta real do app (cuidar em casa, gelo no pano, pausa no treino, quando ir na UPA).
+6. **Saíram promessas que o app não garante**: "ela não deixa passar", "sem perder horas na fila errada" e "gripe forte".
+7. **O final usa o molde da referência, mas nas carinhas** ("então olha pra essas carinhas de novo e me fala: com alguém do lado, qual delas é você?"), e não no círculo.
+8. **A chamada para ação pede o compartilhamento** ("manda pra quem você cuida").
 
 ### Reavaliação da versão final
 
 | Critério | Nota | Por quê |
 |---|---|---|
-| Gancho | **10** | Pergunta direta em 1 segundo, carinhas trocando e uma imagem concreta ("três da manhã... e doesse?") antes do segundo 8. |
-| Retenção no meio | **10** | O problema cabe em 19 segundos e é visual; os dois ganchos ("Mas por quê?" e "E se tivesse alguém?") caem a 0:40 e a 1:12; a piada do terceiro resultado fica entre os dois. |
+| Gancho | **10** | Pergunta direta em 1 segundo, carinhas trocando, e logo depois algo que todo mundo já viu (o totem de carinhas do aeroporto), que puxa a pessoa pra dentro sem pergunta solta. |
+| Retenção no meio | **10** | O problema é contado em primeira pessoa e com uma confissão ("eu também não sabia"); os dois ganchos ("Mas por quê?" e "E se tivesse alguém?") caem a 0:42 e a 1:12; a piada do terceiro resultado fica entre os dois. |
 | Clareza da proposta | **10** | "Você conta o que sente, do seu jeito... ela pergunta pouco e te diz o próximo passo": dá para repetir em uma frase. |
 | Valor percebido | **10** | O caso leve (judô) ganha 25 segundos, mais do que a emergência, e mostra o que o app entrega de verdade: sofá, gelo, pausa no treino, volta e o sinal de alerta. |
-| Prova e confiança | **10** | Escala usada no mundo todo, a médica, BH com fonte, 10.000 casos e 99,5%, cada um num corte próprio. |
+| Prova e confiança | **10** | A escala de dor entra pelo que a pessoa já conhece; depois a médica, o "eu também não sabia", BH com fonte, 10.000 casos e 99,5%, cada um num corte próprio. |
 | Emoção | **10** | A vó, as três da manhã sozinho, a família e o fecho "com alguém pra perguntar, ela fica assim". |
 | Humor | **10** | Três momentos leves e espaçados: "despedindo da família" (1:03), "pro sofá" (1:42) e o "seis e dez" (2:35). |
 | Final | **10** | Volta na pergunta do começo, usa a escala de carinhas, termina pra cima e deixa a frase que a pessoa repete. |
@@ -223,7 +224,8 @@ A versão curta tem 152 palavras, cerca de 58 segundos.
 
 ### Novas telas que o kit vai precisar
 
-- "e se fossem **3 DA MANHÃ** e **DOESSE?**"
-- **UPA? POSTO? AMA? CASA?** caindo uma por vez
+- O totem com quatro botões de carinha (verde sorrindo até vermelha brava), desenhado à mão, e "você já viu **ESSAS CARINHAS**"
+- **EU TAMBÉM NÃO SABIA**
+- **UPA? POSTO? PRONTO-SOCORRO? CASA?** caindo uma por vez
 - **SOFÁ**, **GELO NO PANO · PERNA PRA CIMA · PAUSA NO TREINO**, **VOLTAR A TREINAR · IR NA UPA** e **TORÇÃO · MÚSCULO PUXADO · PANCADA**
 - A fila das seis carinhas com 0 a 10, a carinha de pânico com **10** e o clipe dela se acalmando ao lado da Tami
