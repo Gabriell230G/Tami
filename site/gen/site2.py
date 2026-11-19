@@ -20,6 +20,7 @@ R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = f"{R}/dist"
 V1 = os.path.join(R, "gen", "base")
 BASE = "https://gabriell230g.github.io/tami/"   # provisório (domínio a confirmar com o Gabriel)
+APP = "https://tami-app.onrender.com"
 LINKEDIN = "https://www.linkedin.com/in/gabrielvasconcellosgomes"  # contato público (o e-mail saiu do site a pedido do Gabriel)
 LINKEDIN_TXT = "linkedin.com/in/gabrielvasconcellosgomes"
 
@@ -537,10 +538,10 @@ def beta():
     p = "beta"
     pas = "".join(f'<li data-revela><span class="bt-n" aria-hidden="true">{i}</span><p>{t(p, "passos", f"p{i}")}</p></li>' for i in range(1, 4))
     form = (f'<div class="convite-li"><p>{t(p, "form", "como")}</p>'
-            f'<p class="convite-msg"><span>"{t(p, "form", "mensagem")}"</span>'
-            f'<button type="button" class="btn btn-s" data-copiar-texto="{ta(p, "form", "mensagem")}" data-ok="{ta(p, "form", "copiado")}">{t(p, "form", "copiar")}</button></p>'
+            f'<p><a class="btn btn-p" href="{APP}" target="_blank" rel="noopener">{t(p, "form", "abrir")}<span class="sr"> (abre em outra aba)</span></a></p>'
             f'<p class="nota">{t(p, "form", "nao_mande")} <a href="{link(p, "privacidade")}">{t("geral", "rodape", "privacidade")}</a></p>'
-            f'<a class="btn btn-p" href="{LINKEDIN}" target="_blank" rel="noopener">{t(p, "form", "botao")}<span class="sr"> (abre em outra aba)</span></a></div>')
+            f'<p>{t(p, "form", "depois")}</p>'
+            f'<a class="btn btn-s" href="{LINKEDIN}" target="_blank" rel="noopener">{t(p, "form", "botao")}<span class="sr"> (abre em outra aba)</span></a></div>')
     esperar = (f'<div class="bt-esp"><div class="bt-sim" data-revela><h3>{t(p, "esperar", "sim")}</h3><p>{t(p, "limites", "l1").split(": ", 1)[-1][:1].upper() + t(p, "limites", "l1").split(": ", 1)[-1][1:]}</p></div>'
                f'<div class="bt-ainda" data-revela><h3>{t(p, "esperar", "ainda")}</h3><p>{t(p, "limites", "l2").split(": ", 1)[-1][:1].upper() + t(p, "limites", "l2").split(": ", 1)[-1][1:]}</p></div>'
                f'<div class="bt-imp" data-revela><h3>{t(p, "esperar", "importante")}</h3><p>{t(p, "limites", "l3")}</p><p>{t(p, "limites", "l4")}</p></div></div>')

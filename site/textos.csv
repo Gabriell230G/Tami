@@ -31,7 +31,7 @@ geral;rodape;frase;Cuidar começa com uma conversa.
 geral;rodape;paginas;Páginas
 geral;rodape;nao_mande;Não mande dados de saúde por mensagem. Em emergência, ligue 192.
 geral;convite;titulo;Quer testar a Tami?
-geral;convite;texto;O teste está começando aos poucos, por convite.
+geral;convite;texto;A versão de teste já está no ar. É de graça e não precisa baixar nada.
 geral;convite;botao;Quero testar
 inicio;meta;titulo;Tami · Falou em saúde? Tamo aqui.
 inicio;meta;descricao;A Tami é um app em teste que ajuda a decidir para onde ir: SAMU, UPA, posto ou casa.
@@ -119,12 +119,12 @@ inicio;c8;t1;O protótipo do app funciona, com conversa por texto e por voz.
 inicio;c8;t2_quando;Próximo passo
 inicio;c8;t2;Revisão das regras por profissionais de saúde.
 inicio;c8;t3_quando;Depois
-inicio;c8;t3;Teste com mais pessoas, por convite.
+inicio;c8;t3;Teste aberto, com mais pessoas.
 inicio;c8;t4_quando;Lojas
 inicio;c8;t4;Ainda sem data.
 inicio;c8;link;Conhecer a história
 inicio;c9;titulo;Quer ajudar a deixar a Tami melhor?
-inicio;c9;texto;O teste está começando aos poucos, por convite. Sua opinião ajuda a deixar a Tami mais clara.
+inicio;c9;texto;A versão de teste já está no ar, de graça. Sua opinião ajuda a deixar a Tami mais clara.
 inicio;c9;botao;Quero testar
 como;meta;titulo;Como a Tami funciona · Tami
 como;meta;descricao;Uma conversa curta: você conta, a Tami pergunta e ajuda a decidir para onde ir.
@@ -229,7 +229,7 @@ perguntas;q;r6;Sim. Pode ser um bebê, uma criança, um adulto ou um idoso.
 perguntas;q;p7;Quanto custa?
 perguntas;q;r7;No teste, é de graça.
 perguntas;q;p8;Onde eu baixo o app?
-perguntas;q;r8;Ainda não está nas lojas. O teste está começando aos poucos, por convite.
+perguntas;q;r8;Ainda não está nas lojas. A versão de teste já está no ar e funciona no navegador, de graça.
 perguntas;q;p9;A Tami foi aprovada por algum órgão de saúde?
 perguntas;q;r9;Não. A Tami está em teste e pode errar. Ainda não passou por avaliação da ANVISA nem por validação clínica.
 perguntas;q;p10;O que acontece com o que eu conto?
@@ -239,25 +239,25 @@ perguntas;q;r11;Você não precisa passar por isso sem ajuda. Ligue 188, do CVV,
 perguntas;q;p12;Quem faz a Tami?
 perguntas;q;r12;Gabriel Gomes, estudante de Sistemas de Informação da FIAP. A Tami é um projeto independente e está em teste.
 beta;meta;titulo;Quero testar a Tami · Tami
-beta;meta;descricao;O teste da Tami está começando aos poucos, por convite. Peça o seu e conte o que achou.
+beta;meta;descricao;A versão de teste da Tami já está no ar. É de graça e não precisa baixar nada. Use e conte o que achou.
 beta;topo;rotulo;Teste
 beta;topo;titulo;Quero testar a Tami
-beta;topo;sub;O teste está começando aos poucos, por convite. Quer participar?
+beta;topo;sub;A versão de teste já está no ar. É de graça, não precisa baixar nada e dá para usar sem conta.
 beta;limites;titulo;O que esperar do teste
-beta;limites;l1;O que funciona: conversa por texto e voz, os quatro caminhos e o "Onde dói?".
+beta;limites;l1;O que funciona: conversa por texto, os quatro caminhos, o "Onde dói?" e a unidade do SUS mais perto.
 beta;limites;l2;Ainda não tem: app nas lojas e revisão das regras por profissionais.
 beta;limites;l3;A Tami pode errar. Em emergência, ligue 192 sem esperar a Tami.
 beta;limites;l4;Ainda não passou por avaliação da ANVISA nem por validação clínica.
-beta;passos;titulo;Como funciona o convite
-beta;passos;p1;Você me chama no LinkedIn pedindo o convite.
-beta;passos;p2;Quando chegar a sua vez, eu mando o link.
-beta;passos;p3;Você usa a Tami e conta o que achou.
-beta;form;titulo;Peça seu convite
+beta;passos;titulo;Como testar
+beta;passos;p1;Toque em "Abrir a Tami". Na primeira vez, ela pode levar até 1 minuto para acordar.
+beta;passos;p2;Use sem conta ou crie uma conta de teste. Não precisa usar dados reais.
+beta;passos;p3;Me conta o que achou no LinkedIn: o que ajudou e o que confundiu.
+beta;form;titulo;Abrir a Tami
 beta;form;nome;Seu nome (opcional)
 beta;form;cidade;Sua cidade (opcional)
 beta;form;consentimento;Quero receber o convite e li a política de privacidade.
-beta;form;botao;Pedir convite no LinkedIn
-beta;form;nao_mande;Não mande dados de saúde. O convite não precisa disso. Antes, leia a
+beta;form;botao;Contar o que achei no LinkedIn
+beta;form;nao_mande;No LinkedIn, não mande dados de saúde. Antes de usar, leia a
 beta;form;enviado;Seu app de e-mail deve abrir agora. É só tocar em enviar.
 beta;form;nao_abriu;Não abriu? Copie o endereço e mande um e-mail com "Quero testar a Tami".
 beta;form;copiar;Copiar mensagem
@@ -274,7 +274,7 @@ imprensa;frase;texto;App de orientação em saúde, em teste, que ajuda a decidi
 imprensa;paragrafo;titulo;Em um parágrafo
 imprensa;paragrafo;texto;A Tami é um projeto independente de Gabriel Gomes, estudante da FIAP. Ela conversa por texto ou voz e pergunta primeiro sobre sinais de emergência. Depois, ajuda a decidir entre SAMU, UPA, posto de saúde ou cuidar em casa. Ela segue regras escritas, sem inteligência artificial que inventa respostas. A Tami não dá diagnóstico, não indica remédio e não substitui o atendimento. Está em teste e pode errar. Ainda não passou por avaliação da ANVISA nem por validação clínica.
 imprensa;fatos;titulo;Fatos rápidos
-imprensa;fatos;f1;Fase: em teste, por convite.
+imprensa;fatos;f1;Fase: em teste aberto, no navegador.
 imprensa;fatos;f2;No teste: de graça.
 imprensa;fatos;f3;Quem faz: Gabriel Gomes, FIAP, São Paulo.
 imprensa;fatos;f4;O que faz: ajuda a decidir para onde ir.
@@ -373,7 +373,7 @@ imprensa;kit;copiar;Copiar texto
 imprensa;kit;copiado;Copiado!
 imprensa;kit;copiar_email;Abrir o LinkedIn
 imprensa;kit;ver_manual;Ver o manual de marca completo
-beta;form;como;Mande uma mensagem no meu LinkedIn com esta frase. Se quiser, diga também a sua cidade.
+beta;form;como;É só abrir o link. Funciona no navegador do celular e do computador.
 beta;form;mensagem;Quero testar a Tami
 perguntas;busca;rotulo;Procure sua dúvida
 perguntas;busca;exemplo;Ex.: remédio, emergência, custo
@@ -402,11 +402,11 @@ privacidade;site;texto1;Não uso cookies, rastreadores nem ferramentas de análi
 privacidade;site;texto2;As fontes, as imagens e os códigos ficam no próprio site. Nada é carregado de outras empresas.
 privacidade;site;texto3;O serviço que hospeda o site guarda registros técnicos, como a hora da visita. Isso acontece em qualquer site. Eu não uso esses registros para saber quem você é.
 privacidade;site;texto4;Se você pausar o movimento, essa escolha fica salva só no seu navegador.
-privacidade;convite;titulo;Quando você pede o convite
-privacidade;convite;texto1;O pedido é uma mensagem no LinkedIn. Eu vejo o que você escrever e o seu perfil público.
-privacidade;convite;texto2;Para que serve: mandar o convite e avisos sobre o teste. Mais nada.
+privacidade;convite;titulo;Quando você me manda uma mensagem
+privacidade;convite;texto1;A conversa é pelo LinkedIn. Eu vejo o que você escrever e o seu perfil público.
+privacidade;convite;texto2;Para que serve: ler o que você achou e mandar avisos sobre o teste. Mais nada.
 privacidade;convite;texto3;Por quanto tempo: só enquanto o teste durar. Depois, eu apago a conversa.
-privacidade;convite;texto4;Não mande dados de saúde por mensagem. O convite não precisa disso.
+privacidade;convite;texto4;Não mande dados de saúde por mensagem.
 privacidade;app;titulo;No app: o que a Tami guarda e por quê
 privacidade;app;texto;Cada dado tem um motivo. Se a Tami não precisa, não pede.
 privacidade;app;h1;O que
@@ -532,3 +532,5 @@ imprensa;falar;p7q;Ainda não passou por avaliação da ANVISA nem por validaç�
 imprensa;falar;p8n;app do SUS
 imprensa;falar;p8s;projeto independente de um estudante
 imprensa;falar;p8q;Ela indica serviços do SUS, como UPA e posto. Mas não faz parte dele.
+beta;form;abrir;Abrir a Tami
+beta;form;depois;Depois de testar, me conta o que achou. Se quiser, diga também a sua cidade.
