@@ -1,10 +1,10 @@
 # Tami · Roteiro do vídeo 2: técnico (Entrega 2)
 
-Vídeo de **até 3 minutos** que cobre, nesta ordem, tudo o que o enunciado pede: o sistema Java funcionando, o banco recebendo **inserção, leitura e atualização**, **quais dados** são coletados e **como são tratados**, os **conceitos do curso** no código real e **dois desafios técnicos** com a solução.
+Vídeo de **até 3 minutos**: **1 minuto** para contar o que é a Tami e **2 minutos** para mostrar como ela foi feita, sem complicar. Cobre tudo o que o enunciado pede: o sistema Java funcionando, o banco **gravando, lendo e atualizando**, **quais dados** são coletados e **como são tratados**, os **conceitos do curso** e **dois desafios técnicos**.
 
 **Alvo:** cerca de 2min55s. A contagem está no fim.
 
-**Como falar.** Frases curtas, ritmo de quem está mostrando, não de quem está lendo. Fale **enquanto** clica. "[pausa]" é 1 segundo.
+**Como falar.** Como se estivesse explicando para um amigo que não é da área. Frases curtas. Fale **enquanto** clica. "[pausa]" é 1 segundo.
 
 **Legenda:** 🎤 fala · 🖥️ o que aparece na tela · ⌨️ o que clicar. Todo trecho de código aparece com **arquivo e linha** no canto da tela.
 
@@ -25,36 +25,47 @@ Vídeo de **até 3 minutos** que cobre, nesta ordem, tudo o que o enunciado pede
 
 ## O roteiro
 
+O vídeo tem **duas partes**: no primeiro minuto você conta **o que é a Tami** (para quem nunca viu entender o resto), e depois mostra **como ela foi feita**, em linguagem simples. Cada termo técnico vem com uma frase que explica o que ele faz.
+
+### Parte 1 · O que é a Tami (0:00 a 0:58)
+
 | Tempo | 🖥️ ⌨️ Na tela e o que clicar | 🎤 O que falar |
 |---|---|---|
-| **0:00 a 0:08**<br>Gancho | ⌨️ App aberto com o painel **"Por dentro"** (botão `<>`) ligado. Toque em qualquer botão: a chamada e o SQL aparecem no painel. | Cada toque na Tami vira uma chamada pra API e uma linha no banco. [pausa] Hoje eu te mostro isso por dentro. |
-| **0:08 a 0:22**<br>Arquitetura e Java no ar | 🖥️ Figura `04_arquitetura.png`. ⌨️ Aba **Logs** do Render, na linha "Tami no ar". | É um servidor em Java 17, sem framework: o HttpServer do próprio Java, JDBC e PostgreSQL no Supabase, em São Paulo. Tudo publicado no Render: aqui, o servidor no ar. |
-| **0:22 a 0:45**<br>INSERT | ⌨️ App, logado como "Teste GS" ➜ Meus dados ➜ ligue "Guardar meus dados de saúde" ➜ Início ➜ Começar ➜ Para mim ➜ relato "torci o tornozelo no treino" ➜ Continuar. 🖥️ No "Por dentro": `POST /api/conversas` e `INSERT INTO T_TAMI_CONVERSA`. | Quando eu mando o relato, o app faz um POST na API, e o servidor cria a conversa: um INSERT na tabela de conversas. O painel mostra a chamada e o comando que ela dispara. |
-| **0:45 a 1:05**<br>Transação | ⌨️ Responda até o resultado. ⌨️ VS Code: `dao/ConversaDAO.java`, linhas 54 (`setAutoCommit(false)`) e 81 (`commit()`). ⌨️ Supabase ➜ `t_tami_conversa` (ordene por `id_conversa`, a linha nova) e `t_tami_resposta` filtrando por ela. | No fim, a conversa recebe o destino e as respostas são gravadas numa transação só: ou grava tudo, ou nada. [pausa] No Supabase, a linha nova e cada resposta, na ordem. |
-| **1:05 a 1:20**<br>UPDATE e SELECT | ⌨️ App ➜ "Onde dói, e quanto?" ➜ toque no 6 ➜ Guardar. Depois no 3 ➜ Guardar. 🖥️ "Por dentro": `POST .../dor` (INSERT) e depois `PUT /api/dor/{id}` (UPDATE). ⌨️ Supabase ➜ `t_tami_dor`: `nr_nivel` foi de 6 para 3. ⌨️ App ➜ "Ver resumo para o atendimento". | Dor nível seis: INSERT. Mudei pra três: UPDATE na mesma linha. [pausa] E o resumo pro atendimento é um SELECT que junta conversa, respostas e dor. |
-| **1:20 a 1:42**<br>Dados e tratamento | ⌨️ VS Code: `servico/ConversaService.java`, linhas 120 e 121 (só grava com consentimento). `dao/ConversaDAO.java`, linha 30 (relato só se `isGuardar()`). `api/Servidor.java`, linha 136 (a pessoa baixa os próprios dados). `sql/postgres/01_criar_tabelas.sql`, linha 110 (`ON DELETE CASCADE`). | Que dados ficam? Sem conta, só idade, parte do corpo e destino, pra estatística. O relato só é gravado com conta e consentimento de saúde: está no código, não só na tela. [pausa] E a pessoa baixa tudo o que existe sobre ela, ou apaga a conta, e o cascade leva junto o resto. |
-| **1:42 a 2:02**<br>Conceitos do curso | ⌨️ `dao/BaseDAO.java` linha 11 (`abstract class`) e `dao/DorDAO.java` linha 14 (`extends BaseDAO`), linhas 18, 36 e 47 (`inserir`, `atualizarNivel`, `listarPorConversa`). `modelo/RegistroDor.java` linha 6 (`record`). `motor/Destino.java` linha 4 (`enum`). 🖥️ Figura `06_der.png`. | Do curso: padrão DAO, com herança de uma classe abstrata. PreparedStatement em todo comando, então o texto da pessoa nunca vira SQL. Records e enums no modelo, e o motor não conhece o banco. [pausa] O modelo tem onze tabelas, com chave primária, estrangeira e check. |
-| **2:02 a 2:28**<br>Desafio 1: integração | ⌨️ `servico/LocalService.java`, linhas 36 a 38 (20 por página, 6 em paralelo, cache de 12 horas), 131 a 133 (`sendAsync`) e 163 (`semCoordenadaGenerica`). 🖥️ No app, "Usar minha localização" num resultado de UPA (num lugar público). | Primeiro desafio: achar a UPA real mais perto, na API do Ministério da Saúde. Ela devolve só vinte unidades por vez. Então busco seis páginas em paralelo, com o HttpClient assíncrono, e guardo em cache por doze horas. [pausa] E algumas unidades vinham com coordenada falsa: filtrei. A localização da pessoa nunca é gravada. |
-| **2:28 a 2:55**<br>Desafio 2: segurança | 🖥️ Figura `22_rodadas.png` (as rodadas de teste) e, no fim, Figura `20_matriz.png` (a matriz de 10.000 casos). | Segundo desafio: melhorar a conversa sem perder segurança. Cada mudança no motor roda dez mil casos e doze mil conversas simuladas, em ciclos curtos. Se algum urgente vai pra casa, a mudança é desfeita. [pausa] Assim, as perguntas sem relação caíram de cinquenta e cinco pra vinte e dois por cento, e noventa e nove e meio por cento dos urgentes foram pro lugar certo. |
+| **0:00 a 0:12**<br>O problema | 🎥 Você falando para a câmera. Na tela, uma palavra por vez: **UPA? POSTO? PRONTO-SOCORRO? CASA?** | Quando dói, a dúvida é sempre a mesma: eu vou na UPA? No posto? No pronto-socorro? Ou fico em casa? [pausa] Em BH, quase oito em cada dez atendimentos na UPA não eram urgentes. |
+| **0:12 a 0:20**<br>A Tami | 🖥️ O avatar da Tami e o slogan. | Pra isso eu criei a Tami: uma agente de saúde no celular, de graça. |
+| **0:20 a 0:45**<br>Como ela funciona | ⌨️ Gravação do app: digitar "torci o tornozelo no treino" ➜ as perguntas ➜ a escala de dor ➜ o resultado "cuidar em casa" com os cuidados ➜ "Usar minha localização" (num lugar público). | Você conta o que sente, do seu jeito. Ela confere primeiro se é emergência. Depois pergunta pouco e diz o próximo passo: SAMU, UPA hoje, posto em breve ou cuidar em casa. [pausa] Mostra os cuidados, o SUS mais perto e monta um resumo pro atendimento. |
+| **0:45 a 0:58**<br>O limite | 🖥️ **NÃO DIAGNOSTICA · NÃO INDICA REMÉDIO · 945 SINAIS COM FONTE** | Ela não diagnostica e não indica remédio: segue regras com fonte. [pausa] Agora, como isso foi feito. |
 
----
+### Parte 2 · Como foi feita (0:58 a 2:55)
+
+| Tempo | 🖥️ ⌨️ Na tela e o que clicar | 🎤 O que falar |
+|---|---|---|
+| **0:58 a 1:15**<br>O desenho | 🖥️ Figura `04_arquitetura.png`. ⌨️ Aba **Logs** do Render, na linha "Tami no ar". | Por trás, é um programa em Java que roda num servidor na internet, o Render. Ele guarda tudo num banco PostgreSQL, no Supabase. [pausa] O app conversa com o Java, e o Java conversa com o banco. |
+| **1:15 a 1:35**<br>Gravar | ⌨️ App, logado como "Teste GS", com o painel **"Por dentro"** (botão `<>`) aberto ➜ mandar o relato. 🖥️ O painel mostra `POST /api/conversas` e `INSERT INTO T_TAMI_CONVERSA`. ⌨️ Responder até o resultado. ⌨️ Supabase ➜ `t_tami_conversa` e `t_tami_resposta`: as linhas novas. | Esse painel mostra o que acontece por dentro. Quando eu mando o relato, o Java grava uma conversa nova no banco: é uma inserção. [pausa] No fim, ele grava o destino e cada resposta de uma vez só. Se der erro no meio, nada fica pela metade. |
+| **1:35 a 1:50**<br>Atualizar e ler | ⌨️ App ➜ "Onde dói, e quanto?" ➜ 6 ➜ Guardar ➜ 3 ➜ Guardar. ⌨️ Supabase ➜ `t_tami_dor`: o nível foi de 6 para 3. ⌨️ App ➜ "Ver resumo para o atendimento". | Se eu marco dor seis e depois mudo pra três, ele atualiza a mesma linha. [pausa] E o resumo pro atendimento é uma leitura que junta tudo. |
+| **1:50 a 2:08**<br>Os dados | ⌨️ VS Code: `servico/ConversaService.java`, linhas 120 e 121 (a permissão de saúde), por 3 segundos. ⌨️ App ➜ Meus dados: os botões "Baixar meus dados" e "Apagar minha conta". | Que dados ficam? Sem conta, só idade, parte do corpo e destino, pra estatística. O que a pessoa escreve só é guardado se ela tiver conta e der permissão: tá aqui no código. [pausa] Ela pode baixar os dados ou apagar tudo. E a localização nunca é gravada. |
+| **2:08 a 2:25**<br>O que veio do curso | ⌨️ VS Code: `dao/DorDAO.java` linha 14 (`extends BaseDAO`) e linha 18 (o `inserir`). 🖥️ Figura `06_der.png`. | Do curso, usei orientação a objetos: cada tabela tem uma classe que cuida dela, e todas herdam de uma classe base. Os comandos usam PreparedStatement, que impede que o texto da pessoa vire comando no banco. [pausa] E o banco tem onze tabelas ligadas por chaves. |
+| **2:25 a 2:40**<br>Desafio 1 | ⌨️ VS Code: `servico/LocalService.java`, linhas 36 a 38. 🖥️ No app, a lista de UPAs com "Como chegar". | Primeiro desafio: achar a UPA real mais perto, na base do Ministério da Saúde. Ela devolve só vinte unidades por vez. Então busco várias páginas ao mesmo tempo e guardo o resultado por doze horas, pra ficar rápido. |
+| **2:40 a 2:55**<br>Desafio 2 e fim | 🖥️ Figura `20_matriz.png` e, no fim, o avatar com **"Falou em saúde? Tamo aqui."** | Segundo desafio: melhorar sem perder segurança. Cada mudança roda dez mil casos de teste. Se um urgente vai pra casa, eu desfaço. [pausa] Resultado: noventa e nove e meio por cento dos urgentes no lugar certo. Falou em saúde? Tamo aqui. |
 
 ## Contagem
 
 | Bloco | Palavras faladas |
 |---|---|
-| 0:00 a 0:08  Gancho | 21 |
-| 0:08 a 0:22  Arquitetura e Java no ar | 30 |
-| 0:22 a 0:45  INSERT | 35 |
-| 0:45 a 1:05  Transação | 30 |
-| 1:05 a 1:20  UPDATE e SELECT | 25 |
-| 1:20 a 1:42  Dados e tratamento | 53 |
-| 1:42 a 2:02  Conceitos do curso | 45 |
-| 2:02 a 2:28  Desafio 1: integração | 53 |
-| 2:28 a 2:55  Desafio 2: segurança | 64 |
-| **Total** | **356 palavras ➜ 2min22s a 150 palavras por minuto (2min09s a 165, um ritmo bom para vídeo técnico)** |
+| 0:00 a 0:12  O problema | 34 |
+| 0:12 a 0:20  A Tami | 14 |
+| 0:20 a 0:45  Como ela funciona | 45 |
+| 0:45 a 0:58  O limite | 16 |
+| 0:58 a 1:15  O desenho | 36 |
+| 1:15 a 1:35  Gravar | 46 |
+| 1:35 a 1:50  Atualizar e ler | 26 |
+| 1:50 a 2:08  Os dados | 47 |
+| 2:08 a 2:25  O que veio do curso | 45 |
+| 2:25 a 2:40  Desafio 1 | 38 |
+| 2:40 a 2:55  Desafio 2 e fim | 40 |
+| **Total** | **387 palavras ➜ 2min35s a 150 palavras por minuto** |
 
-Os cliques ocupam o resto do tempo, porque você fala enquanto clica. Se passar de 3 minutos, corte primeiro a frase "O modelo tem onze tabelas, com chave primária, estrangeira e check" (a Figura `06_der.png` fica na tela) e depois "Tudo publicado no Render: aqui, o servidor no ar".
+Você fala enquanto clica, então o vídeo fecha em cerca de 2min55s. Se passar de 3 minutos, corte primeiro "E o banco tem onze tabelas ligadas por chaves" (a figura fica na tela) e depois "Mostra os cuidados, o SUS mais perto e monta um resumo pro atendimento".
 
 ## Checklist antes de publicar
 
@@ -69,9 +80,9 @@ Os cliques ocupam o resto do tempo, porque você fala enquanto clica. Se passar 
 
 | O enunciado pede | Onde está |
 |---|---|
-| Sistema Java em funcionamento | 0:08 (servidor no ar) e o app em todos os blocos |
-| Inserção, leitura e atualização no banco | 0:22 (INSERT), 0:45 (transação), 1:05 (UPDATE e SELECT) |
-| Quais dados são coletados e como são tratados | 1:20 |
-| Conceitos do curso com exemplos reais | 1:42 (DAO, herança, PreparedStatement, records, enum, camadas, DER) |
-| Um ou dois desafios técnicos e as decisões | 2:02 (integração com o Ministério) e 2:28 (segurança e testes) |
-| Estatística e métodos ágeis (critérios gerais) | 2:28 ("dez mil casos", "ciclos curtos", os percentuais) |
+| Sistema Java em funcionamento | 0:20 (o app rodando) e 0:58 (o servidor no ar) |
+| Gravar, ler e atualizar no banco | 1:15 (gravar), 1:35 (atualizar e ler) |
+| Quais dados são coletados e como são tratados | 1:50 |
+| Conceitos do curso com exemplos reais | 2:08 (orientação a objetos, herança, PreparedStatement, modelo do banco) |
+| Um ou dois desafios técnicos e as decisões | 2:25 (a base do Ministério da Saúde) e 2:40 (segurança e testes) |
+| Estatística (critério geral) | 2:40 (10.000 casos e 99,5%) |
