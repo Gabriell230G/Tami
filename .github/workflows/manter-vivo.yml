@@ -1,0 +1,57 @@
+# Mantém a Tami acordada.
+# O Supabase grátis pausa o projeto depois de 7 dias sem consultas no banco.
+# Duas vezes por dia este job chama /api/vivo, que acorda o app no Render
+# e faz uma consulta de verdade no banco. Se falhar, o GitHub manda e-mail.
+name: Manter a Tami acordada
+
+on:
+  schedule:
+    - cron: '17 11 * * *'   # 08:17 em Brasília
+    - cron: '47 23 * * *'   # 20:47 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  URL_VIVO: https://tami-app.onrender.com/api/vivo
+
+jobs:
+  batimento:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Chamar /api/vivo (acorda o Render e consulta o Supabase)
+        run: |
+          # O Render grátis pode levar 1 minuto para acordar, então tenta algumas vezes.
+          for i in 1 2 3 4 5 6 7 8; do
+            resp=$(curl -s --max-time 120 "$URL_VIVO" || true)
+            echo "Tentativa $i: $resp"
+            if echo "$resp" | grep -q '"ok":true'; then
+              echo "Banco respondeu. Tudo certo."
+              exit 0
+            fi
+            sleep 30
+          done
+          echo "::error::A Tami ou o banco não responderam. Abra o Supabase e veja se o projeto foi pausado (botão Restore)."
+          exit 1
+
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Manter este agendamento ligado
+        # O GitHub desliga agendamentos de repositórios sem nenhum commit por 60 dias.
+        # Se o último commit tiver mais de 45 dias, registra um batimento mensal.
+        run: |
+          ultimo=$(git log -1 --format=%ct)
+          agora=$(date +%s)
+          dias=$(( (agora - ultimo) / 86400 ))
+          echo "Último commit há $dias dias."
+          if [ "$dias" -ge 45 ]; then
+            date -u +"Último batimento: %Y-%m-%d %H:%M UTC" > .github/batimento.txt
+            git config user.name "tami-batimento"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .github/batimento.txt
+            git commit -m "chore: batimento mensal para o agendamento não ser desligado [skip ci]"
+            git push
+          fi

@@ -39,6 +39,20 @@ public final class BancoDeDados {
         return true;
     }
 
+    /**
+     * Batimento: uma leitura de verdade no banco. O Supabase grátis pausa o projeto
+     * depois de 7 dias sem consultas; chamar isto de tempos em tempos evita a pausa.
+     * Devolve quantas regiões do corpo existem (tabela que nunca fica vazia).
+     */
+    public long batimento() {
+        try (Connection c = fabrica.abrir(); Statement st = c.createStatement();
+             ResultSet rs = st.executeQuery("SELECT COUNT(*) FROM T_TAMI_REGIAO")) {
+            return rs.next() ? rs.getLong(1) : 0;
+        } catch (SQLException e) {
+            throw new DaoException("O banco não respondeu ao batimento (" + fabrica.nome() + ")", e);
+        }
+    }
+
     /** Apaga tudo (para recomeçar a demonstração). */
     public void apagarTudo() {
         rodarScript(pasta() + "99_apagar_tabelas.sql");

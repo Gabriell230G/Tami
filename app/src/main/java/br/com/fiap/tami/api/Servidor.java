@@ -113,6 +113,11 @@ public final class Servidor {
 
         get("/api/status", r -> Mapa.de("ok", true, "banco", fabrica.nome(), "conversasAbertas", conversas.abertas(),
             "local", "local".equals(r.query().get("_origem"))));
+        // Batimento: faz uma consulta real no banco. É o endereço que o GitHub Actions chama
+        // todo dia para o Supabase grátis nunca ficar 7 dias parado (e o Render acordar junto).
+        br.com.fiap.tami.dao.BancoDeDados banco = new br.com.fiap.tami.dao.BancoDeDados(fabrica);
+        get("/api/vivo", r -> Mapa.de("ok", true, "banco", fabrica.nome(), "regioes", banco.batimento(),
+            "hora", java.time.Instant.now().toString()));
 
         // ---------- usuário ----------
         post("/api/entrar", r -> {   // cria na primeira vez; depois só lê (o código por e-mail fica para a próxima versão)

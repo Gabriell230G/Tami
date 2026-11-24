@@ -99,6 +99,25 @@ public final class App {
         Simulador simulador = new Simulador(motor, arvore, new ConversaDAO(fabrica), new UsuarioDAO(fabrica), new DorDAO(fabrica), new FeedbackDAO(fabrica), textos).comFiltro(sinalDAO);
         Servidor servidor = new Servidor(raiz.resolve("web"), fabrica, arvore, conversas, estatistica, simulador);
         servidor.iniciar(config.porta());
+        manterBancoAcordado(banco);
         System.out.println("Tami no ar: http://localhost:" + config.porta() + (producao ? "  (modo produção)" : "  (modo demonstração)"));
+    }
+
+    /**
+     * Enquanto o app estiver ligado, faz uma consulta leve no banco a cada 6 horas.
+     * O Supabase grátis pausa o projeto depois de 7 dias sem consultas. O Render grátis
+     * dorme quando ninguém usa, então quem garante de verdade é o GitHub Actions
+     * (.github/workflows/manter-vivo.yml), que chama /api/vivo todo dia; isto aqui é a segunda camada.
+     */
+    private static void manterBancoAcordado(BancoDeDados banco) {
+        java.util.concurrent.ScheduledExecutorService agenda = java.util.concurrent.Executors.newSingleThreadScheduledExecutor(r -> {
+            Thread t = new Thread(r, "tami-batimento");
+            t.setDaemon(true);
+            return t;
+        });
+        agenda.scheduleAtFixedRate(() -> {
+            try { banco.batimento(); }
+            catch (RuntimeException e) { System.err.println("Batimento do banco falhou: " + e.getMessage()); }
+        }, 1, 6 * 60, java.util.concurrent.TimeUnit.MINUTES);
     }
 }
