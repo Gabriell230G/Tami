@@ -46,6 +46,7 @@ public final class App {
 
         System.out.println("Tami · banco: " + fabrica.nome());
         BancoDeDados banco = new BancoDeDados(fabrica);
+        esperarBanco(banco);
         if (comando.equals("zerar")) { banco.apagarTudo(); System.out.println("Tabelas apagadas."); }
         if (banco.preparar()) System.out.println("Tabelas criadas (11) e árvore do corpo carregada.");
 
@@ -109,6 +110,21 @@ public final class App {
      * dorme quando ninguém usa, então quem garante de verdade é o GitHub Actions
      * (.github/workflows/manter-vivo.yml), que chama /api/vivo todo dia; isto aqui é a segunda camada.
      */
+    /**
+     * Se o banco estiver acordando (Supabase saindo da pausa), tenta de novo por até 3 minutos
+     * antes de desistir. Assim um deploy feito nesse meio tempo não falha à toa.
+     */
+    private static void esperarBanco(BancoDeDados banco) throws InterruptedException {
+        for (int tentativa = 1; ; tentativa++) {
+            try { banco.tabelasExistem(); return; }
+            catch (RuntimeException e) {
+                if (tentativa >= 12) throw e;
+                System.err.println("Banco ainda não respondeu (tentativa " + tentativa + " de 12). Tento de novo em 15 s.");
+                Thread.sleep(15_000);
+            }
+        }
+    }
+
     private static void manterBancoAcordado(BancoDeDados banco) {
         java.util.concurrent.ScheduledExecutorService agenda = java.util.concurrent.Executors.newSingleThreadScheduledExecutor(r -> {
             Thread t = new Thread(r, "tami-batimento");
