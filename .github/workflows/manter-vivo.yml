@@ -15,6 +15,8 @@ permissions:
 
 env:
   URL_VIVO: https://tami-app.onrender.com/api/vivo
+  # Reserva: também consulta o banco. Usada se o app no ar ainda for uma versão sem /api/vivo.
+  URL_RESERVA: https://tami-app.onrender.com/api/estatisticas
 
 jobs:
   batimento:
@@ -30,6 +32,13 @@ jobs:
             if echo "$resp" | grep -q '"ok":true'; then
               echo "Banco respondeu. Tudo certo."
               exit 0
+            fi
+            if echo "$resp" | grep -q 'não encontrado'; then
+              reserva=$(curl -s --max-time 75 "$URL_RESERVA" || true)
+              if echo "$reserva" | grep -q '"conversas"'; then
+                echo "Banco respondeu pela rota reserva (/api/estatisticas). Tudo certo."
+                exit 0
+              fi
             fi
             sleep 20
           done
